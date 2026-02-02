@@ -211,7 +211,7 @@ const slides = [
       "Digital bonds may be 'simulated' rather than authentic",
       "Vulnerability is edited out of interaction"
     ],
-    image: "https://loremflickr.com/1280/720/computer,chat",
+    image: "https://picsum.photos/seed/illusion/1280/720",
     citation: "Source: Turkle (2011)",
   },
   {
@@ -227,7 +227,7 @@ const slides = [
       "We must use available infrastructure (even if corporate)",
       "Criticism comes from a place of privilege"
     ],
-    image: "https://loremflickr.com/1280/720/person,alone,window",
+    image: "https://picsum.photos/seed/solitude/1280/720",
     citation: "Status: Validated Necessity",
   },
   {
