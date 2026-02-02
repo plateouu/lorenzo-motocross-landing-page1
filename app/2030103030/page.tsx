@@ -13,9 +13,9 @@ function ResetContent() {
   useEffect(() => {
     // Check local flag (set immediately after setup)
     const justCompletedUsingLocal = localStorage.getItem("reset_tutorial_pending")
-    
+
     if (justCompletedUsingLocal === "true") {
-         setViewState("tutorial")
+      setViewState("tutorial")
       localStorage.removeItem("reset_tutorial_pending")
     } else {
       // RETURNING USER: Auto-Reset immediately
@@ -28,8 +28,8 @@ function ResetContent() {
       localStorage.removeItem("tab-disguise-settings")
 
       const timer = setTimeout(() => {
-        router.push("/studyguide")
-         }, 1000) // Short delay to show updated "Pulse" UI if needed, or consistent with old code
+        router.push("/585285885")
+      }, 1000) // Short delay to show updated "Pulse" UI if needed, or consistent with old code
       return () => clearTimeout(timer)
     }
   }, [router])
@@ -39,7 +39,7 @@ function ResetContent() {
     // BUT wait, this is the First Time Setup flow.
     // Does the user want to Auto-Launch here?
     // Usually "Launch Tool" button does that.
-    router.push("/studyguide")
+    router.push("/585285885")
   }
 
   if (viewState === "loading") return null
@@ -64,35 +64,35 @@ function ResetContent() {
           <p className="text-xs text-[#8E8E93] tracking-widest uppercase font-medium">Resetting Configuration...</p>
         </div>
       ) : (
-      // === TUTORIAL VIEW (First Time Only) ===
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4 }} // Wait for swipe to reveal
-            className="max-w-md w-full bg-white modern-border p-8 rounded-sm shadow-xl space-y-6"
-          >
-            <div className="flex flex-col items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-2">
-                {/* Bookmark Icon */}
-                <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                </svg>
-              </div>
-              <h1 className="text-xl font-bold tracking-widest text-[#1D1D1F] uppercase">Ready</h1>
-              <div className="bg-[#F5F5F7] px-4 py-3 rounded-sm border border-[#E5E5E5] flex flex-col items-center gap-1 w-full">
-                <span className="text-[10px] text-[#8E8E93] uppercase tracking-widest font-bold">BOOKMARK this page</span>
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-mono text-[#1D1D1F] font-bold">PRESS CTRL + D</span>
-                </div>
+        // === TUTORIAL VIEW (First Time Only) ===
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4 }} // Wait for swipe to reveal
+          className="max-w-md w-full bg-white modern-border p-8 rounded-sm shadow-xl space-y-6"
+        >
+          <div className="flex flex-col items-center gap-4 mb-4">
+            <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-2">
+              {/* Bookmark Icon */}
+              <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+              </svg>
+            </div>
+            <h1 className="text-xl font-bold tracking-widest text-[#1D1D1F] uppercase">Ready</h1>
+            <div className="bg-[#F5F5F7] px-4 py-3 rounded-sm border border-[#E5E5E5] flex flex-col items-center gap-1 w-full">
+              <span className="text-[10px] text-[#8E8E93] uppercase tracking-widest font-bold">BOOKMARK this page</span>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-mono text-[#1D1D1F] font-bold">PRESS CTRL + D</span>
               </div>
             </div>
+          </div>
 
-            <button
-                onClick={handleLaunch}
-                className="w-full bg-[#1D1D1F] text-white py-4 text-sm font-bold tracking-[0.2em] uppercase hover:opacity-90 transition-all hover:scale-[1.02] active:scale-[0.98] rounded-sm shadow-lg"
-            >
-                Launch Tool
-            </button>
+          <button
+            onClick={handleLaunch}
+            className="w-full bg-[#1D1D1F] text-white py-4 text-sm font-bold tracking-[0.2em] uppercase hover:opacity-90 transition-all hover:scale-[1.02] active:scale-[0.98] rounded-sm shadow-lg"
+          >
+            Launch Tool
+          </button>
         </motion.div>
       )}
     </div>

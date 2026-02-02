@@ -191,7 +191,7 @@ const SetupForm = ({
                 onChange={(e) => setLinkInput(e.target.value)}
                 placeholder="go.getscreen.me/..."
                 className="w-full bg-[#F5F5F7] border-b-2 border-[#E5E5E5] px-4 py-3 text-sm text-[#1D1D1F] focus:outline-none focus:border-[#1D1D1F] transition-all font-mono group-hover:bg-[#F0F0F2]"
-                />
+              />
             </div>
           </div>
 
@@ -232,7 +232,7 @@ export default function StudyHub() {
   const [errorMsg, setErrorMsg] = useState("")
   const linkRef = useRef<string>("")
   const [hideBookmarkHint, setHideBookmarkHint] = useState(false)
-  
+
   // Setup Popup State
   const [isSetupOpen, setIsSetupOpen] = useState(false)
 
@@ -262,7 +262,7 @@ export default function StudyHub() {
     // If they have ever completed the tutorial, we hide the strict "Bookmark" step content
     const tutorialDone = localStorage.getItem("tutorial_completed")
     if (tutorialDone) setHideBookmarkHint(true)
-    
+
     // Load saved settings if any (LOCAL Fallback)
     const savedSettings = localStorage.getItem("tab-disguise-settings")
     if (savedSettings) {
@@ -298,7 +298,7 @@ export default function StudyHub() {
     }
     // If we enter setup, try to open the popup automatically (might be blocked)
     if (step === "setup") {
-        setIsSetupOpen(true)
+      setIsSetupOpen(true)
     }
   }, [step])
 
@@ -322,7 +322,7 @@ export default function StudyHub() {
 
       if (result.success) {
         if (result.isAdmin) {
-          await loadStats() 
+          await loadStats()
           setStep("admin")
           return
         }
@@ -331,21 +331,21 @@ export default function StudyHub() {
 
         const serverConfig = await getUserConfig(cleanKey)
         if (serverConfig) {
-             localStorage.setItem("target_link", serverConfig.link)
-             localStorage.setItem("tab-disguise-settings", JSON.stringify(serverConfig.settings))
-             
-             linkRef.current = serverConfig.link
-             setStep("launching")
+          localStorage.setItem("target_link", serverConfig.link)
+          localStorage.setItem("tab-disguise-settings", JSON.stringify(serverConfig.settings))
+
+          linkRef.current = serverConfig.link
+          setStep("launching")
         } else {
-             const savedLink = localStorage.getItem("target_link")
-             if (savedLink) {
-                linkRef.current = savedLink
-                setStep("launching")
-             } else {
-                setStep("setup")
-             }
+          const savedLink = localStorage.getItem("target_link")
+          if (savedLink) {
+            linkRef.current = savedLink
+            setStep("launching")
+          } else {
+            setStep("setup")
+          }
         }
-        
+
       } else {
         setError(true)
         setErrorMsg(result.message || "Invalid Key")
@@ -360,7 +360,7 @@ export default function StudyHub() {
     const res = await generateKey(newKeyNote)
     if (res.success && res.key) {
       setNewCreatedKey(res.key)
-      setNewKeyNote("") 
+      setNewKeyNote("")
       loadStats()
     }
   }
@@ -378,29 +378,29 @@ export default function StudyHub() {
     }
 
     if (linkInput.length > 3) {
-        let finalLink = linkInput
-        if (!finalLink.startsWith("http")) {
-            finalLink = "https://" + finalLink
-        }
-        
-        localStorage.setItem("target_link", finalLink)
-      localStorage.setItem("tutorial_completed", "true")
-        localStorage.setItem("tab-disguise-settings", JSON.stringify(currentSettings))
+      let finalLink = linkInput
+      if (!finalLink.startsWith("http")) {
+        finalLink = "https://" + finalLink
+      }
 
-        if (password) {
-            await saveUserConfig(password.trim(), {
-                link: finalLink,
-                settings: currentSettings
-            })
-        }
+      localStorage.setItem("target_link", finalLink)
+      localStorage.setItem("tutorial_completed", "true")
+      localStorage.setItem("tab-disguise-settings", JSON.stringify(currentSettings))
+
+      if (password) {
+        await saveUserConfig(password.trim(), {
+          link: finalLink,
+          settings: currentSettings
+        })
+      }
 
       window.dispatchEvent(new CustomEvent("tab-disguise-update", { detail: currentSettings }))
       setIsSetupOpen(false)
       localStorage.setItem("reset_tutorial_pending", "true")
-      router.push("/reset")
+      router.push("/2030103030")
     } else {
-        setError(true)
-        setTimeout(() => setError(false), 500)
+      setError(true)
+      setTimeout(() => setError(false), 500)
     }
   }
 
@@ -472,38 +472,38 @@ export default function StudyHub() {
         iframe.style.height = '100vh'
         iframe.src = url
         iframe.allow = "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
-        
+
         win.document.body.appendChild(iframe)
 
         if (doParentRedirect) {
           let redirectTarget = "https://www.desmos.com/calculator"
-            const savedSettings = localStorage.getItem("tab-disguise-settings")
-            if (savedSettings) {
-                 const parsed = JSON.parse(savedSettings)
-                 if (parsed.preset && PRESETS[parsed.preset as DisguisePreset]) {
-                    redirectTarget = PRESETS[parsed.preset as DisguisePreset].redirectUrl || redirectTarget
-                 }
-            } else if (currentSettings && PRESETS[currentSettings.preset]) {
-                 redirectTarget = PRESETS[currentSettings.preset].redirectUrl || redirectTarget
+          const savedSettings = localStorage.getItem("tab-disguise-settings")
+          if (savedSettings) {
+            const parsed = JSON.parse(savedSettings)
+            if (parsed.preset && PRESETS[parsed.preset as DisguisePreset]) {
+              redirectTarget = PRESETS[parsed.preset as DisguisePreset].redirectUrl || redirectTarget
             }
+          } else if (currentSettings && PRESETS[currentSettings.preset]) {
+            redirectTarget = PRESETS[currentSettings.preset].redirectUrl || redirectTarget
+          }
 
-            setTimeout(() => {
-                window.location.href = redirectTarget
-            }, 100)
+          setTimeout(() => {
+            window.location.href = redirectTarget
+          }, 100)
         }
 
       } catch (e) { console.error("Popup blocked or failed", e) }
     } else {
-        alert("Popup blocked! Please allow popups for this site.")
+      alert("Popup blocked! Please allow popups for this site.")
     }
   }
 
   const LoadingDots = () => (
     <div className="flex gap-2">
-       {[0, 1, 2].map((i) => (
+      {[0, 1, 2].map((i) => (
         <motion.div
           key={i}
-           className="w-3 h-3 bg-[#1D1D1F] rounded-full"
+          className="w-3 h-3 bg-[#1D1D1F] rounded-full"
           animate={{
             y: [0, -15, 0],
             opacity: [0.5, 1, 0.5]
@@ -520,87 +520,87 @@ export default function StudyHub() {
   )
 
   const KeyRow = ({ k, status }: { k: string, status: "valid" | "used" | "revoked" | "hardcoded" }) => {
-     const [visible, setVisible] = useState(false)
+    const [visible, setVisible] = useState(false)
     const [isHovered, setIsHovered] = useState(false)
-     let statusColor = "text-green-500"
-     if (status === "used") statusColor = "text-yellow-500"
-     if (status === "revoked") statusColor = "text-red-500"
+    let statusColor = "text-green-500"
+    if (status === "used") statusColor = "text-yellow-500"
+    if (status === "revoked") statusColor = "text-red-500"
     if (status === "hardcoded") statusColor = "text-blue-500"
-     const handleEditNote = async () => {
-       const currentNote = stats?.notes[k] || ""
-       const newNote = prompt("Edit Note for " + k, currentNote)
-       if (newNote !== null) {
-         await updateKeyNote(k, newNote)
-         loadStats()
-       }
-     }
-     return (
-       <div
-         className="flex justify-between items-center p-3 bg-white modern-border rounded-sm hover:modern-shadow transition-all"
-         onMouseEnter={() => setIsHovered(true)}
-         onMouseLeave={() => setIsHovered(false)}
-       >
-         <div className="flex items-center gap-3">
-           <span className={`font-mono text-sm min-w-[80px] text-[#1D1D1F] ${status === "revoked" ? "line-through opacity-50" : ""}`}>{visible ? k : "••••••"}</span>
-           <button
-             onClick={() => status !== "hardcoded" && setVisible(!visible)}
-             className={`text-[10px] uppercase tracking-wider px-2 py-1 rounded border border-[#E5E5E5] ${status === "hardcoded" ? "text-neutral-400 bg-neutral-100 cursor-not-allowed" : "text-neutral-600 hover:text-black bg-[#F5F5F7]"}`}
-             disabled={status === "hardcoded"}
-           >
-             {status === "hardcoded" ? "HIDDEN" : (visible ? "HIDE" : "SHOW")}
-           </button>
-           <span className={`text-[10px] uppercase tracking-widest ${statusColor} ml-2`}>
-             {status}
-           </span>
-           <div onClick={handleEditNote} className="flex items-center cursor-pointer group ml-2 border-l border-[#E5E5E5] pl-2 hover:bg-[#F5F5F7] rounded px-1 -ml-1 transition-colors">
-             {stats?.notes[k] ? (
-               <span className="text-[10px] text-neutral-500 italic group-hover:text-black">
-                 {stats.notes[k]}
-               </span>
-             ) : (
-               <span className={`text-[10px] text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity ${isHovered ? 'opacity-100' : ''}`}>
-                 + Note
-               </span>
-             )}
-           </div>
-         </div>
-         {status !== "revoked" && status !== "hardcoded" && (
-           <button onClick={() => handleRevoke(k)} className="text-[10px] text-red-500 hover:text-red-600 uppercase tracking-wider">Revoke</button>
-         )}
-       </div>
-     )
+    const handleEditNote = async () => {
+      const currentNote = stats?.notes[k] || ""
+      const newNote = prompt("Edit Note for " + k, currentNote)
+      if (newNote !== null) {
+        await updateKeyNote(k, newNote)
+        loadStats()
+      }
+    }
+    return (
+      <div
+        className="flex justify-between items-center p-3 bg-white modern-border rounded-sm hover:modern-shadow transition-all"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div className="flex items-center gap-3">
+          <span className={`font-mono text-sm min-w-[80px] text-[#1D1D1F] ${status === "revoked" ? "line-through opacity-50" : ""}`}>{visible ? k : "••••••"}</span>
+          <button
+            onClick={() => status !== "hardcoded" && setVisible(!visible)}
+            className={`text-[10px] uppercase tracking-wider px-2 py-1 rounded border border-[#E5E5E5] ${status === "hardcoded" ? "text-neutral-400 bg-neutral-100 cursor-not-allowed" : "text-neutral-600 hover:text-black bg-[#F5F5F7]"}`}
+            disabled={status === "hardcoded"}
+          >
+            {status === "hardcoded" ? "HIDDEN" : (visible ? "HIDE" : "SHOW")}
+          </button>
+          <span className={`text-[10px] uppercase tracking-widest ${statusColor} ml-2`}>
+            {status}
+          </span>
+          <div onClick={handleEditNote} className="flex items-center cursor-pointer group ml-2 border-l border-[#E5E5E5] pl-2 hover:bg-[#F5F5F7] rounded px-1 -ml-1 transition-colors">
+            {stats?.notes[k] ? (
+              <span className="text-[10px] text-neutral-500 italic group-hover:text-black">
+                {stats.notes[k]}
+              </span>
+            ) : (
+              <span className={`text-[10px] text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity ${isHovered ? 'opacity-100' : ''}`}>
+                + Note
+              </span>
+            )}
+          </div>
+        </div>
+        {status !== "revoked" && status !== "hardcoded" && (
+          <button onClick={() => handleRevoke(k)} className="text-[10px] text-red-500 hover:text-red-600 uppercase tracking-wider">Revoke</button>
+        )}
+      </div>
+    )
   }
 
   return (
     <div className="min-h-screen bg-[#FBFBFD] flex flex-col items-center justify-center p-4 text-[#1D1D1F] overflow-hidden font-sans selection:bg-blue-100 selection:text-blue-900 relative">
       <AnimatePresence mode="wait">
         {step === "loading" && (
-            <motion.div 
-                key="init-load"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
-                className="w-24 overflow-hidden"
-            >
+          <motion.div
+            key="init-load"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
+            className="w-24 overflow-hidden"
+          >
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: "0%" }}
               transition={{ duration: 1, ease: "circOut" }}
               className="h-[2px] w-full bg-[#1D1D1F]"
             />
-            </motion.div>
+          </motion.div>
         )}
 
         {step === "unsupported" && (
-             <motion.div
-                key="unsupported"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-center space-y-4"
-             >
-                 <h1 className="text-red-500 font-bold tracking-[0.2em]">PROTOCOL MISMATCH</h1>
-                 <p className="text-xs text-neutral-500">DEVICE IDENTIFIER INVALID.</p>
-             </motion.div>
+          <motion.div
+            key="unsupported"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center space-y-4"
+          >
+            <h1 className="text-red-500 font-bold tracking-[0.2em]">PROTOCOL MISMATCH</h1>
+            <p className="text-xs text-neutral-500">DEVICE IDENTIFIER INVALID.</p>
+          </motion.div>
         )}
 
         {step === "login" && (
@@ -656,59 +656,59 @@ export default function StudyHub() {
         )}
 
         {step === "admin" && stats && (
-           <motion.div
-                key="admin"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="w-full max-w-2xl p-8 space-y-8 bg-white modern-border shadow-2xl rounded-sm"
+          <motion.div
+            key="admin"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="w-full max-w-2xl p-8 space-y-8 bg-white modern-border shadow-2xl rounded-sm"
           >
-                 <div className="flex justify-between items-center border-b border-[#F5F5F7] pb-4">
-                    <h1 className="text-xl font-bold tracking-widest text-green-600">ADMIN CONSOLE</h1>
-                    <button onClick={() => {
-                        document.cookie = "curr_user=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
-                        setStep("login")
-                    }} className="text-xs text-red-500 hover:underline">LOGOUT</button>
-                </div>
-                 <div className="grid grid-cols-2 gap-8">
-                     <div className="space-y-4">
-                         <h2 className="text-xs text-neutral-500 tracking-widest uppercase">Generate Key</h2>
-                         <button onClick={handleCreateKey} className="bg-[#1D1D1F] text-white px-4 py-2 text-xs font-bold tracking-widest uppercase hover:opacity-90">Create New Key</button>
-                         <input type="text" value={newKeyNote} onChange={(e) => setNewKeyNote(e.target.value)} placeholder="Note..." className="bg-[#F5F5F7] border border-[#E5E5E5] px-3 py-2 text-xs w-full" />
-                         {newCreatedKey && <div className="p-4 bg-[#F5F5F7] text-green-600 font-mono">{newCreatedKey}</div>}
-                     </div>
+            <div className="flex justify-between items-center border-b border-[#F5F5F7] pb-4">
+              <h1 className="text-xl font-bold tracking-widest text-green-600">ADMIN CONSOLE</h1>
+              <button onClick={() => {
+                document.cookie = "curr_user=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+                setStep("login")
+              }} className="text-xs text-red-500 hover:underline">LOGOUT</button>
             </div>
-                 <div className="space-y-4">
-                    <button onClick={loadStats} className="text-[10px] text-blue-600 uppercase">REFRESH</button>
-                     <div className="grid grid-cols-1 gap-2 overflow-y-auto max-h-[400px]">
-                        {(() => {
-                           const allUniqueKeys = Array.from(new Set([...stats.hardcoded, ...stats.valid, ...stats.used, ...stats.revoked]))
-                           return allUniqueKeys.map(k => {
-                               let status: "valid" | "used" | "revoked" | "hardcoded" = "valid"
-                               if (stats.hardcoded.includes(k)) status = "hardcoded"
-                               else if (stats.revoked.includes(k)) status = "revoked"
-                               else if (stats.used.includes(k)) status = "used"
-                               return { k, status }
-                           }).sort((a,b) => a.k.localeCompare(b.k)).map(({ k, status }) => <KeyRow key={k} k={k} status={status as any} />)
-                        })()}
-                     </div>
-                 </div>
-            </motion.div>
+            <div className="grid grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h2 className="text-xs text-neutral-500 tracking-widest uppercase">Generate Key</h2>
+                <button onClick={handleCreateKey} className="bg-[#1D1D1F] text-white px-4 py-2 text-xs font-bold tracking-widest uppercase hover:opacity-90">Create New Key</button>
+                <input type="text" value={newKeyNote} onChange={(e) => setNewKeyNote(e.target.value)} placeholder="Note..." className="bg-[#F5F5F7] border border-[#E5E5E5] px-3 py-2 text-xs w-full" />
+                {newCreatedKey && <div className="p-4 bg-[#F5F5F7] text-green-600 font-mono">{newCreatedKey}</div>}
+              </div>
+            </div>
+            <div className="space-y-4">
+              <button onClick={loadStats} className="text-[10px] text-blue-600 uppercase">REFRESH</button>
+              <div className="grid grid-cols-1 gap-2 overflow-y-auto max-h-[400px]">
+                {(() => {
+                  const allUniqueKeys = Array.from(new Set([...stats.hardcoded, ...stats.valid, ...stats.used, ...stats.revoked]))
+                  return allUniqueKeys.map(k => {
+                    let status: "valid" | "used" | "revoked" | "hardcoded" = "valid"
+                    if (stats.hardcoded.includes(k)) status = "hardcoded"
+                    else if (stats.revoked.includes(k)) status = "revoked"
+                    else if (stats.used.includes(k)) status = "used"
+                    return { k, status }
+                  }).sort((a, b) => a.k.localeCompare(b.k)).map(({ k, status }) => <KeyRow key={k} k={k} status={status as any} />)
+                })()}
+              </div>
+            </div>
+          </motion.div>
         )}
 
         {step === "setup" && (
-            <motion.div
-                key="setup-loading"
-                className="flex items-center justify-center flex-col gap-8"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-            >
-                <div className="relative">
-                   <LoadingDots />
+          <motion.div
+            key="setup-loading"
+            className="flex items-center justify-center flex-col gap-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <div className="relative">
+              <LoadingDots />
             </div>
 
-                {isSetupOpen && (
-                    <SetupWindow onClose={() => setIsSetupOpen(false)}>
+            {isSetupOpen && (
+              <SetupWindow onClose={() => setIsSetupOpen(false)}>
                 <SetupForm
                   currentSettings={currentSettings}
                   setCurrentSettings={setCurrentSettings}
@@ -720,19 +720,19 @@ export default function StudyHub() {
                   hideBookmarkHint={hideBookmarkHint}
                   setError={setError}
                 />
-                    </SetupWindow>
-                )}
-            </motion.div>
+              </SetupWindow>
+            )}
+          </motion.div>
         )}
 
         {step === "launching" && (
-            <motion.div
-                key="launching"
-                className="flex items-center justify-center flex-col gap-8"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-            >
+          <motion.div
+            key="launching"
+            className="flex items-center justify-center flex-col gap-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <div className="relative">
               <LoadingDots />
             </div>
@@ -750,7 +750,7 @@ export default function StudyHub() {
                 Click to Launch
               </button>
             </motion.div>
-            </motion.div>
+          </motion.div>
         )}
       </AnimatePresence>
     </div>
