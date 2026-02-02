@@ -259,7 +259,6 @@ const slides = [
       "Mitigates the health crisis"
     ],
     image: "https://picsum.photos/seed/futurebridge/1280/720",
-    citation: "Source: Conclusion",
   },
   {
     id: "references-slide",
