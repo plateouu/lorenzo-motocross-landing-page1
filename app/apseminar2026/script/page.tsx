@@ -17,65 +17,66 @@ const scriptData = [
     slide: "2. The Axis of Memory",
     section: "Intro",
     duration: "0:15 - 0:45",
-    text: `In his memoir, Haruki Murakami, the internationally acclaimed novelist, writes about the "Axis of Memory." He argues that who we are is shaped by the things we see every day. Our identity is anchored in our physical surroundings.
+    text: `Haruki Murakami writes about the "Axis of Memory." He says who we are comes from what we see every day. We need our physical surroundings to know who we are.
     
-This matters because when those surroundings are destroyed, we lose our sense of self. We forget who we are because we lose the proof of our existence.`,
+    Why does this matter? When those surroundings are destroyed, we lose our sense of self. We forget who we are because we lose the proof of our existence.`,
     cues: ["Slow pace", "Emphasize 'Axis'", "Gestures"],
   },
   {
     slide: "3. Context - Key Factors",
     section: "Context",
     duration: "0:45 - 1:15",
-    text: `For millions today, that anchor is gone. It was removed by neglect. 
-
-As Ben Goldfarb, an environmental journalist known for his work on infrastructure's impact on nature, notes in *Crossings*, modern planning—highways and sprawl—has cut us off from each other. We built towns where it is physically impossible to meet people. This destroys trust. You cannot trust a neighbor you literally cannot reach.`,
+    text: `For millions of people, that anchor is gone. It was removed by neglect. 
+    
+    Ben Goldfarb writes in *Crossings* that highways and sprawl cut us off from each other. We built towns where we can't meet people. This destroys trust. You can't trust a neighbor you can't reach.`,
     cues: ["Point to screen", "Stern tone"],
   },
   {
     slide: "4. The Problem",
     section: "Problem",
     duration: "1:15 - 2:00",
-    text: `This is a biological crisis. 
+    text: `This is hurting us physically. 
     
-In 2023, the U.S. Surgeon General, the nation's leading public health spokesperson, declared loneliness an epidemic. Lacking connection carries a mortality risk equivalent to smoking 15 cigarettes a day. It increases premature death by 29%.
+    In 2023, the U.S. Surgeon General called loneliness an epidemic. Being lonely is as deadly as smoking 15 cigarettes a day. It increases the risk of early death by 29%.
     
-We are facing a crisis of connection.`,
+    We are facing a crisis of connection.`,
     cues: ["Emphasize '15 cigarettes'", "Serious pause"],
   },
   {
     slide: "5. Research Question",
     section: "RQ",
     duration: "2:00 - 2:15",
-    text: `This leads to my Research Question: 
+    text: `So I asked: 
     
-To what extent could digital communities be considered meaningful social spaces for those who are isolated from physical spaces?`,
+    Can digital communities be real social spaces for people who are isolated from physical spaces?`,
     cues: ["Read clearly", "Scan audience"],
   },
   {
     slide: "6. Key Concepts",
     section: "Definitions",
     duration: "2:15 - 2:40",
-    text: `To answer this, we need to define "Third Places." Ray Oldenburg, an urban sociologist, coined this term for neutral connection hubs—coffee shops, parks, libraries.
+    text: `To answer this, look at "Third Places." Ray Oldenburg coined this term for neutral connection hubs—coffee shops, parks, libraries.
     
-But many live in "Social Deserts"—places designed against interaction. We need "Bridging Social Capital"—diverse connections that bind society.`,
+    But many live in "Social Deserts"—places designed without interaction. We need "Bridging Social Capital"—connections that bind society together.`,
     cues: ["Define 'Third Place'", "Hand gestures"],
   },
   {
     slide: "7. Thesis Statement",
     section: "Argument",
     duration: "2:40 - 3:00",
-    text: `My thesis is this: 
+    text: `Here is my answer: 
     
-For those trapped in Social Deserts, Virtual Communities function as necessary "Third Places." They are an essential means of developing bridging social capital and supporting inclusion.`,
+    For those trapped in Social Deserts, Virtual Communities work as necessary "Third Places." They are an essential way to build social capital and support inclusion.`,
     cues: ["Strong conviction", "One sentence"],
   },
   {
     slide: "8. Perspectives Overview",
     section: "Roadmap",
     duration: "3:00 - 3:10",
-    text: `I will explore this through two perspectives:
-1. Structural: The barriers to physical entry.
-2. Economic: The cost of digital connection.`,
+    text: `I looked at this in two ways:
+    
+    1. Structural: The barriers to physical entry.
+    2. Economic: The cost of digital connection.`,
     cues: ["Count 1, 2"],
   },
   {
@@ -84,7 +85,7 @@ For those trapped in Social Deserts, Virtual Communities function as necessary "
     duration: "3:10 - 3:45",
     text: `First, the Structural Perspective. Why not just "go outside"?
     
-For youth, the outside is restricted. danah boyd, a Principal Researcher at Microsoft Research and scholar of youth culture, introduces "Networked Publics" in her book *It's Complicated*. Due to curfews and safety fears, the internet is the *only* unsupervised public space left for teens. They are banned from the town square.`,
+    For youth, the outside is restricted. danah boyd writes in *It's Complicated* that due to curfews and safety fears, the internet is the *only* unsupervised public space left for teens. They are banned from the town square.`,
     cues: ["Emphasize 'only impact'", "Sympathetic tone"],
   },
   {
@@ -100,9 +101,9 @@ If visiting a friend takes a 45-minute drive, the friction is too high. You stay
     slide: "11. P1: Counterargument",
     section: "Structural",
     duration: "4:15 - 4:45",
-    text: `Critics like Constance Steinkuehler, a Professor of Informatics who studies games, argue that digital spaces serve corporations. 
+    text: `Critics like Constance Steinkuehler denote that digital spaces serve corporations. 
     
-Platforms prioritize profit. However, looking at the structural barriers, for many, the "imperfect" digital space is the only space accessible at all.`,
+    Platforms prioritize profit. However, looking at the structural barriers, for many, the "imperfect" digital space is the only space accessible at all.`,
     cues: ["Concede point", "Pivot back"],
   },
   {
@@ -111,16 +112,16 @@ Platforms prioritize profit. However, looking at the structural barriers, for ma
     duration: "4:45 - 5:30",
     text: `Moving to the Economic Perspective.
     
-Shoshana Zuboff, a Professor Emerita at Harvard Business School, warns of "Surveillance Capitalism." Platforms like TikTok prioritize prediction over connection. They extract our experience as data. If the "Third Place" is a data mine, can it support community?`,
+    Shoshana Zuboff warns of "Surveillance Capitalism." Platforms like TikTok prioritize prediction over connection. They extract our experience as data. If the "Third Place" is a data mine, can it support community?`,
     cues: ["Warning tone", "Slow down"],
   },
   {
     slide: "13. P2: Illusion of Companionship",
     section: "Economic",
     duration: "5:30 - 6:00",
-    text: `Sherry Turkle, the founding director of the MIT Initiative on Technology and Self, goes further in *Alone Together*. She argues we settle for the "illusion of companionship." 
+    text: `Sherry Turkle writes in *Alone Together* that we settle for the "illusion of companionship." 
     
-In digital space, we edit out the awkwardness. We sip on a simulation of friendship while our biological need for intimacy starves.`,
+    In digital space, we edit out the awkwardness. We sip on a simulation of friendship while our biological need for intimacy starves.`,
     cues: ["Poetic delivery", "Sadness"],
   },
   {
@@ -129,17 +130,17 @@ In digital space, we edit out the awkwardness. We sip on a simulation of friends
     duration: "6:00 - 6:45",
     text: `However, this view comes from privilege. It assumes we *have* a choice between perfect organic connection and imperfect digital connection.
     
-For a disabled senior or a rural teen, that choice doesn't exist. It is Digital Community or Total Isolation. A starving person doesn't reject food because the store is corporate.`,
+For a disabled senior or a rural teen, that choice doesn't exist. It is Digital Community or Total Isolation. A starving person accepts food regardless of whether the store is corporate.`,
     cues: ["Passionate defense", "Strongest point"],
   },
   {
-    slide: "15. Limitations",
+    slide: "15. Limitations & Implications",
     section: "Discussion",
-    duration: "6:45 - 7:15",
-    text: `I must concede a biological limitation. As John Cacioppo, the founder of social neuroscience, notes, text cannot trigger the full oxytocin response of a hug. 
+    duration: "6:45 - 7:30",
+    text: `There is one big problem: Digital contact can't replicate the physical stress-relief of a hug. It is not perfect.
     
-Digital connection is not biologically perfect. But the goal is "Harm Reduction." Imperfect connection is infinitely better than the "toxic isolation" that kills.`,
-    cues: ["Nuanced", "Scientific"],
+    But here is the reality. We cannot wait for better cities to save us. We must see digital access as immediate "Harm Reduction." It is an imperfect tool, but for the isolated, it is the only tool that works.`,
+    cues: ["Nuanced", "Shift to Urgent"],
   },
   {
     slide: "16. Conclusion",
