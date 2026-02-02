@@ -81,7 +81,7 @@ const slides = [
       "Destruction of scenery breaks the axis",
       "Modern planning severs connections (Goldfarb, 2023)"
     ],
-    image: "https://loremflickr.com/800/600/prague,square",
+    image: "https://picsum.photos/seed/prague/800/600",
     citation: "Source: Murakami (2002) / Goldfarb (2023)",
   },
   {
@@ -96,7 +96,7 @@ const slides = [
       "Equivalent to smoking 15 cigarettes/day",
       "Crisis of Connection in modern era"
     ],
-    image: "https://loremflickr.com/1280/720/chart,graph,health",
+    image: "https://picsum.photos/seed/healthchart/1280/720",
     citation: "Data Source: U.S. Surgeon General (2023)",
   },
   {
@@ -116,7 +116,7 @@ const slides = [
       "Social Deserts (Goldfarb, 2023): Design preventing interaction",
       "Bridging Social Capital (Putnam, 2000): Diverse connections"
     ],
-    image: "https://loremflickr.com/800/600/coffee,shop,interior",
+    image: "https://picsum.photos/seed/coffeeshop/800/600",
     citation: "Source: Oldenburg (1989) / Ferreira (2021)",
   },
   {
@@ -134,7 +134,7 @@ const slides = [
       { label: "Structural", icon: BarChart3, desc: "Barriers to Entry" },
       { label: "Economic", icon: Users, desc: "Surveillance Capitalism" },
     ],
-    image: "https://loremflickr.com/1280/720/code,matrix",
+    image: "https://picsum.photos/seed/matrixcode/1280/720",
   },
   {
     id: "p1-youth",
@@ -149,7 +149,7 @@ const slides = [
       "Digital = ONLY unsupervised venue",
       "Barrier is legal, not choice"
     ],
-    image: "https://loremflickr.com/1280/720/teenager,phone,night",
+    image: "https://picsum.photos/seed/teenphone/1280/720",
     citation: "Source: Boyd (2014)",
   },
   {
@@ -165,7 +165,7 @@ const slides = [
       "Highways create 'Social Deserts'",
       "Isolation is structural, not personal"
     ],
-    image: "https://loremflickr.com/1280/720/suburb,aerial",
+    image: "https://picsum.photos/seed/suburbsprawl/1280/720",
     citation: "Source: Goldfarb (2023)",
   },
   {
@@ -179,7 +179,7 @@ const slides = [
       "Platforms prioritize profit over connection (Zuboff, 2019)",
       "Illusion of Companionship (Turkle, 2011)"
     ],
-    image: "https://loremflickr.com/1280/720/warcraft,game",
+    image: "https://picsum.photos/seed/surveillance/1280/720",
     citation: "Source: Steinkuehler & Williams (2006)",
   },
   {
@@ -243,7 +243,7 @@ const slides = [
       "Refutation: Harm Reduction (Quan-Haase, 2004)",
       "Better than 'toxic biological isolation'"
     ],
-    image: "https://loremflickr.com/1280/720/stress,biology,medical", // Replaced broken wikimedia link
+    image: "https://picsum.photos/seed/biology/1280/720", // Replaced broken wikimedia link
     citation: "Source: Cacioppo (2008)",
   },
   {
@@ -258,7 +258,7 @@ const slides = [
       "Must validate virtual connections",
       "Mitigates the health crisis"
     ],
-    image: "https://loremflickr.com/1280/720/bridge,neon,future",
+    image: "https://picsum.photos/seed/futurebridge/1280/720",
     citation: "Source: Conclusion",
   },
   {
