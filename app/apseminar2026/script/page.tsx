@@ -19,7 +19,7 @@ const scriptData = [
     duration: "0:15 - 0:45",
     text: `In his memoir, Haruki Murakami, the internationally acclaimed novelist, writes about the "Axis of Memory." He argues that who we are is shaped by the things we see every day. Our identity is anchored in our physical surroundings.
     
-This matters because when those surroundings are destroyed, we don't just lose a view. We lose our sense of self. We forget who we are because we lose the proof of our existence.`,
+This matters because when those surroundings are destroyed, we lose our sense of self. We forget who we are because we lose the proof of our existence.`,
     cues: ["Slow pace", "Emphasize 'Axis'", "Gestures"],
   },
   {
@@ -111,7 +111,7 @@ Platforms prioritize profit. However, looking at the structural barriers, for ma
     duration: "4:45 - 5:30",
     text: `Moving to the Economic Perspective.
     
-Shoshana Zuboff, a Professor Emerita at Harvard Business School, warns of "Surveillance Capitalism." Platforms like TikTok don't want connection; they want prediction. They extract our experience as data. If the "Third Place" is a data mine, can it support community?`,
+Shoshana Zuboff, a Professor Emerita at Harvard Business School, warns of "Surveillance Capitalism." Platforms like TikTok prioritize prediction over connection. They extract our experience as data. If the "Third Place" is a data mine, can it support community?`,
     cues: ["Warning tone", "Slow down"],
   },
   {
@@ -150,7 +150,7 @@ Digital connection is not biologically perfect. But the goal is "Harm Reduction.
 2. Until we rebuild our cities, Digital Communities are Essential Infrastructure.
 3. They are life rafts.
 
-We shouldn't shame people for looking at their phones. We must ask: *Why is this the only place they have left to go?*`,
+Rather than shaming screen time, we must ask: *Why is this the only place they have left to go?*`,
     cues: ["Final thought", "Powerful close"],
   },
   {
