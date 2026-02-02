@@ -4,359 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
-      <change afterPath="$PROJECT_DIR$/.idea/lorenzo-motocross-landing-page-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/app-build-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/.rscinfo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/1DjmrOJDSJcNO95SyVuPvVS4iX0glUlT5ARCqSISDVs/604800.1770645215318.-BLIKJ1_ieuzk_RrjnfeArvdtxBDsUxNGhmNlNGbIDs.ImFhNTItNjQ5ZDc2MGZiNTE5YiI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/39NRBS0rSEfytml9Ms521-4gTtL8aACbXz1q5IPUmFs/604800.1770644726204.a4LMa6by4SBMS2KI9MIivn_916Eb1s95mKXrn-eWjIU.Vy8iMTc0YTYtNjQ5ZDc4OTFjZWM5MiI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/539Ox9Cm_grPBjjVsvsB0cwB4u2Sn53Y-5EntA95TK0/60.1770030641207.39BmU0hKc9ADv3Q72vSO06RWyhZTXP4YAUK95dSsMbU.Vy8iMTJiNWYyLTE5YmYzZGNhZjg4Ig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/5_Wnl7G2Rgq8H65fP3A0NPHoxovANDv1pdXu6fG8IsA/604800.1770645315243.QI2rI0Pki4kjSmP-FRoG08A0gz4zi8cWFv5ek_ZqLB0.Vy8iMTU2MjItNjQ5ZDdhYzNiOTA4ZSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/8IUeKh8ILl0ohBpp5WNaG835cVU4kg5iC3mJcCRBCqU/604800.1770645212314.w1esmNqL872TbMcLvwo6fQzZlVioRoWqRWx5kw34l8Q.Vy8iMWE0NTEtNjQ5ZDdhNjE3NGFjNSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/9gHbSkCFQiWHYjPYIwyzYC7OQdt54YQK_9dZUodQpkQ/604800.1770644695028.4OfmabH8zdIeoZASi--oxIwHESfBaB8RnxkEmriNdkc.Vy8iMjA5NmUtNjQ5ZDc4NzQ0ZmY4OCI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/BuhLJusOuR_1kjxP_6-HcWg5lF7tiDhCmr55PZVDTYM/60.1770039496884.KuDP9-pDbjpeVyXFnrt6KSlIIeu4jXL5MCwoXoYL_GU.Vy8iZTNmMDQtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/CV0Ce2hdoW1CIDHgzPVLGhWPqIIJGVcc2gvbuO-ICfY/60.1770039513912.STkR06nmCHzMfMhFuoaOJRwg3mFuDFanaKgANrGsF7k.Vy8iYTc1ZmYtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/FlOrMbnVYhkdj1-1bdm7yZWqFCNk234P2rL63orkaSI/60.1770039513164.2DP-DOIsGfL-LkbF9LDehqgxUE55-UN_4fJZ_8NFMAA.Vy8iMTAwOWMtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/Fx8vI-7DJXKE9cKu3YwRcLnNwxheNK_Ge8EPPrT2nfk/604800.1770645315400.hlE-fW_s4FR2QVrugpmRITxa0wmYwvtofHzK-ANoi6Y.Vy8iMTU2MjItNjQ5ZDdhYzNiOTA4ZSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/HKrQI5PdxLSTma1ylvB4FKLwQikOu9QU6YkMfXMbElg/60.1770039636395.YZESHcgTR7JKDmIYto0JOJTFbtDm9Foz1-dXmyK2J0w.Vy8iYzk1YjgtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/Na_YxIwlpKlZTBLEyfk6X72HJBMRuSvik5CYc7LcKsI/604800.1770645225541.TR3YJjR5PScUSJ0fvsGtKDCsmEtzmuAQE23g1zhs5kg.Vy8iMTU4ZTAtNjQ5ZDdhNmVhMGMyMiI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/OCNcMU30-NQWES4tk0CX_ZJeQnbH70uc4FCOW_GQzo4/10800.1770051226597.ZDHlKw7yYugQBt1HAjxIY9sBdOMTi2DuihpHUauwOEY.hR6l_c-s4inUtpwsdDcKWuQXhbh4oDb3Pce55C86Fik.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/Ot5jE_8AdsmzP88HYy42CfEGWQbCqV5EWRTF82KzJ5g/604800.1770644674812.TdModO_M3OVq71jm_xZRJ4g2771BLHrI8_CvdZFvvHo.Vy8iZTIwMy02NDlkNzg2MGQ4OGNkIg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/TMdi5nKfsNu9pduJpUeKa5s-_USr1YMAqiSvVCg68-U/604800.1770644699703.FKpM1DGL6klDucz_cp8Vz-uMbVl5rszhp3E0zplRQpk.Vy8iMTVhNWQtNjQ5ZDc4NzhlMmRmZSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/TxQWa9ydud11jOiFyf3B6XAcoL1AyX_kzWkqnHYAvew/604800.1770644688235.VFvfGG2M2q3AJT72YA7lYGbP5xYNjuYdc5KVlqRtJRo.Vy8iMjYxMzItNjQ5ZDc4NmRkMmQ0YSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/V0Cyxiipl2XUnmuuvNtiptMxXrbuaLFBN7C_LQsvor8/604800.1770645227594.C4oHprjBUvY2CTMpPY8cEyrezc2oasj95Gb_Q760k7s.Vy8iMTU1MDctNjQ5ZDdhNzA1YjI0YSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/XGqMeSm7OExSVFrim1xfQ5TRZQ6KaSuBpbSXtqmImNI/60.1770030648974.q9HMJtzoW7blg6l6Lim5Xmto-Jcq41U7DFBEznNHu_k.Vy8iOTJkNWItMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/YCYMia4zgaYwdV-HIq5Yq62rCQsNztmAWmiOWsfccIU/60.1770039509288.8k4m-Yf54jJLSNb0ETP0dmBHFlXCM92tuyKrprwGTTs.Vy8iMWQ0ODYtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/YHpUfPK_j7nM6wxt-_BkNU4ovMZxbgqWVnPVmx1a-co/604800.1770644707559.PZ_ptXU7i4TxJlVrAM-uuqpmjshvwy3l7CbgVkej19k.Vy8iMjY1NzMtNjQ5ZDc4ODA0NDg4MCI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/Zl5OzYG899LV-agv11W1uf2nCC-nwp1M_8i2EEwbt5w/604800.1770644698287.FzDCaHq3-zRMN_y5d4woVbODktOqizRju3gwMOrxYDs.Vy8iYWVmMi02NDlkNzg3NzhjMTk3Ig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/cD1oMmvcNMm_yiNvK857dW96MeBgvCi8XEiuVeZwybU/604800.1770644686833.BIZpb3j77xyHm2y4ueoS64lbSnnKQJIk9tvFtngDm1M.ImFhNTItNjQ5ZDc2MGZiNTE5YiI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/duRqor0A-cptCZM81KbOq9j_somTfAxpBDGLpSkg5Ks/60.1770039510035.MeNTCDNh-Mik13pWgclqH_tj3kmbbqH3FUbkcsJBT7Y.Vy8iNzY4MTUtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/fvYRVyNvmcsmOn2j33xlDvZHmdPr3Whr_uM0qqIwM8o/604800.1770645183713.s-7Y_N6tHTN2PutMRS636WgrQ2ddapFF7Qs1718GAuo.Vy8iODhmZC02NDlkN2E0NmJlYzA4Ig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/gTVs_vf3BwvT2M9x6EdxEVhFLwxAU2q3M-4_3MMYkl8/60.1770039512247.p4E-R8gF3KLuQn2s7Y0gHOvTZF_ZUhtNSNelmfmIYCg.Vy8iZjNiMC0xOWJmM2RjYWY4OCI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/i06JzYPNMzd5RaGStZRjOKX1ud2ksllDxgvCoS2k7CE/60.1770039512683.oMkwIf1RqB6os1sfqnlboojUaxfHDAJUAFbYtUZO66U.Vy8iMjMzNjItMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/jDLGgJ1aQo8-Y6h9zsWtCXL-HjmTRf1iTow9A9OuTng/60.1770039496886.dlNvQCjYv_26eib3LYCjYkgd2BJkL-q2XHP6C7UBwYs.Vy8iMWEzMTIwLTE5YmYzZGNhZjg4Ig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/jg5u1y8tdaZJCNDLsKpRbbd-daFV99ffQwRNJEFlc0c/60.1770039636396.1yRXI0A4S1IP4HU7BOzxUZfOiziCE7ulE0Sj1Ozjf2E.Vy8iMTcwZjhhLTE5YmYzZGNhZjg4Ig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/kQC6OtbJvJCDQt1C0AOUX0EM-CyAbFl-ed_ipgGQJZs/60.1770039496883.5GEEE3_Yt2COuf9mOWEFES11Zt_YFVtSkRXBcMy_TR4.Vy8iNWM2YmQtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/l36WFZ6-BlxkKzJnLBsbiqS6PeeyQ4XkLpfWAQCQunk/604800.1770645228539.AAYObCESv--Wh7KNrTe4lEsXErIUTFdCZEOZ5xcgsZY.Vy8iMTVmMzctNjQ5ZDdhNzE0NjdlZSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/oljkPamMR_6ywF6XyvKGVF2Gc0bm8kZY7U8CJ6KnQdM/604800.1770644676446.lVZJS8ZZzLPUYOPOhGD9K2yVQdObGf1V99dPNyTN6vU.Vy8iMTFlZDYtNjQ5ZDc4NjJiOWZmNiI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/pC85tgjmMQW4jq8LgaAfBlksNzniRpWT7aWzz-WmWcM/604800.1770645183128.Uw1QN3M8stWkiErzUDjwA7ZAT1D39fdqFYdkC23x-00.Vy8iMTQ1NTEtNjQ5ZDdhNDViODBlMyI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/rGvEkJbu2cRQjDNj1LyMxASqKbP0STdJLmeH4NTX-Vw/60.1770039636396.a0frDP-_NiTsWvJiQ-utMukTFliziDCtF4Y7GESc8b4.Vy8iMTcxNDhjLTE5YmYzZGNhZjg4Ig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/t-z9Dw-Z4ybZvEuGRKA_FSO66STwXgBotj_gsE8GDOs/10800.1770050696227.xzgVI1D_fMhsJtJrrQD4fGKaRE9UzhAMhAJDmMOj8gU.hR6l_c-s4inUtpwsdDcKWuQXhbh4oDb3Pce55C86Fik.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/ucz33k2L5RHSVshAy2j_IwZH4t2eg37dnrs4opdQ8gA/60.1770039636394.mkViXXo9DwcF2xjrIqk2Gv7qOciRyAC-jGdQb6fhFws.Vy8iMTVkNDMtMTliZjNkY2FmODgi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/vP5ESk4rpB7zZn7owOJyiqFKg6V90jd9hbUs5iu7zvk/604800.1770645231765.Rg0AfdUEKHcr8a056vqIE5Op2WOano4k7G9xpWJgEq4.Vy8iYTM0Ni02NDlkN2E3NDcyMDVkIg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/images/vaFYSZlMFN4VMGg0X8aQnXEXzz2NziUqlJaG0D23XiE/604800.1770645225011.AQPTc7R7UuxdKvdlu3vKEQES3Rqoif2E_W5O-DPqvxI.Vy8iMzZjMGYtNjQ5ZDdhNmRhZTkxZSI.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development-fallback/0.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development-fallback/1.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development-fallback/2.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development-fallback/index.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development-fallback/index.pack.gz.old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/0.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/1.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/10.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/11.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/12.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/13.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/14.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/15.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/16.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/17.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/18.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/19.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/2.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/20.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/21.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/22.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/23.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/24.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/25.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/26.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/3.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/4.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/5.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/6.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/7.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/8.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/9.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack.gz.old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/0.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/1.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/10.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/11.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/12.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/13.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/14.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/15.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/16.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/17.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/18.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/19.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/2.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/20.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/3.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/4.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/5.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/6.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/7.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/8.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/9.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack.gz.old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/fallback-build-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/react-loadable-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app-paths-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/_not-found/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/_not-found/page_client-reference-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/apseminar2026/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/apseminar2026/page_client-reference-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/apseminar2026/script/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/apseminar2026/script/page_client-reference-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/script/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/app/script/page_client-reference-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/interception-route-rewrite-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/middleware-build-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/middleware-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/middleware-react-loadable-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/next-font-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/next-font-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/pages/_document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/pages/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/server-reference-manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/server-reference-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/vendor-chunks/@swc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/vendor-chunks/framer-motion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/vendor-chunks/lucide-react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/vendor-chunks/motion-dom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/vendor-chunks/motion-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/vendor-chunks/next.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/server/webpack-runtime.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/_pages-dir-browser_node_modules_next_dist_pages__app_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app-pages-internals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/_not-found/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/apseminar2026/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/apseminar2026/script/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/not-found.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/script/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/app/template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/_app-pages-browser_node_modules_next_dist_client_dev_noop-turbopack-hmr_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/_pages-dir-browser_node_modules_next_dist_pages__app_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/_pages-dir-browser_node_modules_next_dist_pages__error_js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/amp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/main-app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/pages/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/react-refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/fallback/webpack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/main-app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/pages/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/react-refresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/chunks/webpack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/css/app/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/development/_ssgManifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/438aa629764e75f3-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/4c9affa5bc8f420e-s.p.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/51251f8b9793cdb3-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/875ae681bfde4580-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/cc978ac5ee68c2b6-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/ccc01da6a2b3d788-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/e857b654a2caa584-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/media/fa3e259cafa8f47e-s.p.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/024c4360e00e4c73.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/15a236ee03206f0f.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/20cc0b416a113d7b.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/293a9c93358bed14.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/3008398b5b736c07.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/481720cae085ca3c.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/492a20e6e46600b7.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/5726adcac1211c70.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/594a9915d662c052.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/5bef433b7f709818.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/625504ef52743e21.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/633457081244afec._.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/6c61e05d48105729.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/8431a0d9cb09e905.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/8680f8b677bc9e20.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/a6195d898898e1a7.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/ab04c97240941343.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.024c4360e00e4c73.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.20cc0b416a113d7b.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.492a20e6e46600b7.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.8680f8b677bc9e20.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.ab04c97240941343.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.b6635b558970c563.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.e85a6a2be8538f4d.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/page.ebc11fc97d45d0d3.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.15a236ee03206f0f.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.481720cae085ca3c.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.594a9915d662c052.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.625504ef52743e21.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.a6195d898898e1a7.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.c7e6c68e4c7069b9.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/apseminar2026/script/page.ef8d4a238607e633.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.024c4360e00e4c73.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.15a236ee03206f0f.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.20cc0b416a113d7b.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.3008398b5b736c07.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.481720cae085ca3c.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.492a20e6e46600b7.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.5726adcac1211c70.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.594a9915d662c052.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.625504ef52743e21.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.6c61e05d48105729.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.8431a0d9cb09e905.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.8680f8b677bc9e20.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.a6195d898898e1a7.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.ab04c97240941343.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.b6635b558970c563.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.c732b6420bf65b49.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.e85a6a2be8538f4d.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.eae4a72996c21084.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.ebc11fc97d45d0d3.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/app/layout.ef8d4a238607e633.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/b6635b558970c563.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/c732b6420bf65b49.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/c7e6c68e4c7069b9.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/da3d8037205a102a.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/e85a6a2be8538f4d.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/eae4a72996c21084.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/ebc11fc97d45d0d3.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/ef8d4a238607e633.webpack.hot-update.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.024c4360e00e4c73.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.15a236ee03206f0f.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.20cc0b416a113d7b.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.293a9c93358bed14.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.3008398b5b736c07.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.481720cae085ca3c.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.492a20e6e46600b7.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.5726adcac1211c70.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.594a9915d662c052.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.5bef433b7f709818.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.625504ef52743e21.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.6c61e05d48105729.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.8431a0d9cb09e905.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.8680f8b677bc9e20.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.a6195d898898e1a7.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.ab04c97240941343.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.b6635b558970c563.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.c732b6420bf65b49.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.c7e6c68e4c7069b9.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.da3d8037205a102a.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.e85a6a2be8538f4d.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.eae4a72996c21084.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.ebc11fc97d45d0d3.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/static/webpack/webpack.ef8d4a238607e633.hot-update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/trace" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/types/app/apseminar2026/page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/types/app/apseminar2026/script/page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/types/app/layout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/types/app/script/page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/types/cache-life.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.next/types/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apseminar2026/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/apseminar2026/script/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/DataNetwork.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/QuantumGraph.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/loading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pdf/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/reset/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/reset/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/resume/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/schools/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/script/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/studyguide/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/studyguide/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/template.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tj9j43vv3/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/media-focus.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/sticky-header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/tab-disguise-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/tab-settings.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/accordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/alert-dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/alert.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/aspect-ratio.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/avatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/badge.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/breadcrumb.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/button-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/calendar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/carousel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/chart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/checkbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/collapsible.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/command.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/context-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/drawer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/dropdown-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/empty.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/field.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/hover-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/input-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/input-otp.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/kbd.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/label.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/menubar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/navigation-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/pagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/popover.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/progress.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/radio-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/resizable.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/scroll-area.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/separator.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/sheet.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/sidebar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/skeleton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/slider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/sonner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/spinner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/switch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/textarea.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/toast.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/toaster.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/toggle-group.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/toggle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/tooltip.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/use-mobile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/use-toast.ts" afterDir="false" />
-    </list>
+    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -384,12 +32,12 @@
     &quot;assignee&quot;: &quot;plateouu&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/plateouu/lorenzo-motocross-landing-page.git&quot;,
-    &quot;accountId&quot;: &quot;8e2021ab-66b2-44b7-a41a-d3bacf427361&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/plateouu/lorenzo-motocross-landing-page1.git",
+    "accountId": "df18ade6-8484-450f-bd32-bd05f81313d4"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -459,15 +107,7 @@
       <workItem from="1769595481433" duration="7683000" />
       <workItem from="1769985024059" duration="99000" />
       <workItem from="1770041853311" duration="335000" />
-      <workItem from="1770042227597" duration="38000" />
-    </task>
-    <task id="LOCAL-00099" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1768580195422</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1768580195422</updated>
+      <workItem from="1770042227597" duration="381000" />
     </task>
     <task id="LOCAL-00100" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -853,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769173791585</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770042306272</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1770042306273</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
