@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
-      <change afterPath="$PROJECT_DIR$/app/2030103030/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/2030103030/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/585285885/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/585285885/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reset/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/reset/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/studyguide/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/studyguide/page.tsx" beforeDir="false" />
-    </list>
+    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,22 +95,6 @@
       <workItem from="1769985024059" duration="99000" />
       <workItem from="1770041853311" duration="80000" />
       <workItem from="1770042212578" duration="10000" />
-    </task>
-    <task id="LOCAL-00109" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1768585231006</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585231006</updated>
-    </task>
-    <task id="LOCAL-00110" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1768585598403</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585598403</updated>
     </task>
     <task id="LOCAL-00111" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -498,7 +472,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770045232712</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770061998529</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1770061998529</updated>
+    </task>
+    <task id="LOCAL-00159" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770062511074</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1770062511074</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
