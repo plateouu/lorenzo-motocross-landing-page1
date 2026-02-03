@@ -1,14 +1,13 @@
 import type { Metadata } from 'next'
-import { DM_Serif_Display, Manrope } from 'next/font/google'
 import './globals.css'
-
-
-const dmSerif = DM_Serif_Display({ weight: '400', subsets: ['latin'], variable: '--font-serif' })
-const manrope = Manrope({ subsets: ['latin'], variable: '--font-sans' })
+import LenisProvider from './LenisProvider'
+import TransitionProvider from './components/TransitionProvider'
+import CustomCursor from './components/CustomCursor'
+import { bodyFont, displayFont } from './fonts'
 
 export const metadata: Metadata = {
-  title: 'Taylor Daan - Portfolio',
-  description: 'Student First. Developer Second.',
+  title: 'Taylor Daan | Systems Engineer',
+  description: 'Infrastructure met Imagination. High-end game ecosystems and scalable server architecture.',
 }
 
 export default function RootLayout({
@@ -17,9 +16,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${dmSerif.variable} ${manrope.variable} font-sans bg-background text-foreground`}>
-        {children}
+    <html lang="en" className={`${bodyFont.variable} ${displayFont.variable}`}>
+      <body className="font-sans antialiased bg-[#F4F3EC] text-[#221F21] selection:bg-[#ff4d00] selection:text-white">
+        <LenisProvider>
+          <TransitionProvider>
+            <CustomCursor />
+            {children}
+          </TransitionProvider>
+        </LenisProvider>
       </body>
     </html>
   )

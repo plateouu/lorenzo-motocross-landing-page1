@@ -35,6 +35,22 @@
   }
 }
 
+/* Transition Lock Styles */
+html[data-transitioning="1"],
+body[data-transitioning="1"] {
+  overflow: hidden !important;
+}
+
+html[data-transitioning="1"] * {
+  cursor: progress !important;
+}
+
+/* Hide custom cursor when requested */
+body.cursor-hidden .custom-cursor-element {
+  opacity: 0 !important;
+  transition: opacity 0.2s;
+}
+
 @layer base {
   body {
     @apply bg-background text-foreground antialiased selection:bg-black selection:text-white overflow-x-hidden;

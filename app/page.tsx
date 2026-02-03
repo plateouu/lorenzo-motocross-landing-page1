@@ -1,151 +1,188 @@
-'use client'
+'use client';
 
-import { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import QuantumGraph from './components/QuantumGraph'
-import DataNetwork from './components/DataNetwork'
+import React, { useRef, useState } from 'react'
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
+import Link from "next/link"
+import { useLenis } from './LenisProvider'
+import ScrambleText from './components/ScrambleText'
+import TransitionLink from './components/TransitionLink'
+import SideMenu from './components/SideMenu'
+import NoiseOverlay from './components/NoiseOverlay'
+import ProjectPreview from './components/ProjectPreview'
+
+// Define projects
+// Define projects (Removed Decadence)
+const projects = [
+    {
+        title: "PlateouMC",
+        year: "2026",
+        role: "Founder & Lead Engineer",
+        blurb: "Next-gen server infrastructure redefining performance standards.",
+        color: "#FFF7CC",
+        image: "/PlateouSMP.jfif",
+        href: "/projects",
+        tags: ["Infrastructure", "Game Ops", "Scale"],
+        aspect: "square",
+        hideOverlay: true
+    },
+    {
+        title: "DonutSMP",
+        year: "2024",
+        role: "Systems Architect",
+        blurb: "A massive community-driven survival ecosystem managed at scale.",
+        color: "#FFD6DD",
+        image: "/stats.png",
+        hideOverlay: true,
+        href: "/projects",
+        tags: ["Community", "Backend", "LiveOps"]
+    },
+    {
+        title: "Roblox Games",
+        year: "2023",
+        role: "Creative Developer",
+        blurb: "Developed hit titles like Box Crew, accumulating millions of plays.",
+        color: "#FFE4E1", // Misty Rose
+        images: ["/Roblox1.png", "/Roblox2.webp", "/Roblox3.webp"],
+        hideOverlay: true,
+        href: "/projects",
+        tags: ["Lua", "Game Design", "Logic"]
+    }
+];
 
 export default function Page() {
-    const containerRef = useRef<HTMLDivElement>(null)
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end end"]
-    })
+    const lenis = useLenis()
+    const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+    const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
-    // Animation Variants
-    const fadeUp = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-    }
+    // Scroll handling - Global Window Scroll (Pixel based, no guessing)
+    const { scrollY } = useScroll(); // Returns pixels
 
-    const stagger = {
-        visible: { transition: { staggerChildren: 0.2 } }
+    // 1. Hero Fades out: 0px -> 300px
+    const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
+    const heroScale = useTransform(scrollY, [0, 300], [1, 0.95]);
+    const heroPointerEvents = useTransform(scrollY, (y) => y > 300 ? 'none' : 'auto');
+
+    // 2. Safety Lock (Dead Zone 300-500px): Nothing happens. User just scrolls.
+
+    // 3. Projects Fade In: 500px -> 750px
+    const projectListOpacity = useTransform(scrollY, [500, 750], [0, 1]);
+    const projectListY = useTransform(scrollY, [500, 750], [100, 0]);
+
+    const handleMouseMove = (e: React.MouseEvent) => {
+        setCursorPos({ x: e.clientX, y: e.clientY });
+    };
+
+    const scrollToSection = (id: string) => {
+        lenis?.scrollTo(`#${id}`, { offset: 0 })
     }
 
     return (
-        <main ref={containerRef} className="bg-black text-white relative font-sans selection:bg-white selection:text-black">
-            <style jsx global>{`
-                ::-webkit-scrollbar {
-                    display: none;
-                }
-                body {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-            `}</style>
+        <main className="relative w-full bg-[#F4F3EC]" onMouseMove={handleMouseMove}>
+            <NoiseOverlay />
+            <SideMenu />
 
-            {/* BACKGROUND LAYER - STICKY */}
-            <div className="fixed inset-0 z-0">
-                {/* Chaos / Discovery Phase Background */}
-                <motion.div
-                    style={{ opacity: useTransform(scrollYProgress, [0, 0.4, 0.6], [1, 1, 0]) }} // Fade out after Chapter 2
-                    className="absolute inset-0"
-                >
-                    <QuantumGraph />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black" />
-                </motion.div>
+            {/* FIXED HEADER LOGO */}
+            <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-start px-6 py-6 mix-blend-difference text-white pointer-events-none">
+                <div className="w-1/3 pointer-events-auto cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    <span className="font-display italic text-2xl tracking-tighter">Taylor Daan</span>
+                </div>
+                <div className="w-1/3 flex justify-center pointer-events-none">
+                    <span className="font-mono text-xs uppercase tracking-widest hidden md:block">Class of 2026</span>
+                </div>
+                <div className="w-1/3"></div>
+            </header>
 
-                {/* Structure / Scaling Phase Background */}
-                <motion.div
-                    style={{ opacity: useTransform(scrollYProgress, [0.4, 0.6, 1], [0, 1, 1]) }} // Fade in for Chapter 3
-                    className="absolute inset-0"
-                >
-                    <DataNetwork />
-                    <div className="absolute inset-0 bg-black/60" />
-                </motion.div>
-            </div>
-
-            {/* CONTENT LAYER - SCROLLABLE */}
-            <div className="relative z-10 w-full">
-
-                {/* INTRO: The Spark */}
-                <section className="h-screen flex items-center justify-center px-6">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={stagger}
-                        className="text-center"
-                    >
-                        <motion.h1 variants={fadeUp} className="text-6xl md:text-9xl font-bold tracking-tighter mb-6 mix-blend-difference">
-                            Taylor Daan
-                        </motion.h1>
-                        <motion.p variants={fadeUp} className="text-zinc-400 uppercase tracking-[0.4em] text-sm md:text-base">
-                            The Builder's Narrative
-                        </motion.p>
-                    </motion.div>
-                </section>
-
-                {/* CHAPTER 1: Discovery */}
-                <section className="h-screen flex items-center justify-center px-6">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={stagger}
-                        className="max-w-2xl"
-                    >
-                        <motion.span variants={fadeUp} className="block text-blue-500 font-mono text-xs mb-4 tracking-widest">CHAPTER 01</motion.span>
-                        <motion.h2 variants={fadeUp} className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-                            It started with <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Discovery.</span>
-                        </motion.h2>
-                        <motion.p variants={fadeUp} className="text-xl md:text-2xl text-zinc-400 leading-relaxed">
-                            I stumbled upon a world where play met creation. It wasn't just a game; it was an engine. I realized that the pixels on the screen were malleable, waiting for a command.
-                        </motion.p>
-                    </motion.div>
-                </section>
-
-                {/* CHAPTER 2: Creation */}
-                <section className="h-screen flex items-center justify-center px-6">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={stagger}
-                        className="max-w-2xl text-right ml-auto" // Aligned right for variety
-                    >
-                        <motion.span variants={fadeUp} className="block text-purple-500 font-mono text-xs mb-4 tracking-widest">CHAPTER 02</motion.span>
-                        <motion.h2 variants={fadeUp} className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
-                            Then came <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Creation.</span>
-                        </motion.h2>
-                        <motion.p variants={fadeUp} className="text-xl md:text-2xl text-zinc-400 leading-relaxed">
-                            I stopped playing and started building. I dove into the code, crafting my own worlds in Roblox examples like <span className="text-white">Isle</span> and <span className="text-white">Tower Defense</span>. Millions of players began to inhabit the spaces I designed.
-                        </motion.p>
-                    </motion.div>
-                </section>
-
-                {/* CHAPTER 3: Scaling */}
-                <section className="h-screen flex items-center justify-center px-6">
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={stagger}
-                        className="max-w-3xl text-center"
-                    >
-                        <motion.span variants={fadeUp} className="block text-green-500 font-mono text-xs mb-4 tracking-widest">CHAPTER 03</motion.span>
-                        <motion.h2 variants={fadeUp} className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                            Now, I <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">Scale.</span>
-                        </motion.h2>
-                        <motion.p variants={fadeUp} className="text-xl md:text-3xl text-zinc-300 leading-relaxed mb-12">
-                            Infrastructure. Ecosystems. Economies.
-                        </motion.p>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                            <motion.div variants={fadeUp} className="p-8 border border-zinc-800 bg-black/50 backdrop-blur-md rounded-xl hover:border-zinc-600 transition-colors">
-                                <h3 className="text-2xl font-bold mb-2">PlateouMC</h3>
-                                <p className="text-zinc-500">Next-gen server infrastructure redefining performance standards.</p>
-                            </motion.div>
-                            <motion.div variants={fadeUp} className="p-8 border border-zinc-800 bg-black/50 backdrop-blur-md rounded-xl hover:border-zinc-600 transition-colors">
-                                <h3 className="text-2xl font-bold mb-2">DonutSMP</h3>
-                                <p className="text-zinc-500">A massive community-driven survival ecosystem managed at scale.</p>
-                            </motion.div>
+            {/* FIXED HERO COVER - Stays put, fades out based on pixels. z-0 to be behind projects */}
+            <div className="fixed top-0 left-0 h-screen w-full flex flex-col justify-center items-center px-4 md:px-20 z-0 pointer-events-none">
+                <motion.div style={{ opacity: heroOpacity, scale: heroScale, pointerEvents: heroPointerEvents as any }} className="w-full">
+                    <h1 className="text-[10vw] leading-[0.8] font-display font-medium tracking-tighter text-[#221F21] mb-10 overflow-hidden text-center md:text-left">
+                        <div className="block italic">
+                            <ScrambleText text="Student first." duration={1500} />
                         </div>
-                    </motion.div>
-                </section>
-
-                <div className="h-[20vh]" /> {/* Spacer */}
+                        <div className="block md:ml-[10vw]">
+                            <ScrambleText text="Developer second." duration={1500} />
+                        </div>
+                    </h1>
+                </motion.div>
             </div>
+
+            {/* SPACER - Forces the initial scroll distance "Safety Buffer" */}
+            {/* 100vh = Content starts just below fold. User MUST scroll to see it. */}
+            <div className="h-[100vh] w-full invisible pointer-events-none"></div>
+
+            {/* SCROLLING CONTENT - Flows naturally. z-10 to go OVER the fixed hero */}
+            <div className="relative w-full z-10 px-4 md:px-20">
+                <motion.div style={{ opacity: projectListOpacity, y: projectListY }}>
+                    <h2 className="font-mono text-xs uppercase tracking-widest opacity-50 mb-10">( Selected Works )</h2>
+
+                    <div className="flex flex-col gap-10">
+                        {projects.map((project, i) => (
+                            <div
+                                key={i}
+                                className="group relative bg-white/50 backdrop-blur-sm p-10 md:p-14 md:rounded-3xl cursor-pointer hover:bg-white transition-colors duration-500 shadow-sm hover:shadow-xl" // Boxy styling
+                                onMouseEnter={() => {
+                                    setHoveredProject(i);
+                                    document.body.classList.add('cursor-hidden');
+                                }}
+                                onMouseLeave={() => {
+                                    setHoveredProject(null);
+                                    document.body.classList.remove('cursor-hidden');
+                                }}
+                            >
+                                <TransitionLink href={project.href} className="flex flex-col relative z-10">
+                                    <div className="flex flex-col md:flex-row justify-between items-baseline gap-4 mb-4">
+                                        <h3
+                                            className="text-5xl md:text-7xl font-display italic transition-colors duration-300"
+                                            style={{ color: hoveredProject === i ? project.color : '#221F21' }}
+                                        >
+                                            {project.title}
+                                        </h3>
+                                        <div className="font-sans text-sm uppercase tracking-wide opacity-60 font-medium bg-[#221F21]/5 px-3 py-1 rounded-full">
+                                            {project.role} — {project.year}
+                                        </div>
+                                    </div>
+
+                                    {/* Hover Description Reveal */}
+                                    <motion.div
+                                        initial={{ height: 0, opacity: 0 }}
+                                        animate={{ height: hoveredProject === i ? 'auto' : 0, opacity: hoveredProject === i ? 1 : 0 }}
+                                        className="overflow-hidden"
+                                    >
+                                        <p className="text-xl md:text-2xl font-display max-w-2xl opacity-80 pt-2">
+                                            {project.blurb}
+                                        </p>
+                                    </motion.div>
+                                </TransitionLink>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* FOOTER INSIDE ANIMATED CONTAINER */}
+                    <section className="bg-[#221F21] text-[#F4F3EC] py-40 px-6 relative z-10 -mx-8 md:-mx-20 px-4 md:px-20 mt-40 rounded-t-[3rem]">
+                        <div className="flex flex-col md:flex-row justify-between items-end gap-10">
+                            <h2 className="text-[12vw] font-display italic leading-none hover:text-[#ff4d00] transition-colors cursor-pointer">
+                                Let's Talk.
+                            </h2>
+
+                            <div className="flex gap-10 text-lg font-mono uppercase tracking-widest mb-6">
+                                <a href="#" className="hover:text-[#ff4d00] transition-colors">Email</a>
+                                <a href="#" className="hover:text-[#ff4d00] transition-colors">Twitter</a>
+                                <a href="#" className="hover:text-[#ff4d00] transition-colors">GitHub</a>
+                            </div>
+                        </div>
+                    </section>
+                </motion.div>
+            </div>
+
+            {/* HOVER IMAGE FLOATER (Follows cursor) */}
+            <AnimatePresence mode="wait">
+                {hoveredProject !== null && (
+                    <ProjectPreview
+                        project={projects[hoveredProject]}
+                        cursorPos={cursorPos}
+                    />
+                )}
+            </AnimatePresence>
         </main>
     )
 }

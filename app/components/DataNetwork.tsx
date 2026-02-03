@@ -26,8 +26,7 @@ export default function DataNetwork() {
 
         const render = () => {
             time += 0.005
-            ctx.fillStyle = '#000000'
-            ctx.fillRect(0, 0, width, height)
+            ctx.clearRect(0, 0, width, height) // Transparent background
 
             const centerX = width / 2
             const centerY = height / 2
@@ -50,7 +49,7 @@ export default function DataNetwork() {
                     const size = Math.max(0, 2 * scale)
                     const opacity = Math.min(Math.max((scale - 0.5), 0), 1)
 
-                    ctx.fillStyle = `rgba(200, 255, 200, ${opacity})`
+                    ctx.fillStyle = `rgba(0, 0, 0, ${opacity})` // Black dots
                     ctx.beginPath()
                     ctx.arc(screenX, screenY, size, 0, Math.PI * 2)
                     ctx.fill()

@@ -36,15 +36,14 @@ export default function QuantumGraph() {
         const render = () => {
             ctx.clearRect(0, 0, width, height)
 
-            // Background gradient
-            const gradient = ctx.createLinearGradient(0, 0, width, height)
-            gradient.addColorStop(0, '#050505')
-            gradient.addColorStop(1, '#000000')
-            ctx.fillStyle = gradient
-            ctx.fillRect(0, 0, width, height)
+            // Background gradient - Transparent/White for Industrial look
+            ctx.clearRect(0, 0, width, height)
+            // No fillRect needed if we want transparent, or white:
+            // ctx.fillStyle = '#ffffff' 
+            // ctx.fillRect(0, 0, width, height)
 
             // Update & Draw Particles
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.5)'
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.5)'
             particles.forEach((p, i) => {
                 p.x += p.vx
                 p.y += p.vy
@@ -65,7 +64,7 @@ export default function QuantumGraph() {
                     const dist = Math.sqrt(dx * dx + dy * dy)
 
                     if (dist < connectionDistance) {
-                        ctx.strokeStyle = `rgba(100, 200, 255, ${1 - dist / connectionDistance})`
+                        ctx.strokeStyle = `rgba(0, 0, 0, ${1 - dist / connectionDistance})`
                         ctx.lineWidth = 1
                         ctx.beginPath()
                         ctx.moveTo(p.x, p.y)
