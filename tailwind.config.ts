@@ -65,7 +65,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-body)', 'system-ui', 'sans-serif'], // GT Planar
+        display: ['var(--font-display)', 'serif'], // Instrument Serif
         fancy: ['var(--font-fancy)', 'cursive'],
       },
       borderRadius: {

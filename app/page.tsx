@@ -11,16 +11,15 @@ import NoiseOverlay from './components/NoiseOverlay'
 import ProjectPreview from './components/ProjectPreview'
 
 // Define projects
-// Define projects (Removed Decadence)
 const projects = [
     {
         title: "PlateouMC",
         year: "2026",
         role: "Founder & Lead Engineer",
-        blurb: "Next-gen server infrastructure redefining performance standards.",
+        blurb: "Solo-owned Minecraft community with 19k members, $20k earned, and 1m views across all videos.",
         color: "#FFF7CC",
         image: "/PlateouSMP.jfif",
-        href: "/projects",
+        href: "/projects/plateoumc",
         tags: ["Infrastructure", "Game Ops", "Scale"],
         aspect: "square",
         hideOverlay: true
@@ -28,23 +27,23 @@ const projects = [
     {
         title: "DonutSMP",
         year: "2024",
-        role: "Systems Architect",
-        blurb: "A massive community-driven survival ecosystem managed at scale.",
-        color: "#FFD6DD",
+        role: "Assistant Developer",
+        blurb: "Mathematical approaches for server optimization using Redis and Folia.",
+        color: "#D4E6FF", // Light Blue for preview
         image: "/stats.png",
         hideOverlay: true,
-        href: "/projects",
+        href: "/projects/donutsmp", // NEW ROUTE
         tags: ["Community", "Backend", "LiveOps"]
     },
     {
         title: "Roblox Games",
         year: "2023",
-        role: "Creative Developer",
-        blurb: "Developed hit titles like Box Crew, accumulating millions of plays.",
-        color: "#FFE4E1", // Misty Rose
+        role: "Platform Game Developer",
+        blurb: "Games accumulated half a quarter billion players.",
+        color: "#FFE4E1",
         images: ["/Roblox1.png", "/Roblox2.webp", "/Roblox3.webp"],
         hideOverlay: true,
-        href: "/projects",
+        href: "/projects/roblox",
         tags: ["Lua", "Game Design", "Logic"]
     }
 ];
@@ -87,7 +86,7 @@ export default function Page() {
                     <span className="font-display italic text-2xl tracking-tighter">Taylor Daan</span>
                 </div>
                 <div className="w-1/3 flex justify-center pointer-events-none">
-                    <span className="font-mono text-xs uppercase tracking-widest hidden md:block">Class of 2026</span>
+                    <span className="font-sans font-bold text-xs uppercase tracking-widest hidden md:block">Home</span>
                 </div>
                 <div className="w-1/3"></div>
             </header>
@@ -113,7 +112,7 @@ export default function Page() {
             {/* SCROLLING CONTENT - Flows naturally. z-10 to go OVER the fixed hero */}
             <div className="relative w-full z-10 px-4 md:px-20">
                 <motion.div style={{ opacity: projectListOpacity, y: projectListY }}>
-                    <h2 className="font-mono text-xs uppercase tracking-widest opacity-50 mb-10">( Selected Works )</h2>
+                    <h2 className="font-sans font-bold text-xs uppercase tracking-widest opacity-50 mb-10">( Selected Works )</h2>
 
                     <div className="flex flex-col gap-10">
                         {projects.map((project, i) => (
@@ -132,7 +131,7 @@ export default function Page() {
                                 <TransitionLink href={project.href} className="flex flex-col relative z-10">
                                     <div className="flex flex-col md:flex-row justify-between items-baseline gap-4 mb-4">
                                         <h3
-                                            className="text-5xl md:text-7xl font-display italic transition-colors duration-300"
+                                            className="text-5xl md:text-7xl font-sans font-bold tracking-tight transition-colors duration-300"
                                             style={{ color: hoveredProject === i ? project.color : '#221F21' }}
                                         >
                                             {project.title}
@@ -148,7 +147,7 @@ export default function Page() {
                                         animate={{ height: hoveredProject === i ? 'auto' : 0, opacity: hoveredProject === i ? 1 : 0 }}
                                         className="overflow-hidden"
                                     >
-                                        <p className="text-xl md:text-2xl font-display max-w-2xl opacity-80 pt-2">
+                                        <p className="text-xl md:text-2xl font-sans font-medium max-w-2xl opacity-80 pt-2">
                                             {project.blurb}
                                         </p>
                                     </motion.div>
@@ -160,14 +159,15 @@ export default function Page() {
                     {/* FOOTER INSIDE ANIMATED CONTAINER */}
                     <section className="bg-[#221F21] text-[#F4F3EC] py-40 px-6 relative z-10 -mx-8 md:-mx-20 px-4 md:px-20 mt-40 rounded-t-[3rem]">
                         <div className="flex flex-col md:flex-row justify-between items-end gap-10">
-                            <h2 className="text-[12vw] font-display italic leading-none hover:text-[#ff4d00] transition-colors cursor-pointer">
-                                Let's Talk.
-                            </h2>
+                            <a href="mailto:daantaylor02@gmail.com">
+                                <h2 className="text-[12vw] font-display italic leading-none hover:text-[#ff4d00] transition-colors cursor-pointer">
+                                    Let's Talk.
+                                </h2>
+                            </a>
 
-                            <div className="flex gap-10 text-lg font-mono uppercase tracking-widest mb-6">
-                                <a href="#" className="hover:text-[#ff4d00] transition-colors">Email</a>
-                                <a href="#" className="hover:text-[#ff4d00] transition-colors">Twitter</a>
-                                <a href="#" className="hover:text-[#ff4d00] transition-colors">GitHub</a>
+                            <div className="flex gap-10 text-lg font-sans font-bold uppercase tracking-widest mb-6">
+                                <a href="mailto:daantaylor02@gmail.com" className="hover:text-[#ff4d00] transition-colors">Email</a>
+                                <a href="https://www.linkedin.com/in/taylor-daan/" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff4d00] transition-colors">LinkedIn</a>
                             </div>
                         </div>
                     </section>

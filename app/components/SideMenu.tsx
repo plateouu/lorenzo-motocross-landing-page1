@@ -9,8 +9,8 @@ export default function SideMenu() {
     const [isProjectsOpen, setIsProjectsOpen] = useState(false);
 
     const menuVariants = {
-        closed: { x: '100%', transition: { duration: 0.7, ease: "easeInOut" } },
-        open: { x: '0%', transition: { duration: 0.7, ease: "easeInOut" } }
+        closed: { x: '100%', transition: { duration: 0.7, ease: "easeInOut" as const } },
+        open: { x: '0%', transition: { duration: 0.7, ease: "easeInOut" as const } }
     };
 
     const linkVariants = {
@@ -18,14 +18,14 @@ export default function SideMenu() {
         open: (i: number) => ({
             x: 0,
             opacity: 1,
-            transition: { delay: 0.1 + i * 0.1, duration: 0.5, ease: "easeOut" }
+            transition: { delay: 0.1 + i * 0.1, duration: 0.5, ease: "easeOut" as const }
         })
     };
 
     const projectSubLinks = [
-        { name: "PlateouMC", href: "/projects" },
-        { name: "DonutSMP", href: "/projects" },
-        { name: "Roblox Games", href: "/projects" }
+        { name: "PlateouMC", href: "/projects/plateoumc" },
+        { name: "DonutSMP", href: "/projects/donutsmp" },
+        { name: "Roblox Games", href: "/projects/roblox" }
     ];
 
     return (
@@ -66,8 +66,8 @@ export default function SideMenu() {
                         >
                             <div className="flex flex-col gap-6 md:gap-8">
                                 {/* Home */}
-                                <motion.div custom={0} variants={linkVariants}>
-                                    <TransitionLink href="/" className="text-5xl md:text-7xl font-display italic text-[#F4F3EC] hover:text-[#ff4d00] transition-colors">
+                                <motion.div custom={0} variants={linkVariants} onClick={() => setIsOpen(false)}>
+                                    <TransitionLink href="/" className="text-5xl md:text-7xl font-sans font-bold text-[#F4F3EC] hover:text-[#ff4d00] transition-colors">
                                         Home
                                     </TransitionLink>
                                 </motion.div>
@@ -76,7 +76,7 @@ export default function SideMenu() {
                                 <motion.div custom={1} variants={linkVariants} className="flex flex-col">
                                     <button
                                         onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-                                        className="text-5xl md:text-7xl font-display italic text-[#F4F3EC] hover:text-[#ff4d00] transition-colors text-left flex items-center gap-4"
+                                        className="text-5xl md:text-7xl font-sans font-bold text-[#F4F3EC] hover:text-[#ff4d00] transition-colors text-left flex items-center gap-4"
                                     >
                                         Projects
                                         <motion.span
@@ -96,38 +96,40 @@ export default function SideMenu() {
                                                 className="overflow-hidden flex flex-col gap-4 pl-4 md:pl-8 mt-4 border-l-2 border-white/10"
                                             >
                                                 {projectSubLinks.map((p, i) => (
-                                                    <TransitionLink
-                                                        key={p.name}
-                                                        href={p.href}
-                                                        className="text-2xl md:text-4xl font-display text-[#F4F3EC]/70 hover:text-[#ff4d00] transition-colors py-1"
-                                                    >
-                                                        {p.name}
-                                                    </TransitionLink>
+                                                    <div key={p.name} onClick={() => setIsOpen(false)}>
+                                                        <TransitionLink
+                                                            href={p.href}
+                                                            className="text-2xl md:text-4xl font-sans font-medium text-[#F4F3EC]/70 hover:text-[#ff4d00] transition-colors py-1"
+                                                        >
+                                                            {p.name}
+                                                        </TransitionLink>
+                                                    </div>
                                                 ))}
                                             </motion.div>
                                         )}
                                     </AnimatePresence>
                                 </motion.div>
 
-                                {/* About & Contact */}
-                                {['About', 'Contact'].map((item, i) => (
-                                    <motion.div
-                                        key={item}
-                                        custom={i + 2}
-                                        variants={linkVariants}
+                                {/* About */}
+                                <motion.div custom={2} variants={linkVariants} onClick={() => setIsOpen(false)}>
+                                    <TransitionLink href="/about" className="text-5xl md:text-7xl font-sans font-bold text-[#F4F3EC] hover:text-[#ff4d00] transition-colors">
+                                        About
+                                    </TransitionLink>
+                                </motion.div>
+
+                                {/* Contact */}
+                                <motion.div custom={3} variants={linkVariants} onClick={() => setIsOpen(false)}>
+                                    <a
+                                        href="mailto:daantaylor02@gmail.com"
+                                        className="text-5xl md:text-7xl font-sans font-bold text-[#F4F3EC] hover:text-[#ff4d00] transition-colors"
                                     >
-                                        <TransitionLink
-                                            href={`/${item.toLowerCase()}`}
-                                            className="text-5xl md:text-7xl font-display italic text-[#F4F3EC] hover:text-[#ff4d00] transition-colors"
-                                        >
-                                            {item}
-                                        </TransitionLink>
-                                    </motion.div>
-                                ))}
+                                        Contact
+                                    </a>
+                                </motion.div>
                             </div>
 
-                            <div className="mt-20 pt-10 border-t border-white/10 flex justify-between text-[#F4F3EC]/50 font-mono text-xs uppercase tracking-widest">
-                                <span>Class of 2026</span>
+                            <div className="mt-20 pt-10 border-t border-white/10 flex justify-between text-[#F4F3EC]/50 font-sans font-bold text-xs uppercase tracking-widest">
+                                <span>Taylor Daan</span>
                                 <span>© 2026</span>
                             </div>
                         </motion.div>

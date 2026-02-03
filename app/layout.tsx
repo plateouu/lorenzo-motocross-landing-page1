@@ -6,7 +6,7 @@ import CustomCursor from './components/CustomCursor'
 import { bodyFont, displayFont } from './fonts'
 
 export const metadata: Metadata = {
-  title: 'Taylor Daan | Systems Engineer',
+  title: 'Taylor Daan',
   description: 'Infrastructure met Imagination. High-end game ecosystems and scalable server architecture.',
 }
 

@@ -10,8 +10,10 @@ export default function TransitionLink({ href, children, className }: { href: st
             href={href}
             className={className}
             onClick={(e) => {
-                e.preventDefault();
-                go(href);
+                if (href.startsWith('/')) {
+                    e.preventDefault();
+                    go(href);
+                }
             }}
         >
             {children}

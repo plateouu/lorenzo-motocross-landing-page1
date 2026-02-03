@@ -52,6 +52,7 @@ body.cursor-hidden .custom-cursor-element {
 }
 
 @layer base {
+
   body {
     @apply bg-background text-foreground antialiased selection:bg-black selection:text-white overflow-x-hidden;
     font-family: var(--font-sans), sans-serif;
