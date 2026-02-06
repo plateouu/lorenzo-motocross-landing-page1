@@ -60,7 +60,7 @@ export default function ResumePage() {
                                 <span>June 2026</span>
                             </div>
                             <ul className="list-disc list-inside space-y-1 marker:text-black">
-                                <li><span className="font-bold">GPA:</span> 3.66/4.0 &nbsp;|&nbsp; <span className="font-bold">SAT:</span> 1580 (800 Math, 780 Reading)</li>
+                                <li><span className="font-bold">GPA:</span> 4.0 UW &nbsp;|&nbsp; <span className="font-bold">SAT:</span> 1580 (800 Math, 780 Reading)</li>
                                 <li><span className="font-bold">Honors:</span> USACO Platinum, Codeforces Master, Roblox Innovation Awards Top 20</li>
                                 <li><span className="font-bold">Clubs:</span> Debate (Founder & Captain), Mock Trial (Founder & Co-President), Computer Science Club (Director of Innovation), Astronomy (VP), Investment (VP), Varsity XC/Track. <em>(Leadership represents 500+ students, ~1/3 of student body).</em></li>
                             </ul>
