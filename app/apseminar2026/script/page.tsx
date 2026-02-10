@@ -39,7 +39,7 @@ I present this data to establish the scale of the issue. Loneliness is a measura
     duration: "1:20 - 2:00",
     text: `The sociologist Ray Oldenburg identified "Third Places" — coffee shops, parks, libraries, and town squares where people gather outside of home and work. These spaces are where community forms.
 
-I use Oldenburg's framework because it gives a name to what is disappearing. Ben Goldfarb, an environmental journalist, writes in Crossings that American infrastructure — highways, suburban sprawl, car-dependent planning — has created "Social Deserts," which are neighborhoods designed without any place to gather.
+Ben Goldfarb, an environmental journalist, writes in Crossings that American infrastructure — highways, suburban sprawl, car-dependent planning — has created "Social Deserts," which are neighborhoods designed without any place to gather.
 
 On screen you can see an aerial photograph of a typical American suburb. I chose this image because it shows exactly what a Social Desert looks like — rows of houses with no sidewalks, no town square, and no visible place for people to gather. The image makes Goldfarb's concept concrete for the audience.`,
     cues: ["Gesture to image when describing Social Desert", "Name Oldenburg and Goldfarb clearly"],
