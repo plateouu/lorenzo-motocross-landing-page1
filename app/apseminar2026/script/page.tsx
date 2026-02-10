@@ -523,7 +523,7 @@ export default function ScriptPage() {
             onClick={() => setShowModal1(false)}
           >
             <div
-              className="max-w-3xl mx-auto text-white py-16 px-4 md:px-8 min-h-full"
+              className="max-w-3xl mx-auto text-white py-16 px-4 md:px-8 pb-32"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -545,7 +545,7 @@ export default function ScriptPage() {
             onClick={() => setShowModal2(false)}
           >
             <div
-              className="max-w-3xl mx-auto text-white py-16 px-4 md:px-8 min-h-full"
+              className="max-w-3xl mx-auto text-white py-16 px-4 md:px-8 pb-32"
               onClick={(e) => e.stopPropagation()}
             >
               <button
