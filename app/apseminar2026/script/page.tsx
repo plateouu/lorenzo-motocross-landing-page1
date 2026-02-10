@@ -105,53 +105,41 @@ I use boyd's research here because it shows that for an entire demographic, phys
     slide: "10. P1 Structural — Suburban Friction Costs",
     section: "Structural",
     duration: "3:15 - 3:40",
-    text: `This structural exclusion also affects adults. Goldfarb introduces the concept of "Friction Costs" — the time and effort required to reach another person.
+    text: `This structural exclusion also affects adults. Goldfarb calls it "Friction Costs" — the time and energy required just to reach another person.
 
-On screen you can see an aerial view of a highway interchange. I chose this image because it shows the infrastructure that creates friction costs. These roads were designed for cars, and they physically divide neighborhoods. There is nowhere in this image to walk, sit, or meet a neighbor. This is what Goldfarb means by a Social Desert.
-
-In suburban areas, visiting a friend might require a 45-minute drive. Spontaneous connection becomes very difficult.
-
-I return to Goldfarb here because his Friction Costs concept explains why adults in suburbs are also cut off from Third Places — the same structural cause, different demographic.`,
-    cues: ["Gesture to image when describing friction", "Conversational tone"],
+In suburban areas, visiting a friend might require a 45-minute drive. The infrastructure itself — highways, sprawl — physically prevents spontaneous connection. Adults in suburbs are cut off from Third Places by design.`,
+    cues: ["Gesture to image", "Conversational tone"],
   },
   {
     slide: "11. P2 Empirical — Digital Third Places",
     section: "Empirical",
     duration: "3:40 - 4:15",
-    text: `Moving to the Empirical Perspective: do digital spaces actually fill the gap left by disappearing Third Places?
+    text: `Moving to the Empirical Perspective: do digital spaces actually fill this gap?
 
-Constance Steinkuehler, a professor of informatics, and Dmitri Williams published a 2006 study examining massively multiplayer online games. They found that these communities meet every criterion Oldenburg set for Third Places: neutral ground, regular participants, and conversation as the primary activity. Real bridging social capital forms across geographic and demographic lines.
+Constance Steinkuehler and Dmitri Williams published a 2006 study on massively multiplayer online games. They found these communities meet every criterion for a Third Place: neutral ground, regular participants, and conversation as the main activity. Real connections form across geographic and demographic lines.
 
-On screen you can see an example of a Discord community server. I chose this image because it shows what a digital Third Place actually looks like in practice — a persistent space where people gather, have conversations, and form ongoing relationships. This is the modern version of what Oldenburg described.
-
-I use Steinkuehler and Williams because they are the strongest direct evidence that digital spaces can function as Third Places using Oldenburg's own criteria.`,
-    cues: ["Gesture to image", "Evidence-based tone", "Cite with credentials"],
+On screen is a Discord server — this is what a modern Third Place looks like. A persistent space where people gather and form ongoing relationships.`,
+    cues: ["Gesture to image", "Evidence-based tone"],
   },
   {
     slide: "12. P2 Empirical — Bridging Capital Beyond Geography",
     section: "Empirical",
     duration: "4:15 - 4:40",
-    text: `Robert Putnam, a political scientist at Harvard, showed that bridging social capital — connections between people who are different from each other — is what holds communities together.
+    text: `Robert Putnam showed that bridging social capital — connections between different people — holds communities together.
 
-Online communities remove the geographic barrier. A disabled person, a rural teen, or a homebound senior can access social life that their physical environment does not provide. Discord servers, forums, and online guilds replicate the gathering functions that sprawl removed.
-
-I use Putnam here because his framework measures whether a community is actually functioning. Steinkuehler and Williams showed digital spaces meet the Third Place criteria; Putnam's concept confirms they also produce the social capital that communities need.`,
-    cues: ["Cite Putnam with credentials", "Connect to Steinkuehler"],
+Online communities remove the geographic barrier. A disabled person, a rural teen, or a homebound senior can access social life their physical environment does not provide.`,
+    cues: ["Cite Putnam", "Connect to Steinkuehler"],
   },
   {
     slide: "13. Counterargument — The Quality Problem",
     section: "Counter",
     duration: "4:40 - 5:15",
-    text: `There are valid criticisms of this position.
+    text: `There are valid criticisms.
 
-Sherry Turkle, a professor at MIT, argues in Alone Together that digital bonds create an "illusion of companionship." In digital space, people edit out vulnerability and awkwardness, so the connections that form may be shallow.
+Sherry Turkle, a professor at MIT, argues in Alone Together that digital bonds create an "illusion of companionship." People edit out vulnerability, so the connections may be shallow.
 
-On screen you can see the cover of Turkle's book Alone Together. I chose to display this because the title itself captures the core counterargument — the idea that people can be digitally connected and still fundamentally alone.
-
-Shoshana Zuboff, a professor at Harvard Business School, argues in The Age of Surveillance Capitalism that platforms like TikTok and Instagram exist to extract behavioral data for profit. Connection is secondary to their business model.
-
-I include both Turkle and Zuboff because they represent the strongest objections to my thesis — that digital connection lacks quality, and that the platforms hosting it are exploitative.`,
-    cues: ["Gesture to book cover", "Concede honestly", "Name both with credentials"],
+Shoshana Zuboff, at Harvard Business School, argues that platforms like TikTok and Instagram exist to extract data for profit. Connection is secondary to their business model.`,
+    cues: ["Gesture to book cover", "Concede honestly"],
   },
   {
     slide: "14. Rebuttal — A Necessary Lifeline",
@@ -159,22 +147,18 @@ I include both Turkle and Zuboff because they represent the strongest objections
     duration: "5:15 - 5:45",
     text: `Both criticisms assume the person has a choice between physical and digital connection.
 
-For a disabled senior or a rural teenager living in a Social Desert, that alternative does not exist. The available options are digital community or total isolation.
+For a disabled senior or a rural teenager in a Social Desert, that choice does not exist. The options are digital community or total isolation.
 
-Quan-Haase and Wellman, researchers in network sociology, proposed thinking of digital connection as "harm reduction" — an imperfect tool that still addresses a real need.
-
-I use the harm reduction framework because it directly addresses Turkle and Zuboff's concerns. It acknowledges that digital connection has limitations while arguing that for the isolated, it remains the most accessible option.`,
+Quan-Haase and Wellman call this "harm reduction" — an imperfect tool that still addresses a real need. For the isolated, it remains the most accessible option.`,
     cues: ["Strongest point", "Explain the rebuttal logic"],
   },
   {
     slide: "15. Limitations — Physiological Limits",
     section: "Nuance",
     duration: "5:45 - 6:10",
-    text: `There are real limitations to digital connection.
+    text: `There are real limitations. John Cacioppo showed that text-based interaction cannot replicate the stress relief of in-person contact. Physical proximity reduces cortisol in ways screens cannot.
 
-John Cacioppo, a neuroscientist at the University of Chicago, showed that text-based interaction cannot replicate the physiological stress relief of in-person contact. Physical proximity reduces cortisol in ways that text messages cannot.
-
-I include Cacioppo because intellectual honesty requires acknowledging what digital communities cannot do. The long-term goal remains rebuilding physical Third Places. Digital infrastructure serves as a bridge in the meantime.`,
+The long-term goal remains rebuilding physical Third Places. Digital infrastructure is a bridge.`,
     cues: ["Honest, measured tone", "Frame as bridge"],
   },
   {
