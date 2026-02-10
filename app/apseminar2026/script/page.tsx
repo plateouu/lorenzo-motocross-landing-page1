@@ -9,7 +9,7 @@ const scriptData = [
   {
     slide: "1. Title Slide",
     section: "Opening",
-    duration: "0:00 - 0:15",
+    duration: "0:00 - 0:07",
     text: `Good morning. My name is Taylor Daan. My presentation is titled "Digital Communities as Essential Social Infrastructure."`,
     cues: ["Stand tall", "Eye contact", "Clear voice"],
   },
@@ -199,89 +199,118 @@ Rather than dismissing screen time, we should ask why digital space is the only 
   },
 ]
 
-// ONE unified reflection answer — same for every question so you can freestyle
-const reflectionAnswer = `My research process started with the Surgeon General's 2023 advisory, which established that loneliness is a public health crisis with measurable outcomes — a 29% increase in premature death risk. That data gave me the "problem" side of my research. I then needed to understand the cause, which led me to Ray Oldenburg's concept of "Third Places" and Ben Goldfarb's work on "Social Deserts" and "Friction Costs." These two sources explained that the loneliness crisis is structural — physical gathering spaces are disappearing because of how we build cities.
-
-From there, my research question became: can digital communities fill the gap left by disappearing Third Places? The most important evidence I found was Steinkuehler and Williams (2006), who showed that online gaming communities meet all of Oldenburg's Third Place criteria. I also used Putnam's "Bridging Social Capital" to measure whether these digital spaces actually produce functioning community bonds. The evidence showed they do.
-
-I also had to address criticisms. Turkle argues digital connection is shallow, and Zuboff argues platforms exploit users. I addressed both by using Quan-Haase and Wellman's "harm reduction" framework — acknowledging limitations while arguing that for people in Social Deserts, imperfect digital connection is the most accessible option available. Cacioppo's neuroscience research confirmed that digital contact has physiological limits, which I included for intellectual honesty.
-
-Every source I chose connects to the same argument chain: the health crisis (Surgeon General) is caused by structural problems (Oldenburg, Goldfarb), digital spaces can partially address it (Steinkuehler, Putnam), critics raise valid concerns (Turkle, Zuboff), and the harm reduction framework resolves those concerns for isolated populations (Quan-Haase).`
-
-// ONE unified argumentation answer — same for every question so you can freestyle
-const argumentationAnswer = `My argument is that for people isolated from physical Third Places, digital communities function as necessary social infrastructure. The conclusion rests on a chain of evidence.
-
-The Surgeon General's 2023 data establishes that loneliness is a public health crisis with measurable health consequences. Oldenburg's Third Place framework and Goldfarb's Social Deserts concept explain the structural cause — physical gathering spaces have been removed by suburban sprawl and car-dependent planning. This means the crisis is caused by infrastructure, and the solution should also be infrastructural.
-
-Steinkuehler and Williams (2006) provide the strongest evidence for my thesis. They showed that online gaming communities meet every criterion Oldenburg set for Third Places: neutral ground, regular participants, and conversation as the main activity. Putnam's Bridging Social Capital concept confirms that these spaces produce real community bonds across geographic and demographic lines.
-
-The main counterarguments come from Turkle, who argues digital bonds are shallow, and Zuboff, who argues platforms prioritize profit over connection. Both are valid concerns. I address them using Quan-Haase and Wellman's harm reduction framework: digital connection has real limitations, but for people living in Social Deserts — disabled individuals, rural teens, homebound seniors — the available options are digital community or total isolation. The harm reduction model acknowledges imperfection while validating necessity.
-
-Cacioppo's neuroscience research shows that digital contact cannot fully replicate physical co-regulation, which I include as a limitation. The long-term goal remains rebuilding physical Third Places. Digital communities serve as a bridge.
-
-If I had more time, I would investigate which specific design features of digital platforms promote bridging capital versus those that undermine it — for example, comparing persistent-identity spaces like Discord servers to anonymous feeds like Instagram comments. My current research treats "digital" as one category, and the platform-level differences likely matter for connection quality.`
+// ──────────────────────────────────────────────────────────
+// REFLECTION Q&A — Master Answer: THE SURGEON GENERAL
+// Every answer focuses on the Surgeon General's 2023 Advisory as the key driver.
+// ──────────────────────────────────────────────────────────
 
 const reflectionQuestions = [
   {
     q: "What information did you need before you began your research, and how did that information shape your research?",
-    a: reflectionAnswer
+    a: `I needed to know if loneliness was a real medical issue or just a feeling. The Surgeon General's 2023 Advisory provided the key information: loneliness increases premature death risk by 29%. This shaped my research by forcing me to treat loneliness as a public health crisis with structural causes, not just a personal emotional problem.`
   },
   {
     q: "What evidence did you gather that you didn't use? Why did you choose not to use it?",
-    a: reflectionAnswer
+    a: `I found data on social media anxiety (like Instagram depression rates). I chose not to use it because the Surgeon General's report specifically identified "social disconnection" as the health risk. My focus was on solving disconnection, so I needed evidence about community (Oldenburg), not just evidence about bad feelings (anxiety).`
   },
   {
     q: "How valid and reliable are the sources you used? How do you know? Which sources didn't work?",
-    a: reflectionAnswer
+    a: `My most valid source is the Surgeon General's Advisory. I know it's reliable because it is a federal health document backed by meta-analyses of epidemiological data. Sources that didn't work were anecdotal blogs about loneliness; they lacked the medical validity of the Surgeon General's report, so I discarded them.`
   },
   {
     q: "How did you select the strategies you used to gather information or conduct research? Were they effective?",
-    a: reflectionAnswer
+    a: `My strategy was to start with the "problem" defined by the Surgeon General (disconnection) and then search for a "solution" that addressed that specific problem. This was effective because it kept my research focused. Instead of looking at all digital tech, I only looked for tech that solved the Surgeon General's specific crisis of isolation.`
   },
   {
     q: "How did your research question evolve as you moved through the research process?",
-    a: reflectionAnswer
+    a: `I started by asking "Is technology bad?" But the Surgeon General's data showed that isolation is the real killer (equivalent to 15 cigarettes/day). So my question evolved to: "Can technology solve this isolation?" usage. The Surgeon General's framework shifted my focus from "screen time" to "social infrastructure."`
   },
   {
     q: "What information did you need that you weren't able to find or locate? How did you go about trying to find that information?",
-    a: reflectionAnswer
+    a: `I couldn't find a direct study linking Discord use to lower cortisol levels. The Surgeon General cites physical presence as lowering cortisol. Since I couldn't find the medical proof for digital spaces, I had to rely on sociological proof (Oldenburg/Steinkuehler) to argue that it's still a "Third Place," even if the biological data isn't there yet.`
   },
   {
     q: "How did you handle the differing perspectives in order to reach a conclusion?",
-    a: reflectionAnswer
+    a: `I had the medical perspective (Surgeon General says we need connection) and the critical perspective (Turkle says digital connection is fake). I aimed to satisfy the Surgeon General's requirement: if the goal is preventing death from isolation, then even "imperfect" digital connection is a necessary lifeline. I prioritized the Surgeon General's "harm reduction" goal.`
   },
   {
     q: "What advice would you have for other researchers who consider this topic?",
-    a: reflectionAnswer
+    a: `I would advise them to ground their research in a hard medical reality like the Surgeon General's report. It gives you a "True North." It's easy to get lost in opinions about whether phones are annoying, but the Surgeon General's data on mortality keeps the argument focused on what actually matters: saving lives from isolation.`
   },
   {
     q: "If you had more time, what additional research would you conduct related to this issue?",
-    a: reflectionAnswer
-  }
+    a: `I would want to see if the Surgeon General issues a follow-up report specifically on "Digital Third Places." currently, the advisory mentions technology mostly as a risk. I would conduct research to see if new medical data emerges that supports digital community as a valid intervention for the health crisis he identified.`
+  },
 ]
+
+// ──────────────────────────────────────────────────────────
+// ARGUMENTATION Q&A — Master Answer: OLDENBURG & STEINKUEHLER
+// Every answer focuses on the Third Place framework (Oldenburg) and its proof (Steinkuehler).
+// ──────────────────────────────────────────────────────────
 
 const argumentationQuestions = [
   {
     q: "What additional questions emerged from your research? Why are these questions important?",
-    a: argumentationAnswer
+    a: `A key question is: "Do new algorithms destroy Third Places?" Oldenburg defines Third Places as "neutral ground" with "regular participants." Modern TikTok algorithms feed you content, they don't connect you to regulars. This is important because if the tech stops functioning like Oldenburg's Third Place, it stops being a solution to the crisis.`
   },
   {
     q: "What might be the real-world implications or consequences of your findings?",
-    a: argumentationAnswer
+    a: `The implication is that digital spaces are "Social Infrastructure." Oldenburg argued libraries and parks are essential; Steinkuehler proved digital spaces function the same way. The consequence is that we should protect and fund digital communities (like Discord/gaming) just like we fund public parks, because they perform the same essential social function.`
   },
   {
     q: "Explain the level of certainty you have about your conclusion, solution, or recommendation.",
-    a: argumentationAnswer
+    a: `I am highly certain that valid digital Third Places exist, because Steinkuehler and Williams tested them against Oldenburg's exact criteria and they passed. I am less certain if they work for *everyone*, but the sociological match between "MMO Game" and "Third Place" is structurally proven, giving me high confidence in the solution.`
   },
   {
     q: "How does your conclusion respond to any of the other research or sources you examined?",
-    a: argumentationAnswer
+    a: `My conclusion uses Steinkuehler to refute the idea that digital is "lesser." It responds to Turkle by saying: "It might feel different, but sociologically it functions as a Third Place (Oldenburg)." My conclusion suggests that function matters more than feeling — if it does the job of a Third Place, it is one.`
   },
   {
     q: "How did you use the conclusions and questions of others to advance your own research?",
-    a: argumentationAnswer
-  }
+    a: `I used Oldenburg's conclusion (we need Third Places) as my foundation. I used Steinkuehler's conclusion (Games = Third Places) as my bridge. This allowed me to advance the argument that "Digital Communities are Infrastructure." I didn't invent the concept; I just connected Oldenburg's problem to Steinkuehler's solution.`
+  },
 ]
+
+// ──────────────────────────────────────────────────────────
+// ACCORDION COMPONENT for Q&A
+// ──────────────────────────────────────────────────────────
+
+function QAAccordion({ items, color }: { items: { q: string; a: string }[]; color: "blue" | "purple" }) {
+  const [openIndex, setOpenIndex] = React.useState<number | null>(null)
+  const bg = color === "blue" ? "bg-white/5 hover:bg-white/8" : "bg-white/5 hover:bg-white/8"
+  const numColor = color === "blue" ? "text-blue-300" : "text-purple-300"
+
+  return (
+    <div className="space-y-3">
+      {items.map((item, i) => (
+        <div key={i} className={`rounded-xl overflow-hidden transition-all ${openIndex === i ? "bg-white/8" : bg}`}>
+          <button
+            onClick={(e) => { e.stopPropagation(); setOpenIndex(openIndex === i ? null : i) }}
+            className="w-full text-left p-5 flex gap-4 items-start"
+          >
+            <span className={`text-lg font-black ${numColor} shrink-0 mt-0.5`}>{i + 1}</span>
+            <span className="text-base font-semibold text-white/90 leading-relaxed">{item.q}</span>
+          </button>
+          <AnimatePresence>
+            {openIndex === i && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden"
+              >
+                <div className="px-5 pb-5 pl-14">
+                  <p className="text-[15px] leading-[1.8] text-white/70 whitespace-pre-wrap">{item.a}</p>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export default function ScriptPage() {
   const [time, setTime] = React.useState(0)
@@ -479,61 +508,49 @@ export default function ScriptPage() {
         </button>
       </div>
 
-      {/* Modals */}
+      {/* Modals — scrollable, each Q has its own answer */}
       <AnimatePresence>
         {showModal1 && (
           <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-blue-900/95 z-[60] flex justify-center p-4 md:p-8 backdrop-blur-md overflow-y-auto"
+            className="fixed inset-0 bg-[#0f172a] z-[60] overflow-y-auto"
+            onClick={() => setShowModal1(false)}
           >
-            <div className="max-w-3xl w-full text-white space-y-8 relative py-20">
+            <div
+              className="max-w-3xl mx-auto text-white py-16 px-4 md:px-8 min-h-full"
+              onClick={(e) => e.stopPropagation()}
+            >
               <button
                 onClick={() => setShowModal1(false)}
-                className="fixed top-6 right-6 md:top-8 md:right-8 p-4 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all z-50"
+                className="fixed top-6 right-6 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-all z-50"
               >
-                <X size={32} />
+                <X size={28} />
               </button>
-              <h2 className="text-4xl font-black mb-4 border-b border-white/20 pb-4">Reflection on Process</h2>
-              <p className="text-white/60 text-lg mb-8">One unified answer — freestyle to fit whichever question they ask.</p>
-              <div className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
-                <p className="text-lg leading-relaxed text-white/90 whitespace-pre-wrap">{reflectionAnswer}</p>
-              </div>
-              <div className="pt-8 border-t border-white/10">
-                <h3 className="text-xl font-bold text-white/60 mb-4">Possible Questions They Might Ask:</h3>
-                <div className="space-y-3">
-                  {reflectionQuestions.map((item, i) => (
-                    <p key={i} className="text-white/50 text-sm">{i + 1}. {item.q}</p>
-                  ))}
-                </div>
-              </div>
+              <h2 className="text-4xl font-black mb-2">Reflection on Process</h2>
+              <p className="text-white/40 text-base mb-10">Click any question to see its tailored response</p>
+              <QAAccordion items={reflectionQuestions} color="blue" />
             </div>
           </motion.div>
         )}
         {showModal2 && (
           <motion.div
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-purple-900/95 z-[60] flex justify-center p-4 md:p-8 backdrop-blur-md overflow-y-auto"
+            className="fixed inset-0 bg-[#0f0716] z-[60] overflow-y-auto"
+            onClick={() => setShowModal2(false)}
           >
-            <div className="max-w-3xl w-full text-white space-y-8 relative py-20">
+            <div
+              className="max-w-3xl mx-auto text-white py-16 px-4 md:px-8 min-h-full"
+              onClick={(e) => e.stopPropagation()}
+            >
               <button
                 onClick={() => setShowModal2(false)}
-                className="fixed top-6 right-6 md:top-8 md:right-8 p-4 bg-white/10 hover:bg-white/20 rounded-full backdrop-blur-md transition-all z-50"
+                className="fixed top-6 right-6 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-all z-50"
               >
-                <X size={32} />
+                <X size={28} />
               </button>
-              <h2 className="text-4xl font-black mb-4 border-b border-white/20 pb-4">Extending Argumentation</h2>
-              <p className="text-white/60 text-lg mb-8">One unified answer — freestyle to fit whichever question they ask.</p>
-              <div className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
-                <p className="text-lg leading-relaxed text-white/90 whitespace-pre-wrap">{argumentationAnswer}</p>
-              </div>
-              <div className="pt-8 border-t border-white/10">
-                <h3 className="text-xl font-bold text-white/60 mb-4">Possible Questions They Might Ask:</h3>
-                <div className="space-y-3">
-                  {argumentationQuestions.map((item, i) => (
-                    <p key={i} className="text-white/50 text-sm">{i + 1}. {item.q}</p>
-                  ))}
-                </div>
-              </div>
+              <h2 className="text-4xl font-black mb-2">Extending Argumentation</h2>
+              <p className="text-white/40 text-base mb-10">Click any question to see its tailored response</p>
+              <QAAccordion items={argumentationQuestions} color="purple" />
             </div>
           </motion.div>
         )}
