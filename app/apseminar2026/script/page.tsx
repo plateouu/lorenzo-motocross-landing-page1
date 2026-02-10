@@ -9,14 +9,14 @@ const scriptData = [
   {
     slide: "1. Title Slide",
     section: "Opening",
-    duration: "0:00 - 0:05",
+    duration: "0:00 - 0:06",
     text: `Good morning. My name is Taylor Daan. My presentation is titled "Digital Communities as Essential Social Infrastructure."`,
     cues: ["Stand tall", "Eye contact", "Clear voice"],
   },
   {
     slide: "2. Opening Quote — Surgeon General",
     section: "Hook",
-    duration: "0:05 - 0:35",
+    duration: "0:06 - 0:43",
     text: `In 2023, the U.S. Surgeon General Dr. Vivek Murthy issued an advisory stating: "Loneliness is far more than just a bad feeling. It harms both individual and societal health. It is associated with a greater risk of cardiovascular disease, dementia, stroke, depression, anxiety, and premature death."
 
 I chose this quote because it establishes the medical severity of the problem my research investigates. The Surgeon General's advisory is what led me to ask whether digital communities could address this crisis.`,
@@ -25,7 +25,7 @@ I chose this quote because it establishes the medical severity of the problem my
   {
     slide: "3. The Problem — Loneliness Epidemic",
     section: "Problem",
-    duration: "0:35 - 1:10",
+    duration: "0:43 - 1:27",
     text: `The Surgeon General's data shows that loneliness increases the risk of premature death by 29 percent. Its health impact is equivalent to smoking 15 cigarettes a day. Half of all U.S. adults report measurable loneliness.
 
 On screen you can see the cover of the Surgeon General's 2023 advisory report. I include this image because it shows the audience that this data comes from an official federal health document, which establishes its credibility as a primary source.
@@ -36,7 +36,7 @@ I present this data to establish the scale of the issue. Loneliness is a measura
   {
     slide: "4. Root Cause — Disappearing Third Places",
     section: "Cause",
-    duration: "1:10 - 1:45",
+    duration: "1:27 - 2:11",
     text: `The sociologist Ray Oldenburg identified "Third Places" — coffee shops, parks, libraries, and town squares where people gather outside of home and work. These spaces are where community forms.
 
 Ben Goldfarb, an environmental journalist, writes in Crossings that American infrastructure — highways, suburban sprawl, car-dependent planning — has created "Social Deserts," which are neighborhoods designed without any place to gather.
@@ -47,7 +47,7 @@ On screen you can see an aerial photograph of a typical American suburb. I chose
   {
     slide: "5. Research Question",
     section: "Question",
-    duration: "1:45 - 1:55",
+    duration: "2:11 - 2:23",
     text: `Given that loneliness is a health crisis caused by the disappearance of physical gathering spaces, my research question is:
 
 To what extent can digital communities serve as meaningful social spaces for those who are isolated from physical Third Places?`,
@@ -56,7 +56,7 @@ To what extent can digital communities serve as meaningful social spaces for tho
   {
     slide: "6. Key Concepts — Definitions",
     section: "Framework",
-    duration: "1:55 - 2:20",
+    duration: "2:23 - 2:54",
     text: `To investigate this question, I used three key concepts.
 
 First: Third Places, from Oldenburg — neutral gathering spots that are outside home and work.
@@ -71,7 +71,7 @@ I use these three concepts because they form a framework: Third Places are the s
   {
     slide: "7. Thesis Statement",
     section: "Argument",
-    duration: "2:20 - 2:35",
+    duration: "2:54 - 3:13",
     text: `My argument is:
 
 For individuals trapped in Social Deserts, virtual communities function as necessary Third Places. They provide essential social infrastructure and support social inclusion.`,
@@ -80,7 +80,7 @@ For individuals trapped in Social Deserts, virtual communities function as neces
   {
     slide: "8. Perspectives Overview",
     section: "Roadmap",
-    duration: "2:35 - 2:45",
+    duration: "3:13 - 3:25",
     text: `I examined this issue through two perspectives.
 
 First, Structural: who is excluded from physical spaces, and why.
@@ -91,7 +91,7 @@ Second, Empirical: whether digital spaces actually function as Third Places base
   {
     slide: "9. P1 Structural — Youth Exclusion",
     section: "Structural",
-    duration: "2:45 - 3:15",
+    duration: "3:25 - 4:03",
     text: `Starting with the Structural Perspective.
 
 danah boyd, a researcher at Microsoft, writes in It's Complicated that American teens face curfew laws, parental restrictions, and safety fears that prevent them from accessing public spaces. For many young people, the internet is the only unsupervised public venue available to them. Their exclusion is legal and systemic.
@@ -104,7 +104,7 @@ I use boyd's research here because it shows that for an entire demographic, phys
   {
     slide: "10. P1 Structural — Suburban Friction Costs",
     section: "Structural",
-    duration: "3:15 - 3:40",
+    duration: "4:03 - 4:25",
     text: `This structural exclusion also affects adults. Goldfarb calls it "Friction Costs" — the time and energy required just to reach another person.
 
 In suburban areas, visiting a friend might require a 45-minute drive. The infrastructure itself — highways, sprawl — physically prevents spontaneous connection. Adults in suburbs are cut off from Third Places by design.`,
@@ -113,7 +113,7 @@ In suburban areas, visiting a friend might require a 45-minute drive. The infras
   {
     slide: "11. P2 Empirical — Digital Third Places",
     section: "Empirical",
-    duration: "3:40 - 4:15",
+    duration: "4:25 - 5:00",
     text: `Moving to the Empirical Perspective: do digital spaces actually fill this gap?
 
 Constance Steinkuehler and Dmitri Williams published a 2006 study on massively multiplayer online games. They found these communities meet every criterion for a Third Place: neutral ground, regular participants, and conversation as the main activity. Real connections form across geographic and demographic lines.
@@ -124,7 +124,7 @@ On screen is a Discord server — this is what a modern Third Place looks like. 
   {
     slide: "12. P2 Empirical — Bridging Capital Beyond Geography",
     section: "Empirical",
-    duration: "4:15 - 4:40",
+    duration: "5:00 - 5:20",
     text: `Robert Putnam showed that bridging social capital — connections between different people — holds communities together.
 
 Online communities remove the geographic barrier. A disabled person, a rural teen, or a homebound senior can access social life their physical environment does not provide.`,
@@ -133,7 +133,7 @@ Online communities remove the geographic barrier. A disabled person, a rural tee
   {
     slide: "13. Counterargument — The Quality Problem",
     section: "Counter",
-    duration: "4:40 - 5:15",
+    duration: "5:20 - 5:50",
     text: `There are valid criticisms.
 
 Sherry Turkle, a professor at MIT, argues in Alone Together that digital bonds create an "illusion of companionship." People edit out vulnerability, so the connections may be shallow.
@@ -144,7 +144,7 @@ Shoshana Zuboff, at Harvard Business School, argues that platforms like TikTok a
   {
     slide: "14. Rebuttal — A Necessary Lifeline",
     section: "Rebuttal",
-    duration: "5:15 - 5:45",
+    duration: "5:50 - 6:20",
     text: `Both criticisms assume the person has a choice between physical and digital connection.
 
 For a disabled senior or a rural teenager in a Social Desert, that choice does not exist. The options are digital community or total isolation.
@@ -155,7 +155,7 @@ Quan-Haase and Wellman call this "harm reduction" — an imperfect tool that sti
   {
     slide: "15. Limitations — Physiological Limits",
     section: "Nuance",
-    duration: "5:45 - 6:10",
+    duration: "6:20 - 6:40",
     text: `There are real limitations. John Cacioppo showed that text-based interaction cannot replicate the stress relief of in-person contact. Physical proximity reduces cortisol in ways screens cannot.
 
 The long-term goal remains rebuilding physical Third Places. Digital infrastructure is a bridge.`,
@@ -164,7 +164,7 @@ The long-term goal remains rebuilding physical Third Places. Digital infrastruct
   {
     slide: "16. Conclusion — Synthesis",
     section: "Close",
-    duration: "6:10 - 6:45",
+    duration: "6:40 - 7:05",
     text: `In conclusion:
 
 Physical Third Places are disappearing due to decades of structural neglect — suburban sprawl, highway design, and the creation of Social Deserts.
@@ -177,7 +177,7 @@ Rather than dismissing screen time, we should ask why digital space is the only 
   {
     slide: "17. Works Cited",
     section: "End",
-    duration: "6:45 - 7:15",
+    duration: "7:05 - 7:15",
     text: `These are my sources. I am happy to take any questions.`,
     cues: ["Smile", "Nod", "Open posture"],
   },
