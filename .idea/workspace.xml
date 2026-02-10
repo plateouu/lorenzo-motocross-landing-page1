@@ -103,23 +103,7 @@
       <workItem from="1770041853311" duration="80000" />
       <workItem from="1770042212578" duration="10000" />
       <workItem from="1770588134336" duration="11000" />
-      <workItem from="1770719487549" duration="6243000" />
-    </task>
-    <task id="LOCAL-00124" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769140797939</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1769140797939</updated>
-    </task>
-    <task id="LOCAL-00125" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769140900382</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1769140900382</updated>
+      <workItem from="1770719487549" duration="7000000" />
     </task>
     <task id="LOCAL-00126" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -497,7 +481,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770735931792</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770736495379</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1770736495379</updated>
+    </task>
+    <task id="LOCAL-00174" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770737712054</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1770737712054</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

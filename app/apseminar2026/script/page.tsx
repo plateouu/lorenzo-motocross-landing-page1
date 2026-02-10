@@ -311,7 +311,6 @@ function QAAccordion({ items, color }: { items: { q: string; a: string }[]; colo
 }
 
 export default function ScriptPage() {
-  const [time, setTime] = React.useState(0)
   const [elapsedTime, setElapsedTime] = React.useState(0)
   const [isActive, setIsActive] = React.useState(false)
   const [activeSlideIndex, setActiveSlideIndex] = React.useState(-1)
@@ -320,78 +319,38 @@ export default function ScriptPage() {
   const [isFocusMode, setIsFocusMode] = React.useState(false)
   const slideRefs = React.useRef<(HTMLDivElement | null)[]>([])
 
-  const getSecondsRange = (durationStr: string) => {
-    if (!durationStr) return { start: 0, end: 0 }
-    const [startStr, endStr] = durationStr.split(" - ")
-    const parse = (t: string) => {
-      if (!t) return 0
-      const parts = t.split(":").map(Number)
-      if (parts.length !== 2) return 0
-      const [m, s] = parts
-      return m * 60 + s
-    }
-    return { start: parse(startStr), end: parse(endStr) }
-  }
-
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
         e.preventDefault()
-
-        let currentIdx = activeSlideIndex
-        if (currentIdx === -1) {
-          currentIdx = scriptData.findIndex(item => {
-            const range = getSecondsRange(item.duration)
-            return time >= range.start && time < range.end
-          })
-          if (currentIdx === -1 && time === 0) currentIdx = 0
-        }
-
-        let nextIdx = currentIdx
-        if (e.key === 'ArrowRight') {
-          nextIdx = Math.min(scriptData.length - 1, currentIdx + 1)
-        } else if (e.key === 'ArrowLeft') {
-          nextIdx = Math.max(0, currentIdx - 1)
-        }
-
-        if (nextIdx !== currentIdx) {
-          const range = getSecondsRange(scriptData[nextIdx].duration)
-          setTime(range.start)
-        }
+        setActiveSlideIndex(prev => {
+          const current = prev === -1 ? 0 : prev
+          let next = current
+          if (e.key === 'ArrowRight') {
+            next = Math.min(scriptData.length - 1, current + 1)
+          } else {
+            next = Math.max(0, current - 1)
+          }
+          if (slideRefs.current[next]) {
+            slideRefs.current[next]?.scrollIntoView({ behavior: "smooth", block: "center" })
+          }
+          return next
+        })
       }
     }
-
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [activeSlideIndex, time])
+  }, [])
 
   React.useEffect(() => {
     let interval: NodeJS.Timeout
     if (isActive) {
       interval = setInterval(() => {
-        setTime((prev) => prev + 1)
         setElapsedTime((prev) => prev + 1)
       }, 1000)
     }
     return () => clearInterval(interval)
   }, [isActive])
-
-  React.useEffect(() => {
-    const newActiveIndex = scriptData.findIndex((item) => {
-      const { start, end } = getSecondsRange(item.duration)
-      return time >= start && time < end
-    })
-
-    if (newActiveIndex !== -1 && newActiveIndex !== activeSlideIndex) {
-      setActiveSlideIndex(newActiveIndex)
-      if (slideRefs.current[newActiveIndex]) {
-        slideRefs.current[newActiveIndex]?.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        })
-      }
-    }
-  }, [time, activeSlideIndex])
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
@@ -402,7 +361,6 @@ export default function ScriptPage() {
   const toggleTimer = () => setIsActive(!isActive)
   const resetTimer = () => {
     setIsActive(false)
-    setTime(0)
     setElapsedTime(0)
     setActiveSlideIndex(-1)
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -417,7 +375,7 @@ export default function ScriptPage() {
           </Link>
           <div>
             <h1 className={`text-3xl font-black tracking-tighter uppercase ${isFocusMode ? "text-white" : "text-black"}`}>Presentation Script</h1>
-            <p className={`${isFocusMode ? "text-white/50" : "text-black/50"} font-medium`}>Digital Communities & Social Infrastructure • Target Time: 8:00 Minutes</p>
+            <p className={`${isFocusMode ? "text-white/50" : "text-black/50"} font-medium`}>Digital Communities & Social Infrastructure • Target Time: 7:15 Minutes</p>
           </div>
         </div>
 
@@ -475,13 +433,8 @@ export default function ScriptPage() {
 
       {/* Sticky Timer & Controls */}
       <div className="fixed bottom-8 right-8 bg-black text-white p-6 rounded-3xl shadow-2xl z-50 flex items-center gap-6">
-        <div className="flex flex-col items-end gap-1">
-          <div className="font-mono text-4xl font-bold tracking-widest">
-            {formatTime(time)}
-          </div>
-          <div className="font-mono text-xs text-white/50 font-bold uppercase tracking-widest">
-            Script / {formatTime(elapsedTime)} Real
-          </div>
+        <div className="font-mono text-4xl font-bold tracking-widest">
+          {formatTime(elapsedTime)}
         </div>
         <div className="flex gap-2 border-l border-white/20 pl-6">
           <button onClick={() => setIsFocusMode(!isFocusMode)} className={`p-3 rounded-full transition-colors ${isFocusMode ? "bg-blue-600 hover:bg-blue-700" : "bg-white/10 hover:bg-white/20"}`} title="Toggle Peripheral Mode">
