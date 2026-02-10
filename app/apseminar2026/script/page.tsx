@@ -200,74 +200,72 @@ Rather than dismissing screen time, we should ask why digital space is the only 
 ]
 
 // ──────────────────────────────────────────────────────────
-// REFLECTION Q&A — Master Answer: THE SURGEON GENERAL
-// Every answer focuses on the Surgeon General's 2023 Advisory as the key driver.
+// REFLECTION Q&A — Anchor: Surgeon General's Advisory
 // ──────────────────────────────────────────────────────────
 
 const reflectionQuestions = [
   {
     q: "What information did you need before you began your research, and how did that information shape your research?",
-    a: `I needed to know if loneliness was a real medical issue or just a feeling. The Surgeon General's 2023 Advisory provided the key information: loneliness increases premature death risk by 29%. This shaped my research by forcing me to treat loneliness as a public health crisis with structural causes, not just a personal emotional problem.`
+    a: `Before I started, I honestly didn't know if loneliness was actually dangerous or if people were just being dramatic about it. Then I read the Surgeon General's 2023 report, and it said loneliness raises your risk of dying early by 29% — that's as bad as smoking 15 cigarettes a day. That completely changed my research. I stopped thinking about "is social media good or bad" and started thinking about "people are literally dying from being alone — can the internet help?"`
   },
   {
     q: "What evidence did you gather that you didn't use? Why did you choose not to use it?",
-    a: `I found data on social media anxiety (like Instagram depression rates). I chose not to use it because the Surgeon General's report specifically identified "social disconnection" as the health risk. My focus was on solving disconnection, so I needed evidence about community (Oldenburg), not just evidence about bad feelings (anxiety).`
+    a: `I found a lot of stuff about Instagram making teens anxious and depressed. But I didn't end up using it because my research wasn't about social media making people feel bad — it was about whether online spaces can give people a community when they don't have one in real life. The Instagram anxiety stuff was about a different problem than what I was trying to solve.`
   },
   {
     q: "How valid and reliable are the sources you used? How do you know? Which sources didn't work?",
-    a: `My most valid source is the Surgeon General's Advisory. I know it's reliable because it is a federal health document backed by meta-analyses of epidemiological data. Sources that didn't work were anecdotal blogs about loneliness; they lacked the medical validity of the Surgeon General's report, so I discarded them.`
+    a: `The Surgeon General's report is the most solid source I have — it's an official federal health document based on years of medical data. You can't really argue with it. What didn't work were random blog posts and opinion pieces about loneliness. They had good stories but no real data behind them, so I couldn't build an argument on them.`
   },
   {
     q: "How did you select the strategies you used to gather information or conduct research? Were they effective?",
-    a: `My strategy was to start with the "problem" defined by the Surgeon General (disconnection) and then search for a "solution" that addressed that specific problem. This was effective because it kept my research focused. Instead of looking at all digital tech, I only looked for tech that solved the Surgeon General's specific crisis of isolation.`
+    a: `I started with the problem first — the Surgeon General said people are dying from isolation. Then I worked backwards: okay, why are they isolated? And can anything fix it? That kept me really focused. Instead of reading everything about technology, I only looked at things that directly addressed the isolation problem. It saved me a lot of time.`
   },
   {
     q: "How did your research question evolve as you moved through the research process?",
-    a: `I started by asking "Is technology bad?" But the Surgeon General's data showed that isolation is the real killer (equivalent to 15 cigarettes/day). So my question evolved to: "Can technology solve this isolation?" usage. The Surgeon General's framework shifted my focus from "screen time" to "social infrastructure."`
+    a: `At first I was asking "is technology bad for us?" which is way too broad. But once I saw the Surgeon General's numbers — that isolation kills as many people as smoking — my question became much more specific: "Can online communities actually help isolated people?" It went from a vague opinion question to a real health question.`
   },
   {
     q: "What information did you need that you weren't able to find or locate? How did you go about trying to find that information?",
-    a: `I couldn't find a direct study linking Discord use to lower cortisol levels. The Surgeon General cites physical presence as lowering cortisol. Since I couldn't find the medical proof for digital spaces, I had to rely on sociological proof (Oldenburg/Steinkuehler) to argue that it's still a "Third Place," even if the biological data isn't there yet.`
+    a: `I really wanted a study that showed, like, "people who use Discord have lower stress hormones." That doesn't exist yet. The medical side only has data on in-person contact reducing stress. So I had to work around it — I used studies that proved online spaces work like real community spaces, even though I couldn't prove they have the exact same biological effect.`
   },
   {
     q: "How did you handle the differing perspectives in order to reach a conclusion?",
-    a: `I had the medical perspective (Surgeon General says we need connection) and the critical perspective (Turkle says digital connection is fake). I aimed to satisfy the Surgeon General's requirement: if the goal is preventing death from isolation, then even "imperfect" digital connection is a necessary lifeline. I prioritized the Surgeon General's "harm reduction" goal.`
+    a: `One side says "we need connection or people die" — that's the Surgeon General. The other side says "online connection isn't real" — that's Turkle. My conclusion was basically: okay, maybe online isn't perfect, but if someone has zero access to real-life community, an imperfect online community is way better than nothing. It's not ideal, but it keeps people alive.`
   },
   {
     q: "What advice would you have for other researchers who consider this topic?",
-    a: `I would advise them to ground their research in a hard medical reality like the Surgeon General's report. It gives you a "True North." It's easy to get lost in opinions about whether phones are annoying, but the Surgeon General's data on mortality keeps the argument focused on what actually matters: saving lives from isolation.`
+    a: `Start with the health data. The Surgeon General's report gives you something solid to anchor everything to. It's really easy to get lost in opinions about whether phones are good or bad, but if you keep coming back to "loneliness literally kills people," it keeps your argument grounded in something that actually matters.`
   },
   {
     q: "If you had more time, what additional research would you conduct related to this issue?",
-    a: `I would want to see if the Surgeon General issues a follow-up report specifically on "Digital Third Places." currently, the advisory mentions technology mostly as a risk. I would conduct research to see if new medical data emerges that supports digital community as a valid intervention for the health crisis he identified.`
+    a: `I'd want to see if there's ever a follow-up from the Surgeon General that specifically talks about online communities as a solution, not just a risk. Right now the report mostly treats technology as part of the problem. I think there's a gap there — someone needs to study whether platforms like Discord actually reduce the health effects of isolation.`
   },
 ]
 
 // ──────────────────────────────────────────────────────────
-// ARGUMENTATION Q&A — Master Answer: OLDENBURG & STEINKUEHLER
-// Every answer focuses on the Third Place framework (Oldenburg) and its proof (Steinkuehler).
+// ARGUMENTATION Q&A — Anchor: Oldenburg & Steinkuehler
 // ──────────────────────────────────────────────────────────
 
 const argumentationQuestions = [
   {
     q: "What additional questions emerged from your research? Why are these questions important?",
-    a: `A key question is: "Do new algorithms destroy Third Places?" Oldenburg defines Third Places as "neutral ground" with "regular participants." Modern TikTok algorithms feed you content, they don't connect you to regulars. This is important because if the tech stops functioning like Oldenburg's Third Place, it stops being a solution to the crisis.`
+    a: `The big one is: does this still work with modern apps? The communities I studied — like MMO guilds and Discord servers — have regulars who show up, talk, and build relationships. But TikTok just feeds you random videos. You don't build a community scrolling TikTok. So the question is: which platforms actually create community, and which ones just create content? That distinction matters a lot for my argument.`
   },
   {
     q: "What might be the real-world implications or consequences of your findings?",
-    a: `The implication is that digital spaces are "Social Infrastructure." Oldenburg argued libraries and parks are essential; Steinkuehler proved digital spaces function the same way. The consequence is that we should protect and fund digital communities (like Discord/gaming) just like we fund public parks, because they perform the same essential social function.`
+    a: `If online communities really do work like parks and coffee shops — places where people actually connect — then we should treat internet access like we treat public infrastructure. We fund parks because people need somewhere to gather. If a Discord server does the same thing for a kid in a rural town, then cutting off their internet is like locking the park gates.`
   },
   {
     q: "Explain the level of certainty you have about your conclusion, solution, or recommendation.",
-    a: `I am highly certain that valid digital Third Places exist, because Steinkuehler and Williams tested them against Oldenburg's exact criteria and they passed. I am less certain if they work for *everyone*, but the sociological match between "MMO Game" and "Third Place" is structurally proven, giving me high confidence in the solution.`
+    a: `I'm very confident that some online spaces genuinely work as community spaces — the research on gaming communities specifically tested for that and they passed. Where I'm less sure is whether this applies to every platform. A tight-knit Discord server? Yes. A random Twitter feed? Probably not. So my conclusion is strong for certain types of spaces, not all of them.`
   },
   {
     q: "How does your conclusion respond to any of the other research or sources you examined?",
-    a: `My conclusion uses Steinkuehler to refute the idea that digital is "lesser." It responds to Turkle by saying: "It might feel different, but sociologically it functions as a Third Place (Oldenburg)." My conclusion suggests that function matters more than feeling — if it does the job of a Third Place, it is one.`
+    a: `Turkle says online connection is shallow and fake. My response is: maybe it feels different, but it does the same job. If people are showing up regularly, having real conversations, and forming friendships — which the research shows they are — then it doesn't matter that it's on a screen. What matters is whether it works, and the evidence says it does.`
   },
   {
     q: "How did you use the conclusions and questions of others to advance your own research?",
-    a: `I used Oldenburg's conclusion (we need Third Places) as my foundation. I used Steinkuehler's conclusion (Games = Third Places) as my bridge. This allowed me to advance the argument that "Digital Communities are Infrastructure." I didn't invent the concept; I just connected Oldenburg's problem to Steinkuehler's solution.`
+    a: `Oldenburg said communities need gathering places. Steinkuehler proved that online games are gathering places. I just connected those two ideas. Oldenburg identified what's missing, Steinkuehler found where it went — online. My contribution was putting those together and saying: this isn't just entertainment, it's infrastructure.`
   },
 ]
 
