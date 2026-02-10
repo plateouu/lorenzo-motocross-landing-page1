@@ -314,6 +314,7 @@ function QAAccordion({ items, color }: { items: { q: string; a: string }[]; colo
 
 export default function ScriptPage() {
   const [time, setTime] = React.useState(0)
+  const [elapsedTime, setElapsedTime] = React.useState(0)
   const [isActive, setIsActive] = React.useState(false)
   const [activeSlideIndex, setActiveSlideIndex] = React.useState(-1)
   const [showModal1, setShowModal1] = React.useState(false)
@@ -371,6 +372,7 @@ export default function ScriptPage() {
     if (isActive) {
       interval = setInterval(() => {
         setTime((prev) => prev + 1)
+        setElapsedTime((prev) => prev + 1)
       }, 1000)
     }
     return () => clearInterval(interval)
@@ -403,6 +405,7 @@ export default function ScriptPage() {
   const resetTimer = () => {
     setIsActive(false)
     setTime(0)
+    setElapsedTime(0)
     setActiveSlideIndex(-1)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -474,8 +477,13 @@ export default function ScriptPage() {
 
       {/* Sticky Timer & Controls */}
       <div className="fixed bottom-8 right-8 bg-black text-white p-6 rounded-3xl shadow-2xl z-50 flex items-center gap-6">
-        <div className="font-mono text-4xl font-bold tracking-widest">
-          {formatTime(time)}
+        <div className="flex flex-col items-end gap-1">
+          <div className="font-mono text-4xl font-bold tracking-widest">
+            {formatTime(time)}
+          </div>
+          <div className="font-mono text-xs text-white/50 font-bold uppercase tracking-widest">
+            Script / {formatTime(elapsedTime)} Real
+          </div>
         </div>
         <div className="flex gap-2 border-l border-white/20 pl-6">
           <button onClick={() => setIsFocusMode(!isFocusMode)} className={`p-3 rounded-full transition-colors ${isFocusMode ? "bg-blue-600 hover:bg-blue-700" : "bg-white/10 hover:bg-white/20"}`} title="Toggle Peripheral Mode">
