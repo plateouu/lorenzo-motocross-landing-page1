@@ -8,233 +8,290 @@ import Link from "next/link"
 const scriptData = [
   {
     slide: "1. Title Slide",
-    section: "Intro",
+    section: "Opening",
     duration: "0:00 - 0:15",
-    text: `Good morning. My name is Taylor Daan. Today asking you to rethink where we live. My presentation is "Digital Communities as Essential Social Infrastructure."`,
-    cues: ["Stand tall", "Make eye contact", "Clear voice"],
+    text: `Good morning. My name is Taylor Daan. My presentation is titled "Digital Communities as Essential Social Infrastructure."`,
+    cues: ["Stand tall", "Eye contact", "Clear voice"],
   },
   {
-    slide: "2. The Axis of Memory",
-    section: "Intro",
+    slide: "2. Opening Quote — Surgeon General",
+    section: "Hook",
     duration: "0:15 - 0:45",
-    text: `Haruki Murakami writes about the "Axis of Memory." He says who we are comes from what we see every day. We need our physical surroundings to know who we are.
-    
-    Why does this matter? When those surroundings are destroyed, we lose our sense of self. We forget who we are because we lose the proof of our existence.`,
-    cues: ["Slow pace", "Emphasize 'Axis'", "Gestures"],
+    text: `In 2023, the U.S. Surgeon General Dr. Vivek Murthy issued an advisory stating: "Loneliness is far more than just a bad feeling. It harms both individual and societal health. It is associated with a greater risk of cardiovascular disease, dementia, stroke, depression, anxiety, and premature death."
+
+I chose this quote because it establishes the medical severity of the problem my research investigates. The Surgeon General's advisory is what led me to ask whether digital communities could address this crisis.`,
+    cues: ["Read the quote slowly", "Pause after 'premature death'"],
   },
   {
-    slide: "3. Context - Key Factors",
-    section: "Context",
-    duration: "0:45 - 1:15",
-    text: `For millions of people, that anchor is gone. It was removed by neglect. 
-    
-    Ben Goldfarb writes in *Crossings* that highways and sprawl cut us off from each other. We built towns where we can't meet people. This destroys trust. You can't trust a neighbor you can't reach.`,
-    cues: ["Point to screen", "Stern tone"],
-  },
-  {
-    slide: "4. The Problem",
+    slide: "3. The Problem — Loneliness Epidemic",
     section: "Problem",
-    duration: "1:15 - 2:00",
-    text: `This is hurting us physically. 
-    
-    In 2023, the U.S. Surgeon General called loneliness an epidemic. Being lonely is as deadly as smoking 15 cigarettes a day. It increases the risk of early death by 29%.
-    
-    We are facing a crisis of connection.`,
-    cues: ["Emphasize '15 cigarettes'", "Serious pause"],
+    duration: "0:45 - 1:20",
+    text: `The Surgeon General's data shows that loneliness increases the risk of premature death by 29 percent. Its health impact is equivalent to smoking 15 cigarettes a day. Half of all U.S. adults report measurable loneliness.
+
+On screen you can see the cover of the Surgeon General's 2023 advisory report. I include this image because it shows the audience that this data comes from an official federal health document, which establishes its credibility as a primary source.
+
+I present this data to establish the scale of the issue. Loneliness is a measurable public health crisis, and understanding its cause is the next step.`,
+    cues: ["Gesture to image", "Emphasize '15 cigarettes'", "Transition naturally to cause"],
+  },
+  {
+    slide: "4. Root Cause — Disappearing Third Places",
+    section: "Cause",
+    duration: "1:20 - 2:00",
+    text: `The sociologist Ray Oldenburg identified "Third Places" — coffee shops, parks, libraries, and town squares where people gather outside of home and work. These spaces are where community forms.
+
+I use Oldenburg's framework because it gives a name to what is disappearing. Ben Goldfarb, an environmental journalist, writes in Crossings that American infrastructure — highways, suburban sprawl, car-dependent planning — has created "Social Deserts," which are neighborhoods designed without any place to gather.
+
+On screen you can see an aerial photograph of a typical American suburb. I chose this image because it shows exactly what a Social Desert looks like — rows of houses with no sidewalks, no town square, and no visible place for people to gather. The image makes Goldfarb's concept concrete for the audience.`,
+    cues: ["Gesture to image when describing Social Desert", "Name Oldenburg and Goldfarb clearly"],
   },
   {
     slide: "5. Research Question",
-    section: "RQ",
+    section: "Question",
     duration: "2:00 - 2:15",
-    text: `So I asked: 
-    
-    Can digital communities be real social spaces for people who are isolated from physical spaces?`,
-    cues: ["Read clearly", "Scan audience"],
+    text: `Given that loneliness is a health crisis caused by the disappearance of physical gathering spaces, my research question is:
+
+To what extent can digital communities serve as meaningful social spaces for those who are isolated from physical Third Places?`,
+    cues: ["Read clearly", "Deliberate pace"],
   },
   {
-    slide: "6. Key Concepts",
-    section: "Definitions",
+    slide: "6. Key Concepts — Definitions",
+    section: "Framework",
     duration: "2:15 - 2:40",
-    text: `To answer this, look at "Third Places." Ray Oldenburg coined this term for neutral connection hubs—coffee shops, parks, libraries.
-    
-    But many live in "Social Deserts"—places designed without interaction. We need "Bridging Social Capital"—connections that bind society together.`,
-    cues: ["Define 'Third Place'", "Hand gestures"],
+    text: `To investigate this question, I used three key concepts.
+
+First: Third Places, from Oldenburg — neutral gathering spots that are outside home and work.
+
+Second: Social Deserts, from Goldfarb — areas designed without spaces for people to interact.
+
+Third: Bridging Social Capital, from Robert Putnam — connections across diverse groups that hold communities together.
+
+I use these three concepts because they form a framework: Third Places are the solution, Social Deserts are the problem, and Bridging Social Capital is the measure of whether a community is functioning.`,
+    cues: ["Count off 1-2-3 with fingers", "Explain the framework connection"],
   },
   {
     slide: "7. Thesis Statement",
     section: "Argument",
     duration: "2:40 - 3:00",
-    text: `Here is my answer: 
-    
-    For those trapped in Social Deserts, Virtual Communities work as necessary "Third Places." They are an essential way to build social capital and support inclusion.`,
-    cues: ["Strong conviction", "One sentence"],
+    text: `My argument is:
+
+For individuals trapped in Social Deserts, virtual communities function as necessary Third Places. They provide essential social infrastructure and support social inclusion.`,
+    cues: ["Clear conviction", "Pause after stating thesis"],
   },
   {
     slide: "8. Perspectives Overview",
     section: "Roadmap",
     duration: "3:00 - 3:10",
-    text: `I looked at this in two ways:
-    
-    1. Structural: The barriers to physical entry.
-    2. Economic: The cost of digital connection.`,
-    cues: ["Count 1, 2"],
-  },
-  {
-    slide: "9. P1: Networked Publics",
-    section: "Structural",
-    duration: "3:10 - 3:45",
-    text: `First, the Structural Perspective. Why not just "go outside"?
-    
-    For youth, the outside is restricted. danah boyd writes in *It's Complicated* that due to curfews and safety fears, the internet is the *only* unsupervised public space left for teens. They are banned from the town square.`,
-    cues: ["Emphasize 'only impact'", "Sympathetic tone"],
-  },
-  {
-    slide: "10. P1: Friction Costs",
-    section: "Structural",
-    duration: "3:45 - 4:15",
-    text: `For adults, it's design. Goldfarb discusses "Friction Costs." 
-    
-If visiting a friend takes a 45-minute drive, the friction is too high. You stay home. Suburban sprawl creates Social Deserts where community is structurally impossible.`,
-    cues: ["Relatable tone"],
-  },
-  {
-    slide: "11. P1: Counterargument",
-    section: "Structural",
-    duration: "4:15 - 4:45",
-    text: `Critics like Constance Steinkuehler denote that digital spaces serve corporations. 
-    
-    Platforms prioritize profit. However, looking at the structural barriers, for many, the "imperfect" digital space is the only space accessible at all.`,
-    cues: ["Concede point", "Pivot back"],
-  },
-  {
-    slide: "12. P2: Surveillance Capitalism",
-    section: "Economic",
-    duration: "4:45 - 5:30",
-    text: `Moving to the Economic Perspective.
-    
-    Shoshana Zuboff warns of "Surveillance Capitalism." Platforms like TikTok prioritize prediction over connection. They extract our experience as data. If the "Third Place" is a data mine, can it support community?`,
-    cues: ["Warning tone", "Slow down"],
-  },
-  {
-    slide: "13. P2: Illusion of Companionship",
-    section: "Economic",
-    duration: "5:30 - 6:00",
-    text: `Sherry Turkle writes in *Alone Together* that we settle for the "illusion of companionship." 
-    
-    In digital space, we edit out the awkwardness. We sip on a simulation of friendship while our biological need for intimacy starves.`,
-    cues: ["Poetic delivery", "Sadness"],
-  },
-  {
-    slide: "14. P2: Counter - Lifeline",
-    section: "Economic",
-    duration: "6:00 - 6:45",
-    text: `However, this view comes from privilege. It assumes we *have* a choice between perfect organic connection and imperfect digital connection.
-    
-For a disabled senior or a rural teen, that choice doesn't exist. It is Digital Community or Total Isolation. A starving person accepts food regardless of whether the store is corporate.`,
-    cues: ["Passionate defense", "Strongest point"],
-  },
-  {
-    slide: "15. Limitations & Implications",
-    section: "Discussion",
-    duration: "6:45 - 7:30",
-    text: `There is one big problem: Digital contact can't replicate the physical stress-relief of a hug. It is not perfect.
-    
-    But here is the reality. We cannot wait for better cities to save us. We must see digital access as immediate "Harm Reduction." It is an imperfect tool, but for the isolated, it is the only tool that works.`,
-    cues: ["Nuanced", "Shift to Urgent"],
-  },
-  {
-    slide: "16. Conclusion",
-    section: "Synthesis",
-    duration: "7:15 - 7:50",
-    text: `In conclusion:
-1. Our physical axis is broken by neglect.
-2. Until we rebuild our cities, Digital Communities are Essential Infrastructure.
-3. They are life rafts.
+    text: `I examined this issue through two perspectives.
 
-Rather than shaming screen time, we must ask: *Why is this the only place they have left to go?*`,
-    cues: ["Final thought", "Powerful close"],
+First, Structural: who is excluded from physical spaces, and why.
+
+Second, Empirical: whether digital spaces actually function as Third Places based on evidence.`,
+    cues: ["Count 'First... Second...'", "Brief and clear"],
   },
   {
-    slide: "17. References",
+    slide: "9. P1 Structural — Youth Exclusion",
+    section: "Structural",
+    duration: "3:10 - 3:40",
+    text: `Starting with the Structural Perspective.
+
+danah boyd, a researcher at Microsoft, writes in It's Complicated that American teens face curfew laws, parental restrictions, and safety fears that prevent them from accessing public spaces. For many young people, the internet is the only unsupervised public venue available to them. Their exclusion is legal and systemic.
+
+On screen you can see an empty playground that has been closed off. I chose this image because it is a direct visual example of what boyd describes — a public space that exists physically but is blocked off. For many young people, this is what access to a Third Place looks like.
+
+I use boyd's research here because it shows that for an entire demographic, physical Third Places are inaccessible. The barrier is structural.`,
+    cues: ["Gesture to image", "Cite boyd with her credentials"],
+  },
+  {
+    slide: "10. P1 Structural — Suburban Friction Costs",
+    section: "Structural",
+    duration: "3:40 - 4:10",
+    text: `This structural exclusion also affects adults. Goldfarb introduces the concept of "Friction Costs" — the time and effort required to reach another person.
+
+On screen you can see an aerial view of a highway interchange. I chose this image because it shows the infrastructure that creates friction costs. These roads were designed for cars, and they physically divide neighborhoods. There is nowhere in this image to walk, sit, or meet a neighbor. This is what Goldfarb means by a Social Desert.
+
+In suburban areas, visiting a friend might require a 45-minute drive. Spontaneous connection becomes very difficult.
+
+I return to Goldfarb here because his Friction Costs concept explains why adults in suburbs are also cut off from Third Places — the same structural cause, different demographic.`,
+    cues: ["Gesture to image when describing friction", "Conversational tone"],
+  },
+  {
+    slide: "11. P2 Empirical — Digital Third Places",
+    section: "Empirical",
+    duration: "4:10 - 4:50",
+    text: `Moving to the Empirical Perspective: do digital spaces actually fill the gap left by disappearing Third Places?
+
+Constance Steinkuehler, a professor of informatics, and Dmitri Williams published a 2006 study examining massively multiplayer online games. They found that these communities meet every criterion Oldenburg set for Third Places: neutral ground, regular participants, and conversation as the primary activity. Real bridging social capital forms across geographic and demographic lines.
+
+On screen you can see an example of a Discord community server. I chose this image because it shows what a digital Third Place actually looks like in practice — a persistent space where people gather, have conversations, and form ongoing relationships. This is the modern version of what Oldenburg described.
+
+I use Steinkuehler and Williams because they are the strongest direct evidence that digital spaces can function as Third Places using Oldenburg's own criteria.`,
+    cues: ["Gesture to image", "Evidence-based tone", "Cite with credentials"],
+  },
+  {
+    slide: "12. P2 Empirical — Bridging Capital Beyond Geography",
+    section: "Empirical",
+    duration: "4:50 - 5:20",
+    text: `Robert Putnam, a political scientist at Harvard, showed that bridging social capital — connections between people who are different from each other — is what holds communities together.
+
+Online communities remove the geographic barrier. A disabled person, a rural teen, or a homebound senior can access social life that their physical environment does not provide. Discord servers, forums, and online guilds replicate the gathering functions that sprawl removed.
+
+I use Putnam here because his framework measures whether a community is actually functioning. Steinkuehler and Williams showed digital spaces meet the Third Place criteria; Putnam's concept confirms they also produce the social capital that communities need.`,
+    cues: ["Cite Putnam with credentials", "Connect to Steinkuehler"],
+  },
+  {
+    slide: "13. Counterargument — The Quality Problem",
+    section: "Counter",
+    duration: "5:20 - 6:00",
+    text: `There are valid criticisms of this position.
+
+Sherry Turkle, a professor at MIT, argues in Alone Together that digital bonds create an "illusion of companionship." In digital space, people edit out vulnerability and awkwardness, so the connections that form may be shallow.
+
+On screen you can see the cover of Turkle's book Alone Together. I chose to display this because the title itself captures the core counterargument — the idea that people can be digitally connected and still fundamentally alone.
+
+Shoshana Zuboff, a professor at Harvard Business School, argues in The Age of Surveillance Capitalism that platforms like TikTok and Instagram exist to extract behavioral data for profit. Connection is secondary to their business model.
+
+I include both Turkle and Zuboff because they represent the strongest objections to my thesis — that digital connection lacks quality, and that the platforms hosting it are exploitative.`,
+    cues: ["Gesture to book cover", "Concede honestly", "Name both with credentials"],
+  },
+  {
+    slide: "14. Rebuttal — A Necessary Lifeline",
+    section: "Rebuttal",
+    duration: "6:00 - 6:40",
+    text: `Both criticisms assume the person has a choice between physical and digital connection.
+
+For a disabled senior or a rural teenager living in a Social Desert, that alternative does not exist. The available options are digital community or total isolation.
+
+Quan-Haase and Wellman, researchers in network sociology, proposed thinking of digital connection as "harm reduction" — an imperfect tool that still addresses a real need.
+
+I use the harm reduction framework because it directly addresses Turkle and Zuboff's concerns. It acknowledges that digital connection has limitations while arguing that for the isolated, it remains the most accessible option.`,
+    cues: ["Strongest point", "Explain the rebuttal logic"],
+  },
+  {
+    slide: "15. Limitations — Physiological Limits",
+    section: "Nuance",
+    duration: "6:40 - 7:10",
+    text: `There are real limitations to digital connection.
+
+John Cacioppo, a neuroscientist at the University of Chicago, showed that text-based interaction cannot replicate the physiological stress relief of in-person contact. Physical proximity reduces cortisol in ways that text messages cannot.
+
+I include Cacioppo because intellectual honesty requires acknowledging what digital communities cannot do. The long-term goal remains rebuilding physical Third Places. Digital infrastructure serves as a bridge in the meantime.`,
+    cues: ["Honest, measured tone", "Frame as bridge"],
+  },
+  {
+    slide: "16. Conclusion — Synthesis",
+    section: "Close",
+    duration: "7:10 - 7:45",
+    text: `In conclusion:
+
+Physical Third Places are disappearing due to decades of structural neglect — suburban sprawl, highway design, and the creation of Social Deserts.
+
+Digital communities fill this gap as essential social infrastructure. For millions of isolated people, they are the most accessible lifeline available.
+
+Rather than dismissing screen time, we should ask why digital space is the only gathering place many people have left. Thank you.`,
+    cues: ["Slow, deliberate close", "Final question as takeaway", "Pause, then 'Thank you'"],
+  },
+  {
+    slide: "17. Works Cited",
     section: "End",
-    duration: "7:50 - 8:00",
-    text: `Thank you.`,
-    cues: ["Smile", "Nod"],
+    duration: "7:45 - 8:00",
+    text: `These are my sources. I am happy to take any questions.`,
+    cues: ["Smile", "Nod", "Open posture"],
   },
 ]
+
+// ONE unified reflection answer — same for every question so you can freestyle
+const reflectionAnswer = `My research process started with the Surgeon General's 2023 advisory, which established that loneliness is a public health crisis with measurable outcomes — a 29% increase in premature death risk. That data gave me the "problem" side of my research. I then needed to understand the cause, which led me to Ray Oldenburg's concept of "Third Places" and Ben Goldfarb's work on "Social Deserts" and "Friction Costs." These two sources explained that the loneliness crisis is structural — physical gathering spaces are disappearing because of how we build cities.
+
+From there, my research question became: can digital communities fill the gap left by disappearing Third Places? The most important evidence I found was Steinkuehler and Williams (2006), who showed that online gaming communities meet all of Oldenburg's Third Place criteria. I also used Putnam's "Bridging Social Capital" to measure whether these digital spaces actually produce functioning community bonds. The evidence showed they do.
+
+I also had to address criticisms. Turkle argues digital connection is shallow, and Zuboff argues platforms exploit users. I addressed both by using Quan-Haase and Wellman's "harm reduction" framework — acknowledging limitations while arguing that for people in Social Deserts, imperfect digital connection is the most accessible option available. Cacioppo's neuroscience research confirmed that digital contact has physiological limits, which I included for intellectual honesty.
+
+Every source I chose connects to the same argument chain: the health crisis (Surgeon General) is caused by structural problems (Oldenburg, Goldfarb), digital spaces can partially address it (Steinkuehler, Putnam), critics raise valid concerns (Turkle, Zuboff), and the harm reduction framework resolves those concerns for isolated populations (Quan-Haase).`
+
+// ONE unified argumentation answer — same for every question so you can freestyle
+const argumentationAnswer = `My argument is that for people isolated from physical Third Places, digital communities function as necessary social infrastructure. The conclusion rests on a chain of evidence.
+
+The Surgeon General's 2023 data establishes that loneliness is a public health crisis with measurable health consequences. Oldenburg's Third Place framework and Goldfarb's Social Deserts concept explain the structural cause — physical gathering spaces have been removed by suburban sprawl and car-dependent planning. This means the crisis is caused by infrastructure, and the solution should also be infrastructural.
+
+Steinkuehler and Williams (2006) provide the strongest evidence for my thesis. They showed that online gaming communities meet every criterion Oldenburg set for Third Places: neutral ground, regular participants, and conversation as the main activity. Putnam's Bridging Social Capital concept confirms that these spaces produce real community bonds across geographic and demographic lines.
+
+The main counterarguments come from Turkle, who argues digital bonds are shallow, and Zuboff, who argues platforms prioritize profit over connection. Both are valid concerns. I address them using Quan-Haase and Wellman's harm reduction framework: digital connection has real limitations, but for people living in Social Deserts — disabled individuals, rural teens, homebound seniors — the available options are digital community or total isolation. The harm reduction model acknowledges imperfection while validating necessity.
+
+Cacioppo's neuroscience research shows that digital contact cannot fully replicate physical co-regulation, which I include as a limitation. The long-term goal remains rebuilding physical Third Places. Digital communities serve as a bridge.
+
+If I had more time, I would investigate which specific design features of digital platforms promote bridging capital versus those that undermine it — for example, comparing persistent-identity spaces like Discord servers to anonymous feeds like Instagram comments. My current research treats "digital" as one category, and the platform-level differences likely matter for connection quality.`
 
 const reflectionQuestions = [
   {
     q: "What information did you need before you began your research, and how did that information shape your research?",
-    a: "I needed to understand if 'digital community' was biologically valid. I started by reading Cacioppo's neuroscience research on loneliness. That shaped my whole argument because it forced me to admit that digital contact *is* biologically inferior to physical contact. Instead of arguing that digital is 'better,' I shifted to arguing that it is a necessary form of 'harm reduction' for those who physically cannot access the superior option."
+    a: reflectionAnswer
   },
   {
-    q: "What evidence did you gather that you didn’t use? Why did you choose not to use it?",
-    a: "I researched VR and Metaverse communities extensively. I found fascinating data on 'phantom touch' in VR. I chose not to use it because it felt too niche and futuristic. I wanted my argument to apply to the common person using Discord or texting, not just VR enthusiasts. Focusing on VR would have made the argument seem less universal."
+    q: "What evidence did you gather that you didn't use? Why did you choose not to use it?",
+    a: reflectionAnswer
   },
   {
-    q: "How valid and reliable are the sources you used? How do you know? Which sources didn’t work?",
-    a: "I prioritized academic sociologists like Boyd and Turkle because they have longitudinal data. Turkle's 'Alone Together' is a seminal text. I also used the Surgeon General's report for health stats, which is highly reliable gov data. I discarded some 'tech optimist' blogs because they lacked data and were just opinion pieces defending social media without acknowledging the economic surveillance aspect."
+    q: "How valid and reliable are the sources you used? How do you know? Which sources didn't work?",
+    a: reflectionAnswer
   },
   {
     q: "How did you select the strategies you used to gather information or conduct research? Were they effective?",
-    a: "I used a 'Lens' strategy. I specifically looked for 'Structural' (urban planning) and 'Economic' (surveillance) sources separately. This was effective because it prevented me from getting stuck in a generic 'is social media good or bad' debate. It forced me to look at the *infrastructure* of connection, not just the content."
+    a: reflectionAnswer
   },
   {
     q: "How did your research question evolve as you moved through the research process?",
-    a: "Initially, my RQ was 'Is social media making us lonely?' It was too broad and binary. After reading Goldfarb on 'Friction Costs,' I realized the issue wasn't the phone, but the *lack of physical alternatives*. I shifted the question to 'To what extent could digital communities be meaningful social spaces *for those isolated from physical spaces*?' This qualification made the argument much stronger and more specific."
+    a: reflectionAnswer
   },
   {
-    q: "What information did you need that you weren’t able to find or locate? How did you go about trying to find that information?",
-    a: "I struggled to find direct comparison data on 'loneliness reduction' between pure digital users vs. pure physical users, because almost everyone uses both. It was hard to isolate variables. I tried to find studies on shut-ins or elderly populations restricted to home, using that as a proxy for 'pure digital' reliance, which helped fill the gap."
+    q: "What information did you need that you weren't able to find or locate? How did you go about trying to find that information?",
+    a: reflectionAnswer
   },
   {
     q: "How did you handle the differing perspectives in order to reach a conclusion?",
-    a: "I placed Turkle (Digital is fake) in direct conversation with the 'Social Desert' reality. I acknowledged Turkle is right about the *quality* of connection, but countered that she ignores the *access* to connection. My conclusion synthesized them: Digital connection is lower quality but higher accessibility, making it essential infrastructure for the isolated."
+    a: reflectionAnswer
   },
   {
     q: "What advice would you have for other researchers who consider this topic?",
-    a: "Don't get trapped in the 'content' wars. It doesn't matter if TikTok is toxic or not. Focus on the *function* of the connection. Look at it as infrastructure, like roads or bridges. It changes the entire analysis from a moral judgment to a structural necessity."
+    a: reflectionAnswer
   },
   {
     q: "If you had more time, what additional research would you conduct related to this issue?",
-    a: "I would research the specific design features of digital spaces that *promote* bridging capital vs those that destroy it. For example, comparing the social health of a Discord server vs. an Instagram feed. My current research treats 'digital' as one big bucket, but the nuances between platforms likely matter valid."
+    a: reflectionAnswer
   }
 ]
 
 const argumentationQuestions = [
   {
     q: "What additional questions emerged from your research? Why are these questions important?",
-    a: "A huge question is: If digital spaces are essential infrastructure, should they be public utilities? If Discord is the new town square, should a CEO control it? This is important because my argument establishes them as 'essential,' which logically leads to regulation, but I didn't have space to explore the legal nightmare of regulating independent platforms."
+    a: argumentationAnswer
   },
   {
     q: "What might be the real-world implications or consequences of your findings?",
-    a: "The implication is that urban planners need to see 'broadband access' as a mental health intervention, not just an economic one. For communities, it means we need to stop shaming screen time for isolated groups (like the elderly) and start teaching 'healthy digital citizenship' to maximize the connection benefits while minimizing the surveillance risks."
+    a: argumentationAnswer
   },
   {
     q: "Explain the level of certainty you have about your conclusion, solution, or recommendation.",
-    a: "I am highly certain that physical infrastructure is failing connection (the Surgeon General data is irrefutable). I am moderately certain that digital spaces are the *best* stopgap. It's possible that other interventions (like community centers) are better, but given the speed of the crisis, I am confident that validating digital community is the most immediate effective solution."
+    a: argumentationAnswer
   },
   {
     q: "How does your conclusion respond to any of the other research or sources you examined?",
-    a: "My conclusion pushes back against the 'Digital Detox' narrative popular in pop psychology. Sources like Turkle suggest less tech is better. My conclusion argues that for many, less tech means *zero* contact. I respond by arguing that 'detox' is a privileged solution for those with a physical village to return to."
+    a: argumentationAnswer
   },
   {
     q: "How did you use the conclusions and questions of others to advance your own research?",
-    a: "I used Oldenburg's definition of 'Third Places' (which he meant for coffee shops) and applied it to Discord servers. Using his criteria (neutral ground, leveler, conversation as main activity), I proved that digital spaces *fit* his definition, even though he never intended them to. This allowed me to 'stand on the shoulders' of established sociology to validate a modern phenomenon."
+    a: argumentationAnswer
   }
 ]
 
 export default function ScriptPage() {
   const [time, setTime] = React.useState(0)
-  const [isActive, setIsActive] = React.useState(false) // Start paused
+  const [isActive, setIsActive] = React.useState(false)
   const [activeSlideIndex, setActiveSlideIndex] = React.useState(-1)
-  const [showModal1, setShowModal1] = React.useState(false) // Reflection
-  const [showModal2, setShowModal2] = React.useState(false) // Argumentation
+  const [showModal1, setShowModal1] = React.useState(false)
+  const [showModal2, setShowModal2] = React.useState(false)
   const [isFocusMode, setIsFocusMode] = React.useState(false)
   const slideRefs = React.useRef<(HTMLDivElement | null)[]>([])
 
-  // Helper to parse "M:SS - M:SS" into start/end seconds
   const getSecondsRange = (durationStr: string) => {
     if (!durationStr) return { start: 0, end: 0 }
     const [startStr, endStr] = durationStr.split(" - ")
@@ -248,7 +305,6 @@ export default function ScriptPage() {
     return { start: parse(startStr), end: parse(endStr) }
   }
 
-  // Keyboard navigation
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
@@ -273,7 +329,6 @@ export default function ScriptPage() {
         if (nextIdx !== currentIdx) {
           const range = getSecondsRange(scriptData[nextIdx].duration)
           setTime(range.start)
-          // REMOVED setActiveSlideIndex here to force reflow via effect
         }
       }
     }
@@ -438,14 +493,18 @@ export default function ScriptPage() {
               >
                 <X size={32} />
               </button>
-              <h2 className="text-4xl font-black mb-8 border-b border-white/20 pb-4">Reflection on Process</h2>
-              <div className="space-y-8">
-                {reflectionQuestions.map((item, i) => (
-                  <div key={i} className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
-                    <p className="font-bold text-xl mb-4 text-blue-200 block">{i + 1}. {item.q}</p>
-                    <p className="text-lg leading-relaxed text-white/90">{item.a}</p>
-                  </div>
-                ))}
+              <h2 className="text-4xl font-black mb-4 border-b border-white/20 pb-4">Reflection on Process</h2>
+              <p className="text-white/60 text-lg mb-8">One unified answer — freestyle to fit whichever question they ask.</p>
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
+                <p className="text-lg leading-relaxed text-white/90 whitespace-pre-wrap">{reflectionAnswer}</p>
+              </div>
+              <div className="pt-8 border-t border-white/10">
+                <h3 className="text-xl font-bold text-white/60 mb-4">Possible Questions They Might Ask:</h3>
+                <div className="space-y-3">
+                  {reflectionQuestions.map((item, i) => (
+                    <p key={i} className="text-white/50 text-sm">{i + 1}. {item.q}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
@@ -462,14 +521,18 @@ export default function ScriptPage() {
               >
                 <X size={32} />
               </button>
-              <h2 className="text-4xl font-black mb-8 border-b border-white/20 pb-4">Extending Argumentation</h2>
-              <div className="space-y-8">
-                {argumentationQuestions.map((item, i) => (
-                  <div key={i} className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
-                    <p className="font-bold text-xl mb-4 text-purple-200 block">{i + 1}. {item.q}</p>
-                    <p className="text-lg leading-relaxed text-white/90">{item.a}</p>
-                  </div>
-                ))}
+              <h2 className="text-4xl font-black mb-4 border-b border-white/20 pb-4">Extending Argumentation</h2>
+              <p className="text-white/60 text-lg mb-8">One unified answer — freestyle to fit whichever question they ask.</p>
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-lg">
+                <p className="text-lg leading-relaxed text-white/90 whitespace-pre-wrap">{argumentationAnswer}</p>
+              </div>
+              <div className="pt-8 border-t border-white/10">
+                <h3 className="text-xl font-bold text-white/60 mb-4">Possible Questions They Might Ask:</h3>
+                <div className="space-y-3">
+                  {argumentationQuestions.map((item, i) => (
+                    <p key={i} className="text-white/50 text-sm">{i + 1}. {item.q}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>

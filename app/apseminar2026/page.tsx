@@ -1,667 +1,540 @@
 "use client"
 
 import * as React from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Maximize2, Minimize2, BarChart3, Users, Quote as QuoteIcon, ArrowRight, BookOpen, BrainCircuit, Activity } from "lucide-react"
+import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
-import Head from "next/head"
+import { Maximize2, Minimize2 } from "lucide-react"
 
-// --- Background Components ---
+// ──────────────────────────────────────────────────────────
+// SECTION COLOR ACCENTS — subtle, no outlines
+// ──────────────────────────────────────────────────────────
 
-const WavyBackground = () => (
-  <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-[0.4]">
-    <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <motion.path
-        d="M -10 50 Q 25 20 50 50 T 110 50"
-        fill="none"
-        stroke="#000000" // Black stroke
-        strokeWidth="0.8"
-        animate={{
-          d: [
-            "M -10 5 Q 25 0 50 5 T 110 5",
-            "M -10 5 Q 25 10 50 5 T 110 5",
-            "M -10 5 Q 25 0 50 5 T 110 5",
-          ]
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.path
-        d="M -10 95 Q 50 90 110 95"
-        fill="none"
-        stroke="#000000" // Secondary Black line
-        strokeWidth="0.4"
-        strokeDasharray="2 2"
-        animate={{
-          d: [
-            "M -10 95 Q 50 100 110 95",
-            "M -10 95 Q 50 90 110 95",
-            "M -10 95 Q 50 100 110 95",
-          ]
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-    </svg>
-  </div>
-)
+type Theme = {
+  accent: string
+  accentBg: string
+  glow: string
+}
 
-// --- Slide Data ---
+const themes: Record<string, Theme> = {
+  opening: { accent: "text-blue-400", accentBg: "bg-blue-400", glow: "radial-gradient(ellipse 80% 60% at 20% 40%, rgba(59,130,246,0.07) 0%, transparent 100%)" },
+  problem: { accent: "text-rose-400", accentBg: "bg-rose-400", glow: "radial-gradient(ellipse 80% 60% at 80% 30%, rgba(244,63,94,0.07) 0%, transparent 100%)" },
+  framework: { accent: "text-violet-400", accentBg: "bg-violet-400", glow: "radial-gradient(ellipse 70% 70% at 30% 70%, rgba(139,92,246,0.07) 0%, transparent 100%)" },
+  structural: { accent: "text-amber-400", accentBg: "bg-amber-400", glow: "radial-gradient(ellipse 80% 60% at 70% 50%, rgba(245,158,11,0.07) 0%, transparent 100%)" },
+  empirical: { accent: "text-teal-400", accentBg: "bg-teal-400", glow: "radial-gradient(ellipse 70% 60% at 50% 30%, rgba(20,184,166,0.07) 0%, transparent 100%)" },
+  counter: { accent: "text-orange-400", accentBg: "bg-orange-400", glow: "radial-gradient(ellipse 80% 60% at 20% 80%, rgba(249,115,22,0.07) 0%, transparent 100%)" },
+  conclusion: { accent: "text-emerald-400", accentBg: "bg-emerald-400", glow: "radial-gradient(ellipse 90% 70% at 50% 50%, rgba(16,185,129,0.07) 0%, transparent 100%)" },
+}
 
-const slides = [
+// ──────────────────────────────────────────────────────────
+// SLIDES DATA
+// ──────────────────────────────────────────────────────────
+
+const slides: any[] = [
   {
-    id: "title",
-    type: "title",
-    header: "AP SEMINAR IMP",
+    id: 1, theme: "opening", type: "title",
     title: "Digital Communities as Essential Social Infrastructure",
-    author: "Taylor Daan",
+    subtitle: "Taylor Daan",
   },
   {
-    id: "quote-slide",
-    type: "quote",
-    header: "THE AXIS OF MEMORY",
-    quote: "“Identity is a function of relationships to community, specifically through tangible 'scenery'.”",
-    author: "Haruki Murakami (2002)",
-    citation: "",
+    id: 2, theme: "opening", type: "quote",
+    quote: "Loneliness is far more than just a bad feeling. It harms both individual and societal health. It is associated with a greater risk of cardiovascular disease, dementia, stroke, depression, anxiety, and premature death.",
+    author: "Dr. Vivek Murthy",
+    role: "U.S. Surgeon General, 2023",
   },
   {
-    id: "key-factors",
-    type: "standard-content",
-    layout: "right", // Image on right
-    header: "CONTEXT",
-    title: "Key Factors",
-    bullets: [
-      "Axis = Physical stability (Murakami, 2002)",
-      "Destruction of scenery breaks the axis",
-      "Modern planning severs connections (Goldfarb, 2023)"
+    id: 3, theme: "problem", type: "stats",
+    title: "Loneliness Is a Public Health Crisis",
+    stats: [
+      { value: "29%", label: "increased risk of premature death" },
+      { value: "15", label: "cigarettes/day \u2014 equivalent health impact" },
+      { value: "50%", label: "of U.S. adults report measurable loneliness" },
     ],
-    image: "https://picsum.photos/seed/prague/800/600",
-    citation: "Source: Murakami (2002) / Goldfarb (2023)",
+    source: "U.S. Surgeon General Advisory, 2023",
+    image: "/us-surgeongeneral-loneliness-2023.png",
+    imageAlt: "U.S. Surgeon General Advisory on Loneliness",
   },
   {
-    id: "problem",
-    type: "standard-content",
-    layout: "left", // Image on left
-    header: "THE PROBLEM",
-    title: "Public Health Crisis",
-    bullets: [
-      "Loneliness declared an epidemic (Surgeon General, 2023)",
-      "29% increased premature death risk",
-      "Equivalent to smoking 15 cigarettes/day",
-      "Crisis of Connection in modern era"
+    id: 4, theme: "problem", type: "split-text",
+    title: "Disappearing Third Places",
+    blocks: [
+      { heading: "Third Places", body: "Coffee shops, parks, libraries \u2014 gathering spots outside home and work where community forms.", cite: "Oldenburg, 1989" },
+      { heading: "Social Deserts", body: "Neighborhoods built without anywhere to gather. Highways, suburban sprawl, and car-dependent planning eliminated these spaces.", cite: "Goldfarb, 2023" },
     ],
-    image: "https://picsum.photos/seed/healthchart/1280/720",
-    citation: "Data Source: U.S. Surgeon General (2023)",
+    image: "/xpoJW1i2LWtflxEImNfK-K-rdZ4eULQ6EUD71TGS77U.webp",
+    imageAlt: "Suburban sprawl aerial view",
   },
   {
-    id: "rq-slide",
-    type: "statement",
-    header: "RESEARCH QUESTION",
-    text: "To what extent could digital communities be considered meaningful social spaces for those who are isolated from physical spaces?",
+    id: 5, theme: "framework", type: "bigtext",
+    label: "Research Question",
+    text: "To what extent can digital communities serve as meaningful social spaces for those who are isolated from physical Third Places?",
   },
   {
-    id: "key-concepts",
-    type: "standard-content",
-    layout: "right",
-    header: "KEY CONCEPTS",
-    title: "Definitions",
-    bullets: [
-      "Third Places (Oldenburg, 1989): Neutral connection hubs",
-      "Social Deserts (Goldfarb, 2023): Design preventing interaction",
-      "Bridging Social Capital (Putnam, 2000): Diverse connections"
+    id: 6, theme: "framework", type: "three-cards",
+    cards: [
+      { num: "01", term: "Third Places", def: "Neutral gathering spots outside home and work", source: "Oldenburg, 1989" },
+      { num: "02", term: "Social Deserts", def: "Areas designed without spaces for interaction", source: "Goldfarb, 2023" },
+      { num: "03", term: "Bridging Social Capital", def: "Connections across diverse groups that hold communities together", source: "Putnam, 2000" },
     ],
-    image: "https://picsum.photos/seed/coffeeshop/800/600",
-    citation: "Source: Oldenburg (1989) / Ferreira (2021)",
   },
   {
-    id: "thesis-slide",
-    type: "thesis",
-    header: "THESIS STATEMENT",
-    text: "For individuals trapped in Social Deserts, Virtual Communities function as necessary “Third Places” that provide essential social infrastructure and support social inclusion.",
+    id: 7, theme: "framework", type: "bigtext",
+    label: "Thesis",
+    text: "For individuals trapped in Social Deserts, virtual communities function as necessary \u201CThird Places\u201D that provide essential social infrastructure and support social inclusion.",
   },
   {
-    id: "perspectives-intro",
-    type: "perspectives-intro",
-    header: "OVERVIEW",
-    title: "Perspectives",
-    perspectives: [
-      { label: "Structural", icon: BarChart3, desc: "Barriers to Entry" },
-      { label: "Economic", icon: Users, desc: "Surveillance Capitalism" },
+    id: 8, theme: "framework", type: "two-boxes",
+    cols: [
+      { num: "01", title: "Structural", desc: "Who is excluded from physical spaces, and why" },
+      { num: "02", title: "Empirical", desc: "Do digital spaces actually function as Third Places" },
     ],
-    image: "https://picsum.photos/seed/matrixcode/1280/720",
   },
   {
-    id: "p1-youth",
-    type: "standard-content",
-    layout: "left",
-    header: "PERSPECTIVE 1",
-    subHeader: "STRUCTURAL",
-    title: "Networked Publics",
-    bullets: [
-      "Concept: 'Networked Publics' (Boyd, 2014)",
-      "Curfews/Safety fears restrict youth",
-      "Digital = ONLY unsupervised venue",
-      "Barrier is legal, not choice"
+    id: 9, theme: "structural", type: "split-text",
+    title: "Youth Excluded from Public Space",
+    blocks: [
+      { heading: "", body: "Curfew laws, parental restrictions, and safety fears prevent teens from accessing public spaces.", cite: "" },
+      { heading: "", body: "The internet is the only unsupervised public venue available to them. Their exclusion is systemic.", cite: "" },
     ],
-    image: "https://picsum.photos/seed/teenphone/1280/720",
-    citation: "Source: Boyd (2014)",
+    source: "danah boyd, It\u2019s Complicated (2014)",
+    sourceRole: "Researcher, Microsoft",
+    image: "/empty-playground-closed-quarantine-covid-blocked-red-warning-tape-stay-home-please-179761275.webp",
+    imageAlt: "Empty closed playground",
   },
   {
-    id: "p1-sprawl",
-    type: "standard-content",
-    layout: "right",
-    header: "PERSPECTIVE 1",
-    subHeader: "STRUCTURAL",
-    title: "High 'Friction Costs'",
-    bullets: [
-      "Concept: High 'Friction Costs' (Goldfarb, 2023)",
-      "Suburban sprawl segments communities",
-      "Highways create 'Social Deserts'",
-      "Isolation is structural, not personal"
+    id: 10, theme: "structural", type: "split-text",
+    title: "Impossible \u201CFriction Costs\u201D",
+    blocks: [
+      { heading: "", body: "Suburban design raises the cost of every social interaction. No sidewalks, no town squares, no walkable centers.", cite: "" },
+      { heading: "", body: "A 45-minute drive to see a friend removes spontaneous connection entirely.", cite: "" },
     ],
-    image: "https://picsum.photos/seed/suburbsprawl/1280/720",
-    citation: "Source: Goldfarb (2023)",
+    source: "Goldfarb, Crossings (2023)",
+    sourceRole: "Environmental Journalist",
+    image: "/los-angeles-highway-interchange-aerial-photos.jpg",
+    imageAlt: "LA highway interchange",
   },
   {
-    id: "p1-counter",
-    type: "standard-content",
-    layout: "left",
-    header: "COUNTERARGUMENT",
-    subHeader: "STRUCTURAL",
-    title: "Surveillance Capitalism",
-    bullets: [
-      "Platforms prioritize profit over connection (Zuboff, 2019)",
-      "Illusion of Companionship (Turkle, 2011)"
+    id: 11, theme: "empirical", type: "split-text",
+    title: "Digital Spaces Are Third Places",
+    blocks: [
+      { heading: "", body: "Online communities meet all of Oldenburg\u2019s Third Place criteria: neutral ground, regular participants, conversation as main activity.", cite: "" },
+      { heading: "", body: "Real bridging social capital forms across geographic and demographic lines.", cite: "" },
     ],
-    image: "https://picsum.photos/seed/surveillance/1280/720",
-    citation: "Source: Steinkuehler & Williams (2006)",
+    source: "Steinkuehler & Williams (2006)",
+    sourceRole: "Journal of Computer-Mediated Communication",
+    image: "/Content-Blog-Banner_Q1-2024_1125x600_066_Discord-Communities.png",
+    imageAlt: "Discord community server",
   },
   {
-    id: "p2-economic-1",
-    type: "standard-content",
-    layout: "right",
-    header: "PERSPECTIVE 2",
-    subHeader: "ECONOMIC",
-    title: "Profit Over Connection",
-    bullets: [
-      "Surveillance Capitalism (Zuboff, 2019)",
-      "Experience extracted as raw data",
-      "Goal: Prediction and Behavioral Modification",
-      "Connection is secondary to profit"
+    id: 12, theme: "empirical", type: "points",
+    title: "Bridging Capital Beyond Geography",
+    points: [
+      "Online communities remove the geographic barrier entirely",
+      "Disabled, rural, and homebound individuals gain access to social life their environment does not provide",
     ],
-    image: "https://covers.openlibrary.org/b/id/8381666-L.jpg",
-    citation: "Source: Zuboff (2019)",
+    source: "Putnam (2000)",
+    sourceRole: "Political Scientist, Harvard",
   },
   {
-    id: "p2-economic-2",
-    type: "standard-content",
-    layout: "left",
-    header: "PERSPECTIVE 2",
-    subHeader: "ECONOMIC",
-    title: "Illusion of Companionship",
-    bullets: [
-      "Sherry Turkle (2011): 'Alone Together'",
-      "We expect more from technology and less from each other",
-      "Digital bonds may be 'simulated' rather than authentic",
-      "Vulnerability is edited out of interaction"
+    id: 13, theme: "counter", type: "counter",
+    title: "The Quality Problem",
+    args: [
+      { author: "Turkle (2011)", role: "Professor, MIT", point: "Digital bonds create an \u201Cillusion of companionship.\u201D Vulnerability is edited out, connections stay shallow." },
+      { author: "Zuboff (2019)", role: "Professor, Harvard Business School", point: "Platforms extract behavioral data for profit. Connection is secondary to their business model." },
     ],
-    image: "https://picsum.photos/seed/illusion/1280/720",
-    citation: "Source: Turkle (2011)",
+    image: "/9780465093656.webp",
+    imageAlt: "Alone Together by Sherry Turkle",
   },
   {
-    id: "p2-economic-counter",
-    type: "standard-content",
-    layout: "right",
-    header: "COUNTERARGUMENT",
-    subHeader: "ECONOMIC",
+    id: 14, theme: "counter", type: "points",
     title: "A Necessary Lifeline",
-    bullets: [
-      "Rebuttal: Flawed vessel, real need",
-      "For the isolated, 'imperfect' connection is better than none",
-      "We must use available infrastructure (even if corporate)",
-      "Criticism comes from a place of privilege"
+    points: [
+      "Both criticisms assume the person has a choice between physical and digital connection",
+      "For people in Social Deserts, the options are digital community or total isolation",
+      "Harm reduction: an imperfect tool still addresses a real need",
     ],
-    image: "https://picsum.photos/seed/solitude/1280/720",
-    citation: "Status: Validated Necessity",
+    source: "Quan-Haase & Wellman (2004)",
+    sourceRole: "Harm Reduction Framework",
   },
   {
-    id: "limitations",
-    type: "standard-content",
-    layout: "left",
-    header: "DISCUSSION",
-    subHeader: "LIMITATIONS",
+    id: 15, theme: "counter", type: "points",
     title: "Physiological Limits",
-    bullets: [
-      "Stress response failure (Cacioppo, 2008)",
-      "Text lacks physiological co-regulation",
-      "Refutation: Harm Reduction (Quan-Haase, 2004)",
-      "Better than 'toxic biological isolation'"
+    points: [
+      "Text-based interaction cannot replicate the physical stress relief of in-person contact",
+      "Digital communities serve as a bridge, not a permanent replacement",
     ],
-    image: "https://picsum.photos/seed/biology/1280/720", // Replaced broken wikimedia link
-    citation: "Source: Cacioppo (2008)",
+    source: "Cacioppo (2008)",
+    sourceRole: "Neuroscientist, University of Chicago",
   },
   {
-    id: "conclusion-slide",
-    type: "standard-content",
-    layout: "right",
-    header: "CONCLUSION",
-    title: "Synthesis",
-    bullets: [
-      "Physical axis broken by neglect (Murakami/Goldfarb)",
-      "Digital space is the lifeline",
-      "Must validate virtual connections",
-      "Mitigates the health crisis"
+    id: 16, theme: "conclusion", type: "conclusion",
+    lines: [
+      "Physical Third Places are disappearing due to structural neglect",
+      "Digital communities fill this gap as essential social infrastructure",
+      "The real question: why is digital space the only gathering place many people have left",
     ],
-    image: "https://picsum.photos/seed/futurebridge/1280/720",
   },
   {
-    id: "references-slide",
-    type: "references",
-    header: "APPENDIX",
+    id: 17, theme: "conclusion", type: "references",
     title: "Works Cited",
     refs: [
-      "Boyd, D. (2014). It's Complicated. Yale University Press.",
+      "Boyd, D. (2014). It\u2019s Complicated. Yale University Press.",
+      "Cacioppo, J. T. & Patrick, W. (2008). Loneliness. W.W. Norton.",
       "Goldfarb, B. (2023). Crossings. W.W. Norton.",
-      "Murakami, H. (2002). A Walk to Kobe.",
-      "Office of the U.S. Surgeon General. (2023). Advisory on Social Connection.",
-      "Steinkuehler, C., & Williams, D. (2006). Where Everybody Knows Your Name.",
-      "Zuboff, S. (2019). The Age of Surveillance Capitalism.",
-      "Turkle, S. (2011). Alone Together.",
+      "Oldenburg, R. (1989). The Great Good Place. Marlowe & Company.",
+      "Office of the U.S. Surgeon General. (2023). Our Epidemic of Loneliness and Isolation.",
+      "Putnam, R. D. (2000). Bowling Alone. Simon & Schuster.",
+      "Quan-Haase, A. & Wellman, B. (2004). How does the Internet affect social capital? MIT Press.",
+      "Steinkuehler, C. & Williams, D. (2006). Where Everybody Knows Your (Screen) Name. JCMC, 11(4).",
+      "Turkle, S. (2011). Alone Together. Basic Books.",
+      "Zuboff, S. (2019). The Age of Surveillance Capitalism. PublicAffairs.",
     ],
   },
 ]
 
-// --- Unified Components ---
-
-const MasterCard = ({ children, className }: { children: React.ReactNode, className?: string }) => (
-  <motion.div
-    initial={{ opacity: 0, scale: 0.98, y: 10 }}
-    animate={{ opacity: 1, scale: 1, y: 0 }}
-    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-    className={cn(
-      "w-full h-full relative bg-white overflow-hidden flex flex-col p-6 md:p-12 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] rounded-[2.5rem] ring-1 ring-black/[0.03]",
-      className
-    )}
-  >
-    {children}
-  </motion.div>
-)
+// ──────────────────────────────────────────────────────────
+// MAIN
+// ──────────────────────────────────────────────────────────
 
 export default function PresentationPage() {
-  const [currentSlide, setCurrentSlide] = React.useState(0)
-  const [direction, setDirection] = React.useState(0)
-  const [isFullscreen, setIsFullscreen] = React.useState(false)
+  const [current, setCurrent] = React.useState(0)
+  const [isFs, setIsFs] = React.useState(false)
   const [mounted, setMounted] = React.useState(false)
-  const containerRef = React.useRef<HTMLDivElement>(null)
-
-  const [timerTime, setTimerTime] = React.useState(480) // 8 minutes
-  const [timerActive, setTimerActive] = React.useState(false)
-  const [timerVisible, setTimerVisible] = React.useState(false)
+  const ref = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(() => { setMounted(true) }, [])
 
-  // Timer countdown logic
-  React.useEffect(() => {
-    let interval: NodeJS.Timeout
-    if (timerActive && timerTime > 0) {
-      interval = setInterval(() => {
-        setTimerTime((prev) => prev - 1)
-      }, 1000)
-    }
-    return () => clearInterval(interval)
-  }, [timerActive, timerTime])
+  const go = React.useCallback((i: number) => { if (i >= 0 && i < slides.length) setCurrent(i) }, [])
+  const next = React.useCallback(() => { if (current < slides.length - 1) go(current + 1) }, [current, go])
+  const prev = React.useCallback(() => { if (current > 0) go(current - 1) }, [current, go])
 
-  const toggleFullscreen = (e: React.MouseEvent) => {
+  React.useEffect(() => {
+    const h = (e: KeyboardEvent) => {
+      if (["ArrowRight", "Space", "PageDown", "ArrowDown"].includes(e.code)) { e.preventDefault(); next() }
+      else if (["ArrowLeft", "PageUp", "ArrowUp"].includes(e.code)) { e.preventDefault(); prev() }
+    }
+    window.addEventListener("keydown", h)
+    return () => window.removeEventListener("keydown", h)
+  }, [next, prev])
+
+  const toggleFs = (e: React.MouseEvent) => {
     e.stopPropagation()
-    if (!document.fullscreenElement) {
-      containerRef.current?.requestFullscreen()
-      setIsFullscreen(true)
-    } else {
-      document.exitFullscreen()
-      setIsFullscreen(false)
-    }
+    if (!document.fullscreenElement) { ref.current?.requestFullscreen(); setIsFs(true) }
+    else { document.exitFullscreen(); setIsFs(false) }
   }
 
-  const nextSlide = React.useCallback(() => {
-    if (currentSlide < slides.length - 1) {
-      setDirection(1)
-      setCurrentSlide((prev) => prev + 1)
-    }
-  }, [currentSlide])
-
-  const prevSlide = React.useCallback(() => {
-    if (currentSlide > 0) {
-      setDirection(-1)
-      setCurrentSlide((prev) => prev - 1)
-    }
-  }, [currentSlide])
-
-  React.useEffect(() => {
-    if (currentSlide > 0 && !timerActive) {
-      setTimerActive(true)
-      setTimerVisible(true)
-    }
-  }, [currentSlide, timerActive])
-
-  // Enhanced Key Handling including PageUp/PageDown and ArrowUp/ArrowDown
-  React.useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (["ArrowRight", "Space", "PageDown", "ArrowDown"].includes(e.code)) {
-        e.preventDefault()
-        nextSlide()
-      } else if (["ArrowLeft", "PageUp", "ArrowUp"].includes(e.code)) {
-        e.preventDefault()
-        prevSlide()
-      }
-    }
-    window.addEventListener("keydown", handleKeyDown)
-    return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [nextSlide, prevSlide])
-
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60)
-    const secs = seconds % 60
-    return `${mins}:${secs.toString().padStart(2, "0")}`
-  }
-
-  // Preload Next Image
-  const nextSlideImage = slides[currentSlide + 1]?.type === 'standard-content'
-    // @ts-ignore
-    ? slides[currentSlide + 1]?.image
-    : null;
+  const slide = slides[current]
+  const theme = themes[slide.theme]
 
   return (
-    <div className="bg-[#Fdfbf7] min-h-screen text-black overflow-hidden font-sans relative selection:bg-yellow-200">
-      <Head>
-        {nextSlideImage && <link rel="preload" as="image" href={nextSlideImage} />}
-      </Head>
-
-      <div className="absolute inset-0 z-[60] pointer-events-none opacity-[0.04]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
-        }}
-      />
-
-      <WavyBackground />
-
-      {/* Floating Fullscreen button */}
-      <div className="fixed top-6 right-6 z-50">
-        {mounted && (
-          <button
-            onClick={toggleFullscreen}
-            className="p-3 bg-white/50 backdrop-blur hover:bg-white/80 text-black rounded-full transition-all duration-300 shadow-sm border border-black/5"
-          >
-            {isFullscreen ? <Minimize2 size={24} /> : <Maximize2 size={24} />}
-          </button>
-        )}
-      </div>
-
-      {/* Main Slide Container */}
+    <div className="bg-[#09090b] min-h-screen text-white font-sans">
       <div
-        ref={containerRef}
-        onClick={nextSlide}
-        className="relative w-full h-screen cursor-pointer select-none p-4 md:p-8 flex items-center justify-center"
+        ref={ref}
+        onClick={next}
+        onContextMenu={(e) => { e.preventDefault(); prev() }}
+        className="relative w-full h-screen cursor-pointer select-none overflow-hidden bg-[#09090b]"
+        tabIndex={0}
       >
-        {/* Timer - Fixed Top Left (Inside Container for Fullscreen) */}
-        {timerVisible && (
-          <div className="fixed top-4 left-4 z-[100] pointer-events-none select-none">
-            <span className="font-mono text-xl font-bold text-black/[0.05]">
-              {formatTime(timerTime)}
-            </span>
-          </div>
-        )}
+        {/* Ambient glow */}
+        <div className="absolute inset-0 pointer-events-none transition-all duration-[1.5s]" style={{ background: theme.glow }} />
 
-        {/* Hidden Preloader for next image */}
-        {nextSlideImage && (
-          <div className="hidden">
-            <Image src={nextSlideImage} alt="preload" width={1} height={1} priority={true} />
-          </div>
-        )}
-
-        <AnimatePresence initial={false} custom={direction} mode="wait">
+        {/* Slide */}
+        <AnimatePresence mode="wait">
           <motion.div
-            key={currentSlide}
-            custom={direction}
-            initial={{ opacity: 0, x: direction > 0 ? 50 : -50, scale: 0.95 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: direction < 0 ? 50 : -50, scale: 0.95 }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }} // Elegant ease
-            className="w-full h-full max-w-[1700px] max-h-[1000px] mx-auto z-10"
+            key={slide.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] as const }}
+            className="absolute inset-0 flex items-center justify-center px-[7%] py-16"
           >
-            <SlideContent slide={slides[currentSlide]} />
+            <Slide slide={slide} theme={theme} />
           </motion.div>
         </AnimatePresence>
+
+        {/* Fullscreen */}
+        {mounted && (
+          <button onClick={toggleFs} className="fixed top-5 right-5 z-50 p-2.5 bg-white/5 hover:bg-white/10 rounded-lg transition">
+            {isFs ? <Minimize2 size={16} className="text-white/30" /> : <Maximize2 size={16} className="text-white/30" />}
+          </button>
+        )}
+
+        {/* Progress */}
+        <div className="absolute bottom-0 left-0 right-0 z-50 h-[2px] bg-white/[0.03]">
+          <div className={`h-full transition-all duration-700 ${theme.accentBg} opacity-30`} style={{ width: `${((current + 1) / slides.length) * 100}%` }} />
+        </div>
+
+        {/* Counter */}
+        <div className="absolute bottom-4 right-6 z-50 pointer-events-none">
+          <span className="font-mono text-[11px] text-white/10">{current + 1}/{slides.length}</span>
+        </div>
       </div>
     </div>
   )
 }
 
-function SlideContent({ slide }: { slide: any }) {
+// ──────────────────────────────────────────────────────────
+// SLIDE RENDERER — big, bold, no outlines
+// ──────────────────────────────────────────────────────────
 
-  const contentAnim = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { staggerChildren: 0.1, delayChildren: 0.1 } }
-  }
-  const itemAnim = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 }
-  }
-
-  // Shared Header Component
-  const SlideHeader = ({ title, subHeader, header, className, align = "left" }: any) => (
-    <div className={cn("mb-[4vh] shrink-0", className, align === "center" && "text-center", align === "right" && "text-right")}>
-      {header && <h3 className="text-xs md:text-sm font-black tracking-[0.3em] text-black/40 uppercase mb-2">{header}</h3>}
-      <div className="flex flex-col gap-1">
-        {subHeader ? (
-          <>
-            {/* Subheader dominant mode */}
-            <h1 className="text-[6vw] lg:text-[5vw] font-black tracking-tighter text-black leading-[0.9]">{subHeader}</h1>
-            <h2 className="text-[2.5vw] lg:text-[1.5vw] font-bold text-black/60 tracking-tight leading-none">{title}</h2>
-          </>
-        ) : (
-          /* Title dominant mode */
-          <h1 className="text-[5vw] lg:text-[4vw] font-black tracking-tighter text-black leading-none">{title}</h1>
-        )}
-      </div>
-    </div>
-  )
-
-
+function Slide({ slide, theme }: { slide: any; theme: Theme }) {
   switch (slide.type) {
     case "title":
       return (
-        <MasterCard className="text-center items-center justify-center gap-8 !bg-black text-white rounded-none md:rounded-[3rem]">
-          {/* Abstract Background Accents */}
-          <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-[100px] rounded-full pointer-events-none" />
-
-          <motion.div variants={contentAnim} initial="hidden" animate="show" className="max-w-[90vw] relative z-10">
-            <motion.p variants={itemAnim} className="text-lg md:text-xl font-black tracking-[0.4em] text-white/50 mb-[2vh] uppercase">{slide.header}</motion.p>
-            <motion.h1 variants={itemAnim} className="text-[6vw] md:text-[6vw] font-black tracking-tighter leading-[1.0] text-white mb-[4vh] max-w-5xl mx-auto">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">{slide.title}</span>
-            </motion.h1>
-            <motion.p variants={itemAnim} className="text-xl md:text-2xl font-medium text-white/60 uppercase tracking-widest">{slide.author}</motion.p>
-          </motion.div>
-        </MasterCard>
+        <div className="text-center w-full max-w-5xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+            className="text-[64px] font-black tracking-[-0.03em] leading-[1.05] text-white"
+          >{slide.title}</motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
+            className="text-lg text-white/25 font-medium mt-8 tracking-wide"
+          >{slide.subtitle}</motion.p>
+        </div>
       )
 
     case "quote":
       return (
-        <MasterCard className="text-center items-center justify-center bg-[#f8f8f8]">
-          <motion.div variants={contentAnim} initial="hidden" animate="show" className="max-w-[85vw]">
-            <motion.div variants={itemAnim}><QuoteIcon className="w-[6vw] h-[6vw] text-black/10 mx-auto mb-8" strokeWidth={1} /></motion.div>
-            <motion.h3 variants={itemAnim} className="text-sm font-bold tracking-[0.3em] text-black/40 mb-8 uppercase">{slide.header}</motion.h3>
-            <motion.h2 variants={itemAnim} className="text-[4vw] font-black leading-[1.1] text-black mb-12 italic tracking-tight relative inline-block">
-              {slide.quote}
-            </motion.h2>
-            <motion.div variants={itemAnim} className="space-y-2">
-              <p className="text-[2vw] font-bold text-black">— {slide.author}</p>
-            </motion.div>
+        <div className="text-center w-full max-w-4xl">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+            className="text-[28px] font-semibold leading-[1.6] text-white/75 italic"
+          >&ldquo;{slide.quote}&rdquo;</motion.p>
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
+            <p className={`text-base font-bold mt-10 ${theme.accent}`}>{slide.author}</p>
+            <p className="text-sm text-white/20 mt-1">{slide.role}</p>
           </motion.div>
-        </MasterCard>
+        </div>
       )
 
-    case "grid":
-      // ... existing grid code if needed, but looks like we aren't using grid type in new slides ...
-      return null;
-
-    case "statement":
+    case "stats":
       return (
-        <MasterCard className="items-center justify-center text-center !bg-black text-white">
-          <div className="max-w-[85vw]">
-            <h3 className="text-lg md:text-xl font-black tracking-widest text-white/50 mb-12 uppercase">{slide.header}</h3>
-            <h2 className="text-[4.5vw] font-medium leading-[1.2] text-white tracking-tight">
-              {slide.text}
-            </h2>
+        <div className="w-full max-w-6xl flex items-center gap-16">
+          <div className="flex-1">
+            <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+              className="text-[42px] font-black tracking-tight text-white mb-10"
+            >{slide.title}</motion.h2>
+            <div className="space-y-8">
+              {slide.stats.map((s: any, i: number) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.15 + i * 0.1 }}
+                >
+                  <span className={`text-[56px] font-black ${theme.accent} leading-none`}>{s.value}</span>
+                  <p className="text-base text-white/35 font-medium mt-1">{s.label}</p>
+                </motion.div>
+              ))}
+            </div>
+            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
+              className="text-xs text-white/15 mt-8"
+            >{slide.source}</motion.p>
           </div>
-        </MasterCard>
+          {slide.image && (
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
+              className="relative w-[400px] h-[450px] shrink-0 rounded-2xl overflow-hidden bg-white/[0.02]"
+            >
+              <Image src={slide.image} alt={slide.imageAlt} fill className="object-contain p-4" sizes="400px" />
+            </motion.div>
+          )}
+        </div>
       )
 
-    case "thesis":
+    case "split-text":
       return (
-        <MasterCard className="items-center justify-center text-center border-[20px] border-white/5 !bg-black">
-          <div className="max-w-[90vw]">
-            <h1 className="text-[6vw] font-black text-white/10 mb-[4vh] uppercase tracking-tighter leading-none absolute top-12 left-0 w-full text-center select-none">
-              {slide.header}
-            </h1>
-            <h2 className="text-[3vw] font-bold leading-[1.3] text-white relative z-10">
-              {slide.text}
-            </h2>
+        <div className="w-full max-w-6xl flex items-center gap-14">
+          <div className="flex-1">
+            <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+              className="text-[40px] font-black tracking-tight text-white mb-8"
+            >{slide.title}</motion.h2>
+            <div className="space-y-6">
+              {slide.blocks.map((b: any, i: number) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -15 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.12 + i * 0.1 }}
+                >
+                  {b.heading && <p className={`text-xl font-black ${theme.accent} mb-2`}>{b.heading}</p>}
+                  <p className="text-lg text-white/55 font-medium leading-relaxed">{b.body}</p>
+                  {b.cite && <p className="text-xs text-white/15 mt-2">{b.cite}</p>}
+                </motion.div>
+              ))}
+            </div>
+            {slide.source && (
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
+                className="mt-8 flex items-baseline gap-3"
+              >
+                <p className={`text-sm font-bold ${theme.accent} opacity-70`}>{slide.source}</p>
+                {slide.sourceRole && <p className="text-xs text-white/15">{slide.sourceRole}</p>}
+              </motion.div>
+            )}
           </div>
-        </MasterCard>
+          {slide.image && (
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25 }}
+              className="relative w-[420px] h-[380px] shrink-0 rounded-2xl overflow-hidden bg-white/[0.02]"
+            >
+              <Image src={slide.image} alt={slide.imageAlt} fill className="object-contain p-3" sizes="420px" />
+            </motion.div>
+          )}
+        </div>
       )
 
-    case "perspectives-intro":
+    case "bigtext":
       return (
-        <MasterCard className="items-center justify-center text-center">
-          <h2 className="text-lg font-black tracking-widest text-black/40 mb-6 uppercase">{slide.header}</h2>
-          <h1 className="text-[8vw] font-black tracking-tighter text-black mb-12 leading-none">{slide.title}</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[80vw]">
-            {slide.perspectives.map((p: any, i: number) => (
-              <div key={i} className="bg-black text-white rounded-[2rem] p-8 md:p-12 flex flex-col items-center justify-center gap-6 shadow-2xl relative overflow-hidden group hover:scale-[1.02] transition-transform">
-                <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-all duration-500" />
-                <p.icon className="w-[6vw] h-[6vw] mb-4 text-white/90" strokeWidth={1} />
-                <div>
-                  <span className="text-[3vw] font-black uppercase tracking-widest block mb-2">{p.label}</span>
-                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/50">{p.desc}</span>
-                </div>
-              </div>
+        <div className="text-center w-full max-w-4xl">
+          {slide.label && (
+            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+              className={`text-sm font-bold ${theme.accent} uppercase tracking-[0.2em] mb-8`}
+            >{slide.label}</motion.p>
+          )}
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
+            className="text-[34px] font-bold leading-[1.5] text-white/90"
+          >{slide.text}</motion.h2>
+        </div>
+      )
+
+    case "three-cards":
+      return (
+        <div className="w-full max-w-5xl grid grid-cols-3 gap-8">
+          {slide.cards.map((c: any, i: number) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.08 + i * 0.1 }}
+              className="bg-white/[0.03] rounded-2xl p-8"
+            >
+              <span className={`text-[42px] font-black ${theme.accent} opacity-15 block mb-4`}>{c.num}</span>
+              <p className="text-xl font-black text-white mb-3">{c.term}</p>
+              <p className="text-sm text-white/40 font-medium leading-relaxed">{c.def}</p>
+              <p className="text-[10px] text-white/15 mt-4">{c.source}</p>
+            </motion.div>
+          ))}
+        </div>
+      )
+
+    case "two-boxes":
+      return (
+        <div className="w-full max-w-5xl grid grid-cols-2 gap-12">
+          {slide.cols.map((col: any, i: number) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 + i * 0.12 }}
+            >
+              <span className={`text-[64px] font-black ${theme.accent} opacity-12 block mb-3`}>{col.num}</span>
+              <h3 className="text-[36px] font-black text-white mb-3">{col.title}</h3>
+              <p className="text-lg text-white/35 font-medium leading-relaxed">{col.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      )
+
+    case "points":
+      return (
+        <div className="w-full max-w-4xl">
+          <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+            className="text-[40px] font-black tracking-tight text-white mb-8"
+          >{slide.title}</motion.h2>
+          <div className="space-y-5">
+            {slide.points.map((pt: string, i: number) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -15 }} animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.12 + i * 0.1 }}
+                className="flex gap-4 items-start"
+              >
+                <div className={`w-2 h-2 rounded-full mt-2.5 shrink-0 ${theme.accentBg} opacity-40`} />
+                <p className="text-lg text-white/55 font-medium leading-relaxed">{pt}</p>
+              </motion.div>
             ))}
           </div>
-        </MasterCard>
+          {slide.source && (
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
+              className="mt-8 flex items-baseline gap-3"
+            >
+              <p className={`text-sm font-bold ${theme.accent} opacity-70`}>{slide.source}</p>
+              {slide.sourceRole && <p className="text-xs text-white/15">{slide.sourceRole}</p>}
+            </motion.div>
+          )}
+        </div>
       )
 
-    case "standard-content":
-      const hasImage = !!slide.image;
-      const isRightLayout = slide.layout === 'right'; // Image on right, Text on left
-
-      // Default left layout: Image Left, Text Right
-      // Right layout: Text Left, Image Right
-
+    case "counter":
       return (
-        <MasterCard>
-          <div className="flex flex-col h-full">
-            <SlideHeader title={slide.title} subHeader={slide.subHeader} header={slide.header} />
-
-            <div className={cn(
-              "flex flex-1 gap-8 min-h-0 items-center",
-              isRightLayout ? "flex-row" : "flex-row-reverse"
-            )}>
-              {/* Bullets Block */}
-              {slide.bullets && (
-                <div className="w-1/2 flex flex-col justify-center space-y-6 pl-4">
-                  {slide.bullets.map((bullet: string, i: number) => (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, x: isRightLayout ? -20 : 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.2 + (0.1 * i) }}
-                      className="flex gap-4 items-start group"
-                    >
-                      <div className="w-2 h-2 rounded-full bg-black group-hover:bg-blue-600 mt-2.5 shrink-0 transition-colors" />
-                      <p className="text-[1.6vw] font-medium leading-relaxed text-slate-800">{bullet}</p>
-                    </motion.div>
-                  ))}
-                </div>
-              )}
-
-              {/* Image Block */}
-              {hasImage ? (
-                <div className={cn(
-                  "relative h-full rounded-[2rem] overflow-hidden bg-gray-100 min-h-0 shadow-lg ring-1 ring-black/5",
-                  slide.bullets ? "w-1/2" : "w-full"
-                )}>
-                  <Image
-                    src={slide.image}
-                    alt={slide.title || "Slide Image"}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-1000"
-                    priority={true}
-                  />
-                  <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md px-4 py-2 rounded-full shadow-sm">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-black">{slide.citation}</p>
+        <div className="w-full max-w-6xl flex items-center gap-14">
+          <div className="flex-1">
+            <motion.h2 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+              className="text-[40px] font-black tracking-tight text-white mb-8"
+            >{slide.title}</motion.h2>
+            <div className="space-y-8">
+              {slide.args.map((arg: any, i: number) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -15 }} animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.12 + i * 0.1 }}
+                >
+                  <p className="text-lg text-white/55 font-medium leading-relaxed mb-2">{arg.point}</p>
+                  <div className="flex items-baseline gap-3">
+                    <p className={`text-sm font-bold ${theme.accent}`}>{arg.author}</p>
+                    <p className="text-xs text-white/20">{arg.role}</p>
                   </div>
-                </div>
-              ) : (
-                <div className={cn(
-                  "rounded-[2rem] bg-gray-50 flex items-center justify-center border-2 border-dashed border-black/10",
-                  slide.bullets ? "w-1/2" : "w-full"
-                )}>
-                  <p className="text-black/30 font-bold uppercase tracking-widest">Image Unavailable</p>
-                </div>
-              )}
+                </motion.div>
+              ))}
             </div>
           </div>
-        </MasterCard>
+          {slide.image && (
+            <motion.div
+              initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25 }}
+              className="relative w-[300px] h-[380px] shrink-0 rounded-2xl overflow-hidden bg-white/[0.02]"
+            >
+              <Image src={slide.image} alt={slide.imageAlt} fill className="object-contain p-4" sizes="300px" />
+            </motion.div>
+          )}
+        </div>
       )
 
     case "conclusion":
       return (
-        <MasterCard className="justify-center bg-black text-white">
-          <div className="max-w-[85vw] mx-auto w-full">
-            <h3 className="text-lg font-black tracking-widest text-white/40 uppercase mb-4">{slide.header}</h3>
-            <h1 className="text-[7vw] font-black tracking-tighter text-white mb-16 border-b border-white/20 pb-8">{slide.title}</h1>
-            <div className="space-y-6 mb-8">
-              {slide.items.map((item: string, i: number) => (
-                <div key={i} className="flex gap-6 items-center">
-                  <ArrowRight className="text-blue-500 shrink-0 w-[4vw] h-[4vw]" strokeWidth={3} />
-                  <span className="text-[3.5vw] font-bold text-white leading-tight tracking-tight">{item}</span>
-                </div>
-              ))}
-            </div>
-            <div className="flex flex-wrap gap-8 pt-8 mt-12 border-t border-white/10 opacity-60">
-              <p className="text-sm font-mono uppercase tracking-widest">Digital Communities = Social Infrastructure</p>
-            </div>
+        <div className="w-full max-w-4xl">
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+            className={`text-sm font-bold ${theme.accent} uppercase tracking-[0.2em] mb-10`}
+          >Conclusion</motion.p>
+          <div className="space-y-8">
+            {slide.lines.map((line: string, i: number) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1 + i * 0.12 }}
+                className="flex gap-6 items-start"
+              >
+                <span className={`text-[40px] font-black ${theme.accent} opacity-15 shrink-0 leading-none`}>{i + 1}</span>
+                <p className="text-[22px] font-bold text-white/75 leading-relaxed pt-1">{line}</p>
+              </motion.div>
+            ))}
           </div>
-        </MasterCard>
+        </div>
       )
 
     case "references":
       return (
-        <MasterCard>
-          <div className="flex flex-col h-full">
-            <h3 className="text-lg font-black tracking-widest text-black/30 uppercase mb-4">{slide.header}</h3>
-            <h1 className="text-[6vw] font-black tracking-tighter text-black mb-6 uppercase border-b-4 border-black pb-4">{slide.title}</h1>
-            <div className="overflow-y-auto flex-1 pr-6 custom-scrollbar space-y-4 pb-8">
-              {slide.refs.map((ref: string, i: number) => (
-                <div key={i} className="pl-8 -indent-8 text-[1.4vw] font-medium text-slate-700 leading-relaxed hover:text-black transition-colors">
-                  {ref}
-                </div>
-              ))}
-            </div>
+        <div className="w-full max-w-3xl">
+          <motion.h2 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
+            className="text-[30px] font-black text-white mb-8"
+          >{slide.title}</motion.h2>
+          <div className="space-y-3">
+            {slide.refs.map((r: string, i: number) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.03 + i * 0.03 }}
+                className="text-[14px] text-white/30 font-medium leading-relaxed pl-8 -indent-8"
+              >{r}</motion.p>
+            ))}
           </div>
-        </MasterCard>
+        </div>
       )
 
     default: return null
   }
-}
-
-function cn(...classes: (string | boolean | undefined)[]) {
-  return classes.filter(Boolean).join(" ")
 }
