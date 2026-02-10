@@ -103,15 +103,7 @@
       <workItem from="1770041853311" duration="80000" />
       <workItem from="1770042212578" duration="10000" />
       <workItem from="1770588134336" duration="11000" />
-      <workItem from="1770719487549" duration="7885000" />
-    </task>
-    <task id="LOCAL-00128" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769141824328</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1769141824328</updated>
+      <workItem from="1770719487549" duration="8280000" />
     </task>
     <task id="LOCAL-00129" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -497,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770738532109</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770738640712</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1770738640712</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
