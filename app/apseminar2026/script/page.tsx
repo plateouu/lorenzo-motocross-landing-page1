@@ -178,72 +178,72 @@ Digital communities fill this gap as essential infrastructure. Rather than dismi
 ]
 
 // ──────────────────────────────────────────────────────────
-// REFLECTION Q&A — Anchor: Surgeon General's Advisory
+// REFLECTION Q&A — Only 2 sources: Surgeon General + Steinkuehler
 // ──────────────────────────────────────────────────────────
 
 const reflectionQuestions = [
   {
     q: "What information did you need before you began your research, and how did that information shape your research?",
-    a: `Before I started, I honestly didn't know if loneliness was actually dangerous or if people were just being dramatic about it. Then I read the Surgeon General's 2023 report, and it said loneliness raises your risk of dying early by 29% — that's as bad as smoking 15 cigarettes a day. That completely changed my research. I stopped thinking about "is social media good or bad" and started thinking about "people are literally dying from being alone — can the internet help?"`
+    a: `I needed to know if loneliness was actually dangerous. The Surgeon General's report said it raises your risk of dying early by 29% — as bad as smoking 15 cigarettes a day. That changed everything. I stopped asking "is social media good or bad" and started asking "people are dying from isolation — can online communities help?"`
   },
   {
     q: "What evidence did you gather that you didn't use? Why did you choose not to use it?",
-    a: `I found a lot of stuff about Instagram making teens anxious and depressed. But I didn't end up using it because my research wasn't about social media making people feel bad — it was about whether online spaces can give people a community when they don't have one in real life. The Instagram anxiety stuff was about a different problem than what I was trying to solve.`
+    a: `I found a lot about Instagram making people anxious. But my research wasn't about social media making people feel bad — it was about whether online spaces can give people community when they don't have one in real life. The anxiety stuff was about a different problem than what the Surgeon General identified.`
   },
   {
     q: "How valid and reliable are the sources you used? How do you know? Which sources didn't work?",
-    a: `The Surgeon General's report is the most solid source I have — it's an official federal health document based on years of medical data. You can't really argue with it. What didn't work were random blog posts and opinion pieces about loneliness. They had good stories but no real data behind them, so I couldn't build an argument on them.`
+    a: `The Surgeon General's report is an official federal health document based on years of medical data — you can't really argue with it. Steinkuehler and Williams published peer-reviewed research that specifically tested whether online communities function as real gathering places. Random blog posts about loneliness didn't work — good stories, no data.`
   },
   {
     q: "How did you select the strategies you used to gather information or conduct research? Were they effective?",
-    a: `I started with the problem first — the Surgeon General said people are dying from isolation. Then I worked backwards: okay, why are they isolated? And can anything fix it? That kept me really focused. Instead of reading everything about technology, I only looked at things that directly addressed the isolation problem. It saved me a lot of time.`
+    a: `I started with the problem — the Surgeon General said people are dying from isolation. Then I looked for evidence that something could fix it, which led me to Steinkuehler and Williams. Working from "problem" to "solution" kept me focused instead of reading everything about technology.`
   },
   {
     q: "How did your research question evolve as you moved through the research process?",
-    a: `At first I was asking "is technology bad for us?" which is way too broad. But once I saw the Surgeon General's numbers — that isolation kills as many people as smoking — my question became much more specific: "Can online communities actually help isolated people?" It went from a vague opinion question to a real health question.`
+    a: `At first I was asking "is technology bad?" which is way too broad. The Surgeon General's numbers made it specific: isolation kills people. Then Steinkuehler showed that some online spaces actually work as real communities. So my question became: "Can these spaces help the people the Surgeon General is worried about?"`
   },
   {
     q: "What information did you need that you weren't able to find or locate? How did you go about trying to find that information?",
-    a: `I really wanted a study that showed, like, "people who use Discord have lower stress hormones." That doesn't exist yet. The medical side only has data on in-person contact reducing stress. So I had to work around it — I used studies that proved online spaces work like real community spaces, even though I couldn't prove they have the exact same biological effect.`
+    a: `I wanted a study showing that using Discord literally lowers your stress hormones. That doesn't exist yet. Steinkuehler proved online spaces work like real community spaces, but nobody's measured the biological effect. So I have the social proof but not the medical proof — that's the gap.`
   },
   {
     q: "How did you handle the differing perspectives in order to reach a conclusion?",
-    a: `One side says "we need connection or people die" — that's the Surgeon General. The other side says "online connection isn't real" — that's Turkle. My conclusion was basically: okay, maybe online isn't perfect, but if someone has zero access to real-life community, an imperfect online community is way better than nothing. It's not ideal, but it keeps people alive.`
+    a: `Some people say online connection isn't real. But the Surgeon General says isolation kills people, and Steinkuehler proved online communities actually function as real gathering places. My conclusion is: maybe online isn't perfect, but if someone has zero access to real-life community, an imperfect online community is way better than nothing.`
   },
   {
     q: "What advice would you have for other researchers who consider this topic?",
-    a: `Start with the health data. The Surgeon General's report gives you something solid to anchor everything to. It's really easy to get lost in opinions about whether phones are good or bad, but if you keep coming back to "loneliness literally kills people," it keeps your argument grounded in something that actually matters.`
+    a: `Start with the Surgeon General's report — it gives you something solid. "Loneliness literally kills people" keeps your argument grounded. Then find evidence like Steinkuehler's that directly tests whether a solution works. Don't get lost in opinions about phones — stick to data.`
   },
   {
     q: "If you had more time, what additional research would you conduct related to this issue?",
-    a: `I'd want to see if there's ever a follow-up from the Surgeon General that specifically talks about online communities as a solution, not just a risk. Right now the report mostly treats technology as part of the problem. I think there's a gap there — someone needs to study whether platforms like Discord actually reduce the health effects of isolation.`
+    a: `I'd want to combine both sources — run a study where you take the people the Surgeon General is worried about (isolated individuals) and put them in the communities Steinkuehler studied (online gathering places) and measure whether their health actually improves. That study doesn't exist yet, but it should.`
   },
 ]
 
 // ──────────────────────────────────────────────────────────
-// ARGUMENTATION Q&A — Anchor: Oldenburg & Steinkuehler
+// ARGUMENTATION Q&A — Only 2 sources: Surgeon General + Steinkuehler
 // ──────────────────────────────────────────────────────────
 
 const argumentationQuestions = [
   {
     q: "What additional questions emerged from your research? Why are these questions important?",
-    a: `The big one is: does this still work with modern apps? The communities I studied — like MMO guilds and Discord servers — have regulars who show up, talk, and build relationships. But TikTok just feeds you random videos. You don't build a community scrolling TikTok. So the question is: which platforms actually create community, and which ones just create content? That distinction matters a lot for my argument.`
+    a: `The big question is: does this work on every platform? Steinkuehler studied communities with regulars who show up and talk — like MMO guilds and Discord servers. But TikTok just feeds you random videos. So which platforms actually create community? That matters because the Surgeon General's crisis won't be solved by platforms that don't actually connect people.`
   },
   {
     q: "What might be the real-world implications or consequences of your findings?",
-    a: `If online communities really do work like parks and coffee shops — places where people actually connect — then we should treat internet access like we treat public infrastructure. We fund parks because people need somewhere to gather. If a Discord server does the same thing for a kid in a rural town, then cutting off their internet is like locking the park gates.`
+    a: `The Surgeon General says isolation is killing people. Steinkuehler proved certain online spaces actually work as community spaces. If that's true, then internet access is a health issue — not just entertainment. Cutting off someone's access to a Discord server where they have real community is like closing the only park in town.`
   },
   {
     q: "Explain the level of certainty you have about your conclusion, solution, or recommendation.",
-    a: `I'm very confident that some online spaces genuinely work as community spaces — the research on gaming communities specifically tested for that and they passed. Where I'm less sure is whether this applies to every platform. A tight-knit Discord server? Yes. A random Twitter feed? Probably not. So my conclusion is strong for certain types of spaces, not all of them.`
+    a: `I'm very confident because Steinkuehler specifically tested for this and the communities passed — they function as real gathering places. And the Surgeon General's data on the problem is rock solid. Where I'm less sure is whether every platform works this way. A tight-knit Discord server? Yes. A random Twitter feed? Probably not.`
   },
   {
     q: "How does your conclusion respond to any of the other research or sources you examined?",
-    a: `Turkle says online connection is shallow and fake. My response is: maybe it feels different, but it does the same job. If people are showing up regularly, having real conversations, and forming friendships — which the research shows they are — then it doesn't matter that it's on a screen. What matters is whether it works, and the evidence says it does.`
+    a: `Some researchers say online connection is shallow. My response is: the Surgeon General says people are dying from isolation, and Steinkuehler proved these spaces actually function as real communities. If people show up regularly and form friendships — which the research shows they do — then it doesn't matter that it's on a screen. What matters is whether it works.`
   },
   {
     q: "How did you use the conclusions and questions of others to advance your own research?",
-    a: `Oldenburg said communities need gathering places. Steinkuehler proved that online games are gathering places. I just connected those two ideas. Oldenburg identified what's missing, Steinkuehler found where it went — online. My contribution was putting those together and saying: this isn't just entertainment, it's infrastructure.`
+    a: `The Surgeon General identified the problem — people are isolated and it's killing them. Steinkuehler identified the solution — some online spaces genuinely function as community spaces. I connected those two. My contribution was saying: the crisis the Surgeon General describes can be partially addressed by the spaces Steinkuehler studied.`
   },
 ]
 
