@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa" />
+    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,15 +105,7 @@
       <workItem from="1770041853311" duration="80000" />
       <workItem from="1770042212578" duration="10000" />
       <workItem from="1770588134336" duration="11000" />
-      <workItem from="1770719487549" duration="9069000" />
-    </task>
-    <task id="LOCAL-00130" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769142631231</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1769142631231</updated>
+      <workItem from="1770719487549" duration="12812000" />
     </task>
     <task id="LOCAL-00131" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -497,7 +491,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770739200475</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770740027037</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1770740027037</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
