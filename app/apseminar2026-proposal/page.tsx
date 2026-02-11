@@ -116,7 +116,7 @@ function SlideContent({ id }: { id: string }) {
                             transition={{ delay: 1.2, duration: 0.8 }}
                             className="mt-6 text-sm md:text-lg text-neutral-500 max-w-2xl font-mono"
                         >
-                            RQ: To what extent do social media algorithms perpetuate inequality by rendering the majority of content invisible?
+                            RQ: How do social media algorithms create inequality by hiding the majority of content?
                         </motion.p>
                     </motion.div>
                 </div>
@@ -219,7 +219,7 @@ function SlideContent({ id }: { id: string }) {
                         FEEDBACK
                     </motion.h2>
 
-                    <Question delay={0.2} num="01" text="Is my Research TOPIC too broad? (Narrow to TikTok?)" />
+                    <Question delay={0.2} num="01" text="Is my Research question too broad? (Narrow to TikTok?)" />
                     <Question delay={0.4} num="02" text="Is the 'Right to be Seen' a strong enough argument?" />
                     <Question delay={0.6} num="03" text="Should I pivot to a different topic entirely?" />
                 </div>
