@@ -39,6 +39,11 @@ export default function ProposalPage() {
         >
             <div className="w-full max-w-5xl p-12 text-center">
                 <AnimatePresence mode="wait">
+                    {/* Tiny Goofy Image (Top Left) */}
+                    <div className="fixed top-4 left-4 z-50 pointer-events-none">
+                        <img src="/goofy.avif" alt="goofy" className="w-12 h-12 object-contain" />
+                    </div>
+
                     <motion.div
                         key={current}
                         initial={{ opacity: 0, y: 10 }}
