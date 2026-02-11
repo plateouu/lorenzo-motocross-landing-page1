@@ -216,12 +216,12 @@ function SlideContent({ id }: { id: string }) {
                         initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
                         className="text-5xl md:text-7xl font-black mb-16"
                     >
-                        RESEARCH QUESTIONS
+                        FEEDBACK
                     </motion.h2>
 
-                    <Question delay={0.2} num="01" text="How do 'black box' algorithms impact the economic viability of independent creators?" />
-                    <Question delay={0.4} num="02" text="To what extent does the 'power law' of attention violate principles of digital equity?" />
-                    <Question delay={0.6} num="03" text="Can algorithmic transparency regulation effectively mitigate gatekeeping?" />
+                    <Question delay={0.2} num="01" text="Is my Research TOPIC too broad? (Narrow to TikTok?)" />
+                    <Question delay={0.4} num="02" text="Is the 'Right to be Seen' a strong enough argument?" />
+                    <Question delay={0.6} num="03" text="Should I pivot to a different topic entirely?" />
                 </div>
             )
 
