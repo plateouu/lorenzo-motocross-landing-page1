@@ -103,31 +103,7 @@
       <workItem from="1770041853311" duration="80000" />
       <workItem from="1770042212578" duration="10000" />
       <workItem from="1770588134336" duration="11000" />
-      <workItem from="1770719487549" duration="14518000" />
-    </task>
-    <task id="LOCAL-00134" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769144550218</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1769144550218</updated>
-    </task>
-    <task id="LOCAL-00135" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769144984990</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1769144984990</updated>
-    </task>
-    <task id="LOCAL-00136" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769145270433</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1769145270434</updated>
+      <workItem from="1770719487549" duration="15274000" />
     </task>
     <task id="LOCAL-00137" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -497,7 +473,31 @@
       <option name="project" value="LOCAL" />
       <updated>1770828299183</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770828396253</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1770828396253</updated>
+    </task>
+    <task id="LOCAL-00184" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770828457751</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1770828457751</updated>
+    </task>
+    <task id="LOCAL-00185" summary="fa">
+      <option name="closed" value="true" />
+      <created>1770831858168</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1770831858168</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
