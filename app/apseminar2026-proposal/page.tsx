@@ -110,6 +110,14 @@ function SlideContent({ id }: { id: string }) {
                         className="mt-8 border-l-2 border-white pl-6"
                     >
                         <p className="text-xl md:text-3xl font-light text-neutral-400">The Right to Be Seen</p>
+                        <motion.p
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.2, duration: 0.8 }}
+                            className="mt-6 text-sm md:text-lg text-neutral-500 max-w-2xl font-mono"
+                        >
+                            RQ: To what extent do social media algorithms perpetuate inequality by rendering the majority of content invisible?
+                        </motion.p>
                     </motion.div>
                 </div>
             )
@@ -131,7 +139,7 @@ function SlideContent({ id }: { id: string }) {
                             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
                             className="text-xl text-neutral-400 leading-relaxed max-w-md"
                         >
-                            My friend did everything right. Quality content. Consistency. <strong>Zero Views.</strong> Because the algorithm is a cliff.
+                            My friend did everything right. Quality content. Consistency. <strong>Zero Views.</strong> Because the algorithm s a cliff.
                         </motion.p>
                     </div>
 
@@ -208,12 +216,12 @@ function SlideContent({ id }: { id: string }) {
                         initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
                         className="text-5xl md:text-7xl font-black mb-16"
                     >
-                        FEEDBACK
+                        RESEARCH QUESTIONS
                     </motion.h2>
 
-                    <Question delay={0.2} num="01" text="Is my Research Question too broad? (Narrow to TikTok?)" />
-                    <Question delay={0.4} num="02" text="Is the 'Right to be Seen' a strong enough argument?" />
-                    <Question delay={0.6} num="03" text="Should I pivot to a different topic entirely?" />
+                    <Question delay={0.2} num="01" text="How do 'black box' algorithms impact the economic viability of independent creators?" />
+                    <Question delay={0.4} num="02" text="To what extent does the 'power law' of attention violate principles of digital equity?" />
+                    <Question delay={0.6} num="03" text="Can algorithmic transparency regulation effectively mitigate gatekeeping?" />
                 </div>
             )
 
