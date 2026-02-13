@@ -70,7 +70,7 @@ export default function ProposalPage() {
                                 <h1 className="text-6xl font-bold uppercase tracking-widest border-b-4 border-black pb-4 inline-block">The Question</h1>
                                 <div className="border-4 border-black p-12 bg-gray-50 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-1">
                                     <p className="text-4xl font-bold leading-relaxed">
-                                        "At what specific <span className="text-red-600">Battery Percentage</span> does a student's academic anxiety spike to 'Distraction' levels?"
+                                        "What is the relationship between 'Low-Battery Anxiety' and self-reported distraction during study sessions among college students?"
                                     </p>
                                 </div>
                             </div>
