@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { usePathname } from "next/navigation"
 
-export type DisguisePreset = "desmos" | "ap_classroom" | "google_classroom" | "google_forms" | "google_docs" | "custom"
+export type DisguisePreset = "ping_pong" | "dashmetry" | "desmos" | "ap_classroom" | "google_classroom" | "google_forms" | "google_docs" | "custom"
 
 export interface DisguiseSettings {
   preset: DisguisePreset
@@ -12,6 +12,16 @@ export interface DisguiseSettings {
 }
 
 export const PRESETS = {
+  ping_pong: {
+    title: "Ping Pong Free Online Game",
+    icon: "/pingpong.ico",
+    redirectUrl: "https://pong-2.com/"
+  },
+  dashmetry: {
+    title: "Dashmetry",
+    icon: "/desmos/favicon.ico",
+    redirectUrl: "https://dashmetry.com/"
+  },
   desmos: {
     title: "Desmos | Graphing Calculator",
     icon: "/desmos/favicon.ico",
@@ -65,7 +75,7 @@ export function TabDisguiseProvider({ children }: { children: React.ReactNode })
       }
     }
     window.addEventListener("storage", handleStorage)
-    
+
     // Custom event for immediate updates within the same tab
     const handleUpdate = (e: CustomEvent<DisguiseSettings>) => {
       setSettings(e.detail)

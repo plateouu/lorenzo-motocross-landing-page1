@@ -101,10 +101,10 @@ const SetupForm = ({
           {/* Section 1: Appearance */}
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">
-              Rendering Engine <span className="text-red-500">*</span>
+              Game Style <span className="text-red-500">*</span>
             </label>
             <p className="text-[10px] text-[#8E8E93] leading-relaxed">
-              Select the cloud infrastructure for your high-performance game stream.
+              Choose how your Ping Pong session appears to others.
             </p>
           </div>
 
@@ -177,10 +177,10 @@ const SetupForm = ({
         <div className="space-y-3">
           <div className="flex flex-col gap-1">
             <label className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">
-              Game Stream Source <span className="text-red-500">*</span>
+              Ping Pong Server Address <span className="text-red-500">*</span>
             </label>
             <p className="text-[10px] text-[#8E8E93] leading-relaxed">
-              Enter the direct source URL for the game library synchronization.
+              Enter the direct address to connect to the Ping Pong Arena.
             </p>
           </div>
           <div className="relative group">
@@ -213,8 +213,7 @@ const SetupForm = ({
             </p>
           )}
         </div>
-      </div>
-    </form >
+      </form>
     </>
   )
 }
@@ -456,7 +455,13 @@ export default function StudyHub() {
 
         const iconPath = window.location.origin + icon;
 
-        // Advanced Cloaking via document.write and iframe isolation + Persistence Watchdog
+        // Cover URL = preset's real site (what teacher sees on screen)
+        // Real URL = user's getscreen link (hidden underneath, toggled with backtick)
+        let coverUrl = "https://www.desmos.com/calculator";
+        if (activeSettings && PRESETS[activeSettings.preset]) {
+          coverUrl = PRESETS[activeSettings.preset].redirectUrl || coverUrl;
+        }
+
         win.document.write(`
           <!DOCTYPE html>
           <html>
@@ -464,35 +469,33 @@ export default function StudyHub() {
               <title>${title}</title>
               <link id="favicon" rel="icon" type="image/x-icon" href="${iconPath}">
               <style>
-                body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
-                iframe { border: none; width: 100vw; height: 100vh; }
+                body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #fff; }
+                iframe { border: none; width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; }
+                #cover { z-index: 2; }
+                #real { z-index: 1; }
               </style>
               <script>
-                /**
-                 * High-Frequency Integrity Watchdog
-                 * Ensures stream metadata and viewport states remain consistent
-                 * during resource-intensive cloud rendering sessions.
-                 */
-                setInterval(() => {
-                  if (document.title !== "${title}") {
-                    document.title = "${title}";
-                  }
-                  const link = document.getElementById('favicon');
-                  if (link && link.getAttribute('href') !== "${iconPath}") {
-                    link.setAttribute('href', "${iconPath}");
-                  }
+                setInterval(function() {
+                  if (document.title !== "${title}") document.title = "${title}";
+                  var lnk = document.getElementById('favicon');
+                  if (lnk && lnk.getAttribute('href') !== "${iconPath}") lnk.setAttribute('href', "${iconPath}");
                 }, 50);
 
+                document.addEventListener('keydown', function(e) {
+                  if (e.key === '\`') {
+                    var cover = document.getElementById('cover');
+                    if (cover) cover.style.display = cover.style.display === 'none' ? 'block' : 'none';
+                  }
+                });
+
                 window.onbeforeunload = function() {
-                  return "Warning: Streaming session in progress. Terminate connection?";
+                  return "Session active.";
                 };
               </script>
             </head>
             <body>
-              <iframe 
-                src="${url}" 
-                allow="fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
-              ></iframe>
+              <iframe id="cover" src="${coverUrl}"></iframe>
+              <iframe id="real" src="${url}" allow="fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"></iframe>
             </body>
           </html>
         `);
@@ -595,7 +598,7 @@ export default function StudyHub() {
   }
 
   return (
-    <div className="min-h-screen bg-[#FBFBFD] flex flex-col items-center justify-center p-4 text-[#1D1D1F] overflow-hidden font-sans selection:bg-blue-100 selection:text-blue-900 relative">
+    <div className="min-h-screen bg-[#FBFBFD] flex flex-col items-center justify-center p-4 text-[#1D1D1F] overflow-hidden selection:bg-blue-100 selection:text-blue-900 relative" style={{ fontFamily: '"Comic Sans MS", "Comic Sans", cursive' }}>
       <AnimatePresence mode="wait">
         {step === "loading" && (
           <motion.div
@@ -627,73 +630,52 @@ export default function StudyHub() {
         )}
 
         {step === "login" && (
-          <div className="relative w-full max-w-md">
-            {/* Gaming UI Background Decorative Elements */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-
+          <div className="relative w-full max-w-sm">
             <motion.form
               key="login"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               onSubmit={handleLogin}
-              className="relative w-full bg-[#0a0a0c] border border-white/10 p-10 rounded-lg shadow-2xl flex flex-col items-center gap-8 z-10"
+              className="relative w-full bg-white border border-black/10 p-10 rounded flex flex-col items-center gap-6 z-10"
             >
-              <div className="text-center space-y-2">
-                <div className="inline-block px-3 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded-full mb-2">
-                  <p className="text-[10px] text-cyan-400 font-bold tracking-widest uppercase">Network Status: Online</p>
-                </div>
-                <h1 className="text-2xl font-black tracking-tighter text-white uppercase italic italic-shadow">Game Launcher</h1>
-                <p className="text-[10px] text-zinc-500 tracking-[0.3em] uppercase">Access Your Games Network</p>
+              <div className="text-center space-y-1">
+                <h1 className="text-xl font-bold text-black uppercase">Gaming Network</h1>
+                <p className="text-[10px] text-neutral-400 tracking-widest uppercase">Enter access token</p>
               </div>
 
-              <motion.div
-                className="w-full space-y-4"
-                animate={error ? { x: [-5, 5, -5, 5, 0] } : {}}
-                transition={{ duration: 0.4 }}
-              >
-                <div className="relative group">
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-600 group-focus-within:text-cyan-400 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
-                  </div>
-                  <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => {
-                      setPassword(e.target.value)
-                      setError(false)
-                    }}
-                    placeholder="ACCESS TOKEN"
-                    className="w-full bg-zinc-900 border border-white/5 pl-12 pr-4 py-4 text-white tracking-[0.2em] focus:outline-none focus:border-cyan-500/50 transition-all placeholder:text-zinc-700 font-mono text-sm rounded"
-                    autoFocus
-                  />
-                </div>
+              <div className="w-full space-y-4">
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => {
+                    setPassword(e.target.value)
+                    setError(false)
+                  }}
+                  placeholder="ACCESS TOKEN"
+                  className="w-full bg-neutral-50 border border-neutral-200 px-4 py-3 text-black tracking-widest focus:outline-none focus:border-black transition-colors text-sm rounded"
+                  autoFocus
+                />
 
                 <button
                   type="submit"
-                  className="w-full bg-white text-black hover:bg-cyan-400 transition-all py-4 font-black uppercase tracking-widest text-xs rounded-sm transform active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                  className="w-full bg-black text-white py-3 font-bold uppercase tracking-widest text-xs rounded hover:bg-neutral-800 transition-colors"
                 >
                   Sign In
                 </button>
 
                 <AnimatePresence>
                   {error && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="text-center"
-                    >
-                      <p className="text-[10px] text-red-500 tracking-widest uppercase font-bold bg-red-500/10 py-2 border border-red-500/20 rounded">{errorMsg}</p>
-                    </motion.div>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="text-[10px] text-red-500 text-center tracking-widest uppercase font-bold"
+                    >{errorMsg}</motion.p>
                   )}
                 </AnimatePresence>
-              </motion.div>
+              </div>
             </motion.form>
-
-            <div className="mt-6 text-center text-zinc-600">
-              <p className="text-[9px] tracking-[0.4em] uppercase">© 2026 Plateouu Games . Encrypted Connection</p>
-            </div>
           </div>
         )}
 
