@@ -16,7 +16,7 @@ function SidebarContent() {
     return (
         <div className="w-64 flex flex-col h-full bg-[#111] text-white font-comic shrink-0">
             <div className="p-8 pb-4">
-                <Link href="/" className="text-2xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
+                <Link href="/hub" className="text-2xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
                     Game Hub
                 </Link>
             </div>
@@ -29,7 +29,7 @@ function SidebarContent() {
                     return (
                         <Link
                             key={cat.label}
-                            href={`/?filter=${cat.label}`}
+                            href={`/hub?filter=${cat.label}`}
                             className={`
                 w-full flex items-center gap-4 px-6 py-4 rounded-2xl text-sm font-bold transition-all
                 ${isActive

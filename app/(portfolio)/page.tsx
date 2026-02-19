@@ -3,12 +3,13 @@
 import React, { useRef, useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import Link from "next/link"
-import { useLenis } from './LenisProvider'
-import ScrambleText from './components/ScrambleText'
-import TransitionLink from './components/TransitionLink'
-import SideMenu from './components/SideMenu'
-import NoiseOverlay from './components/NoiseOverlay'
-import ProjectPreview from './components/ProjectPreview'
+// Updated imports for moved file
+import { useLenis } from '@/app/LenisProvider'
+import ScrambleText from '@/app/components/ScrambleText'
+import TransitionLink from '@/app/components/TransitionLink'
+import SideMenu from '@/app/components/SideMenu'
+import NoiseOverlay from '@/app/components/NoiseOverlay'
+import ProjectPreview from '@/app/components/ProjectPreview'
 
 // Define projects
 const projects = [
@@ -47,12 +48,12 @@ const projects = [
         tags: ["Lua", "Game Design", "Logic"]
     },
     // Added Game Hub Link as a Project
-    {
+     {
         title: "Game Hub",
         year: "2026",
         role: "Full Stack Engineer",
         blurb: "A hidden game dashboard masked as a math tool.",
-        color: "#111",
+        color: "#111", 
         image: "/games/desmos.png", // Using desmos icon
         href: "/hub",
         tags: ["Next.js", "React", "Stealth"],
