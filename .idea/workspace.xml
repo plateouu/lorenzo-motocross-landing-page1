@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
-      <change beforePath="$PROJECT_DIR$/app/585285885/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/585285885/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/585285885/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/585285885/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/tab-disguise-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/tab-disguise-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,15 +121,7 @@
       <workItem from="1770719487549" duration="23768000" />
       <workItem from="1771166029425" duration="31000" />
       <workItem from="1771420940963" duration="1051000" />
-      <workItem from="1771518490553" duration="925000" />
-    </task>
-    <task id="LOCAL-00143" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769147243909</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1769147243909</updated>
+      <workItem from="1771518490553" duration="5096000" />
     </task>
     <task id="LOCAL-00144" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -503,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771518954052</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="fa">
+      <option name="closed" value="true" />
+      <created>1771519830719</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1771519830719</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
