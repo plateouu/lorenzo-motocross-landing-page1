@@ -378,7 +378,7 @@ export default function StudyHub() {
     }
 
     if (linkInput.length > 3) {
-      let finalLink = linkInput
+      let finalLink = linkInput.trim()
       if (!finalLink.startsWith("http")) {
         finalLink = "https://" + finalLink
       }
@@ -749,6 +749,13 @@ export default function StudyHub() {
               >
                 Click to Launch
               </button>
+              {linkRef.current && (
+                <div className="pt-2 px-10">
+                  <p className="text-[9px] text-neutral-400 break-all font-mono bg-neutral-50 p-2 border border-neutral-100 rounded">
+                    Launch URL: {linkRef.current}
+                  </p>
+                </div>
+              )}
             </motion.div>
           </motion.div>
         )}
