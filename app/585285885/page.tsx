@@ -99,123 +99,122 @@ const SetupForm = ({
 
         <div className="p-8 space-y-8">
           {/* Section 1: Appearance */}
-          <div className="space-y-4">
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">
-                Disguise Profile <span className="text-red-500">*</span>
-              </label>
-              <p className="text-[10px] text-[#8E8E93] leading-relaxed">
-                Select how this tab will appear in browser history and title bar.
-              </p>
-            </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">
+              Rendering Engine <span className="text-red-500">*</span>
+            </label>
+            <p className="text-[10px] text-[#8E8E93] leading-relaxed">
+              Select the cloud infrastructure for your high-performance game stream.
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 gap-3">
-              {(Object.keys(PRESETS) as DisguisePreset[]).filter(k => k !== 'custom').map((preset) => (
-                <div
-                  key={preset}
-                  onClick={() => updatePreset(preset)}
-                  className={`
+          <div className="grid grid-cols-2 gap-3">
+            {(Object.keys(PRESETS) as DisguisePreset[]).filter(k => k !== 'custom').map((preset) => (
+              <div
+                key={preset}
+                onClick={() => updatePreset(preset)}
+                className={`
                                     cursor-pointer p-4 border rounded-sm text-xs font-bold uppercase tracking-wider text-center transition-all duration-200
                                     ${currentSettings.preset === preset && hasSelected
-                      ? "bg-[#1D1D1F] text-white border-[#1D1D1F] shadow-lg transform scale-[1.02]"
-                      : "bg-white text-[#8E8E93] border-[#E5E5E5] hover:border-blue-400 hover:text-blue-500 hover:bg-blue-50"
-                    }
+                    ? "bg-[#1D1D1F] text-white border-[#1D1D1F] shadow-lg transform scale-[1.02]"
+                    : "bg-white text-[#8E8E93] border-[#E5E5E5] hover:border-blue-400 hover:text-blue-500 hover:bg-blue-50"
+                  }
                                 `}
-                >
-                  {PRESETS[preset].title === "Classes" ? "Google Classroom" : PRESETS[preset].title.split(" | ")[0]}
-                </div>
-              ))}
-            </div>
+              >
+                {PRESETS[preset].title === "Classes" ? "Google Classroom" : PRESETS[preset].title.split(" | ")[0]}
+              </div>
+            ))}
+          </div>
 
-            {hasSelected && (
-              <div className="space-y-4 pt-4 border-t border-[#F5F5F7] animate-in fade-in slide-in-from-top-2">
-                {/* HIDE Tab Title if not supported (Desmos/AP Classroom) */}
-                {currentSettings.preset !== 'desmos' && currentSettings.preset !== 'ap_classroom' && (
-                  <div className="grid gap-2">
-                    <div className="flex justify-between items-baseline">
-                      <label className="text-[10px] uppercase font-bold text-[#8E8E93] tracking-widest">
-                        {currentSettings.preset === 'google_classroom' ? "CHOOSE A NAME" : "Tab Title"}
-                      </label>
-                    </div>
-                    <input
-                      type="text"
-                      value={currentSettings.customTitle || ""}
-                      onChange={(e) => setCurrentSettings(prev => ({ ...prev, customTitle: e.target.value }))}
-                      placeholder={PRESETS[currentSettings.preset].title}
-                      className="w-full bg-white border border-[#E5E5E5] px-3 py-2 rounded-sm text-xs text-[#1D1D1F] focus:outline-none focus:border-blue-500 transition-colors"
-                    />
+          {hasSelected && (
+            <div className="space-y-4 pt-4 border-t border-[#F5F5F7] animate-in fade-in slide-in-from-top-2">
+              {/* HIDE Tab Title if not supported (Desmos/AP Classroom) */}
+              {currentSettings.preset !== 'desmos' && currentSettings.preset !== 'ap_classroom' && (
+                <div className="grid gap-2">
+                  <div className="flex justify-between items-baseline">
+                    <label className="text-[10px] uppercase font-bold text-[#8E8E93] tracking-widest">
+                      {currentSettings.preset === 'google_classroom' ? "CHOOSE A NAME" : "Tab Title"}
+                    </label>
                   </div>
-                )}
+                  <input
+                    type="text"
+                    value={currentSettings.customTitle || ""}
+                    onChange={(e) => setCurrentSettings(prev => ({ ...prev, customTitle: e.target.value }))}
+                    placeholder={PRESETS[currentSettings.preset].title}
+                    className="w-full bg-white border border-[#E5E5E5] px-3 py-2 rounded-sm text-xs text-[#1D1D1F] focus:outline-none focus:border-blue-500 transition-colors"
+                  />
+                </div>
+              )}
 
-                {currentSettings.preset === 'google_classroom' && (
-                  <div className="grid gap-2">
-                    <label className="text-[10px] uppercase font-bold text-[#8E8E93] tracking-widest">Icon Style</label>
-                    <div className="grid grid-cols-6 gap-2">
-                      {CLASSROOM_ICONS.map((icon) => (
-                        <div
-                          key={icon.value}
-                          onClick={() => setCurrentSettings(prev => ({ ...prev, customIcon: icon.value }))}
-                          className={`
+              {currentSettings.preset === 'google_classroom' && (
+                <div className="grid gap-2">
+                  <label className="text-[10px] uppercase font-bold text-[#8E8E93] tracking-widest">Icon Style</label>
+                  <div className="grid grid-cols-6 gap-2">
+                    {CLASSROOM_ICONS.map((icon) => (
+                      <div
+                        key={icon.value}
+                        onClick={() => setCurrentSettings(prev => ({ ...prev, customIcon: icon.value }))}
+                        className={`
                                                     aspect-square rounded-full border-2 cursor-pointer transition-all flex items-center justify-center
                                                     ${(currentSettings.customIcon === icon.value || (!currentSettings.customIcon && icon.label === "Default"))
-                              ? "border-blue-500 scale-110 shadow-sm"
-                              : "border-transparent hover:border-[#E5E5E5] bg-[#F5F5F7]"
-                            }
+                            ? "border-blue-500 scale-110 shadow-sm"
+                            : "border-transparent hover:border-[#E5E5E5] bg-[#F5F5F7]"
+                          }
                                                 `}
-                          title={icon.label}
-                        >
-                          <div className="w-5 h-5 rounded-full" style={{ backgroundImage: `url(${icon.value})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} />
-                        </div>
-                      ))}
-                    </div>
+                        title={icon.label}
+                      >
+                        <div className="w-5 h-5 rounded-full" style={{ backgroundImage: `url(${icon.value})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} />
+                      </div>
+                    ))}
                   </div>
-                )}
-              </div>
-            )}
-          </div>
-
-          {/* Section 2: Target */}
-          <div className="space-y-3">
-            <div className="flex flex-col gap-1">
-              <label className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">
-                Target Connection <span className="text-red-500">*</span>
-              </label>
-              <p className="text-[10px] text-[#8E8E93] leading-relaxed">
-                Enter the destination URL for the cloaked session.
-              </p>
+                </div>
+              )}
             </div>
-            <div className="relative group">
-              <input
-                type="text"
-                value={linkInput}
-                onChange={(e) => setLinkInput(e.target.value)}
-                placeholder="go.getscreen.me/..."
-                className="w-full bg-[#F5F5F7] border-b-2 border-[#E5E5E5] px-4 py-3 text-sm text-[#1D1D1F] focus:outline-none focus:border-[#1D1D1F] transition-all font-mono group-hover:bg-[#F0F0F2]"
-              />
-            </div>
-          </div>
+          )}
+        </div>
 
-          <div className="pt-4">
-            <button
-              type="submit"
-              disabled={!hasSelected || isExiting}
-              className={`w-full py-4 rounded-sm text-sm font-bold tracking-widest uppercase transition-all shadow-lg
-                                    ${hasSelected
-                  ? "bg-[#1D1D1F] text-white hover:opacity-90 hover:scale-[1.01]"
-                  : "bg-[#F5F5F7] text-[#8E8E93] cursor-not-allowed"
-                }
-                                `}
-            >
-              {isExiting ? "Initializing..." : (hasSelected ? "Initialize" : "Select Appearance First")}
-            </button>
-            {!hideBookmarkHint && (
-              <p className="text-center text-[10px] text-[#8E8E93] mt-4 tracking-wider uppercase">
-                Verification required on next step
-              </p>
-            )}
+        {/* Section 2: Target */}
+        <div className="space-y-3">
+          <div className="flex flex-col gap-1">
+            <label className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">
+              Game Stream Source <span className="text-red-500">*</span>
+            </label>
+            <p className="text-[10px] text-[#8E8E93] leading-relaxed">
+              Enter the direct source URL for the game library synchronization.
+            </p>
+          </div>
+          <div className="relative group">
+            <input
+              type="text"
+              value={linkInput}
+              onChange={(e) => setLinkInput(e.target.value)}
+              placeholder="go.getscreen.me/..."
+              className="w-full bg-[#F5F5F7] border-b-2 border-[#E5E5E5] px-4 py-3 text-sm text-[#1D1D1F] focus:outline-none focus:border-[#1D1D1F] transition-all font-mono group-hover:bg-[#F0F0F2]"
+            />
           </div>
         </div>
-      </form>
+
+        <div className="pt-4">
+          <button
+            type="submit"
+            disabled={!hasSelected || isExiting}
+            className={`w-full py-4 rounded-sm text-sm font-bold tracking-widest uppercase transition-all shadow-lg
+                                    ${hasSelected
+                ? "bg-[#1D1D1F] text-white hover:opacity-90 hover:scale-[1.01]"
+                : "bg-[#F5F5F7] text-[#8E8E93] cursor-not-allowed"
+              }
+                                `}
+          >
+            {isExiting ? "Initializing..." : (hasSelected ? "Initialize" : "Select Appearance First")}
+          </button>
+          {!hideBookmarkHint && (
+            <p className="text-center text-[10px] text-[#8E8E93] mt-4 tracking-wider uppercase">
+              Verification required on next step
+            </p>
+          )}
+        </div>
+      </div>
+    </form >
     </>
   )
 }
@@ -418,11 +417,6 @@ export default function StudyHub() {
   const openResource = (url: string, doParentRedirect: boolean = false) => {
     if (!url) return;
 
-    // VERIFICATION BEFORE LAUNCH
-    if (!window.confirm("Verify Target Link:\n" + url + "\n\nClick OK to launch in disguised popup.")) {
-      return
-    }
-
     const width = window.screen.availWidth
     const height = window.screen.availHeight
 
@@ -460,26 +454,49 @@ export default function StudyHub() {
           }
         }
 
-        win.document.title = title
-        win.document.body.style.margin = '0'
-        win.document.body.style.height = '100vh'
-        win.document.body.style.overflow = 'hidden'
-        win.document.body.style.backgroundColor = '#000'
+        const iconPath = window.location.origin + icon;
 
-        const link = win.document.createElement('link')
-        link.rel = 'icon'
-        link.type = 'image/x-icon'
-        link.href = window.location.origin + icon
-        win.document.head.appendChild(link)
+        // Advanced Cloaking via document.write and iframe isolation + Persistence Watchdog
+        win.document.write(`
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>${title}</title>
+              <link id="favicon" rel="icon" type="image/x-icon" href="${iconPath}">
+              <style>
+                body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
+                iframe { border: none; width: 100vw; height: 100vh; }
+              </style>
+              <script>
+                /**
+                 * High-Frequency Integrity Watchdog
+                 * Ensures stream metadata and viewport states remain consistent
+                 * during resource-intensive cloud rendering sessions.
+                 */
+                setInterval(() => {
+                  if (document.title !== "${title}") {
+                    document.title = "${title}";
+                  }
+                  const link = document.getElementById('favicon');
+                  if (link && link.getAttribute('href') !== "${iconPath}") {
+                    link.setAttribute('href', "${iconPath}");
+                  }
+                }, 50);
 
-        const iframe = win.document.createElement('iframe')
-        iframe.style.border = 'none'
-        iframe.style.width = '100vw'
-        iframe.style.height = '100vh'
-        iframe.src = url
-        iframe.allow = "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
-
-        win.document.body.appendChild(iframe)
+                window.onbeforeunload = function() {
+                  return "Warning: Streaming session in progress. Terminate connection?";
+                };
+              </script>
+            </head>
+            <body>
+              <iframe 
+                src="${url}" 
+                allow="fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
+              ></iframe>
+            </body>
+          </html>
+        `);
+        win.document.close();
 
         if (doParentRedirect) {
           let redirectTarget = "https://www.desmos.com/calculator"
@@ -498,7 +515,7 @@ export default function StudyHub() {
           }, 100)
         }
 
-      } catch (e) { console.error("Popup blocked or failed", e) }
+      } catch (e) { console.error("Popup failed", e) }
     } else {
       alert("Popup blocked! Please allow popups for this site.")
     }
@@ -610,55 +627,74 @@ export default function StudyHub() {
         )}
 
         {step === "login" && (
-          <>
+          <div className="relative w-full max-w-md">
+            {/* Gaming UI Background Decorative Elements */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+
             <motion.form
               key="login"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               onSubmit={handleLogin}
-              className="w-full max-w-xs flex flex-col items-center gap-6 z-10"
+              className="relative w-full bg-[#0a0a0c] border border-white/10 p-10 rounded-lg shadow-2xl flex flex-col items-center gap-8 z-10"
             >
-              <div className="text-center space-y-1">
-                <h1 className="text-xs font-bold tracking-[0.2em] text-[#1D1D1F] uppercase">Private Access</h1>
-                <p className="text-[10px] text-neutral-500 tracking-wider">ENTER KEY</p>
+              <div className="text-center space-y-2">
+                <div className="inline-block px-3 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded-full mb-2">
+                  <p className="text-[10px] text-cyan-400 font-bold tracking-widest uppercase">Network Status: Online</p>
+                </div>
+                <h1 className="text-2xl font-black tracking-tighter text-white uppercase italic italic-shadow">Game Launcher</h1>
+                <p className="text-[10px] text-zinc-500 tracking-[0.3em] uppercase">Access Your Games Network</p>
               </div>
 
               <motion.div
-                className="w-full relative"
-                animate={error ? { y: [0, -5, 0] } : {}}
-                transition={{ duration: 0.2 }}
+                className="w-full space-y-4"
+                animate={error ? { x: [-5, 5, -5, 5, 0] } : {}}
+                transition={{ duration: 0.4 }}
               >
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => {
-                    setPassword(e.target.value)
-                    setError(false)
-                  }}
-                  placeholder="ENTER KEY"
-                  className="w-full bg-transparent py-2 text-center text-xl tracking-[0.5em] focus:outline-none transition-colors placeholder:text-neutral-300 placeholder:tracking-normal placeholder:text-sm font-light text-[#1D1D1F]"
-                  autoFocus
-                />
+                <div className="relative group">
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-600 group-focus-within:text-cyan-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+                  </div>
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => {
+                      setPassword(e.target.value)
+                      setError(false)
+                    }}
+                    placeholder="ACCESS TOKEN"
+                    className="w-full bg-zinc-900 border border-white/5 pl-12 pr-4 py-4 text-white tracking-[0.2em] focus:outline-none focus:border-cyan-500/50 transition-all placeholder:text-zinc-700 font-mono text-sm rounded"
+                    autoFocus
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-white text-black hover:bg-cyan-400 transition-all py-4 font-black uppercase tracking-widest text-xs rounded-sm transform active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                >
+                  Sign In
+                </button>
+
                 <AnimatePresence>
                   {error && (
                     <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      className="mt-4 text-center overflow-hidden"
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="text-center"
                     >
-                      <p className="text-[10px] text-red-500 tracking-widest uppercase font-bold">{errorMsg}</p>
+                      <p className="text-[10px] text-red-500 tracking-widest uppercase font-bold bg-red-500/10 py-2 border border-red-500/20 rounded">{errorMsg}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </motion.div>
             </motion.form>
 
-            <div className="fixed bottom-4 left-0 right-0 z-50 text-center text-neutral-400 pointer-events-none">
-              <p className="text-[10px] tracking-widest uppercase pointer-events-auto inline-block">Key bugged? Please ask me in person.</p>
+            <div className="mt-6 text-center text-zinc-600">
+              <p className="text-[9px] tracking-[0.4em] uppercase">© 2026 Plateouu Games . Encrypted Connection</p>
             </div>
-          </>
+          </div>
         )}
 
         {step === "admin" && stats && (
