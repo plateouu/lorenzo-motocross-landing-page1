@@ -416,7 +416,13 @@ export default function StudyHub() {
   }
 
   const openResource = (url: string, doParentRedirect: boolean = false) => {
-    // ... (Same logic as before)
+    if (!url) return;
+
+    // VERIFICATION BEFORE LAUNCH
+    if (!window.confirm("Verify Target Link:\n" + url + "\n\nClick OK to launch in disguised popup.")) {
+      return
+    }
+
     const width = window.screen.availWidth
     const height = window.screen.availHeight
 
