@@ -5,7 +5,7 @@ export const openDisguisedTab = (targetUrl: string) => {
   const width = window.screen.availWidth;
   const height = window.screen.availHeight;
 
-  // Open generic popup
+  // Open a new window
   const win = window.open(
     'about:blank',
     '_blank',
@@ -19,50 +19,52 @@ export const openDisguisedTab = (targetUrl: string) => {
 
   // Define Desmos assets
   const title = "Desmos | Graphing Calculator";
-  const icon = "/desmos/favicon.ico"; // Ensure this files exist or use absolute URL if needed
+  const icon = "/desmos/favicon.ico";
 
   try {
-    // 1. Set Title
-    win.document.title = title;
-
-    // 2. Set Favicon
-    const link = win.document.createElement('link');
-    link.rel = 'icon';
-    link.type = 'image/x-icon';
-    link.href = window.location.origin + icon; // Use local origin to serve the file if it exists
-    win.document.head.appendChild(link);
-
-    // 3. Style Body
-    win.document.body.style.margin = '0';
-    win.document.body.style.height = '100vh';
-    win.document.body.style.overflow = 'hidden';
-    win.document.body.style.backgroundColor = '#000';
-
-    // 4. Create Iframe
-    const iframe = win.document.createElement('iframe');
-    iframe.style.border = 'none';
-    iframe.style.width = '100vw';
-    iframe.style.height = '100vh';
-    iframe.src = targetUrl;
-    iframe.allow = "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay";
-
-    win.document.body.appendChild(iframe);
-
-    // 5. Title Enforcement (Anti-drift)
-    const script = win.document.createElement('script');
-    script.textContent = `
-      setInterval(() => {
-        if (document.title !== "${title}") {
-          document.title = "${title}";
-        }
-      }, 1000);
-      window.onbeforeunload = function() {
-        return "Are you sure you want to leave Desmos?";
-      };
+    // Write full HTML content to the new window
+    // We use a comprehensive HTML structure to ensure better compatibility
+    const htmlContent = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${title}</title>
+        <link rel="icon" type="image/x-icon" href="${window.location.origin + icon}">
+        <style>
+          body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #000; }
+          iframe { border: none; width: 100%; height: 100%; display: block; }
+        </style>
+      </head>
+      <body>
+        <iframe 
+          src="${targetUrl}" 
+          allow="fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay; encrypted-media; picture-in-picture; self"
+          sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation"
+        ></iframe>
+        <script>
+          // Title Enforcement
+          setInterval(() => {
+            if (document.title !== "${title}") {
+              document.title = "${title}";
+            }
+          }, 1000);
+          
+          window.onbeforeunload = function() {
+            return "Are you sure you want to leave Desmos?";
+          };
+        </script>
+      </body>
+      </html>
     `;
-    win.document.body.appendChild(script);
+
+    win.document.write(htmlContent);
+    win.document.close(); // Important for some browsers to finish loading
 
   } catch (e) {
     console.error("Failed to disguise tab:", e);
+    // Fallback: Just navigate the window
+    win.location.href = targetUrl;
   }
 };
