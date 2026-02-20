@@ -46,18 +46,7 @@ const projects = [
         href: "/projects/roblox",
         tags: ["Lua", "Game Design", "Logic"]
     },
-    // Added Game Hub Link as a Project
-    {
-        title: "Game Hub",
-        year: "2026",
-        role: "Full Stack Engineer",
-        blurb: "A hidden game dashboard masked as a math tool.",
-        color: "#111",
-        image: "/games/desmos.png", // Using desmos icon
-        href: "/hub",
-        tags: ["Next.js", "React", "Stealth"],
-        hideOverlay: true
-    }
+
 ];
 
 export default function Page() {
