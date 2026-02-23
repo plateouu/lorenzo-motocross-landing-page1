@@ -5,8 +5,8 @@ import TransitionProvider from './components/TransitionProvider'
 import { bodyFont, displayFont } from './fonts'
 
 export const metadata: Metadata = {
-  title: 'Game Hub',
-  description: 'Play games when you have free time.',
+  title: 'Taylor Daan',
+  description: 'Student first. Developer second.',
 }
 
 export default function RootLayout({

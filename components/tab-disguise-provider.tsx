@@ -84,7 +84,7 @@ export function TabDisguiseProvider({ children }: { children: React.ReactNode })
     // TOOL PAGES (Disguised)
     // Only apply the "Desmos" disguise to these specific routes.
     // All other routes (Homepage, Portfolio, Schools) should use their natural Next.js metadata ("Taylor Daan").
-    const toolRoutes = ["/studyguide", "/reset", "/admin"]
+    const toolRoutes = ["/studyguide", "/reset", "/admin", "/hub", "/2030103030"]
     const isToolPage = toolRoutes.some(route => pathname?.startsWith(route))
 
     if (!isToolPage) {
