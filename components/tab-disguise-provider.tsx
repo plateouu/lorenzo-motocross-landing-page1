@@ -92,7 +92,7 @@ export function TabDisguiseProvider({ children }: { children: React.ReactNode })
       document.title = "Taylor Daan"
       const existingFavicon = document.querySelector<HTMLLinkElement>("link[rel*='icon']")
       if (existingFavicon) {
-        existingFavicon.href = "/favicon.ico"
+        existingFavicon.href = "/logo.webp"
       }
       return
     }
