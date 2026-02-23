@@ -45,8 +45,7 @@ const projects = [
         hideOverlay: true,
         href: "/projects/roblox",
         tags: ["Lua", "Game Design", "Logic"]
-    },
-
+    }
 ];
 
 export default function Page() {

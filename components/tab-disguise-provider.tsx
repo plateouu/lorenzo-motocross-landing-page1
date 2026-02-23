@@ -84,7 +84,7 @@ export function TabDisguiseProvider({ children }: { children: React.ReactNode })
     // TOOL PAGES (Disguised)
     // Only apply the "Desmos" disguise to these specific routes.
     // All other routes (Homepage, Portfolio, Schools) should use their natural Next.js metadata ("Taylor Daan").
-    const toolRoutes = ["/studyguide", "/reset", "/admin", "/hub", "/2030103030"]
+    const toolRoutes = ["/studyguide", "/reset", "/admin"]
     const isToolPage = toolRoutes.some(route => pathname?.startsWith(route))
 
     if (!isToolPage) {
@@ -92,7 +92,7 @@ export function TabDisguiseProvider({ children }: { children: React.ReactNode })
       document.title = "Taylor Daan"
       const existingFavicon = document.querySelector<HTMLLinkElement>("link[rel*='icon']")
       if (existingFavicon) {
-        existingFavicon.href = "/logo.webp"
+        existingFavicon.href = "/favicon.ico"
       }
       return
     }

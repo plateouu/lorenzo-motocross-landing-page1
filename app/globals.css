@@ -4,15 +4,12 @@
 
 @layer base {
   :root {
-
-    /* --- COLLINS "AGENCY" PALETTE (Dark Mode Override) --- */
-    --color-off-white: #0a0a0a;
-    /* Dark Background */
-    --color-off-black: #ffffff;
-    /* Light Text */
-    --color-mid-grey: #333333;
-    --color-accent: #3b82f6;
-    /* Blue-500 */
+    /* --- COLLINS "AGENCY" PALETTE --- */
+    --color-off-white: #f8f8f7;
+    --color-off-black: #140700;
+    --color-mid-grey: #d0d0c8;
+    --color-accent: #ff7600;
+    /* Subtle orange accent from reference */
 
     --background: var(--color-off-white);
     --foreground: var(--color-off-black);
