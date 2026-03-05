@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa" />
+    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,11 +60,11 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Administrator\\Downloads\\lorenzo-motocross-landing-page-master\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="npm.Next.js: server-side">
+  <component name="RunManager">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
@@ -104,14 +106,8 @@
       <workItem from="1770042212578" duration="10000" />
       <workItem from="1770588134336" duration="11000" />
       <workItem from="1770719487549" duration="15274000" />
-    </task>
-    <task id="LOCAL-00137" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769145529851</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1769145529851</updated>
+      <workItem from="1771883280693" duration="164000" />
+      <workItem from="1771884732009" duration="7000" />
     </task>
     <task id="LOCAL-00138" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -497,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770831858168</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="fa">
+      <option name="closed" value="true" />
+      <created>1771883291800</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1771883291800</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
