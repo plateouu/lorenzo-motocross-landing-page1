@@ -68,8 +68,8 @@ const WEEK: DayPlan[] = [
       { name: "Hanging Leg Raises", sets: "3 × failure", videoId: "hdng3Nm1x_E" },
       { name: "Cable Woodchops", sets: "3 × 12 each side", videoId: "0_QBtLJiYaw" },
       { name: "Plank", sets: "3 × 60 sec", videoId: "pvIjsG5Svck" },
-      { name: "Back Extension", sets: "3 × 12", videoId: "vx0bSEzyzEo" },
-      { name: "Smith Machine Calf Raises", sets: "4 × 15", videoId: "g2rGZk_bJ4k" },
+      { name: "Back Extension", sets: "3 × 12", videoId: "F0S12T4tPKA" },
+      { name: "Smith Machine Calf Raises", sets: "4 × 15", videoId: "p-x0l_pB12M" },
     ],
   },
   {
@@ -82,7 +82,7 @@ const WEEK: DayPlan[] = [
       { name: "Bulgarian Split Squat", sets: "3 × 8 each leg", videoId: "2C-uNgKwPLE" },
       { name: "Seated Leg Curl", sets: "4 × 10", videoId: "Wy1SwoY2aaQ" },
       { name: "Leg Extensions", sets: "3 × 12", videoId: "YyvSfVjQeL0" },
-      { name: "Smith Machine Calf Raises", sets: "4 × 15", videoId: "g2rGZk_bJ4k" },
+      { name: "Smith Machine Calf Raises", sets: "4 × 15", videoId: "p-x0l_pB12M" },
     ],
   },
   {
@@ -95,7 +95,7 @@ const WEEK: DayPlan[] = [
       { name: "Seated Cable Row", sets: "4 × 10", videoId: "GZbfZ033f74" },
       { name: "Dumbbell Shrugs", sets: "4 × 12", videoId: "cJRVVxmytaM" },
       { name: "Dumbbell Hammer Curl", sets: "3 × 10", videoId: "zC3nLlEvin4" },
-      { name: "Cable Bicep Curl", sets: "3 × 12", videoId: "NFzpLET5Zmg" },
+      { name: "Cable Bicep Curl", sets: "3 × 12", videoId: "43VKw8d9IKA" },
       { name: "Face Pull", sets: "3 × 12", videoId: "rep-qVOkqgk" },
     ],
   },
@@ -105,12 +105,12 @@ const WEEK: DayPlan[] = [
     focus: "This Is the Day Your Arms Grow",
     accent: "#ffaa00",
     exercises: [
-      { name: "EZ Bar Curl", sets: "4 × 10", videoId: "kwG2ipFRgFo" },
+      { name: "EZ Bar Curl", sets: "4 × 10", videoId: "49xiNdJ0txQ" },
       { name: "Incline Dumbbell Curl", sets: "3 × 10", videoId: "soxrZlIl35U" },
       { name: "Tricep Rope Pushdown", sets: "4 × 12", videoId: "kiuVA0gs3EI" },
       { name: "Overhead Cable Tricep Extension", sets: "3 × 10", videoId: "nRiJVZDpdL0" },
       { name: "Lateral Raises", sets: "3 × 15", videoId: "Y29xKcze8Ik" },
-      { name: "Cable Crunch", sets: "3 × 15", videoId: "AV5PmrFqMUU" },
+      { name: "Cable Crunch", sets: "3 × 15", videoId: "y_2mFw_V0G0" },
     ],
   },
 ];
