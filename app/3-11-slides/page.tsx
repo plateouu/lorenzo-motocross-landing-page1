@@ -317,7 +317,7 @@ const debates = [
 
 export default function SlidesPage() {
   const [slide, setSlide] = useState(0);
-  const TOTAL = 21;
+  const TOTAL = 22;
   const [dnLeft, setDnLeft] = useState(300);
   const [dnRun, setDnRun] = useState(false);
   const [dnStarted, setDnStarted] = useState(false);
@@ -332,7 +332,7 @@ export default function SlidesPage() {
   const goNext = useCallback(() => setSlide(s => Math.min(s + 1, TOTAL - 1)), []);
 
   const forward = useCallback(() => {
-    if (slide === 1 && !dnStarted) {
+    if (slide === 3 && !dnStarted) {
       setDnStarted(true); setDnRun(true);
       dnRef.current = setInterval(() => {
         setDnLeft(t => {
@@ -342,10 +342,10 @@ export default function SlidesPage() {
       }, 1000);
       return;
     }
-    if (slide === 13 && !dt[0]) { setDt(d => [true, d[1], d[2]]); return; }
-    if (slide === 14 && !dt[1]) { setDt(d => [d[0], true, d[2]]); return; }
-    if (slide === 15 && !dt[2]) { setDt(d => [d[0], d[1], true]); return; }
-    const mi = slide - 16;
+    if (slide === 14 && !dt[0]) { setDt(d => [true, d[1], d[2]]); return; }
+    if (slide === 15 && !dt[1]) { setDt(d => [d[0], true, d[2]]); return; }
+    if (slide === 16 && !dt[2]) { setDt(d => [d[0], d[1], true]); return; }
+    const mi = slide - 17;
     if (mi >= 0 && mi <= 2) {
       if (mcqRevealed[mi]) { goNext(); return; }
       mcqRefs[mi].current?.reveal();
@@ -394,7 +394,45 @@ export default function SlidesPage() {
       </motion.div>
     </div>,
 
-    // 1 — Do Now
+    // 1 — EKs
+    <div key="ek" className="split">
+      <div className="split-main">
+        <motion.h2 className="section-title" {...rise(0)}>Essential Knowledge</motion.h2>
+        <div className="note-stack tight">
+          {[
+            <><b>EK 3.11.A.1:</b> The New Negro movement encouraged African Americans to define their own identity and to advocate for themselves politically in the midst of the nadir&apos;s atrocities.</>,
+            <><b>EK 3.11.A.2:</b> The New Negro movement pursued the creation of a Black aesthetic, which was reflected in the artistic and cultural achievements of Black creators.</>,
+            <><b>EK 3.11.A.3:</b> The New Negro movement produced innovations in music (e.g., blues and jazz), art, and literature that served as counternarratives to prevailing racial stereotypes. These artistic innovations reflected the migrations of African Americans from the South to urban centers in the North and Midwest.</>,
+            <><b>EK 3.11.A.4:</b> The movement encompassed several cultural movements, including the Harlem Renaissance. The Harlem Renaissance was a flourishing of Black literary, artistic, and intellectual life that created a cultural revolution in the United States in the 1920s and 1930s.</>,
+          ].map((t, i) => <motion.div key={i} className="card note-card" style={{ fontSize: '15px', padding: '16px' }} {...rise(0.06 + i * 0.05)}>{t}</motion.div>)}
+        </div>
+      </div>
+      <div className="split-side">
+        <Photo src="/apaf/harlem.jpg" alt="Harlem Renaissance" tall />
+      </div>
+    </div>,
+
+    // 2 — Key Vocabulary
+    <div key="vocab" className="split">
+      <div className="split-main" style={{ minWidth: '550px' }}>
+        <motion.h2 className="section-title" {...rise(0)}>Key Vocabulary</motion.h2>
+        <div className="note-stack" style={{ gap: '10px' }}>
+          {[
+            <><b>New Negro Movement:</b> A cultural and political movement starting in the late 1800s to redefine Black identity, embrace racial pride, and challenge white supremacy.</>,
+            <><b>Harlem Renaissance:</b> A flourishing of Black literary, artistic, and intellectual life centered in Harlem during the 1920s and 1930s.</>,
+            <><b>Black Aesthetic:</b> A distinctive style of art rooted in Black cultural experience; rejecting white standards of beauty.</>,
+            <><b>Nadir of Race Relations:</b> The period (1890s-1920s) of extreme racial violence, disenfranchisement, and segregation where this movement emerged.</>,
+            <><b>Counternarrative:</b> Stories or art pushing back against the dominant racist stereotypes depicting Black people as inferior.</>,
+            <><b>Great Migration:</b> The mass movement of ~6 million African Americans from the rural South to northern/midwestern urban centers.</>,
+          ].map((t, i) => <motion.div key={i} className="card note-card" style={{ fontSize: '14px', padding: '12px' }} {...rise(0.06 + i * 0.05)}>{t}</motion.div>)}
+        </div>
+      </div>
+      <div className="split-side">
+        <Photo src="/apaf/new_negro.jpg" alt="The New Negro" tall />
+      </div>
+    </div>,
+
+    // 3 — Do Now
     <div key="1" className="split">
       <div className="split-main">
         <motion.div className="hdr-row" {...rise(0)}>
@@ -592,14 +630,17 @@ export default function SlidesPage() {
       </div>
     </div>,
 
-    // 12 — Debate intro
+    // 11 — Debate intro
     <div key="12" className="cx">
       <motion.div className="icon-circle" {...pop(0)}>🗣️</motion.div>
       <motion.h1 className="display-title" {...rise(0.15)}>Debate It Out</motion.h1>
-      <motion.div className="hero-chips" {...rise(0.3)}>
+      <motion.p className="sub-hero" {...rise(0.25)} style={{ fontSize: '20px', color: '#444', marginTop: '16px', fontWeight: 600, maxWidth: '800px', lineHeight: 1.5 }}>
+        <b>Directions:</b> Prepare arguments using evidence from Alain Locke's <i>The New Negro</i> and Langston Hughes's <i>The Negro Artist and the Racial Mountain</i>.
+      </motion.p>
+      <motion.div className="hero-chips" {...rise(0.35)} style={{ marginTop: '24px' }}>
         <span className="chip">3 Min Prep</span>
         <span className="chip chip-orange">5 Min Debate</span>
-        <span className="chip">3 Topics</span>
+        <span className="chip">Use Historical Evidence</span>
       </motion.div>
     </div>,
 
