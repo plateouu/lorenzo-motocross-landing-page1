@@ -317,7 +317,7 @@ const debates = [
 
 export default function SlidesPage() {
   const [slide, setSlide] = useState(0);
-  const TOTAL = 22;
+  const TOTAL = 23;
   const [dnLeft, setDnLeft] = useState(300);
   const [dnRun, setDnRun] = useState(false);
   const [dnStarted, setDnStarted] = useState(false);
@@ -342,10 +342,10 @@ export default function SlidesPage() {
       }, 1000);
       return;
     }
-    if (slide === 13 && !dt[0]) { setDt(d => [true, d[1], d[2]]); return; }
-    if (slide === 14 && !dt[1]) { setDt(d => [d[0], true, d[2]]); return; }
-    if (slide === 15 && !dt[2]) { setDt(d => [d[0], d[1], true]); return; }
-    const mi = slide - 16;
+    if (slide === 15 && !dt[0]) { setDt(d => [true, d[1], d[2]]); return; }
+    if (slide === 16 && !dt[1]) { setDt(d => [d[0], true, d[2]]); return; }
+    if (slide === 17 && !dt[2]) { setDt(d => [d[0], d[1], true]); return; }
+    const mi = slide - 18;
     if (mi >= 0 && mi <= 2) {
       if (mcqRevealed[mi]) { goNext(); return; }
       mcqRefs[mi].current?.reveal();
