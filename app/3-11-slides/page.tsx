@@ -260,14 +260,14 @@ const mcqs = [
     q: "The New Negro movement most directly reflected which of the following developments in the early twentieth century?",
     opts: [
       { key: "A", text: "The decline of African American political activism after Reconstruction" },
-      { key: "B", text: "A growing emphasis on self-definition, racial pride, and cultural expression among African Americans" },
-      { key: "C", text: "Federal legislation that protected the civil rights of African Americans in northern cities" },
+      { key: "B", text: "Federal legislation that protected the civil rights of African Americans in northern cities" },
+      { key: "C", text: "A growing emphasis on self-definition, racial pride, and cultural expression among African Americans" },
       { key: "D", text: "The integration of African American artists into mainstream white cultural institutions" },
-    ], ans: "B",
+    ], ans: "C",
     explanations: {
       "A": "Incorrect. African American political activism did not decline; it transformed and grew through organizations like the NAACP and UNIA.",
-      "B": "Correct! The New Negro movement was defined by its push for self-definition, racial pride, and cultural independence.",
-      "C": "Incorrect. There was no widespread federal legislation protecting civil rights in northern cities during this time period.",
+      "B": "Incorrect. There was no widespread federal legislation protecting civil rights in northern cities during this time period.",
+      "C": "Correct! The New Negro movement was defined by its push for self-definition, racial pride, and cultural independence.",
       "D": "Incorrect. The New Negro movement sought to build independent Black cultural expression, not focus on integrating into white institutions."
     }
   },
@@ -275,28 +275,28 @@ const mcqs = [
     q: "Langston Hughes's essay \"The Negro Artist and the Racial Mountain\" most directly argues for which of the following?",
     opts: [
       { key: "A", text: "African American artists should seek approval from white critics to gain wider recognition." },
-      { key: "B", text: "Black artists should embrace their own racial identity and cultural traditions in their work." },
+      { key: "B", text: "African American literature should focus exclusively on the experience of slavery." },
       { key: "C", text: "The Harlem Renaissance was primarily a political movement rather than an artistic one." },
-      { key: "D", text: "African American literature should focus exclusively on the experience of slavery." },
-    ], ans: "B",
+      { key: "D", text: "Black artists should embrace their own racial identity and cultural traditions in their work." },
+    ], ans: "D",
     explanations: {
       "A": "Incorrect. This is the exact opposite of Hughes's argument; he criticized Black artists who wanted to be white or cater to white audiences.",
-      "B": "Correct! Hughes powerfully argued that Black artists must proudly embrace their own culture, rhythm, and life without fear or shame.",
+      "B": "Incorrect. Hughes celebrated contemporary, everyday Black life (like jazz and blues), not just historical themes of slavery.",
       "C": "Incorrect. Hughes was a poet and writer; his essay focused explicitly on the role of the artist and cultural production.",
-      "D": "Incorrect. Hughes celebrated contemporary, everyday Black life (like jazz and blues), not just historical themes of slavery."
+      "D": "Correct! Hughes powerfully argued that Black artists must proudly embrace their own culture, rhythm, and life without fear or shame."
     }
   },
   {
     q: "Which of the following best describes the relationship between the Great Migration and the Harlem Renaissance?",
     opts: [
-      { key: "A", text: "The Great Migration had no significant impact on cultural developments in northern cities." },
-      { key: "B", text: "The migration of African Americans from the South brought cultural traditions that helped fuel artistic innovations in urban centers like Harlem." },
+      { key: "A", text: "The migration of African Americans from the South brought cultural traditions that helped fuel artistic innovations in urban centers like Harlem." },
+      { key: "B", text: "The Great Migration had no significant impact on cultural developments in northern cities." },
       { key: "C", text: "The Harlem Renaissance primarily drew on European artistic traditions rather than African American culture." },
       { key: "D", text: "The Great Migration was caused by the success of the Harlem Renaissance in attracting Southern Black workers." },
-    ], ans: "B",
+    ], ans: "A",
     explanations: {
-      "A": "Incorrect. The influx of millions of Black southerners fundamentally transformed northern urban culture.",
-      "B": "Correct! Migrants brought southern cultural traditions (like blues) that evolved and blossomed in northern cities, directly fueling the Renaissance.",
+      "A": "Correct! Migrants brought southern cultural traditions (like blues) that evolved and blossomed in northern cities, directly fueling the Renaissance.",
+      "B": "Incorrect. The influx of millions of Black southerners fundamentally transformed northern urban culture.",
       "C": "Incorrect. The core defining feature of the Harlem Renaissance was its reliance on distinctively African American culture and roots.",
       "D": "Incorrect. The causality is backward. Economic opportunities and escaping Jim Crow caused the Great Migration, which then enabled the Renaissance."
     }
