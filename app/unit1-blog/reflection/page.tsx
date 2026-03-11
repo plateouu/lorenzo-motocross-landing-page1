@@ -16,7 +16,7 @@ export default function Reflection() {
           className="text-[#131211] text-5xl md:text-[5.5rem] leading-[1.05] tracking-tighter font-black mb-20"
           style={{ fontFamily: 'var(--font-space)' }}
         >
-          Analyzing the <span className="inline-block bg-[#ff3b30] text-[#f3efe0] px-4 pt-1 pb-2 rounded-[40px] border-[4px] border-[#131211] shadow-[6px_6px_0px_#131211] rotate-[2deg] mx-1">Acts</span> of Literacy.
+          The <span className="inline-block bg-[#ff3b30] text-[#f3efe0] px-4 pt-1 pb-2 rounded-[40px] border-[4px] border-[#131211] shadow-[6px_6px_0px_#131211] rotate-[2deg] mx-1">Act</span> of Design.
         </h1>
 
         <div className="space-y-12 text-[#131211] text-xl md:text-2xl leading-[1.7] font-medium" style={{ fontFamily: 'var(--font-outfit)' }}>

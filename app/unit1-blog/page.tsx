@@ -16,14 +16,14 @@ export default function Unit1BlogHome() {
         </div>
 
         <h1 
-          className="text-[#131211] text-[4rem] md:text-[6.5rem] lg:text-[9rem] leading-[1.05] tracking-tighter font-black mb-12"
+          className="text-[#131211] text-[4rem] md:text-[6.5rem] lg:text-[8rem] leading-[1.05] tracking-tighter font-black mb-12"
           style={{ fontFamily: 'var(--font-space)' }}
         >
-          Language,<br />
+          Overthinking<br />
           <span className="inline-flex items-center justify-center bg-[#ff3b30] text-[#f3efe0] px-8 pt-1 pb-4 mx-2 rounded-[50px] border-[4px] border-[#131211] shadow-[10px_10px_0px_#131211] rotate-[-2deg] align-middle transform -translate-y-2 relative overflow-visible">
-            Identity
-          </span>,
-          <br />& Power.
+            Out
+          </span>
+          <br />Loud.
         </h1>
         
           <p 
