@@ -23,10 +23,10 @@ export default function AboutBlog() {
 
         <div className="space-y-12 text-[#f3efe0] text-xl md:text-2xl leading-[1.7] font-medium p-10 md:p-14 border-[6px] border-[#131211] bg-[#131211] shadow-[12px_12px_0px_#ff3b30] rounded-[60px] rounded-tr-[10px]" style={{ fontFamily: 'var(--font-outfit)' }}>
           <p>
-            This blog was started as a question: what if the most important things in life are the ones that we pass by?
+            This blog was inspired by a simple question: what if the most important things in life are the ones that we keep walking past?
           </p>
           <p>
-            This blog, built around the ideas discussed in Unit 1, is dedicated to slowing down and paying attention to the interactions that construct our identities. We look closely at the interactions that define us. We dissect the story that others tell about us.
+            As dedicated as I am to discussing the topics of Unit 1, this blog is dedicated to slowing down and paying attention to the everyday interactions that define who we are.
           </p>
         </div>
         

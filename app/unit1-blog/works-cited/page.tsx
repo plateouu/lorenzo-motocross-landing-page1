@@ -3,12 +3,9 @@
 import TransitionLink from "../components/TransitionLink";
 
 const citations = [
-  'Adichie, Chimamanda Ngozi. "The Danger of a Single Story." TEDGlobal 2009, July 2009',
-  'Lyiscott, Jamila. "3 Ways to Speak English." TEDSalon NY2014, Feb. 2014',
+  'Adichie, Chimamanda Ngozi. "The Danger of a Single Story." TED, July 2009, www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story.',
+  'Lyiscott, Jamila. "3 Ways to Speak English." TED, Feb. 2014, www.ted.com/talks/jamila_lyiscott_3_ways_to_speak_english.',
   'Melzer, Dan, and Kevin Coxwell-Teague. Everything\'s a Text: Readings for Composition. Pearson Education, 2010.',
-  'Clark-Owens, Devon. "Everyday Literacy Practices and Community Identity." Journal of Literacy Research, vol. 48, no. 2, 2016',
-  'Jordan, June. "Nobody Mean More to Me Than You and the Future Life of Willie Jordan." Harvard Educational Review, vol. 58, no. 3, 1988',
-  'Kumar, Revathi. "Code-Switching as Cultural Navigation." Applied Linguistics Review, vol. 11, no. 4, 2020',
 ];
 
 export default function WorksCited() {

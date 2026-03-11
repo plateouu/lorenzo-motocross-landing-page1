@@ -23,10 +23,10 @@ export default function AboutAuthor() {
 
         <div className="space-y-12 text-[#131211] text-xl md:text-2xl leading-[1.7] font-medium p-10 md:p-14 bg-[#f3efe0] shadow-[12px_12px_0px_#ff3b30] rounded-[60px] rounded-bl-[10px] border-[6px] border-[#131211]" style={{ fontFamily: 'var(--font-outfit)' }}>
           <p>
-            As an observant high school student, I take notice of the world around me. I observe how others interact with the world and with each other.
+            As an highly observant student in high school, I always take the time to observe the world around me. I notice the way that people act in certain ways in certain situations. I observe the way that others speak to me.
           </p>
           <p>
-            Writing is a means of processing the world around me. It is a way of slowing down and examining the ordinary very seriously. This blog is an extension of that instinct.
+            Writing is a way for me to process the world around me. It is a way for me to slow down and examine the world with the same observance that I naturally possess. Therefore, this blog is a way for me to take the ordinary very seriously.
           </p>
         </div>
         

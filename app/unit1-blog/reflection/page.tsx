@@ -21,11 +21,11 @@ export default function Reflection() {
 
         <div className="space-y-12 text-[#131211] text-xl md:text-2xl leading-[1.7] font-medium" style={{ fontFamily: 'var(--font-outfit)' }}>
           <p className="first-letter:text-[4.5rem] md:first-letter:text-[5.5rem] first-letter:font-black first-letter:text-[#f3efe0] first-letter:bg-[#131211] first-letter:px-5 first-letter:pt-2 first-letter:pb-3 first-letter:mr-6 first-letter:float-left first-letter:leading-none first-letter:shadow-[8px_8px_0px_#ff3b30] first-letter:rounded-full first-letter:border-[4px] first-letter:border-[#131211]">
-            When I first started thinking about the blog post, I struggled with how to best translate all of this into the digital world. My initial thoughts on the blog were overly formal, as if it were an essay. Yet, the act of literacy requires a different approach. Literacy is situated within contexts. Therefore, I had to adjust my mind and my composing process to fit the digital medium.
+            When I first began writing the blog post titled “Pennies of Power,” I struggled with the idea of how to translate the academic concepts of language and identity into a digital space. My initial blog posts had a more formal tone, as I approached the blog as if it were an essay. The concept of act of literacy, as defined by <a href="https://www.goodreads.com/book/show/9060416-everything-s-a-text" target="_blank" rel="noopener noreferrer" className="font-bold underline decoration-wavy decoration-[#ff3b30] hover:text-[#ff3b30] transition-colors">Dan Melzer and Kevin Coxwell-Teague</a>, is not simply the written word, but also the visual components of a composition. Therefore, I needed to alter the way that I approached my blog post to fit this new concept of act of literacy.
           </p>
           
           <p>
-            One specific learning moment occurred when I decided to change the visual design of the blog. <a href="https://www.goodreads.com/book/show/9060416-everything-s-a-text" target="_blank" rel="noopener noreferrer" className="font-bold underline decoration-wavy decoration-[#ff3b30] hover:text-[#ff3b30] transition-colors">Dan Melzer and Kevin Coxwell-Teague</a> discussed the idea that composing involves more than just the text that is written. Therefore, I had to think about the visual components of my blog and how they would reflect the content that I was publishing. I had to perform an act of visual literacy to command the attention of my audience. The visual design of the blog would reflect the heavy nature of the discussion regarding power dynamics.
+            One of the main changes that I made to my blog post was in the visual design of my blog. Melzer and Coxwell-Teague argue that acts of literacy incorporate both text and visual components. Thus, I altered the visual design of my blog post to command the attention of readers. The visual elements of my blog reflect the heavy nature of the concepts that I am discussing in my blog post. Therefore, the medium in which I published my blog post became a part of my message.
           </p>
           
           <blockquote className="my-24 p-10 md:p-16 bg-[#131211] text-[#f3efe0] shadow-[12px_12px_0px_#ff3b30] rounded-[60px] rounded-tl-[10px] border-[6px] border-[#131211] relative">
@@ -39,11 +39,11 @@ export default function Reflection() {
           </blockquote>
 
           <p>
-            This learning was significantly helpful in adjusting my mind to the idea that academic writing and digital expression are not separate activities. Instead, they are both forms of literacy that must be considered in their contexts. Therefore, I had to analyze my work in terms of its situated nature. I had to find a way to discuss both the everyday nature of high school life and the structural nature of societal stereotyping.
+            Through this process, I learned about the concept of situated literacies. I had previously considered literacy and academic writing as separate concepts from digital publishing. Yet, by weaving my personal reflections with the concepts and authors discussed in my blog post, I learned that both my audience of peers and instructors, as well as my own voice as an author, must be considered in the composition of my blog post.
           </p>
 
           <p>
-            Through this process of adjustment, I found a way to balance these elements in my blog post. Therefore, I was able to prove my point regarding the nature of literacy and the dynamic relationship between the reader and the text.
+            Through this blog post, I have learned that acts of literacy can be intentional in their design. By analyzing the situated nature of my blog post and its required audience, I was able to find a balance between discussing the everyday experiences of high school students and the structural aspects of society’s understanding of those students. Therefore, through this blog post, I have found a way to express myself as an author in a way that is intentional and with purpose.
           </p>
         </div>
       </div>
