@@ -48,32 +48,34 @@ export default function Navigation() {
             animate={{ opacity: 1, clipPath: "circle(150% at top right)" }}
             exit={{ opacity: 0, clipPath: "circle(0% at top right)" }}
             transition={{ duration: 0.6, ease: [0.83, 0, 0.17, 1] }}
-            className="fixed inset-0 z-40 bg-[#f3efe0] flex flex-col justify-center items-center"
+            className="fixed inset-0 z-40 bg-[#f3efe0] overflow-y-auto"
           >
             {/* Background decorative circles */}
-            <div className="absolute top-10 left-10 w-32 h-32 border-[4px] border-[#131211] rounded-full opacity-20 pointer-events-none" />
-            <div className="absolute bottom-20 right-20 w-64 h-64 bg-[#ff3b30] border-[4px] border-[#131211] rounded-full opacity-20 pointer-events-none" />
+            <div className="fixed top-10 left-10 w-32 h-32 border-[4px] border-[#131211] rounded-full opacity-20 pointer-events-none z-0" />
+            <div className="fixed bottom-20 right-20 w-64 h-64 bg-[#ff3b30] border-[4px] border-[#131211] rounded-full opacity-20 pointer-events-none z-0" />
 
-            <nav className="flex flex-col items-center gap-4 md:gap-8 relative z-10 w-full px-4 overflow-y-auto max-h-[75vh] py-6 scrollbar-hide">
-              {LINKS.map((link) => (
-                <TransitionLink
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter transition-all duration-300 py-3 px-8 rounded-[40px] border-[3px] sm:border-[4px] border-[#131211] text-center max-w-[90vw] ${
-                    pathname === link.href 
-                      ? "bg-[#ff3b30] text-[#f3efe0] shadow-[6px_6px_0px_#131211] rotate-[-2deg]" 
-                      : "bg-[#f3efe0] text-[#131211] hover:bg-[#131211] hover:text-[#f3efe0] hover:shadow-[6px_6px_0px_#ff3b30]"
-                  }`}
-                  style={{ fontFamily: 'var(--font-space)' }}
-                >
-                  {link.name}
-                </TransitionLink>
-              ))}
-            </nav>
-            
-            <div className="absolute bottom-12 font-black text-sm uppercase tracking-widest bg-[#131211] text-[#f3efe0] px-6 py-3 rounded-full border-[3px] border-[#131211] shadow-[5px_5px_0px_#ff3b30] rotate-2" style={{ fontFamily: 'var(--font-space)' }}>
-              Taylor Daan / Unit 1
+            <div className="min-h-[100svh] w-full flex flex-col justify-center items-center py-28 px-4 relative z-10">
+              <nav className="flex flex-col items-center gap-4 sm:gap-6 md:gap-8 w-full">
+                {LINKS.map((link) => (
+                  <TransitionLink
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-xl sm:text-2xl md:text-5xl lg:text-6xl font-black tracking-tighter transition-all duration-300 py-3 sm:py-4 px-6 sm:px-10 rounded-[40px] border-[3px] sm:border-[4px] border-[#131211] text-center max-w-[85vw] ${
+                      pathname === link.href 
+                        ? "bg-[#ff3b30] text-[#f3efe0] shadow-[6px_6px_0px_#131211] rotate-[-2deg]" 
+                        : "bg-[#f3efe0] text-[#131211] hover:bg-[#131211] hover:text-[#f3efe0] hover:shadow-[6px_6px_0px_#ff3b30]"
+                    }`}
+                    style={{ fontFamily: 'var(--font-space)' }}
+                  >
+                    {link.name}
+                  </TransitionLink>
+                ))}
+              </nav>
+              
+              <div className="mt-12 font-black text-[10px] sm:text-xs md:text-sm uppercase tracking-widest bg-[#131211] text-[#f3efe0] px-6 py-3 rounded-full border-[3px] border-[#131211] shadow-[5px_5px_0px_#ff3b30] rotate-2" style={{ fontFamily: 'var(--font-space)' }}>
+                Taylor Daan / Unit 1
+              </div>
             </div>
           </motion.div>
         )}
