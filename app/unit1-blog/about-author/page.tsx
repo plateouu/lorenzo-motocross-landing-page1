@@ -23,10 +23,10 @@ export default function AboutAuthor() {
 
         <div className="space-y-12 text-[#131211] text-xl md:text-2xl leading-[1.7] font-medium p-10 md:p-14 bg-[#f3efe0] shadow-[12px_12px_0px_#ff3b30] rounded-[60px] rounded-bl-[10px] border-[6px] border-[#131211]" style={{ fontFamily: 'var(--font-outfit)' }}>
           <p>
-            As an highly observant student in high school, I always take the time to observe the world around me. I notice the way that people act in certain ways in certain situations. I observe the way that others speak to me.
+            As an student who is dedicated to observing the world around me, I try to take notice of the people and the world around me. I pay attention to how people act in certain situations, and how the tone of individuals can differ in certain conversations.
           </p>
           <p>
-            Writing is a way for me to process the world around me. It is a way for me to slow down and examine the world with the same observance that I naturally possess. Therefore, this blog is a way for me to take the ordinary very seriously.
+            Writing is a way for me to process the world around me. It allows me to slow down and take notice of the reality of our world. Therefore, this blog, dedicated to the topics of Unit 1, is also an extension of me and my observations of the world.
           </p>
         </div>
         

@@ -26,7 +26,7 @@ export default function AboutBlog() {
             This blog was inspired by a simple question: what if the most important things in life are the ones that we keep walking past?
           </p>
           <p>
-            As dedicated as I am to discussing the topics of Unit 1, this blog is dedicated to slowing down and paying attention to the everyday interactions that define who we are.
+            As dedicated as I am to discussing the topics of Unit 1, this blog is dedicated to slowing down and paying attention to the interactions that define who we are.
           </p>
         </div>
         
