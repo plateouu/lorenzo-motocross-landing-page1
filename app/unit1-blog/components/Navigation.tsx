@@ -54,15 +54,15 @@ export default function Navigation() {
             <div className="absolute top-10 left-10 w-32 h-32 border-[4px] border-[#131211] rounded-full opacity-20 pointer-events-none" />
             <div className="absolute bottom-20 right-20 w-64 h-64 bg-[#ff3b30] border-[4px] border-[#131211] rounded-full opacity-20 pointer-events-none" />
 
-            <nav className="flex flex-col items-center gap-6 md:gap-8 relative z-10">
+            <nav className="flex flex-col items-center gap-4 md:gap-8 relative z-10 w-full px-4 overflow-y-auto max-h-[75vh] py-6 scrollbar-hide">
               {LINKS.map((link) => (
                 <TransitionLink
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter transition-all duration-300 py-3 px-10 rounded-full border-[4px] border-[#131211] ${
+                  className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter transition-all duration-300 py-3 px-8 rounded-[40px] border-[3px] sm:border-[4px] border-[#131211] text-center max-w-[90vw] ${
                     pathname === link.href 
-                      ? "bg-[#ff3b30] text-[#f3efe0] shadow-[8px_8px_0px_#131211] rotate-[-2deg]" 
+                      ? "bg-[#ff3b30] text-[#f3efe0] shadow-[6px_6px_0px_#131211] rotate-[-2deg]" 
                       : "bg-[#f3efe0] text-[#131211] hover:bg-[#131211] hover:text-[#f3efe0] hover:shadow-[6px_6px_0px_#ff3b30]"
                   }`}
                   style={{ fontFamily: 'var(--font-space)' }}
