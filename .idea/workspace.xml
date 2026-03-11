@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
-      <change beforePath="$PROJECT_DIR$/app/3-11-slides/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/3-11-slides/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,22 +107,6 @@
       <workItem from="1770719487549" duration="15274000" />
       <workItem from="1771883280693" duration="164000" />
       <workItem from="1771884732009" duration="7000" />
-    </task>
-    <task id="LOCAL-00144" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769147679054</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1769147679054</updated>
-    </task>
-    <task id="LOCAL-00145" summary="preloader fix, gamer icons, reduced spacing, and mission section">
-      <option name="closed" value="true" />
-      <created>1769148047776</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1769148047776</updated>
     </task>
     <task id="LOCAL-00146" summary="preloader fix, gamer icons, reduced spacing, and mission section">
       <option name="closed" value="true" />
@@ -500,7 +484,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773136926140</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="fa">
+      <option name="closed" value="true" />
+      <created>1773137137855</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1773137137855</updated>
+    </task>
+    <task id="LOCAL-00194" summary="fa">
+      <option name="closed" value="true" />
+      <created>1773138643520</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1773138643520</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

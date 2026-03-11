@@ -1,0 +1,64 @@
+=== HOME PAGE ===
+Title:
+Language, Identity, & Power.
+
+Subtitle:
+A blog exploring how the little things we say every day shape who we are, and the unwritten rules behind the words we use.
+
+
+=== THE READING (BLOG POST) ===
+Title:
+Pennies of Power: How the smallest words carry the heaviest weight.
+
+Text:
+We often ignore the architecture built by passing comments. A label attached to someone during a casual conversation feels entirely weightless in the moment. Humor has an insidious way of calcifying into structure. A joke about someone being "the smart one" or "the quiet one" hardens over time. We internalize these tiny designations. We mold our behavior to fit the linguistic box someone else constructed for us.
+
+This mechanism shapes the entire social landscape of high school. A single descriptor handed down by a peer or a teacher creates a psychological boundary. A tiny word operates as a penny of power. Weeks bleed into months, and a subtle shift occurs. The labeled individual starts anticipating the expectations embedded in those casual words. They start playing the role assigned to them by the language of the room.
+
+Identity gets assembled in the profoundly ordinary. It forms in the text you send at midnight that gets left on "Read". It solidifies in the passing hallway comments that nobody questions. By the time you notice the walls forming around you, the cement has already dried.
+
+When Chimamanda Ngozi Adichie gave that famous TED Talk describing the "danger of a single story," the academic world largely digested it as a commentary on colonialism, globalism, and cultural erasure. The mechanism she describes feels relevant at every imaginable scale, from continents down to high school cafeterias. Reputations ossify in the hallways. Somebody accidentally drops a tray one time as a freshman, and for four years they exist as "the clumsy kid." Someone asks too many questions and becomes "the try-hard."
+
+These labels flatten a human being into a flat JPEG. Language is the tool used to write that script. The casual, everyday literacy practices we perform without thinking twice define our social boundaries.
+
+Language serves as the skeleton key. It allowed me to negotiate the differing power dynamics of my daily life. Jamila Lyiscott makes this viscerally clear when she performs her spoken-word poem on the three ways she speaks English. She claims the way her syntax bends depending on what room she walks into. She describes herself as "tri-lingual." She deliberately navigates intersecting worlds, wielding different tongues like distinct tools.
+
+I feel that intensely. I text my best friend using abbreviated, chaotic phrases reliant on absurd inside jokes. I compose carefully manicured emails to teachers asking for a two-day extension. Both versions of me exist fully. The "meme" language is an act of intimacy and shared culture. The formal email language is an act of institutional survival.
+
+Society judges one of those literacies and praises the other. This judgment dictates whose voice is considered "competent" and whose is considered "careless". It enforces itself through microscopic reactions. A raised eyebrow. A corrected pronunciation.
+
+Every time we choose how to speak, we communicate a thought and engage in an act of literacy. This shapes the existing power structure. The words intertwine with identity. They look like pennies. Drop enough of them into the jar, and eventually, you've bought a reality.
+
+
+=== REFLECTION ===
+Title:
+Analyzing the Acts of Literacy.
+
+Text:
+When I began constructing the "Pennies of Power" blog post, I struggled with how to translate academic concepts of language and identity into a digital space intended for a broader audience. My initial drafts felt overly formal. I treated the assignment as a traditional essay. An active "act of literacy" as defined by Dan Melzer and Kevin Coxwell-Teague requires a different approach. Literacy is inherently situated within specific social and cultural contexts. I realized I needed to adjust my composing process to fit the medium.
+
+One specific learning moment occurred when I decided to shift the visual design of the blog to a stark, neo-brutalist aesthetic. Melzer and Coxwell-Teague argue that composing involves text and visual components. I intentionally selected a high-contrast layout with aggressive typography. I executed an act of visual literacy designed to command the reader's attention. The visual style reflects the heavy, structural nature of the power dynamics discussed in the post. The medium became part of the message.
+
+This learning was deeply significant. I previously viewed academic writing and digital expression as entirely separate skills. Engaging with the idea of "situated literacies," I realized that learning to weave personal reflections with sources like Chimamanda Ngozi Adichie and Jamila Lyiscott was a complex negotiation of multiple layers at once.
+
+I had to consider my audience of peers and instructors while maintaining an authentic voice. This required me to analyze the "situated" nature of my work. I balanced observations of everyday high school dynamics with rigid, structural claims about societal stereotyping. This process of intentional design and rhetorical positioning proved that real literacy is a dynamic exchange between the composer and the audience.
+
+
+=== ABOUT BLOG ===
+Title:
+Dedicated to slowing down and paying attention.
+
+Text:
+This blog was born from a simple question: what if the most important things in life are the ones we keep walking past?
+
+Built around the central ideas of Unit 1, this space is dedicated to slowing down and paying attention. We look closely at the everyday interactions that quietly construct who we are. We examine the way someone says your name. We dissect the story that gets retold until it replaces what actually happened.
+
+
+=== ABOUT AUTHOR ===
+Title:
+Taking the ordinary very seriously.
+
+Text:
+I am a highly observant high school student. I notice the way people shift their voices when they are nervous. I observe the quiet politics of who gets to speak first in a classroom.
+
+Writing serves as a method to process these observations. It lets me slow down the flood of small moments and examine them closely. This blog functions as a deliberate extension of that instinct to take the ordinary seriously.
