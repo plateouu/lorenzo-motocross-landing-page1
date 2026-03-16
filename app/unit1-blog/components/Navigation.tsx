@@ -22,7 +22,7 @@ export default function Navigation() {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 z-50 px-6 py-8 md:px-12 flex justify-between items-center text-[#131211]">
+      <header className={`top-0 left-0 right-0 z-50 px-6 py-8 md:px-12 flex justify-between items-center text-[#131211] ${isOpen ? "fixed" : "absolute"}`}>
         <TransitionLink
           href="/unit1-blog"
           className="text-xl md:text-2xl tracking-tighter font-black hover:-translate-y-1 transition-transform"
