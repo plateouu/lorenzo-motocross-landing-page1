@@ -25,6 +25,9 @@ import {
     addCustomChore,
     updateChoreDetail,
     deleteChore,
+    getSecurityStatus,
+    setUserPassword,
+    verifyPassword,
     Member,
     Chore,
     Assignment,
@@ -69,6 +72,10 @@ export default function ChorelistPage() {
     const [showAddModal, setShowAddModal] = useState(false)
     const [showDinnerModal, setShowDinnerModal] = useState(false)
     const [showEditModal, setShowEditModal] = useState(false)
+
+    const [authUserId, setAuthUserId] = useState<string | null>(null)
+    const [authMode, setAuthMode] = useState<'none' | 'setup' | 'verify'>('none')
+    const [authPassword, setAuthPassword] = useState("")
 
     const chatEndRef = useRef<HTMLDivElement>(null)
 
@@ -190,31 +197,97 @@ export default function ChorelistPage() {
         fetchState()
     }
 
+    const handleSelectMember = async (id: string) => {
+        const { hasPassword } = await getSecurityStatus(id)
+        setAuthUserId(id)
+        setAuthMode(hasPassword ? 'verify' : 'setup')
+        setAuthPassword("")
+    }
+
+    const handleAuth = async (e: React.FormEvent) => {
+        e.preventDefault()
+        if (!authUserId) return
+        
+        if (authMode === 'setup') {
+            if (authPassword.length < 4) {
+                toast.error("Password must be at least 4 characters")
+                return
+            }
+            await setUserPassword(authUserId, authPassword)
+            toast.success("Security set!")
+        } else {
+            const res = await verifyPassword(authUserId, authPassword)
+            if (res.error) {
+                toast.error(res.error)
+                return
+            }
+        }
+        
+        const m = state?.members.find(member => member.id === authUserId)
+        if (m) {
+            setUserName(m.name)
+            localStorage.setItem("daan-member-name", m.name)
+        }
+    }
+
     if (!state) return <div className="min-h-screen bg-black" />
 
     if (!userName) {
         return (
-            <div className="min-h-screen bg-black flex items-center justify-center p-6 text-white font-sans">
-                <div className="w-full max-w-xs space-y-12">
-                    <h1 className="text-3xl font-bold text-center">LOGIN</h1>
-                    <div className="space-y-4">
-                        {MEMBER_IDS.map(id => {
-                            const m = state.members.find(member => member.id === id)
-                            if (!m) return null
-                            return (
-                                <button
-                                    key={m.id}
-                                    onClick={() => {
-                                        setUserName(m.name)
-                                        localStorage.setItem("daan-member-name", m.name)
-                                    }}
-                                    className="w-full p-8 bg-zinc-900 hover:bg-zinc-800 rounded-2xl text-left font-bold text-xl transition-all"
-                                >
-                                    {m.name}
-                                </button>
-                            )
-                        })}
+            <div className="min-h-screen bg-black flex items-center justify-center p-6 text-white font-sans selection:bg-white selection:text-black">
+                <div className="w-full max-w-sm space-y-12">
+                    <div className="text-center space-y-2">
+                        <h1 className="text-5xl font-black tracking-tighter">CHORES</h1>
+                        <p className="text-[10px] font-bold text-zinc-700 uppercase tracking-[0.3em]">Select your profile</p>
                     </div>
+
+                    {authMode === 'none' ? (
+                        <div className="space-y-4">
+                            {MEMBER_IDS.map(id => {
+                                const m = state.members.find(member => member.id === id)
+                                if (!m) return null
+                                return (
+                                    <button
+                                        key={m.id}
+                                        onClick={() => handleSelectMember(m.id)}
+                                        className="w-full p-8 bg-zinc-950 border border-white/5 hover:border-white/20 rounded-3xl text-left font-black text-2xl transition-all active:scale-[0.98]"
+                                    >
+                                        {m.name.toUpperCase()}
+                                    </button>
+                                )
+                            })}
+                        </div>
+                    ) : (
+                        <form onSubmit={handleAuth} className="space-y-8 bg-zinc-950 p-10 rounded-3xl border border-white/5 animate-in fade-in zoom-in duration-300">
+                            <div className="space-y-4 text-center">
+                                <h2 className="text-2xl font-black">{authMode === 'setup' ? 'CREATE PASSWORD' : 'ENTER PASSWORD'}</h2>
+                                <p className="text-[10px] font-bold text-zinc-600 uppercase">Profile: {state.members.find(m => m.id === authUserId)?.name}</p>
+                            </div>
+                            <input 
+                                autoFocus
+                                type="password" 
+                                value={authPassword}
+                                onChange={(e) => setAuthPassword(e.target.value)}
+                                placeholder="••••"
+                                className="w-full bg-black border-4 border-zinc-900 rounded-2xl p-6 text-center text-3xl font-black tracking-widest outline-none focus:border-white transition-all"
+                            />
+                            <div className="flex gap-4">
+                                <button 
+                                    type="button" 
+                                    onClick={() => setAuthMode('none')}
+                                    className="flex-1 bg-zinc-900 text-zinc-500 py-6 rounded-2xl font-black uppercase text-sm"
+                                >
+                                    BACK
+                                </button>
+                                <button 
+                                    type="submit"
+                                    className="flex-[2] bg-white text-black py-6 rounded-2xl font-black uppercase text-sm active:scale-95 transition-all"
+                                >
+                                    {authMode === 'setup' ? 'SET SECURITY' : 'UNLOCK'}
+                                </button>
+                            </div>
+                        </form>
+                    )}
                 </div>
             </div>
         )
@@ -326,7 +399,7 @@ export default function ChorelistPage() {
                                     <div className="flex items-center gap-6 md:gap-10">
                                         <button 
                                             onClick={() => handleStatus(chore.id, primaryAssignee.id, assignment.status)}
-                                            className={`w-14 h-14 rounded-2xl border-4 flex items-center justify-center transition-all ${
+                                            className={`w-14 h-14 shrink-0 aspect-square rounded-2xl border-4 flex items-center justify-center transition-all ${
                                                 isDone ? "bg-zinc-900 border-zinc-800 text-zinc-700" : isMe || isParent ? "bg-white border-white text-black active:scale-90" : "border-zinc-800"
                                             }`}
                                         >
@@ -389,7 +462,7 @@ export default function ChorelistPage() {
                                                 <div className="flex items-center gap-8 md:gap-12">
                                                     <button 
                                                         onClick={() => handleStatus(c.id, m.id, assignment.status)}
-                                                        className={`w-14 h-14 rounded-2xl border-4 flex items-center justify-center transition-all ${
+                                                        className={`w-14 h-14 shrink-0 aspect-square rounded-2xl border-4 flex items-center justify-center transition-all ${
                                                             isDone ? "bg-zinc-900 border-zinc-800 text-zinc-700" : isMe || isParent ? "bg-white border-white text-black active:scale-95" : "border-zinc-800"
                                                         }`}
                                                     >

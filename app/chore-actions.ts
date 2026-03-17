@@ -4,11 +4,23 @@ import Redis from "ioredis"
 import { revalidatePath } from "next/cache"
 import { startOfWeek, getWeek } from "date-fns"
 
+import crypto from "node:crypto"
+
 const redis = new Redis("redis://default:AYW1AAIncDEzNDc2MmZlZmY1ZDk0ZWQyOTIxYjYxZDZiZmZmYTQ1MHAxMzQyMjk@ultimate-pig-34229.upstash.io:6379", {
     tls: {
         servername: "ultimate-pig-34229.upstash.io"
     }
 })
+
+// Timezone Helper: Always use New York Wall Clock Time
+function getNYDate() {
+    const nyString = new Date().toLocaleString("en-US", { timeZone: "America/New_York" })
+    return new Date(nyString)
+}
+
+function hashPassword(password: string) {
+    return crypto.createHash('sha256').update(password).digest('hex')
+}
 
 // Types
 export type Member = {
@@ -96,7 +108,7 @@ const CYCLES = {
 }
 
 // Utility to get assignment for specific chore logic
-function getDynamicAssignee(choreId: string, date: Date = new Date()) {
+function getDynamicAssignee(choreId: string, date: Date = getNYDate()) {
     const weekNumber = getWeek(date)
     const dayIndex = date.getDay()
     const key = choreId.replace('shared-', '').replace('dad-', '') as keyof typeof CYCLES
@@ -109,7 +121,8 @@ function getDynamicAssignee(choreId: string, date: Date = new Date()) {
 
     // 2. Laundry Folding (Daily Rotation - Independent)
     if (choreId === 'shared-laundry') {
-        return CYCLES.laundry[dayIndex % CYCLES.laundry.length]
+        const d = date.getDay()
+        return CYCLES.laundry[d % CYCLES.laundry.length]
     }
 
     // 3. Yard Work (Bi-weekly Saturday Joint)
@@ -133,15 +146,36 @@ function getDynamicAssignee(choreId: string, date: Date = new Date()) {
     }
     
     // Vacuuming: Everyone (Orchestrated to never overlap Trash/Floors person)
-    // Week 0: Trash:Dad, Floors:Mom -> Vac:Son
-    // Week 1: Trash:Son, Floors:Daughter -> Vac:Dad
-    // Week 2: Trash:Dad, Floors:Mom -> Vac:Daughter
-    // Week 3: Trash:Son, Floors:Dauther -> Vac:Mom
     if (choreId === 'shared-vacuum') {
         return ['son', 'dad', 'daughter', 'mom'][cyclePos]
     }
 
     return cycle ? cycle[weekNumber % cycle.length] : ""
+}
+
+// Security Actions
+export async function getSecurityStatus(userId: string) {
+    const pwd = await redis.hget('chorelist:passwords', userId)
+    return { hasPassword: !!pwd }
+}
+
+export async function setUserPassword(userId: string, password: string) {
+    const existing = await redis.hget('chorelist:passwords', userId)
+    if (existing) return { error: 'Password already set' }
+    
+    const hash = hashPassword(password)
+    await redis.hset('chorelist:passwords', userId, hash)
+    return { success: true }
+}
+
+export async function verifyPassword(userId: string, password: string) {
+    const hash = await redis.hget('chorelist:passwords', userId)
+    if (!hash) return { error: 'No password set' }
+    
+    if (hash === hashPassword(password)) {
+        return { success: true }
+    }
+    return { error: 'Incorrect password' }
 }
 
 // Server Actions
@@ -252,9 +286,10 @@ export async function getChoreState() {
     const members = Object.values(membersRaw || {}).map(m => JSON.parse(m as string))
     const baseChores = Object.values(choresRaw || {}).map(c => JSON.parse(c as string))
     
-    const now = new Date()
-    const next = new Date()
-    next.setDate(next.getDate() + 7)
+    // Always calculate based on New York Wall Clock
+    const now = getNYDate()
+    const next = new Date(now)
+    next.setDate(now.getDate() + 7)
 
     const rotation: Record<string, string> = {}
     const nextRotation: Record<string, string> = {}
