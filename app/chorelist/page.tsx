@@ -328,7 +328,7 @@ export default function ChorelistPage() {
                 </div>
             </header>
 
-            <div className="max-w-4xl mx-auto px-6 pt-32 space-y-20">
+            <div className="max-w-4xl mx-auto px-6 pt-52 space-y-20">
                 
                 {/* 1. DINNER PREP CARD */}
                 <section className="bg-zinc-950 p-6 md:p-10 rounded-3xl border-2 border-zinc-900 space-y-8">
