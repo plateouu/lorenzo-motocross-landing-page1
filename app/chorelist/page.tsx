@@ -38,10 +38,10 @@ import { Toaster, toast } from "sonner"
 // CONSTANT SORT ORDERS - NEVER CHANGE
 const MEMBER_IDS = ['mom', 'dad', 'son', 'daughter']
 const BASE_INDIVIDUAL_IDS = [
-    'mom-bedroom', 'mom-dishes',
-    'dad-bathroom',
-    'son-bedroom', 'son-bathroom',
-    'daughter-bedroom', 'daughter-bathroom'
+    'mom-bedroom',
+    'dad-bedroom', 'dad-bathroom-daily', 'dad-bathroom-deep',
+    'son-bedroom', 'son-bathroom-daily', 'son-bathroom-deep',
+    'daughter-bedroom', 'daughter-bathroom-daily', 'daughter-bathroom-deep'
 ]
 const SHARED_CHORE_IDS = [
     'shared-trash', 'shared-floors', 'shared-vacuum', 'shared-laundry', 'dad-yard'
@@ -313,7 +313,7 @@ export default function ChorelistPage() {
                 <div className="max-w-4xl mx-auto flex justify-between items-center">
                     <div>
                         <h1 className="text-2xl md:text-5xl font-black tracking-tighter">CHORES</h1>
-                        <p className="text-[10px] font-bold text-zinc-600 mt-1 uppercase tracking-widest">{userName} &bull; {DAYS[todayIndex]}</p>
+                        <p className="text-[10px] font-bold text-zinc-600 mt-1 uppercase tracking-widest">{userName} &bull; NEW JERSEY &bull; {DAYS[todayIndex]}</p>
                     </div>
                     <div className="flex gap-3">
                         {isParent && (

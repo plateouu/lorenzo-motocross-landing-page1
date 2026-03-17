@@ -183,24 +183,12 @@ export async function verifyPassword(userId: string, password: string) {
 
 // Server Actions
 export async function seedInitialData() {
-    // Force re-seed for the new structure
-    await redis.del('chorelist:chores')
-    await redis.del('chorelist:members')
-    
-    // Update chores for specific frequencies
-    const modifiedChores = INITIAL_CHORES.map(c => {
-        if (c.id === 'dad-yard') {
-            return { ...c, title: 'Yard Maintenance (Joint)', description: 'Mowing and outdoor upkeep' }
-        }
-        if (c.id.includes('bathroom')) {
-            return { ...c, description: 'Deep clean (Every 3 Days)' }
-        }
-        return c
-    })
-    
+    const existing = await redis.hlen('chorelist:chores')
+    if (existing > 0) return 
+
     const pipeline = redis.pipeline()
     INITIAL_MEMBERS.forEach(m => pipeline.hset('chorelist:members', m.id, JSON.stringify(m)))
-    modifiedChores.forEach(c => pipeline.hset('chorelist:chores', c.id, JSON.stringify(c)))
+    INITIAL_CHORES.forEach(c => pipeline.hset('chorelist:chores', c.id, JSON.stringify(c)))
     await pipeline.exec()
     revalidatePath('/')
 }
