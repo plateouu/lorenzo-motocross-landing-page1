@@ -7,7 +7,7 @@ import { bodyFont, displayFont } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Taylor Daan',
-  description: 'Infrastructure met Imagination. High-end game ecosystems and scalable server architecture.',
+  description: 'Full-stack development and game systems engineering.',
 }
 
 export default function RootLayout({
