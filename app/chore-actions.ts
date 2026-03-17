@@ -71,26 +71,29 @@ const INITIAL_MEMBERS: Member[] = [
 
 const INITIAL_CHORES: Chore[] = [
     // Son (Taylor) - Fixed
-    { id: 'son-bedroom', title: 'Bedroom (Upstairs)', description: 'Clean and organize personal room', type: 'individual', category: 'Bedroom', assigneeId: 'son' },
-    { id: 'son-bathroom', title: 'Bathroom (Upstairs)', description: 'Deep clean shared/personal bathroom', type: 'individual', category: 'Bathroom', assigneeId: 'son' },
+    { id: 'son-bedroom', title: 'Bedroom Upkeep', description: 'Clean and organize personal room', type: 'individual', category: 'Bedroom', assigneeId: 'son' },
+    { id: 'son-bathroom-daily', title: 'Bathroom Upkeep', description: 'Wipe down and organize (Daily)', type: 'individual', category: 'Bathroom', assigneeId: 'son' },
+    { id: 'son-bathroom-deep', title: 'Bathroom Deep Clean', description: 'Complete scrub (Every 3 Days)', type: 'individual', category: 'Bathroom', assigneeId: 'son' },
 
     // Daughter (Daphne) - Fixed
-    { id: 'daughter-bedroom', title: 'Bedroom (Basement)', description: 'Maintain basement living space', type: 'individual', category: 'Bedroom', assigneeId: 'daughter' },
-    { id: 'daughter-bathroom', title: 'Bathroom (Basement)', description: 'Clean private basement bathroom', type: 'individual', category: 'Bathroom', assigneeId: 'daughter' },
+    { id: 'daughter-bedroom', title: 'Bedroom Upkeep', description: 'Maintain basement living space', type: 'individual', category: 'Bedroom', assigneeId: 'daughter' },
+    { id: 'daughter-bathroom-daily', title: 'Bathroom Upkeep', description: 'Wipe down and organize (Daily)', type: 'individual', category: 'Bathroom', assigneeId: 'daughter' },
+    { id: 'daughter-bathroom-deep', title: 'Bathroom Deep Clean', description: 'Complete scrub (Every 3 Days)', type: 'individual', category: 'Bathroom', assigneeId: 'daughter' },
 
     // Dad (Marvin) - Fixed
-    { id: 'dad-bathroom', title: 'Master Bathroom', description: 'Clean private master bathroom', type: 'individual', category: 'Bathroom', assigneeId: 'dad' },
+    { id: 'dad-bedroom', title: 'Bedroom Upkeep', description: 'Master bedroom organization', type: 'individual', category: 'Bedroom', assigneeId: 'dad' },
+    { id: 'dad-bathroom-daily', title: 'Bathroom Upkeep', description: 'Wipe down and organize (Daily)', type: 'individual', category: 'Bathroom', assigneeId: 'dad' },
+    { id: 'dad-bathroom-deep', title: 'Bathroom Deep Clean', description: 'Complete scrub (Every 3 Days)', type: 'individual', category: 'Bathroom', assigneeId: 'dad' },
     { id: 'dad-yard', title: 'Yard Maintenance', description: 'Mowing and general outdoor upkeep', type: 'individual', category: 'Outdoor', assigneeId: 'dad' },
 
     // Mom (Anett) - Fixed
     { id: 'mom-bedroom', title: 'Master Bedroom', description: 'Complete upkeep of the master bedroom', type: 'individual', category: 'Bedroom', assigneeId: 'mom' },
-    { id: 'mom-dishes', title: 'Wash Dishes', description: 'Maintain kitchen cleanliness and dishes', type: 'individual', category: 'Kitchen', assigneeId: 'mom' },
     
     // Shared / Rotating (Switch between people)
     { id: 'shared-cooking', title: 'Dinner Preparation', description: 'Prepare meal for the household', type: 'shared', category: 'Kitchen' },
-    { id: 'shared-vacuum', title: 'Living Room Vacuum', description: 'Clean common area carpets', type: 'shared', category: 'House' },
+    { id: 'shared-vacuum', title: 'Clean Livingroom', description: 'Clean common area carpets', type: 'shared', category: 'House' },
     { id: 'shared-trash', title: 'Trash & Recycling', description: 'Handle all bins and curb placement', type: 'shared', category: 'Maintenance' },
-    { id: 'shared-floors', title: 'Kitchen Floors', description: 'Sweep and mop the kitchen area', type: 'shared', category: 'House' },
+    { id: 'shared-floors', title: 'Dishes', description: 'Wash and dry all household dishes', type: 'shared', category: 'Kitchen' },
     { id: 'shared-laundry', title: 'Doing the Laundry', description: 'Wash, dry, and fold shared items', type: 'shared', category: 'Laundry' },
 ]
 
@@ -99,11 +102,11 @@ const FOLDING_ROTATION = ['son', 'daughter', 'mom', 'dad']
 
 // Specific Rotation Cycles
 const CYCLES = {
-    trash: ['dad', 'son'], // Marvin and Taylor
-    floors: ['mom', 'daughter'], // Anett and Daphne
-    vacuum: ['mom', 'dad', 'son', 'daughter'], // Everyone
-    laundry: ['son', 'daughter', 'mom', 'dad'], // Daily - Everyone
-    yard: ['joint:dad,son'], // Together Marvin and Taylor
+    trash: ['dad', 'son'], 
+    dishes: ['mom', 'daughter'], // Renamed from floors
+    vacuum: ['mom', 'dad', 'son', 'daughter'], 
+    laundry: ['son', 'daughter', 'mom', 'dad'], 
+    yard: ['joint:dad,son'], 
     cooking: ['mom', 'dad', 'son', 'daughter'] 
 }
 
@@ -140,7 +143,7 @@ function getDynamicAssignee(choreId: string, date: Date = getNYDate()) {
         return ['dad', 'son', 'dad', 'son'][cyclePos]
     }
     
-    // Floors Pairing: Anett (Mom) and Daphne (Daughter)
+    // Dishes Pairing (Renamed floors): Anett (Mom) and Daphne (Daughter)
     if (choreId === 'shared-floors') {
         return ['mom', 'daughter', 'mom', 'daughter'][cyclePos]
     }
@@ -296,8 +299,9 @@ export async function getChoreState() {
 
     // Build rotation summaries dynamically
     Object.keys(CYCLES).forEach(key => {
-        rotation[key] = getDynamicAssignee(`shared-${key}`, now)
-        nextRotation[key] = getDynamicAssignee(`shared-${key}`, next)
+        const choreId = key === 'dishes' ? 'shared-floors' : `shared-${key}`
+        rotation[key] = getDynamicAssignee(choreId, now)
+        nextRotation[key] = getDynamicAssignee(choreId, next)
     })
 
     // Special: Yard Next Date
@@ -315,6 +319,70 @@ export async function getChoreState() {
     const finalDueDates = { ...dueDatesRaw }
     finalDueDates['dad-yard'] = yardDateStr
 
+    // Smart Periodic Reset & Filtering
+    const processedAssignments: Record<string, string> = {}
+    const startOfToday = new Date(now)
+    startOfToday.setHours(0, 0, 0, 0)
+
+    // Reference date for 3-day deep clean cycle (Sunday, March 1, 2026)
+    const SEED_DATE = new Date("2026-03-01T00:00:00-05:00") // NY Time
+
+    Object.entries(assignmentsRaw || {}).forEach(([key, val]) => {
+        const [memberId, choreId] = key.split(':')
+        const assignment: Assignment = JSON.parse(val as string)
+        const chore = baseChores.find(c => c.id === choreId)
+        
+        if (assignment.status === 'completed' && assignment.lastCompleted) {
+            const completedDate = new Date(assignment.lastCompleted)
+            
+            // 1. Daily Reset Logic
+            const isDaily = chore?.title.toLowerCase().includes('upkeep') || 
+                            choreId === 'shared-floors' || // Dishes
+                            choreId === 'shared-laundry' ||
+                            chore?.id === 'mom-dishes'
+            
+            if (isDaily && completedDate < startOfToday) {
+                // Resets daily
+                return 
+            }
+
+            // 2. Periodic Reset (3-Day Deep Clean)
+            if (choreId.includes('deep')) {
+                const diffMs = now.getTime() - SEED_DATE.getTime()
+                const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+                const currentCycleDay = diffDays % 3
+                
+                const cycleStart = new Date(now)
+                cycleStart.setDate(now.getDate() - currentCycleDay)
+                cycleStart.setHours(0, 0, 0, 0)
+
+                if (completedDate < cycleStart) {
+                    // Reset if completed before the start of this 3-day cycle
+                    return
+                }
+            }
+        }
+        processedAssignments[key] = val
+    })
+
+    // Calculate Next Due Dates for Deep Cleans
+    baseChores.forEach(chore => {
+        if (chore.id.includes('deep')) {
+            const diffMs = now.getTime() - SEED_DATE.getTime()
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
+            const daysUntilNext = 3 - (diffDays % 3)
+            
+            const nextDate = new Date(now)
+            nextDate.setDate(now.getDate() + (daysUntilNext === 3 ? 0 : daysUntilNext))
+            
+            finalDueDates[chore.id] = nextDate.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                month: 'long', 
+                day: 'numeric' 
+            })
+        }
+    })
+
     // Parse dinner schedule
     const dinnerSchedule: Record<string, { assigneeId: string, description: string }> = {}
     if (dinnerScheduleRaw) {
@@ -326,7 +394,7 @@ export async function getChoreState() {
     return {
         members,
         chores: baseChores,
-        assignments: assignmentsRaw || {},
+        assignments: processedAssignments,
         dueDates: finalDueDates,
         chat: chatRaw.map(m => JSON.parse(m as string)),
         dinnerSchedule,
