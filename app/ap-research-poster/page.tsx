@@ -3,10 +3,10 @@
 import React from "react";
 
 /**
- * AP Research Poster - Simplified Direct Content Version
- * - Very simple, high contrast, no scroll.
- * - 8th grade level readability for presentation.
- * - Covering core areas from the Stage 4 requirements.
+ * AP Research Poster - Responsive & Simplified
+ * - High contrast, no scroll (single-screen).
+ * - 8th grade readability.
+ * - Dynamic font scaling (clamp) based on viewport size.
  */
 export default function HumanizedPosterPage() {
   return (
@@ -14,7 +14,7 @@ export default function HumanizedPosterPage() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-        /* --- GLOBAL RESET & HIDE SCROLLBARS --- */
+        /* --- GLOBAL RESET --- */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         
         *::-webkit-scrollbar { display: none; }
@@ -32,30 +32,30 @@ export default function HumanizedPosterPage() {
         .poster-root {
           width: 100vw;
           height: 100vh;
-          padding: 12px;
+          padding: clamp(8px, 2vh, 20px);
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: clamp(6px, 1.5vh, 12px);
         }
 
         /* --- HEADER SECTION --- */
         .poster-header {
           text-align: center;
-          padding: 8px;
+          padding: clamp(6px, 1.2vh, 14px);
           background-color: #ffffff;
           border: 2px solid #2d3748;
           border-radius: 8px;
         }
 
         .header-title {
-          font-size: 24px;
+          font-size: clamp(18px, 3vh, 32px);
           font-weight: 800;
           color: #1a202c;
           margin-bottom: 2px;
         }
 
         .header-author {
-          font-size: 14px;
+          font-size: clamp(12px, 1.6vh, 16px);
           font-weight: 700;
           color: #4a5568;
           text-transform: uppercase;
@@ -68,7 +68,7 @@ export default function HumanizedPosterPage() {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(4, 1fr);
-          gap: 10px;
+          gap: clamp(6px, 1.2vh, 12px);
           min-height: 0;
         }
 
@@ -77,7 +77,7 @@ export default function HumanizedPosterPage() {
           background-color: #ffffff; 
           border: 2px solid #2d3748;
           border-radius: 8px;
-          padding: 10px;
+          padding: clamp(6px, 1.2vh, 14px);
           display: flex;
           flex-direction: column;
           min-height: 0;
@@ -86,26 +86,26 @@ export default function HumanizedPosterPage() {
         }
 
         .card-title {
-          font-size: 13px;
+          font-size: clamp(11px, 1.4vh, 14px);
           font-weight: 800;
           color: #2b6cb0;
           text-transform: uppercase;
-          margin-bottom: 6px;
-          padding-bottom: 4px;
+          margin-bottom: clamp(4px, 0.8vh, 8px);
+          padding-bottom: clamp(2px, 0.4vh, 4px);
           border-bottom: 2px solid #e2e8f0;
           flex-shrink: 0;
         }
 
         .card-content {
-          font-size: 12px;
-          line-height: 1.35;
+          font-size: clamp(10px, 1.35vh, 14px);
+          line-height: 1.3;
           color: #000; 
           font-weight: 500;
           overflow: hidden;
         }
 
         .card-content p {
-          margin-bottom: 4px;
+          margin-bottom: clamp(3px, 0.6vh, 6px);
         }
 
         /* Layout spans */
@@ -116,11 +116,9 @@ export default function HumanizedPosterPage() {
         .methods-block { grid-row: span 2; }
         .assume-block { grid-column: span 2; }
 
-        @media screen and (max-height: 800px) {
-          .header-title { font-size: 22px; }
-          .card-title { font-size: 11px; }
-          .card-content { font-size: 11px; }
-        }
+        /* Ensure everything fits on really long text cards */
+        .methods-block .card-content { font-size: clamp(10px, 1.3vh, 13px); }
+        .assume-block .card-content { font-size: clamp(10px, 1.25vh, 12.5px); }
       `}</style>
 
       <div className="poster-root">
@@ -145,7 +143,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card question-block">
             <h2 className="card-title">Research Question</h2>
             <div className="card-content">
-              <p style={{ fontSize: "15px", fontWeight: "700", color: "#2d3748" }}>"How does the pressure to get views on TikTok and Instagram change how new creators feel and what they choose to post?"</p>
+              <p style={{ fontWeight: "700", color: "#2d3748" }}>"How does the pressure to get views on TikTok and Instagram change how new creators feel and what they choose to post?"</p>
             </div>
           </div>
 
@@ -153,7 +151,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Concepts</h2>
             <div className="card-content">
-              <p><strong>Algorithm:</strong> The hidden code that picks which videos go viral and which ones stay invisible.</p>
+              <p><strong>Algorithm:</strong> Hidden code that picks which videos go viral and which stay invisible.</p>
               <p><strong>Small Creators:</strong> Regular people trying to grow an audience on apps like TikTok and Instagram.</p>
             </div>
           </div>
@@ -162,7 +160,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card assume-block">
             <h2 className="card-title">Predictions</h2>
             <div className="card-content">
-              <p><strong>The Theory:</strong> I assume the algorithm only likes content that matches what's already viral. If you're new, the platform basically hides you. Because of this, I think creators get stressed and feel like they have to "act fake" to gain followers.</p>
+              <p><strong>The Theory:</strong> I assume the algorithm only likes content matching trends. If you're new, the platform hides you. I think this pressure causes stress and forces creators to 'act fake' for followers.</p>
             </div>
           </div>
 
@@ -170,7 +168,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card sig-block">
             <h2 className="card-title">Value of Study</h2>
             <div className="card-content">
-              <p>If we understand this pressure, we can see why everyone online copies each other and why social media can be bad for your head. It helps us understand why online communities feel toxic or fake sometimes.</p>
+              <p>Understanding this pressure shows why everyone copies each other and why social media can be bad for your mental health. It helps explain toxic online behavior.</p>
             </div>
           </div>
 
@@ -178,8 +176,8 @@ export default function HumanizedPosterPage() {
           <div className="poster-card methods-block">
             <h2 className="card-title">The Method</h2>
             <div className="card-content">
-              <p>First, I'll use an <strong>anonymous survey</strong> to see how many people feel this pressure. Next, I'll do <strong>10-minute interviews</strong> to hear exactly how the algorithm made them feel.</p>
-              <p>I'll look for "emotional themes" in their stories to prove the connection.</p>
+              <p>First, I'll use an <strong>anonymous survey</strong> to see the general level of pressure. Next, I'll do <strong>10-minute interviews</strong> to hear real emotional stories.</p>
+              <p>I'll look for themes in their stories to prove a connection between view count drops and mental stress.</p>
             </div>
           </div>
 
@@ -187,7 +185,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Rationale</h2>
             <div className="card-content">
-              <p>Interviews give me the "why" behind the numbers. I can hear the exact moments people felt stressed out by their view counts dropping.</p>
+              <p>Interviews give me the "why" behind numbers. I can hear the exact moments people felt stressed out by their view counts dropping.</p>
             </div>
           </div>
 
@@ -195,7 +193,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">The Gap</h2>
             <div className="card-content">
-              <p>Experts know algorithms cause anxiety, but nobody is really looking at how it feels when you're just starting your account.</p>
+              <p>Experts know algorithms cause anxiety, but nobody is looking at the first steps of a new account's journey.</p>
             </div>
           </div>
 
@@ -203,7 +201,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Expert Sources</h2>
             <div className="card-content">
-              <p>I'm reading studies by experts like Gillespie (2014) and Bucher (2012) about how apps hide certain people and how that affects their brains.</p>
+              <p>Reading experts like Gillespie (2014) and Bucher (2012) about digital invisibility and how apps hide certain people.</p>
             </div>
           </div>
 
@@ -211,7 +209,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Own Evidence</h2>
             <div className="card-content">
-              <p>I will use my own surveys and interviews from people found on TikTok subreddits and creator forums.</p>
+              <p>Using survey results and interview transcripts from creators found on TikTok subreddits and forums.</p>
             </div>
           </div>
 
@@ -219,7 +217,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Safety & Rights</h2>
             <div className="card-content">
-              <p>Everyone stays anonymous. Participants can skip any question or stop at any time. I won't save any real names.</p>
+              <p>Stay anonymous. Participants can skip any question or stop at any time. No real names saved.</p>
             </div>
           </div>
 
@@ -227,7 +225,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Next Steps</h2>
             <div className="card-content">
-              <p>Finish my expert reading, get school permission to start, and find my first 10 creators to interview.</p>
+              <p>Finish expert reading, get school permission, and find my first 10 creators to interview.</p>
             </div>
           </div>
 
@@ -235,7 +233,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">What's Missing?</h2>
             <div className="card-content">
-              <p>Do platforms like Patreon or Substack work differently because they don't have the same "viral feed" algorithms?</p>
+              <p>Do subscription-based apps like Patreon work differently because they don't have viral feeds?</p>
             </div>
           </div>
 
@@ -243,7 +241,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Possible Problems</h2>
             <div className="card-content">
-              <p>It's hard to find new creators because the algorithm hides them! Also, people might be embarrassed to say they "acted fake" for views.</p>
+              <p>Hard to find new creators if the algorithm hides them! People might also hide that they copy trends.</p>
             </div>
           </div>
 

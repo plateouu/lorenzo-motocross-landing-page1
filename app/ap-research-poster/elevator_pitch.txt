@@ -1,26 +1,25 @@
-ELEVATOR PITCH (SIMPLE VERSION) - TAYLOR DAAN
+ELEVATOR PITCH (2-MINUTE VERSION) - TAYLOR DAAN
 ----------------------------------------
 
-"Hey everyone! My research is about how social media apps like TikTok and Instagram use hidden code—called algorithms—to pick which videos go viral.
+"Hi everyone! My research focuses on the hidden gatekeepers of our digital lives: social media algorithms.
 
-For new creators, this creates a lot of pressure. If you don't follow the latest trend, nobody sees your work. This makes people stressed, and it forces them to act 'fake' or change their own style just to get views.
+Think about how apps like TikTok and Instagram decide which videos you see every day. They use a secret code to pick the 'winners' and 'losers.' If you're a big celebrity, you're fine. But for new, small creators who are just starting out, this creates a huge amount of psychological pressure.
 
-My big question is: How does this pressure to get views actually change the mental health and the choices of new creators?
+The main problem is that if you don't follow the latest trend, nobody sees your work. New creators feel forced to copy whatever is already famous just to get a few views. This leads to massive stress and an identity crisis for young artists. They stop being authentic and start 'acting fake' just to satisfy the code.
 
-To find out, I’m doing an anonymous survey to see how many people feel this way. Then, I’m doing 10-minute interviews to hear their real stories. I want to see the exact moment someone felt forced to change their style because of the algorithm.
+This led me to my core research question: How does the constant pressure to get views actually change how new creators feel about themselves and what they choose to post?
 
-This study matters because it explains why so much of social media feels like everyone is just copying each other. It helps us understand why online communities can feel toxic or fake sometimes.
+To answer this, I’m doing two things. First, an anonymous survey to see how many people feel this algorithmic anxiety. Second, I’m doing 10-minute interviews to hear their real stories. I want to hear about the exact moment someone felt like they had to change their personal style just to avoid being 'invisible' online.
 
-The biggest problem is that the algorithm hides the very people I need to talk to—the small creators! But my next steps are to finish my expert reading and start finding those first 10 creators on Reddit and creator forums. Thank you."
+Experts in this field have already shown that algorithms make us anxious. But my study is unique because I am looking specifically at brand-new accounts right when they are first trying to build an audience.
+
+This matters because it explains why our online communities can feel toxic or unauthentic sometimes. It helps us understand why everyone seems to be copying each other instead of sharing original ideas. By seeing the human cost of these algorithms, we can fix how we talk to each other in digital spaces.
+
+The biggest challenge? The algorithm hides the very people I need to interview! But my next steps are to finish my expert reading and start finding those first 10 creators in online forums and subreddits. Thank you."
 ----------------------------------------
-(Simple Talking Points)
+(Talking Points for Pacing)
 
-- [ ] THE HOOK: Algorithms pick winners and losers.
-- [ ] THE PRESSURE: New creators feel they MUST follow trends to be seen.
-- [ ] THE IMPACT: Stress and "acting fake" to gain followers.
-- [ ] THE QUESTION: How does this pressure change how creators feel and what they post?
-- [ ] THE PLAN: Surveys (for numbers) + Interviews (for real stories).
-- [ ] THE GOAL: Mapping emotional moments to view count drops.
-- [ ] WHY IT MATTERS: Explaining why social media feels unauthentic.
-- [ ] THE HURDLE: Finding creators that the algorithm is already hiding.
-- [ ] NEXT STEPS: Finishing expert reading and starting recruitment.
+0:00 - 0:30 | THE HOOK & PROBLEM: Algorithms as gatekeepers. The pressure of being a new creator.
+0:30 - 1:00 | THE IMPACT: Forced trends, stress, and the "identity crisis" of being fake for views.
+1:00 - 1:30 | THE QUESTION & PLAN: How does pressure change choices? Surveys + 10-min Interviews.
+1:30 - 2:00 | SIGNIFICANCE & CHALLENGE: Why social media feels fake. The hurdle of finding hidden creators.
