@@ -3,24 +3,24 @@
 import React from "react";
 
 /**
- * AP Research Poster Redesign
- * - Clean, professional academic style.
- * - No animations.
- * - Fits within a single screen (no scroll goal).
- * - Humanized text provided by the user.
+ * AP Research Poster - Final High Contrast Review
+ * - Extra legible, high contrast fonts.
+ * - Single-screen view (no scroll).
+ * - Humanized text only.
  */
 export default function HumanizedPosterPage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html, body { 
           height: 100vh; width: 100vw; 
-          background-color: #fcfcfc; color: #1a202c; 
+          background-color: #f0f2f5; 
+          color: #1a202c; 
           font-family: 'Inter', sans-serif; 
-          overflow: hidden; /* No scroll goal */
+          overflow: hidden; 
         }
 
         .poster-root {
@@ -29,30 +29,31 @@ export default function HumanizedPosterPage() {
           padding: 24px;
           display: flex;
           flex-direction: column;
-          gap: 16px;
+          gap: 20px;
         }
 
         /* --- HEADER SECTION --- */
         .poster-header {
           text-align: center;
-          padding-bottom: 8px;
-          border-bottom: 3px solid #3182ce;
+          padding: 16px;
+          background-color: #ffffff;
+          border: 2px solid #2d3748;
+          border-radius: 8px;
         }
 
         .header-title {
-          font-family: 'Lora', serif;
-          font-size: 32px;
-          font-weight: 700;
-          color: #2c5282;
+          font-size: 34px;
+          font-weight: 800;
+          color: #1a202c;
           margin-bottom: 4px;
         }
 
         .header-author {
-          font-size: 16px;
-          font-weight: 600;
+          font-size: 18px;
+          font-weight: 700;
           color: #4a5568;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
         }
 
         /* --- THE GRID --- */
@@ -61,64 +62,67 @@ export default function HumanizedPosterPage() {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(4, 1fr);
-          gap: 12px;
-          min-height: 0; /* Important for flex child to not overflow */
+          gap: 16px;
+          min-height: 0;
         }
 
         /* --- POSTER CARD --- */
         .poster-card {
           background-color: #ffffff; 
-          border: 1px solid #e2e8f0;
-          padding: 14px;
+          border: 2px solid #2d3748;
+          border-radius: 8px;
+          padding: 16px;
           display: flex;
           flex-direction: column;
           min-height: 0;
-          box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+          box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
         }
 
         .card-title {
-          font-family: 'Lora', serif;
-          font-size: 16px;
-          font-weight: 700;
+          font-size: 17px;
+          font-weight: 800;
           color: #2b6cb0;
-          border-bottom: 1.5px solid #bee3f8;
-          margin-bottom: 8px;
-          padding-bottom: 4px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          padding-bottom: 6px;
+          border-bottom: 2px solid #e2e8f0;
         }
 
         .card-content {
-          font-size: 13.5px;
-          line-height: 1.45;
-          color: #2d3748;
-          overflow-y: auto; /* Allow overflow inside cards if needed */
-          padding-right: 4px;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #1a202c; /* High contrast black/grey */
+          overflow-y: auto;
+          font-weight: 500;
         }
 
         .card-content p {
-          margin-bottom: 8px;
+          margin-bottom: 10px;
         }
 
-        /* Span rules to create an interesting balanced layout */
-        .span-2-row { grid-row: span 2; }
-        .span-2-col { grid-column: span 2; }
+        .highlight-box {
+          background-color: #ebf8ff;
+          border-left: 4px solid #3182ce;
+          padding: 8px 12px;
+          margin: 8px 0;
+        }
 
-        /* Specific block placements */
-        .problem-block { grid-column: span 2; grid-row: span 1; }
-        .question-block { grid-column: span 2; }
-        
+        /* Span rules for layout balance */
+        .problem-block { grid-column: span 2; }
+        .question-block { grid-column: span 2; background-color: #fffaf0; border-color: #dd6b20; }
+        .question-block .card-title { color: #dd6b20; border-bottom-color: #feebc8; }
+        .sig-block { grid-column: span 2; }
         .methods-block { grid-row: span 2; }
-        .rationale-block { grid-column: span 1; }
-        .data-lit-block { grid-column: span 1; }
-        
-        .significance-block { grid-column: span 2; }
+        .assume-block { grid-column: span 2; }
 
         /* Scrollbar styling for cards */
-        .card-content::-webkit-scrollbar { width: 4px; }
+        .card-content::-webkit-scrollbar { width: 6px; }
         .card-content::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 10px; }
 
-        @media screen and (max-height: 700px) {
-          .header-title { font-size: 24px; }
-          .card-content { font-size: 12px; }
+        @media screen and (max-height: 800px) {
+          .header-title { font-size: 26px; }
+          .card-title { font-size: 15px; }
+          .card-content { font-size: 13px; }
         }
       `}</style>
 
@@ -132,8 +136,6 @@ export default function HumanizedPosterPage() {
         {/* POSTER GRID */}
         <div className="poster-grid">
           
-          {/* COLUMN 1 */}
-
           {/* Problem Statement */}
           <div className="poster-card problem-block">
             <h2 className="card-title">Problem Statement</h2>
@@ -147,7 +149,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card question-block">
             <h2 className="card-title">Research Question</h2>
             <div className="card-content">
-              <p style={{ fontStyle: "italic", fontSize: "16px", fontWeight: "600" }}>"How does algorithmic gatekeeping on platforms like TikTok and Instagram impact the psychological well-being of small content creators?"</p>
+              <p style={{ fontSize: "17px", fontWeight: "700", color: "#2d3748" }}>"How does algorithmic gatekeeping on platforms like TikTok and Instagram impact the psychological well-being of small content creators?"</p>
             </div>
           </div>
 
@@ -161,20 +163,20 @@ export default function HumanizedPosterPage() {
           </div>
 
           {/* Assumptions/Hypotheses */}
-          <div className="poster-card span-2-col">
+          <div className="poster-card assume-block">
             <h2 className="card-title">Assumptions & Hypotheses</h2>
             <div className="card-content">
               <p><strong>Assumption:</strong> The algorithms on social media platforms are designed to only feature content that is similar to the viral content of that platform at the time. Furthermore, as a new creator to a social media platform, assuming that a creator has no following yet, the platform will hide that user’s social media content.</p>
-              <p><strong>Hypothesis:</strong> It is hypothesized that the creators will suffer significant psychological stress due to the algorithm’s influence over them, forcing them to change their authentic content to gain likes and followers.</p>
+              <p><strong>Hypothesis:</strong> The creators will suffer significant psychological stress due to the algorithm’s influence over them, forcing them to change their authentic content to gain likes and followers.</p>
             </div>
           </div>
 
           {/* Significance */}
-          <div className="poster-card significance-block">
+          <div className="poster-card sig-block">
             <h2 className="card-title">Significance / Value</h2>
             <div className="card-content">
               <p>Understanding the psychological impact of social media algorithms on creators will allow researchers to understand the root of the psychological crises of online communities.</p>
-              <p>Furthermore, it will allow researchers to investigate the root of significant social media phenomena such as engagement-farming behavior, the formation of echo chambers online, and the mental health of online communities overall.</p>
+              <p>Furthermore, it will allow researchers to investigate the root of significant social media phenomena such as engagement-farming, echo chambers, and the mental health of online communities overall.</p>
             </div>
           </div>
 
@@ -182,16 +184,17 @@ export default function HumanizedPosterPage() {
           <div className="poster-card methods-block">
             <h2 className="card-title">Method of Inquiry</h2>
             <div className="card-content">
-              <p>The method that will be used to investigate the research question is through the performance of <strong>anonymous surveys</strong> with content creators that utilize platforms like TikTok and Instagram, followed by <strong>qualitative interviews</strong> with those same participants to examine their experiences with the social media algorithm.</p>
+              <p>Investigate the described research question through <strong>anonymous surveys</strong> with content creators that utilize TikTok and Instagram.</p>
+              <p>Followed by <strong>qualitative interviews</strong> with those same participants to examine their experiences with the social media algorithm.</p>
             </div>
           </div>
 
           {/* Rationale */}
-          <div className="poster-card rationale-block">
+          <div className="poster-card">
             <h2 className="card-title">Rationale for Method</h2>
             <div className="card-content">
-              <p>Using qualitative interviews will allow researchers to gain an understanding of the experiences and the “identity” of the creators being surveyed.</p>
-              <p>Furthermore, using thematic coding will allow researchers to map the psychological experiences of the creators to their experiences with social media algorithms.</p>
+              <p>Qualitative interviews provide a deep understanding of the experiences and the “identity” of the creators being surveyed.</p>
+              <p>Thematic coding maps the mental experiences of the creators to their interactions with social media algorithms.</p>
             </div>
           </div>
 
@@ -199,7 +202,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Situatedness (The Gap)</h2>
             <div className="card-content">
-              <p>While existing literature on social media algorithms recognizes the psychological impact of those platforms on users in general (Gillespie, Bucher), there has been a lack of investigation into the psychological impact on new creators of platforms on social media.</p>
+              <p>Existing literature (Gillespie, Bucher) recognizes the impact of those platforms on users in general, but there has been a lack of investigation into the impact on brand-new creators trying to establish a foothold.</p>
             </div>
           </div>
 
@@ -207,7 +210,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Data Sources (Lit Review)</h2>
             <div className="card-content">
-              <p>Research articles published in peer-reviewed journals in the fields of sociology and media studies, such as Gillespie (2014), Noble (2018), and Bucher (2012) regarding algorithmic objectivity, bias, and the psychological impact of becoming invisible online.</p>
+              <p>Peer-reviewed journals in sociology and media studies (e.g., Gillespie 2014, Noble 2018, Bucher 2012) regarding algorithmic objectivity, bias, and the impact of digital invisibility.</p>
             </div>
           </div>
 
@@ -215,7 +218,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Data Sources (Evidence)</h2>
             <div className="card-content">
-              <p>Data collected from anonymous survey responses and transcribed qualitative interviews with content creators recruited from independent online content creator discussion forums.</p>
+              <p>Data collected from anonymous survey responses and transcribed qualitative interviews with creators recruited from independent content creator forums.</p>
             </div>
           </div>
 
@@ -223,7 +226,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Ethical Considerations</h2>
             <div className="card-content">
-              <p>Voluntary participation with informed consent will be required from all participants to ensure their rights are preserved and respected. Additionally, no personally identifiable information will be collected from these creators.</p>
+              <p>Voluntary participation with informed consent from all participants. No personally identifiable information will be collected from these creators.</p>
             </div>
           </div>
 
@@ -231,7 +234,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Next Steps</h2>
             <div className="card-content">
-              <p>Completing the literature review, obtaining approval to distribute the survey and conduct interviews, and beginning recruitment of participants for the study.</p>
+              <p>Completing the literature review, obtaining approval to distribute the survey, and beginning recruitment of participants.</p>
             </div>
           </div>
 
@@ -239,7 +242,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">What am I Missing?</h2>
             <div className="card-content">
-              <p>Are there other social media platforms besides Instagram and TikTok that may have differently-designed algorithmic features that could be the subject of this study?</p>
+              <p>Are there other platforms besides Instagram and TikTok that have differently-designed algorithmic features that should be considered?</p>
             </div>
           </div>
 
@@ -247,8 +250,8 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Potential Issues</h2>
             <div className="card-content">
-              <p>The social media algorithm hides small creators, making it challenging to recruit participants for the study.</p>
-              <p>Additionally, creators may be hesitant to reveal in interviews that they change their authentic content to gain social media likes and followers.</p>
+              <p>The algorithm hides small creators, making it challenging to recruit participants.</p>
+              <p>Creators may also be hesitant to reveal in interviews that they change their authentic content to gain social media likes and followers.</p>
             </div>
           </div>
 
