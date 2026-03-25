@@ -17,53 +17,51 @@ export default function HumanizedPosterPage() {
         /* --- GLOBAL RESET --- */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         
-        *::-webkit-scrollbar { width: 8px; height: 8px; }
-        *::-webkit-scrollbar-track { background: transparent; }
-        *::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
-        *::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.2); }
+        *::-webkit-scrollbar { display: none; }
+        * { -ms-overflow-style: none; scrollbar-width: none; }
 
         html, body { 
-          min-height: 100vh;
+          height: 100vh;
+          width: 100vw;
           background: radial-gradient(circle at top right, #f8fafc, #e2e8f0);
           color: #1a202c; 
           font-family: 'Outfit', sans-serif; 
-          overflow-x: hidden;
-          line-height: 1.5;
+          overflow: hidden;
+          line-height: 1.3;
         }
 
         .poster-root {
-          width: 100%;
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: clamp(24px, 5vw, 60px);
+          width: 100vw;
+          height: 100vh;
+          padding: clamp(12px, 2.5vh, 24px);
           display: flex;
           flex-direction: column;
-          gap: clamp(20px, 3vh, 32px);
-          min-height: 100vh;
+          gap: clamp(8px, 1.5vh, 16px);
         }
 
         /* --- HEADER SECTION --- */
         .poster-header {
           text-align: center;
-          padding: clamp(24px, 4vh, 48px);
+          padding: clamp(12px, 2vh, 24px);
           background: rgba(255, 255, 255, 0.6);
           backdrop-filter: blur(12px);
           border: 1px solid rgba(255, 255, 255, 0.4);
-          border-radius: 24px;
-          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+          border-radius: 16px;
+          box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+          flex-shrink: 0;
         }
 
         .header-title {
-          font-size: clamp(24px, 5vw, 48px);
+          font-size: clamp(20px, 3.5vh, 36px);
           font-weight: 800;
           color: #0f172a;
-          margin-bottom: 12px;
+          margin-bottom: 4px;
           line-height: 1.1;
           letter-spacing: -0.02em;
         }
 
         .header-author {
-          font-size: clamp(14px, 2vh, 18px);
+          font-size: clamp(12px, 1.5vh, 16px);
           font-weight: 600;
           color: #64748b;
           text-transform: uppercase;
@@ -72,21 +70,12 @@ export default function HumanizedPosterPage() {
 
         /* --- THE GRID --- */
         .poster-grid {
+          flex: 1;
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          grid-auto-rows: auto;
-          gap: 20px;
-          padding-bottom: 40px;
-        }
-
-        /* Responsive Grid: Switch to 2 columns on tablets, 1 on mobile */
-        @media (max-width: 1100px) {
-          .poster-grid { grid-template-columns: repeat(2, 1fr); }
-          .problem-block, .question-block, .sig-block, .assume-block { grid-column: span 2 !important; }
-        }
-        @media (max-width: 640px) {
-          .poster-grid { grid-template-columns: 1fr; }
-          .problem-block, .question-block, .sig-block, .assume-block, .methods-block { grid-column: span 1 !important; }
+          grid-template-rows: repeat(4, 1fr);
+          gap: clamp(8px, 1.5vh, 16px);
+          min-height: 0;
         }
 
         /* --- POSTER CARD --- */
@@ -94,23 +83,18 @@ export default function HumanizedPosterPage() {
           background: rgba(255, 255, 255, 0.7);
           backdrop-filter: blur(8px);
           border: 1px solid rgba(255, 255, 255, 0.5);
-          border-radius: 20px;
-          padding: 24px;
+          border-radius: 12px;
+          padding: clamp(10px, 1.5vh, 20px);
           display: flex;
           flex-direction: column;
-          gap: 12px;
-          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-          height: 100%;
-        }
-
-        .poster-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+          gap: clamp(4px, 0.8vh, 8px);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          min-height: 0;
+          overflow: hidden;
         }
 
         .card-title {
-          font-size: 13px;
+          font-size: clamp(10px, 1.25vh, 13px);
           font-weight: 800;
           color: #3b82f6;
           text-transform: uppercase;
@@ -118,6 +102,7 @@ export default function HumanizedPosterPage() {
           display: flex;
           align-items: center;
           gap: 8px;
+          flex-shrink: 0;
         }
 
         .card-title::after {
@@ -128,14 +113,15 @@ export default function HumanizedPosterPage() {
         }
 
         .card-content {
-          font-size: 15px;
-          line-height: 1.6;
+          font-size: clamp(10px, 1.32vh, 14.5px);
+          line-height: 1.4;
           color: #334155;
           font-weight: 450;
+          overflow: hidden;
         }
 
         .card-content p {
-          margin-bottom: 12px;
+          margin-bottom: clamp(4px, 0.6vh, 8px);
         }
 
         .card-content strong {
@@ -157,6 +143,7 @@ export default function HumanizedPosterPage() {
         /* Typography tweaks for readability */
         .header-title, .card-title, .card-content { -webkit-font-smoothing: antialiased; }
       `}</style>
+
 
 
       <div className="poster-root">
