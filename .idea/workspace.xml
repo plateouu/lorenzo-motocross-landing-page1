@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
-      <change beforePath="$PROJECT_DIR$/app/ap-research-poster/elevator_pitch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/ap-research-poster/elevator_pitch.txt" afterDir="false" />
-    </list>
+    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,14 +105,6 @@
       <workItem from="1770719487549" duration="15274000" />
       <workItem from="1771883280693" duration="164000" />
       <workItem from="1771884732009" duration="7000" />
-    </task>
-    <task id="LOCAL-00161" summary="fa">
-      <option name="closed" value="true" />
-      <created>1770107981415</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1770107981415</updated>
     </task>
     <task id="LOCAL-00162" summary="fa">
       <option name="closed" value="true" />
@@ -500,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774452621367</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="fa">
+      <option name="closed" value="true" />
+      <created>1774453771025</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1774453771026</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
