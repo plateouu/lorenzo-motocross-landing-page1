@@ -1,0 +1,52 @@
+AP RESEARCH POSTER: COMPLETE SCRIPT & EXPLANATION
+CREATED BY: TAYLOR DAAN
+--------------------------------------------------------------------------------
+
+INTRODUCTION (THE HOOK)
+"Imagine you are a brand-new artist. You spend hours creating something original, but when you post it, only 3 people see it. Meanwhile, a 15-second video of someone dancing to a trending song gets 2 million views. This is the reality of social media algorithms—the hidden codes that act as digital gatekeepers, deciding who gets heard and who stays invisible."
+
+--------------------------------------------------------------------------------
+PART-BY-PART BREAKDOWN & CONNECTIONS:
+
+1. THE PROBLEM (The 'Why' It Matters)
+Connection: This sets the stage. It explains that creators aren't just 'sad' about views; they are being forced into a 'trend-or-fail' cycle. This cycle creates a psychological trap where authenticity is sacrificed for visibility.
+
+2. RESEARCH QUESTION (The Core Focus)
+Connection: This is the bridge between the problem and the study. It narrows the focus to two variables: how creators FEEL (internal psychology) and what they POST (external choice).
+
+3. CONCEPTS (Defining the Terms)
+Connection: To understand the study, we must agree on what an 'Algorithm' is (the gatekeeper) and who 'Small Creators' are (the subjects). It keeps the research grounded in specific digital mechanics.
+
+4. PREDICTIONS (The Hypothesis)
+Connection: Based on the problem, I predict that 'acting fake' isn't just a choice—it’s a survival tactic. I assume the pressure to be viral directly causes stress and content homogenization (everyone posting the same thing).
+
+5. VALUE OF STUDY (The Bigger Picture)
+Connection: This explains the 'So What?' if new creators are stressed, our entire digital culture becomes a copy-paste mirror. It connects individual stress to a larger societal issue of toxic online behavior.
+
+6. THE METHOD (The Strategy)
+Connection: I am using a 'Mixed Methods' approach. The survey gives me the numbers (the breadth), and the interviews give me the stories (the depth). They work together to prove the psychological impact.
+
+7. RATIONALE (Why This Way?)
+Connection: Numbers (surveys) alone can't show emotion. I need to hear the 'exact moments' of stress in an interview to truly answer the 'How' in my research question.
+
+8. THE GAP (The Missing Piece)
+Connection: Many people study how algorithms affect big celebrities or 'influencers.' My research specifically targets the 'New Account'—the most vulnerable stage of the creator journey that others have ignored.
+
+9. EXPERT SOURCES (The Foundation)
+Connection: I’m building on the work of Gillespie (2014) and Bucher (2012). They provided the theory of 'algorithmic visibility,' which I am now applying to the specific psychology of small creators.
+
+10. OWN EVIDENCE (The Proof)
+Connection: This is where my personal work comes in. The survey results and interview transcripts provide the raw data that will either prove or disprove my predictions.
+
+11. SAFETY & RIGHTS (The Ethics)
+Connection: Because I am asking about mental health and stress, I must protect my participants. Anonymity is key to getting honest answers about 'faking it' for the algorithm.
+
+12. NEXT STEPS (The Roadmap)
+Connection: This shows where I am now vs. where I’m going. It transitions the project from planning to active data collection.
+
+13. WHAT'S MISSING & POTENTIAL PROBLEMS (The Reality Check)
+Connection: No study is perfect. I acknowledge that subscription-based apps (like Patreon) might be the 'antidote' to algorithmic stress, and I admit that finding 'invisible' creators is a challenge I must overcome.
+
+--------------------------------------------------------------------------------
+FINAL SUMMARY CONNECTION:
+"From the Hook to the Next Steps, every part of this poster is connected by one theme: The Human Cost of the Code. We are investigating how a hidden math formula changes the way humans express themselves."

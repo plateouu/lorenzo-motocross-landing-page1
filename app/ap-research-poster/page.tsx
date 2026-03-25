@@ -12,114 +12,152 @@ export default function HumanizedPosterPage() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
         /* --- GLOBAL RESET --- */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         
-        *::-webkit-scrollbar { display: none; }
-        * { -ms-overflow-style: none; scrollbar-width: none; }
+        *::-webkit-scrollbar { width: 8px; height: 8px; }
+        *::-webkit-scrollbar-track { background: transparent; }
+        *::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
+        *::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.2); }
 
         html, body { 
-          height: 100vh; 
-          width: 100vw; 
-          background-color: #f0f2f5; 
+          min-height: 100vh;
+          background: radial-gradient(circle at top right, #f8fafc, #e2e8f0);
           color: #1a202c; 
-          font-family: 'Inter', sans-serif; 
-          overflow: hidden; 
+          font-family: 'Outfit', sans-serif; 
+          overflow-x: hidden;
+          line-height: 1.5;
         }
 
         .poster-root {
-          width: 100vw;
-          height: 100vh;
-          padding: clamp(8px, 2vh, 20px);
+          width: 100%;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: clamp(24px, 5vw, 60px);
           display: flex;
           flex-direction: column;
-          gap: clamp(6px, 1.5vh, 12px);
+          gap: clamp(20px, 3vh, 32px);
+          min-height: 100vh;
         }
 
         /* --- HEADER SECTION --- */
         .poster-header {
           text-align: center;
-          padding: clamp(6px, 1.2vh, 14px);
-          background-color: #ffffff;
-          border: 2px solid #2d3748;
-          border-radius: 8px;
+          padding: clamp(24px, 4vh, 48px);
+          background: rgba(255, 255, 255, 0.6);
+          backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 24px;
+          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
         }
 
         .header-title {
-          font-size: clamp(18px, 3vh, 32px);
+          font-size: clamp(24px, 5vw, 48px);
           font-weight: 800;
-          color: #1a202c;
-          margin-bottom: 2px;
+          color: #0f172a;
+          margin-bottom: 12px;
+          line-height: 1.1;
+          letter-spacing: -0.02em;
         }
 
         .header-author {
-          font-size: clamp(12px, 1.6vh, 16px);
-          font-weight: 700;
-          color: #4a5568;
+          font-size: clamp(14px, 2vh, 18px);
+          font-weight: 600;
+          color: #64748b;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
         }
 
         /* --- THE GRID --- */
         .poster-grid {
-          flex: 1;
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-          gap: clamp(6px, 1.2vh, 12px);
-          min-height: 0;
+          grid-auto-rows: auto;
+          gap: 20px;
+          padding-bottom: 40px;
+        }
+
+        /* Responsive Grid: Switch to 2 columns on tablets, 1 on mobile */
+        @media (max-width: 1100px) {
+          .poster-grid { grid-template-columns: repeat(2, 1fr); }
+          .problem-block, .question-block, .sig-block, .assume-block { grid-column: span 2 !important; }
+        }
+        @media (max-width: 640px) {
+          .poster-grid { grid-template-columns: 1fr; }
+          .problem-block, .question-block, .sig-block, .assume-block, .methods-block { grid-column: span 1 !important; }
         }
 
         /* --- POSTER CARD --- */
         .poster-card {
-          background-color: #ffffff; 
-          border: 2px solid #2d3748;
-          border-radius: 8px;
-          padding: clamp(6px, 1.2vh, 14px);
+          background: rgba(255, 255, 255, 0.7);
+          backdrop-filter: blur(8px);
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 20px;
+          padding: 24px;
           display: flex;
           flex-direction: column;
-          min-height: 0;
-          box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
-          overflow: hidden;
+          gap: 12px;
+          transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+          height: 100%;
+        }
+
+        .poster-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         .card-title {
-          font-size: clamp(11px, 1.4vh, 14px);
+          font-size: 13px;
           font-weight: 800;
-          color: #2b6cb0;
+          color: #3b82f6;
           text-transform: uppercase;
-          margin-bottom: clamp(4px, 0.8vh, 8px);
-          padding-bottom: clamp(2px, 0.4vh, 4px);
-          border-bottom: 2px solid #e2e8f0;
-          flex-shrink: 0;
+          letter-spacing: 0.1em;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .card-title::after {
+          content: "";
+          flex: 1;
+          height: 1px;
+          background: #e2e8f0;
         }
 
         .card-content {
-          font-size: clamp(10px, 1.35vh, 14px);
-          line-height: 1.3;
-          color: #000; 
-          font-weight: 500;
-          overflow: hidden;
+          font-size: 15px;
+          line-height: 1.6;
+          color: #334155;
+          font-weight: 450;
         }
 
         .card-content p {
-          margin-bottom: clamp(3px, 0.6vh, 6px);
+          margin-bottom: 12px;
+        }
+
+        .card-content strong {
+          color: #0f172a;
+          font-weight: 700;
         }
 
         /* Layout spans */
-        .problem-block { grid-column: span 2; }
-        .question-block { grid-column: span 2; background-color: #fffaf0; border-color: #dd6b20; }
-        .question-block .card-title { color: #dd6b20; border-bottom-color: #feebc8; }
+        .problem-block { grid-column: span 2; background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%); }
+        .question-block { grid-column: span 2; background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border-color: #fcd34d; }
+        .question-block .card-title { color: #d97706; }
+        .question-block .card-title::after { background: #fde68a; }
         .sig-block { grid-column: span 2; }
-        .methods-block { grid-row: span 2; }
+        .methods-block { grid-row: span 2; background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-color: #86efac; }
+        .methods-block .card-title { color: #16a34a; }
+        .methods-block .card-title::after { background: #bbf7d0; }
         .assume-block { grid-column: span 2; }
 
-        /* Ensure everything fits on really long text cards */
-        .methods-block .card-content { font-size: clamp(10px, 1.3vh, 13px); }
-        .assume-block .card-content { font-size: clamp(10px, 1.25vh, 12.5px); }
+        /* Typography tweaks for readability */
+        .header-title, .card-title, .card-content { -webkit-font-smoothing: antialiased; }
       `}</style>
+
 
       <div className="poster-root">
         {/* HEADER */}
