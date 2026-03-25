@@ -96,17 +96,17 @@ export default function ElevatorPitchPage() {
 
     // Floor 1
     <div key="1" className="slide-content">
-      <motion.span className="pill orange-pill" {...pop(0)}>Problem Statement</motion.span>
-      <motion.h2 className="section-title" {...rise(0.1)}>Algorithms Act as Objective Gatekeepers</motion.h2>
+      <motion.span className="pill orange-pill" {...pop(0)}>The Problem</motion.span>
+      <motion.h2 className="section-title" {...rise(0.1)}>The Algorithm Picks What Shows Up</motion.h2>
       
       <div className="card-grid">
         <motion.div className="card" {...rise(0.2)}>
-          <h3>The Reality</h3>
-          <p>They limit visibility, leading to unequal exposure and massive anxiety among users.</p>
+          <h3>The Pressure</h3>
+          <p>For new creators, if you don't follow the latest trend, nobody sees your work. You feel forced to copy what's famous just to get any views.</p>
         </motion.div>
         <motion.div className="card red-card" {...rise(0.3)}>
-          <h3>The Pressure</h3>
-          <p>Brand-new creators feel immense pressure to change the art they produce to generate engagement, sacrificing high-quality work to appease the algorithm.</p>
+          <h3>The Impact</h3>
+          <p>This pressure makes people stop being authentic. It leads to a lot of stress because you're constantly "acting fake" to gain followers.</p>
         </motion.div>
       </div>
     </div>,
@@ -115,102 +115,102 @@ export default function ElevatorPitchPage() {
     <div key="2" className="slide-content">
       <motion.span className="pill green-pill" {...pop(0)}>Research Question</motion.span>
       <motion.div className="hero-quote-box" {...rise(0.1)}>
-        "How do small content creators respond to algorithmic changes in visibility and engagement, and how do those responses inform their creative decisions and personal creative identities?"
+        "How does the pressure to get views on TikTok and Instagram change how new creators feel and what they post?"
       </motion.div>
 
       <div className="card-grid mt-4">
         <motion.div className="card small-card" {...rise(0.3)}>
           <span className="bold-label highlight-green">Algorithm</span> 
-          <p>The platform mechanisms that act as gatekeepers to visibility.</p>
+          <p>The hidden code that picks which videos go viral and which ones stay invisible.</p>
         </motion.div>
         <motion.div className="card small-card" {...rise(0.4)}>
           <span className="bold-label highlight-green">Small Creators</span> 
-          <p>Artists attempting to establish their identities on TikTok, YouTube, and Instagram.</p>
+          <p>Regular people trying to grow an audience on apps like TikTok and Instagram.</p>
         </motion.div>
       </div>
     </div>,
 
     // Floor 3
     <div key="3" className="slide-content">
-      <motion.span className="pill purple-pill" {...pop(0)}>Assumptions & Hypotheses</motion.span>
+      <motion.span className="pill purple-pill" {...pop(0)}>Predictions</motion.span>
       <motion.h2 className="section-title" {...rise(0.1)}>What I Expect to Find</motion.h2>
 
       <div className="split-layout">
         <motion.div className="card" {...rise(0.2)}>
-          <h3 className="highlight-purple">Assumption</h3>
-          <p>The algorithm acts as a gatekeeper to new creators and can severely limit views (e.g., dropping arbitrarily from 8,000 to 1,500 views overnight).</p>
+          <h3 className="highlight-purple">The Theory</h3>
+          <p>I assume the algorithm only shows content that matches viral trends. If you're new and have no followers, the platform basically hides you.</p>
         </motion.div>
         <motion.div className="card" {...rise(0.3)}>
-          <h3 className="highlight-purple">Hypothesis</h3>
-          <p>The pressure of algorithmic gatekeeping forces small creators to change how they view themselves and their art, actively sacrificing quality for engagement metrics.</p>
+          <h3 className="highlight-purple">The Goal</h3>
+          <p>I think this unpredictability causes real mental stress. Creators are forced to give up their authentic style just to secure steady likes.</p>
         </motion.div>
       </div>
     </div>,
 
     // Floor 4
     <div key="4" className="slide-content">
-      <motion.span className="pill blue-pill" {...pop(0)}>Lit Review</motion.span>
-      <motion.h2 className="section-title" {...rise(0.1)}>Situatedness & The Gap</motion.h2>
+      <motion.span className="pill blue-pill" {...pop(0)}>Expert Sources</motion.span>
+      <motion.h2 className="section-title" {...rise(0.1)}>What Experts Say</motion.h2>
 
       <div className="note-stack">
-        <motion.div className="card note-card" {...rise(0.2)}><b>Gillespie (2014):</b> Established that algorithms act as gatekeepers while falsely claiming objectivity.</motion.div>
-        <motion.div className="card note-card" {...rise(0.3)}><b>Noble (2018):</b> Proved algorithms reinforce existing inequalities.</motion.div>
-        <motion.div className="card note-card" {...rise(0.4)}><b>Bucher (2012):</b> Found users feel anxious about algorithmic visibility and alter habits.</motion.div>
+        <motion.div className="card note-card" {...rise(0.2)}><b>Gillespie (2014):</b> Found that algorithms pick winners while pretending to be balanced.</motion.div>
+        <motion.div className="card note-card" {...rise(0.3)}><b>Noble (2018):</b> Showed that algorithms often make existing unfairness even worse.</motion.div>
+        <motion.div className="card note-card" {...rise(0.4)}><b>Bucher (2012):</b> Found that the fear of being "invisible" online causes creators a lot of anxiety.</motion.div>
       </div>
 
       <motion.div className="card gap-card" {...pop(0.5)}>
         <span className="bold-label highlight-blue">THE GAP</span>
-        <p>The conversation has yet to explore the psychological & creative impact on brand-new creators utilizing art for personal identity, or if a rights-based model should exist.</p>
+        <p>Other researchers know algorithms cause anxiety, but nobody is looking at the very first steps of a new creator's journey.</p>
       </motion.div>
     </div>,
 
     // Floor 5
     <div key="5" className="slide-content">
-      <motion.span className="pill pink-pill" {...pop(0)}>Methodology</motion.span>
-      <motion.h2 className="section-title" {...rise(0.1)}>Method of Inquiry & Data Sources</motion.h2>
+      <motion.span className="pill pink-pill" {...pop(0)}>The Study</motion.span>
+      <motion.h2 className="section-title" {...rise(0.1)}>How I'm Doing It</motion.h2>
 
       <div className="card-grid">
         <motion.div className="card" {...rise(0.2)}>
-          <h3 className="highlight-pink">Methodology</h3>
-          <p>A qualitative study using anonymous surveys (Google Forms) & 10-15 minute qualitative interviews (text, voice, or video) analyzed via <b>thematic coding</b>.</p>
+          <h3 className="highlight-pink">Method</h3>
+          <p>A quick survey to see the general pressure, followed by 10-minute interviews to hear their real emotional stories.</p>
         </motion.div>
         <motion.div className="card" {...rise(0.3)}>
-          <h3 className="highlight-pink">Data Sources</h3>
-          <p>Anonymous survey responses and transcribed interviews from small creators found on various independent online message boards and forums.</p>
+          <h3 className="highlight-pink">Rationale</h3>
+          <p>Interviews let me hear the "why" behind the numbers. I can see exactly where someone felt forced to change because of a drop in likes.</p>
         </motion.div>
       </div>
     </div>,
 
     // Floor 6
     <div key="6" className="slide-content">
-      <motion.span className="pill orange-pill" {...pop(0)}>Hurdles</motion.span>
-      <motion.h2 className="section-title" {...rise(0.1)}>Ethics & Potential Issues</motion.h2>
+      <motion.span className="pill orange-pill" {...pop(0)}>The Hurdles</motion.span>
+      <motion.h2 className="section-title" {...rise(0.1)}>What Could Go Wrong</motion.h2>
 
       <div className="split-layout">
         <motion.div className="card" {...rise(0.2)}>
-          <h3 className="highlight-orange">Ethical Considerations</h3>
-          <p>Participation is completely voluntary with informed consent. No PII will be collected, and participants can exit at any time ensuring minimal risk.</p>
+          <h3 className="highlight-orange">Safety</h3>
+          <p>Everyone stays anonymous. They can quit any time, and I'm not saving any real names or private profiles.</p>
         </motion.div>
         <motion.div className="card" {...rise(0.3)}>
-          <h3 className="highlight-orange">Potential Issues</h3>
-          <p>The algorithm makes finding small creators incredibly difficult! It actively hides their content. Finding creators willing to admit they changed art for views will be challenging.</p>
+          <h3 className="highlight-orange">Problems</h3>
+          <p>It's hard to find small creators because the algorithm hides them! Also, people might be shy to admit they "acted fake" for views.</p>
         </motion.div>
       </div>
     </div>,
 
     // Floor 7
     <div key="7" className="slide-content">
-      <motion.span className="pill teal-pill" {...pop(0)}>Conclusion</motion.span>
-      <motion.h2 className="section-title" {...rise(0.1)}>Significance & Next Steps</motion.h2>
+      <motion.span className="pill teal-pill" {...pop(0)}>Moving Forward</motion.span>
+      <motion.h2 className="section-title" {...rise(0.1)}>Why This Matters</motion.h2>
 
       <motion.div className="card" {...rise(0.2)}>
-        <h3 className="highlight-teal">Value of the Study</h3>
-        <p>Understanding engagement-chasing explains broader implications of echo chambers/farming. It highlights how misinformation, science denial, and extreme views spread online, aiding in fixing our community dialogue.</p>
+        <h3 className="highlight-teal">The Value</h3>
+        <p>This explains why social media feels like a cycle of people copying each other. Understanding this pressure helps us fix how talk to each other online.</p>
       </motion.div>
       
       <motion.div className="card mt-4" {...rise(0.3)}>
         <h3 className="highlight-teal">Next Steps</h3>
-        <p>Finalize the literature review, submit the instrument, and begin contacting creators dug up from online forums for surveys and interviews.</p>
+        <p>Finish reading expert books, get permission from school, and start finding my first creators to interview on forums/Reddit.</p>
       </motion.div>
     </div>
   ];

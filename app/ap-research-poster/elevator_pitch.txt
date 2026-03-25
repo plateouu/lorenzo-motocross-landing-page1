@@ -1,25 +1,26 @@
-ELEVATOR PITCH (Stage 4) - TAYLOR DAAN
+ELEVATOR PITCH (SIMPLE VERSION) - TAYLOR DAAN
 ----------------------------------------
 
-"Hi everyone, my research focuses on the hidden gatekeepers of our digital lives: social media algorithms.
+"Hey everyone! My research is about how social media apps like TikTok and Instagram use hidden code—called algorithms—to pick which videos go viral.
 
-Right now, small creators are under intense psychological pressure. Instead of finding a space for original expression, they are being forced to abandon their authentic ideas just to chase virality. This isn't just about 'getting views'—it’s a fundamental shift in how creators view their own creative identities.
+For new creators, this creates a lot of pressure. If you don't follow the latest trend, nobody sees your work. This makes people stressed, and it forces them to act 'fake' or change their own style just to get views.
 
-This led me to my core research question: How does algorithmic gatekeeping on platforms like TikTok and Instagram specifically impact the psychological well-being of small content creators?
+My big question is: How does this pressure to get views actually change the mental health and the choices of new creators?
 
-To answer this, I’m launching a study using anonymous surveys to gather broad data. But more importantly, I’ll be conducting qualitative interviews to dive deep into the personal 'identity' and mental health of these creators. By using thematic coding, I can map their specific emotional experiences directly to algorithmic changes.
+To find out, I’m doing an anonymous survey to see how many people feel this way. Then, I’m doing 10-minute interviews to hear their real stories. I want to see the exact moment someone felt forced to change their style because of the algorithm.
 
-This study matters because it gets to the root of why our online communities are currently in a state of crisis—from engagement-farming and echo chambers to the overall mental health of digital spaces.
+This study matters because it explains why so much of social media feels like everyone is just copying each other. It helps us understand why online communities can feel toxic or fake sometimes.
 
-The biggest challenge? The algorithm itself hides the very people I need to interview: the small creators. So, my immediate next steps are to secure approval and start recruiting participants directly from independent creator forums. Thank you."
+The biggest problem is that the algorithm hides the very people I need to talk to—the small creators! But my next steps are to finish my expert reading and start finding those first 10 creators on Reddit and creator forums. Thank you."
 ----------------------------------------
-(Talking points version below for quick reference)
+(Simple Talking Points)
 
-- [ ] HOOK: Algorithms as "hidden gatekeepers" forcing a shift in identity.
-- [ ] REASON: Pressure to chase virality instead of authentic content.
-- [ ] QUESTION: Focus on "psychological well-being" for small creators.
-- [ ] PLAN: Anonymous surveys (broad) + Qualitative interviews (deep).
-- [ ] ANALYSIS: Map emotional experiences to algorithms via thematic coding.
-- [ ] VALUE: Explaining echo chambers and digital mental health crises.
-- [ ] HURDLE: Finding participants hidden by the algorithm.
-- [ ] NEXT: Secured approval and forum recruitment.
+- [ ] THE HOOK: Algorithms pick winners and losers.
+- [ ] THE PRESSURE: New creators feel they MUST follow trends to be seen.
+- [ ] THE IMPACT: Stress and "acting fake" to gain followers.
+- [ ] THE QUESTION: How does this pressure change how creators feel and what they post?
+- [ ] THE PLAN: Surveys (for numbers) + Interviews (for real stories).
+- [ ] THE GOAL: Mapping emotional moments to view count drops.
+- [ ] WHY IT MATTERS: Explaining why social media feels unauthentic.
+- [ ] THE HURDLE: Finding creators that the algorithm is already hiding.
+- [ ] NEXT STEPS: Finishing expert reading and starting recruitment.

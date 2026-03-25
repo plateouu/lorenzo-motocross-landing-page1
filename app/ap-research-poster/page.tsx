@@ -3,10 +3,10 @@
 import React from "react";
 
 /**
- * AP Research Poster - Final Single Screen No Scroll Version
- * - Force fits everything to exact 100vh.
- * - Hides all scrollbars globally.
- * - Humanized text only.
+ * AP Research Poster - Simplified Direct Content Version
+ * - Very simple, high contrast, no scroll.
+ * - 8th grade level readability for presentation.
+ * - Covering core areas from the Stage 4 requirements.
  */
 export default function HumanizedPosterPage() {
   return (
@@ -17,7 +17,7 @@ export default function HumanizedPosterPage() {
         /* --- GLOBAL RESET & HIDE SCROLLBARS --- */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         
-        *::-webkit-scrollbar { display: none; } /* Hide for all elements in layout */
+        *::-webkit-scrollbar { display: none; }
         * { -ms-overflow-style: none; scrollbar-width: none; }
 
         html, body { 
@@ -26,40 +26,40 @@ export default function HumanizedPosterPage() {
           background-color: #f0f2f5; 
           color: #1a202c; 
           font-family: 'Inter', sans-serif; 
-          overflow: hidden; /* No browser scroll */
+          overflow: hidden; 
         }
 
         .poster-root {
           width: 100vw;
           height: 100vh;
-          padding: 16px; /* Slightly tighter padding */
+          padding: 12px;
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 10px;
         }
 
         /* --- HEADER SECTION --- */
         .poster-header {
           text-align: center;
-          padding: 12px;
+          padding: 8px;
           background-color: #ffffff;
           border: 2px solid #2d3748;
           border-radius: 8px;
         }
 
         .header-title {
-          font-size: 28px;
+          font-size: 24px;
           font-weight: 800;
           color: #1a202c;
           margin-bottom: 2px;
         }
 
         .header-author {
-          font-size: 15px;
+          font-size: 14px;
           font-weight: 700;
           color: #4a5568;
           text-transform: uppercase;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
         }
 
         /* --- THE GRID --- */
@@ -68,7 +68,7 @@ export default function HumanizedPosterPage() {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(4, 1fr);
-          gap: 12px;
+          gap: 10px;
           min-height: 0;
         }
 
@@ -77,38 +77,38 @@ export default function HumanizedPosterPage() {
           background-color: #ffffff; 
           border: 2px solid #2d3748;
           border-radius: 8px;
-          padding: 12px;
+          padding: 10px;
           display: flex;
           flex-direction: column;
           min-height: 0;
           box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
-          overflow: hidden; /* Force content to stay in card */
+          overflow: hidden;
         }
 
         .card-title {
-          font-size: 15px;
+          font-size: 13px;
           font-weight: 800;
           color: #2b6cb0;
           text-transform: uppercase;
-          margin-bottom: 8px;
+          margin-bottom: 6px;
           padding-bottom: 4px;
           border-bottom: 2px solid #e2e8f0;
           flex-shrink: 0;
         }
 
         .card-content {
-          font-size: 13px; /* Slightly smaller to fit without scroll */
-          line-height: 1.4;
-          color: #1a202c; 
-          overflow: hidden; /* No internal scroll wheel */
+          font-size: 12px;
+          line-height: 1.35;
+          color: #000; 
           font-weight: 500;
+          overflow: hidden;
         }
 
         .card-content p {
-          margin-bottom: 6px;
+          margin-bottom: 4px;
         }
 
-        /* Span rules for layout balance */
+        /* Layout spans */
         .problem-block { grid-column: span 2; }
         .question-block { grid-column: span 2; background-color: #fffaf0; border-color: #dd6b20; }
         .question-block .card-title { color: #dd6b20; border-bottom-color: #feebc8; }
@@ -116,25 +116,17 @@ export default function HumanizedPosterPage() {
         .methods-block { grid-row: span 2; }
         .assume-block { grid-column: span 2; }
 
-        /* Responsive scale-down if screen is really small */
-        @media screen and (max-height: 900px) {
-          .header-title { font-size: 24px; }
-          .card-title { font-size: 14px; }
-          .card-content { font-size: 12px; }
-        }
-        @media screen and (max-height: 700px) {
-          .header-title { font-size: 20px; }
-          .card-title { font-size: 12px; padding-bottom: 2px; margin-bottom: 4px; }
-          .card-content { font-size: 11px; line-height: 1.25; }
-          .poster-root { padding: 10px; gap: 8px; }
-          .poster-grid { gap: 8px; }
+        @media screen and (max-height: 800px) {
+          .header-title { font-size: 22px; }
+          .card-title { font-size: 11px; }
+          .card-content { font-size: 11px; }
         }
       `}</style>
 
       <div className="poster-root">
         {/* HEADER */}
         <header className="poster-header">
-          <h1 className="header-title">How Social Media Algorithms Affect the Psychology of Small Content Creators</h1>
+          <h1 className="header-title">How Social Media Algorithms Affect the Psychology of Small Creators</h1>
           <p className="header-author">AP Research • Taylor Daan</p>
         </header>
 
@@ -143,10 +135,9 @@ export default function HumanizedPosterPage() {
           
           {/* Problem Statement */}
           <div className="poster-card problem-block">
-            <h2 className="card-title">Problem Statement</h2>
+            <h2 className="card-title">The Problem</h2>
             <div className="card-content">
-              <p>Social media algorithms determine the visibility of content. Small creators are under significant psychological pressure to abandon their original ideas in pursuit of virality.</p>
-              <p>Instead of encouraging original content, social media platforms force creators to change who they are creatively to fit the algorithm.</p>
+              <p>Social media apps use algorithms to pick what shows up on your feed. For new creators, if you don't follow the latest trend, nobody sees your work. Because of this, creators feel forced to change their style and content just to get views. This leads to massive stress and makes people stop being authentic.</p>
             </div>
           </div>
 
@@ -154,84 +145,81 @@ export default function HumanizedPosterPage() {
           <div className="poster-card question-block">
             <h2 className="card-title">Research Question</h2>
             <div className="card-content">
-              <p style={{ fontSize: "16px", fontWeight: "700", color: "#2d3748" }}>"How does algorithmic gatekeeping on platforms like TikTok and Instagram impact the psychological well-being of small content creators?"</p>
+              <p style={{ fontSize: "15px", fontWeight: "700", color: "#2d3748" }}>"How does the pressure to get views on TikTok and Instagram change how new creators feel and what they choose to post?"</p>
             </div>
           </div>
 
           {/* Definitions */}
           <div className="poster-card">
-            <h2 className="card-title">Definitions</h2>
+            <h2 className="card-title">Concepts</h2>
             <div className="card-content">
-              <p><strong>Algorithm:</strong> The underlying mechanisms of social media platforms that work to prioritize content that receives the most engagement from users.</p>
-              <p><strong>Small Creators:</strong> Users that create original content on platforms like TikTok and Instagram while attempting to gain an audience.</p>
+              <p><strong>Algorithm:</strong> The hidden code that picks which videos go viral and which ones stay invisible.</p>
+              <p><strong>Small Creators:</strong> Regular people trying to grow an audience on apps like TikTok and Instagram.</p>
             </div>
           </div>
 
           {/* Assumptions/Hypotheses */}
           <div className="poster-card assume-block">
-            <h2 className="card-title">Assumptions & Hypotheses</h2>
-            <div className="card-content" style={{ fontSize: "12.5px" }}>
-              <p><strong>Assumption:</strong> Algorithms on social media platforms are designed to only feature content that is similar to viral content at the time. For new creators without followings, the platform will hide their content.</p>
-              <p><strong>Hypothesis:</strong> Creators suffer significant psychological stress due to the algorithm's influence, forcing them to change their authentic content to gain metrics.</p>
+            <h2 className="card-title">Predictions</h2>
+            <div className="card-content">
+              <p><strong>The Theory:</strong> I assume the algorithm only likes content that matches what's already viral. If you're new, the platform basically hides you. Because of this, I think creators get stressed and feel like they have to "act fake" to gain followers.</p>
             </div>
           </div>
 
           {/* Significance */}
           <div className="poster-card sig-block">
-            <h2 className="card-title">Significance / Value</h2>
+            <h2 className="card-title">Value of Study</h2>
             <div className="card-content">
-              <p>Understanding the impact of social media algorithms on creators will allow researchers to understand the root of psychological crises in online communities.</p>
-              <p>Allows investigation into phenomena such as engagement-farming, echo chambers, and the mental health of online communities overall.</p>
+              <p>If we understand this pressure, we can see why everyone online copies each other and why social media can be bad for your head. It helps us understand why online communities feel toxic or fake sometimes.</p>
             </div>
           </div>
 
           {/* Method of Inquiry */}
           <div className="poster-card methods-block">
-            <h2 className="card-title">Method of Inquiry</h2>
+            <h2 className="card-title">The Method</h2>
             <div className="card-content">
-              <p>Investigate the described research question through <strong>anonymous surveys</strong> with content creators that utilize TikTok and Instagram.</p>
-              <p>Followed by <strong>qualitative interviews</strong> with participants to examine their personal experiences with the social media algorithm.</p>
+              <p>First, I'll use an <strong>anonymous survey</strong> to see how many people feel this pressure. Next, I'll do <strong>10-minute interviews</strong> to hear exactly how the algorithm made them feel.</p>
+              <p>I'll look for "emotional themes" in their stories to prove the connection.</p>
             </div>
           </div>
 
           {/* Rationale */}
           <div className="poster-card">
-            <h2 className="card-title">Rationale for Method</h2>
+            <h2 className="card-title">Rationale</h2>
             <div className="card-content">
-              <p>Qualitative interviews provide a deep understanding of the experiences and the “identity” of the creators being surveyed.</p>
-              <p>Thematic coding maps the mental experiences to their interactions with social media algorithms.</p>
+              <p>Interviews give me the "why" behind the numbers. I can hear the exact moments people felt stressed out by their view counts dropping.</p>
             </div>
           </div>
 
           {/* Situatedness */}
           <div className="poster-card">
-            <h2 className="card-title">Situatedness (The Gap)</h2>
+            <h2 className="card-title">The Gap</h2>
             <div className="card-content">
-              <p>Existing literature recognizes impact on users in general, but there has been a lack of investigation into brand-new creators trying to establish a foothold.</p>
+              <p>Experts know algorithms cause anxiety, but nobody is really looking at how it feels when you're just starting your account.</p>
             </div>
           </div>
 
           {/* Data Sources - Lit Review */}
           <div className="poster-card">
-            <h2 className="card-title">Data Sources (Lit Review)</h2>
+            <h2 className="card-title">Expert Sources</h2>
             <div className="card-content">
-              <p>Peer-reviewed journals in sociology and media studies regarding algorithmic objectivity, bias, and digital invisibility.</p>
+              <p>I'm reading studies by experts like Gillespie (2014) and Bucher (2012) about how apps hide certain people and how that affects their brains.</p>
             </div>
           </div>
 
           {/* Data Sources - Evidence */}
           <div className="poster-card">
-            <h2 className="card-title">Data Sources (Evidence)</h2>
+            <h2 className="card-title">Own Evidence</h2>
             <div className="card-content">
-              <p>Data from anonymous surveys and transcribed interviews with content creators recruited from independent creator forums.</p>
+              <p>I will use my own surveys and interviews from people found on TikTok subreddits and creator forums.</p>
             </div>
           </div>
 
           {/* Ethical Considerations */}
           <div className="poster-card">
-            <h2 className="card-title">Ethical Considerations</h2>
+            <h2 className="card-title">Safety & Rights</h2>
             <div className="card-content">
-              <p>Voluntary participation with informed consent from all participants. No personally identifiable information will be collected.</p>
+              <p>Everyone stays anonymous. Participants can skip any question or stop at any time. I won't save any real names.</p>
             </div>
           </div>
 
@@ -239,24 +227,23 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Next Steps</h2>
             <div className="card-content">
-              <p>Completing the literature review, obtaining approval to distribute the survey, and beginning recruitment of participants.</p>
+              <p>Finish my expert reading, get school permission to start, and find my first 10 creators to interview.</p>
             </div>
           </div>
 
           {/* What am I Missing? */}
           <div className="poster-card">
-            <h2 className="card-title">What am I Missing?</h2>
+            <h2 className="card-title">What's Missing?</h2>
             <div className="card-content">
-              <p>Are there other platforms besides Instagram and TikTok that have differently-designed algorithmic features that should be considered?</p>
+              <p>Do platforms like Patreon or Substack work differently because they don't have the same "viral feed" algorithms?</p>
             </div>
           </div>
 
           {/* Potential Issues */}
           <div className="poster-card">
-            <h2 className="card-title">Potential Issues</h2>
+            <h2 className="card-title">Possible Problems</h2>
             <div className="card-content">
-              <p>The algorithm hides small creators, making it challenging to recruit participants.</p>
-              <p>Creators may also be hesitant to reveal in interviews that they change their authentic content for metrics.</p>
+              <p>It's hard to find new creators because the algorithm hides them! Also, people might be embarrassed to say they "acted fake" for views.</p>
             </div>
           </div>
 
