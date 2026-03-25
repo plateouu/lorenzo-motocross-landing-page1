@@ -3,9 +3,9 @@
 import React from "react";
 
 /**
- * AP Research Poster - Final High Contrast Review
- * - Extra legible, high contrast fonts.
- * - Single-screen view (no scroll).
+ * AP Research Poster - Final Single Screen No Scroll Version
+ * - Force fits everything to exact 100vh.
+ * - Hides all scrollbars globally.
  * - Humanized text only.
  */
 export default function HumanizedPosterPage() {
@@ -14,42 +14,48 @@ export default function HumanizedPosterPage() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+        /* --- GLOBAL RESET & HIDE SCROLLBARS --- */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        *::-webkit-scrollbar { display: none; } /* Hide for all elements in layout */
+        * { -ms-overflow-style: none; scrollbar-width: none; }
+
         html, body { 
-          height: 100vh; width: 100vw; 
+          height: 100vh; 
+          width: 100vw; 
           background-color: #f0f2f5; 
           color: #1a202c; 
           font-family: 'Inter', sans-serif; 
-          overflow: hidden; 
+          overflow: hidden; /* No browser scroll */
         }
 
         .poster-root {
           width: 100vw;
           height: 100vh;
-          padding: 24px;
+          padding: 16px; /* Slightly tighter padding */
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 12px;
         }
 
         /* --- HEADER SECTION --- */
         .poster-header {
           text-align: center;
-          padding: 16px;
+          padding: 12px;
           background-color: #ffffff;
           border: 2px solid #2d3748;
           border-radius: 8px;
         }
 
         .header-title {
-          font-size: 34px;
+          font-size: 28px;
           font-weight: 800;
           color: #1a202c;
-          margin-bottom: 4px;
+          margin-bottom: 2px;
         }
 
         .header-author {
-          font-size: 18px;
+          font-size: 15px;
           font-weight: 700;
           color: #4a5568;
           text-transform: uppercase;
@@ -62,7 +68,7 @@ export default function HumanizedPosterPage() {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(4, 1fr);
-          gap: 16px;
+          gap: 12px;
           min-height: 0;
         }
 
@@ -71,40 +77,35 @@ export default function HumanizedPosterPage() {
           background-color: #ffffff; 
           border: 2px solid #2d3748;
           border-radius: 8px;
-          padding: 16px;
+          padding: 12px;
           display: flex;
           flex-direction: column;
           min-height: 0;
           box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+          overflow: hidden; /* Force content to stay in card */
         }
 
         .card-title {
-          font-size: 17px;
+          font-size: 15px;
           font-weight: 800;
           color: #2b6cb0;
           text-transform: uppercase;
-          margin-bottom: 10px;
-          padding-bottom: 6px;
+          margin-bottom: 8px;
+          padding-bottom: 4px;
           border-bottom: 2px solid #e2e8f0;
+          flex-shrink: 0;
         }
 
         .card-content {
-          font-size: 14px;
-          line-height: 1.5;
-          color: #1a202c; /* High contrast black/grey */
-          overflow-y: auto;
+          font-size: 13px; /* Slightly smaller to fit without scroll */
+          line-height: 1.4;
+          color: #1a202c; 
+          overflow: hidden; /* No internal scroll wheel */
           font-weight: 500;
         }
 
         .card-content p {
-          margin-bottom: 10px;
-        }
-
-        .highlight-box {
-          background-color: #ebf8ff;
-          border-left: 4px solid #3182ce;
-          padding: 8px 12px;
-          margin: 8px 0;
+          margin-bottom: 6px;
         }
 
         /* Span rules for layout balance */
@@ -115,14 +116,18 @@ export default function HumanizedPosterPage() {
         .methods-block { grid-row: span 2; }
         .assume-block { grid-column: span 2; }
 
-        /* Scrollbar styling for cards */
-        .card-content::-webkit-scrollbar { width: 6px; }
-        .card-content::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 10px; }
-
-        @media screen and (max-height: 800px) {
-          .header-title { font-size: 26px; }
-          .card-title { font-size: 15px; }
-          .card-content { font-size: 13px; }
+        /* Responsive scale-down if screen is really small */
+        @media screen and (max-height: 900px) {
+          .header-title { font-size: 24px; }
+          .card-title { font-size: 14px; }
+          .card-content { font-size: 12px; }
+        }
+        @media screen and (max-height: 700px) {
+          .header-title { font-size: 20px; }
+          .card-title { font-size: 12px; padding-bottom: 2px; margin-bottom: 4px; }
+          .card-content { font-size: 11px; line-height: 1.25; }
+          .poster-root { padding: 10px; gap: 8px; }
+          .poster-grid { gap: 8px; }
         }
       `}</style>
 
@@ -149,7 +154,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card question-block">
             <h2 className="card-title">Research Question</h2>
             <div className="card-content">
-              <p style={{ fontSize: "17px", fontWeight: "700", color: "#2d3748" }}>"How does algorithmic gatekeeping on platforms like TikTok and Instagram impact the psychological well-being of small content creators?"</p>
+              <p style={{ fontSize: "16px", fontWeight: "700", color: "#2d3748" }}>"How does algorithmic gatekeeping on platforms like TikTok and Instagram impact the psychological well-being of small content creators?"</p>
             </div>
           </div>
 
@@ -165,9 +170,9 @@ export default function HumanizedPosterPage() {
           {/* Assumptions/Hypotheses */}
           <div className="poster-card assume-block">
             <h2 className="card-title">Assumptions & Hypotheses</h2>
-            <div className="card-content">
-              <p><strong>Assumption:</strong> The algorithms on social media platforms are designed to only feature content that is similar to the viral content of that platform at the time. Furthermore, as a new creator to a social media platform, assuming that a creator has no following yet, the platform will hide that user’s social media content.</p>
-              <p><strong>Hypothesis:</strong> The creators will suffer significant psychological stress due to the algorithm’s influence over them, forcing them to change their authentic content to gain likes and followers.</p>
+            <div className="card-content" style={{ fontSize: "12.5px" }}>
+              <p><strong>Assumption:</strong> Algorithms on social media platforms are designed to only feature content that is similar to viral content at the time. For new creators without followings, the platform will hide their content.</p>
+              <p><strong>Hypothesis:</strong> Creators suffer significant psychological stress due to the algorithm's influence, forcing them to change their authentic content to gain metrics.</p>
             </div>
           </div>
 
@@ -175,8 +180,8 @@ export default function HumanizedPosterPage() {
           <div className="poster-card sig-block">
             <h2 className="card-title">Significance / Value</h2>
             <div className="card-content">
-              <p>Understanding the psychological impact of social media algorithms on creators will allow researchers to understand the root of the psychological crises of online communities.</p>
-              <p>Furthermore, it will allow researchers to investigate the root of significant social media phenomena such as engagement-farming, echo chambers, and the mental health of online communities overall.</p>
+              <p>Understanding the impact of social media algorithms on creators will allow researchers to understand the root of psychological crises in online communities.</p>
+              <p>Allows investigation into phenomena such as engagement-farming, echo chambers, and the mental health of online communities overall.</p>
             </div>
           </div>
 
@@ -185,7 +190,7 @@ export default function HumanizedPosterPage() {
             <h2 className="card-title">Method of Inquiry</h2>
             <div className="card-content">
               <p>Investigate the described research question through <strong>anonymous surveys</strong> with content creators that utilize TikTok and Instagram.</p>
-              <p>Followed by <strong>qualitative interviews</strong> with those same participants to examine their experiences with the social media algorithm.</p>
+              <p>Followed by <strong>qualitative interviews</strong> with participants to examine their personal experiences with the social media algorithm.</p>
             </div>
           </div>
 
@@ -194,7 +199,7 @@ export default function HumanizedPosterPage() {
             <h2 className="card-title">Rationale for Method</h2>
             <div className="card-content">
               <p>Qualitative interviews provide a deep understanding of the experiences and the “identity” of the creators being surveyed.</p>
-              <p>Thematic coding maps the mental experiences of the creators to their interactions with social media algorithms.</p>
+              <p>Thematic coding maps the mental experiences to their interactions with social media algorithms.</p>
             </div>
           </div>
 
@@ -202,7 +207,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Situatedness (The Gap)</h2>
             <div className="card-content">
-              <p>Existing literature (Gillespie, Bucher) recognizes the impact of those platforms on users in general, but there has been a lack of investigation into the impact on brand-new creators trying to establish a foothold.</p>
+              <p>Existing literature recognizes impact on users in general, but there has been a lack of investigation into brand-new creators trying to establish a foothold.</p>
             </div>
           </div>
 
@@ -210,7 +215,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Data Sources (Lit Review)</h2>
             <div className="card-content">
-              <p>Peer-reviewed journals in sociology and media studies (e.g., Gillespie 2014, Noble 2018, Bucher 2012) regarding algorithmic objectivity, bias, and the impact of digital invisibility.</p>
+              <p>Peer-reviewed journals in sociology and media studies regarding algorithmic objectivity, bias, and digital invisibility.</p>
             </div>
           </div>
 
@@ -218,7 +223,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Data Sources (Evidence)</h2>
             <div className="card-content">
-              <p>Data collected from anonymous survey responses and transcribed qualitative interviews with creators recruited from independent content creator forums.</p>
+              <p>Data from anonymous surveys and transcribed interviews with content creators recruited from independent creator forums.</p>
             </div>
           </div>
 
@@ -226,7 +231,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Ethical Considerations</h2>
             <div className="card-content">
-              <p>Voluntary participation with informed consent from all participants. No personally identifiable information will be collected from these creators.</p>
+              <p>Voluntary participation with informed consent from all participants. No personally identifiable information will be collected.</p>
             </div>
           </div>
 
@@ -251,7 +256,7 @@ export default function HumanizedPosterPage() {
             <h2 className="card-title">Potential Issues</h2>
             <div className="card-content">
               <p>The algorithm hides small creators, making it challenging to recruit participants.</p>
-              <p>Creators may also be hesitant to reveal in interviews that they change their authentic content to gain social media likes and followers.</p>
+              <p>Creators may also be hesitant to reveal in interviews that they change their authentic content for metrics.</p>
             </div>
           </div>
 
