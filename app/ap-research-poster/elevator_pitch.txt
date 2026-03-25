@@ -1,27 +1,25 @@
-ELEVATOR PITCH TALKING POINTS
-AP Research (Stage 4) - Taylor Daan
+ELEVATOR PITCH (Stage 4) - TAYLOR DAAN
+----------------------------------------
 
-1. THE PROBLEM (HOOK)
-- Algorithms are the hidden gatekeepers of social media.
-- For small creators, this creates massive psychological pressure.
-- They aren't just making content; they're forced to abandon their original ideas to chase virality.
+"Hi everyone, my research focuses on the hidden gatekeepers of our digital lives: social media algorithms.
 
-2. THE "WHY"
-- Instead of encouraging original work, platforms force creators to change who they are creatively just to "fit the algorithm."
-- This causes real-world stress and an identity crisis for new users.
+Right now, small creators are under intense psychological pressure. Instead of finding a space for original expression, they are being forced to abandon their authentic ideas just to chase virality. This isn't just about 'getting views'—it’s a fundamental shift in how creators view their own creative identities.
 
-3. THE RESEARCH QUESTION
-- My goal is to answer: "How does algorithmic gatekeeping on TikTok and Instagram specifically impact the psychological well-being of these small creators?"
+This led me to my core research question: How does algorithmic gatekeeping on platforms like TikTok and Instagram specifically impact the psychological well-being of small content creators?
 
-4. MY PLAN (METHOD)
-- I’m launching into data collection using anonymous surveys for broad data.
-- Then, I'll do qualitative interviews to really get into the "identity" and personal stories of these creators.
-- I'll map these psychological experiences directly to algorithmic events using thematic coding.
+To answer this, I’m launching a study using anonymous surveys to gather broad data. But more importantly, I’ll be conducting qualitative interviews to dive deep into the personal 'identity' and mental health of these creators. By using thematic coding, I can map their specific emotional experiences directly to algorithmic changes.
 
-5. THE BIG PICTURE (SIGNIFICANCE)
-- This study matters because it gets to the root of why our online communities are in crisis.
-- It explains engagement-farming, echo chambers, and the mental health issues we see every day online.
+This study matters because it gets to the root of why our online communities are currently in a state of crisis—from engagement-farming and echo chambers to the overall mental health of digital spaces.
 
-6. CHALLENGES & NEXT STEPS
-- The biggest hurdle? The algorithm hides the very people I need to interview (small creators).
-- My next step is getting approval and digging into creator forums to find my participants.
+The biggest challenge? The algorithm itself hides the very people I need to interview: the small creators. So, my immediate next steps are to secure approval and start recruiting participants directly from independent creator forums. Thank you."
+----------------------------------------
+(Talking points version below for quick reference)
+
+- [ ] HOOK: Algorithms as "hidden gatekeepers" forcing a shift in identity.
+- [ ] REASON: Pressure to chase virality instead of authentic content.
+- [ ] QUESTION: Focus on "psychological well-being" for small creators.
+- [ ] PLAN: Anonymous surveys (broad) + Qualitative interviews (deep).
+- [ ] ANALYSIS: Map emotional experiences to algorithms via thematic coding.
+- [ ] VALUE: Explaining echo chambers and digital mental health crises.
+- [ ] HURDLE: Finding participants hidden by the algorithm.
+- [ ] NEXT: Secured approval and forum recruitment.
