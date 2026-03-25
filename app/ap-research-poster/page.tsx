@@ -225,7 +225,7 @@ export default function HumanizedPosterPage() {
           <div className="poster-card">
             <h2 className="card-title">Next Steps</h2>
             <div className="card-content">
-              <p>Finish expert reading, get school permission, and find my first 10 creators to interview.</p>
+              <p>Finish lit review and peer editing, then find my first 10 creators to interview and send surveys to.</p>
             </div>
           </div>
 
