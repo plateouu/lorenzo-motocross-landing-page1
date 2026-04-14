@@ -3,8 +3,27 @@
 import TransitionLink from "../components/TransitionLink";
 
 const citations = [
-  'Adichie, Chimamanda Ngozi. "The Danger of a Single Story." TED, July 2009, www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story.',
-  'Lyiscott, Jamila. "3 Ways to Speak English." TED, Feb. 2014, www.ted.com/talks/jamila_lyiscott_3_ways_to_speak_english.',
+  {
+    text: (
+      <>
+        Adichie, Chimamanda Ngozi. "The Danger of a Single Story." <i>TED</i>, July 2009, www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story.
+      </>
+    ),
+  },
+  {
+    text: (
+      <>
+        Lyiscott, Jamila. "3 Ways to Speak English." <i>TED</i>, Feb. 2014, www.ted.com/talks/jamila_lyiscott_3_ways_to_speak_english.
+      </>
+    ),
+  },
+  {
+    text: (
+      <>
+        Melzer, Dan, and Deborah Coxwell-Teague. <i>Everything’s a Text: Readings for Composition</i>. Longman, 2011.
+      </>
+    ),
+  },
 ];
 
 export default function WorksCited() {
@@ -30,7 +49,7 @@ export default function WorksCited() {
           {citations.map((cite, i) => (
             <div key={i} className="bg-[#f3efe0] p-8 md:p-10 rounded-[40px] shadow-[8px_8px_0px_#ff3b30] border-[4px] border-[#131211] transition-transform hover:-translate-y-2 hover:shadow-[12px_12px_0px_#131211] cursor-default bg-white">
               <p>
-                {cite}
+                {cite.text}
               </p>
             </div>
           ))}
@@ -49,3 +68,4 @@ export default function WorksCited() {
     </div>
   );
 }
+
