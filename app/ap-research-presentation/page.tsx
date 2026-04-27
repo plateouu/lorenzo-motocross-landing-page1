@@ -95,7 +95,7 @@ export default function APResearchPresentation() {
 
     return (
         <div
-            className="min-h-screen w-full bg-white text-black flex flex-col items-center justify-center overflow-auto selection:bg-yellow-200 cursor-default p-4 md:p-12"
+            className="h-screen w-full bg-white text-black flex flex-col items-center justify-center overflow-hidden selection:bg-yellow-200 cursor-default p-4 md:p-8"
             style={{ fontFamily: '"Comic Neue", "Comic Sans MS", "Comic Sans", cursive' }}
             onClick={(e) => {
                 if ((e.target as HTMLElement).closest('button')) return;
@@ -397,7 +397,7 @@ export default function APResearchPresentation() {
                                     </div>
                                     <div className="border-8 border-black bg-white shadow-2xl max-w-md mx-auto overflow-hidden">
                                         <img 
-                                            src="/images/umbc-algorithmic-precarity.png" 
+                                            src="/images/Digital-gatekeeping-in-a-mass-dissemination-framework.png" 
                                             alt="Precarity Model" 
                                             className="w-full h-auto"
                                             onError={(e) => { e.currentTarget.src = "https://via.placeholder.com/800x600?text=Model" }}
@@ -453,14 +453,10 @@ export default function APResearchPresentation() {
                 </AnimatePresence>
             </div>
 
-            {/* PROGRESS BAR */}
-            <div className="fixed bottom-0 left-0 h-4 bg-yellow-400 transition-all duration-300 z-[60] border-t-2 border-black" style={{ width: `${((current + 1) / SLIDES.length) * 100}%` }} />
-
-            {/* FOOTER */}
-            <div className="fixed bottom-4 md:bottom-8 w-full px-12 flex justify-between items-center text-lg md:text-3xl font-black uppercase z-50">
-                <span className="text-gray-300 tracking-[0.4em]">{SLIDES[current].label}</span>
-                <div className="flex items-center gap-6">
-                    <span className="bg-black text-white px-4 py-2 border-2 border-black text-xl md:text-3xl font-mono">{current + 1} / {SLIDES.length}</span>
+            {/* FOOTER - Minimal Page Number Only */}
+            <div className="fixed bottom-6 right-6 z-50 pointer-events-none">
+                <div className="bg-black text-white px-3 py-2 border-2 border-black text-sm md:text-xl font-mono shadow-[2px_2px_0px_0px_rgba(253,224,71,1)] pointer-events-auto">
+                    {current + 1} / {SLIDES.length}
                 </div>
             </div>
         </div>
