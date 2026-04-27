@@ -162,24 +162,24 @@ export default function APResearchPresentation() {
 
                         {/* 2. CONTEXT: GATEKEEPING */}
                         {SLIDES[current].id === "context-gatekeeping" && (
-                            <div className="space-y-6 h-full flex flex-col justify-center p-8">
-                                <h2 className="text-4xl md:text-6xl font-bold uppercase border-b-8 border-black pb-4 mb-8">Gatekeeping</h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                                    <div className="space-y-8 text-2xl md:text-4xl font-bold">
-                                        <p className="bg-slate-50 p-6 border-l-8 border-black"><strong>Gatekeeping:</strong> The process of choosing what information reaches the public.</p>
-                                        <div className="bg-yellow-400 p-8 border-4 border-black rotate-1 shadow-lg">
-                                            <p className="text-3xl font-black uppercase mb-2">Technical Rules:</p>
-                                            <p>This map shows how complicated these systems are for artists to understand.</p>
+                            <div className="space-y-4 h-full flex flex-col justify-center p-4">
+                                <h2 className="text-3xl md:text-5xl font-bold uppercase border-b-8 border-black pb-2 mb-4">Gatekeeping</h2>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                                    <div className="space-y-4 text-xl md:text-3xl font-bold">
+                                        <p className="bg-slate-50 p-4 border-l-8 border-black">The process of choosing what information reaches the public.</p>
+                                        <div className="bg-yellow-400 p-6 border-4 border-black rotate-1 shadow-lg">
+                                            <p className="text-2xl font-black uppercase mb-1">Technical Rules:</p>
+                                            <p className="text-lg md:text-xl">This map shows how complicated these systems are for artists to understand.</p>
                                         </div>
                                     </div>
-                                    <div className="border-4 border-black bg-white shadow-xl max-w-lg mx-auto overflow-hidden">
+                                    <div className="border-4 border-black bg-white shadow-xl max-w-sm mx-auto overflow-hidden">
                                         <img 
                                             src="/images/gillespie-map.jpg" 
                                             alt="Gillespie Map" 
-                                            className="w-full h-auto"
+                                            className="w-full h-auto max-h-[300px] md:max-h-[400px] object-contain"
                                             onError={(e) => { e.currentTarget.src = "https://via.placeholder.com/800x600?text=Gillespie+Map" }}
                                         />
-                                        <p className="text-sm p-4 font-bold uppercase bg-black text-white text-center italic">Fig 1: Socio-Technical Map (Gillespie, 2014)</p>
+                                        <p className="text-[10px] p-2 font-bold uppercase bg-black text-white text-center italic">Fig 1: Socio-Technical Map (Gillespie, 2014)</p>
                                     </div>
                                 </div>
                             </div>
@@ -451,15 +451,15 @@ export default function APResearchPresentation() {
 
                         {/* 18. WORKS CITED */}
                         {SLIDES[current].id === "works-cited" && (
-                            <div className="space-y-8 p-8">
-                                <h2 className="text-6xl font-bold uppercase border-b-8 border-black pb-4">Works Cited</h2>
-                                <div className="bg-white border-8 border-black p-12 shadow-xl space-y-6 max-h-[60vh] overflow-auto">
-                                    <p className="text-xl md:text-2xl font-bold font-mono">Bruns, Axel. (2017). "Gatekeeping into the 21st century." Oxford Research Encyclopedia of Communication.</p>
-                                    <p className="text-xl md:text-2xl font-bold font-mono">Bucher, Taina. (2017). "The algorithmic imaginary: exploring the role of algorithms in social media." Information, Communication & Society.</p>
-                                    <p className="text-xl md:text-2xl font-bold font-mono">Gillespie, Tarleton. (2014). "The relevance of algorithms." Media Technologies: Essays on Communication, Materiality, and Society.</p>
-                                    <p className="text-xl md:text-2xl font-bold font-mono">Noble, Safiya U. (2018). "Algorithms of Oppression: How Search Engines Reinforce Racism." NYU Press.</p>
-                                    <p className="text-xl md:text-2xl font-bold font-mono">Saturno. (2023). "Artists as Data: The Costs of Modern Visibility." Saturno Digital Archives.</p>
-                                    <p className="text-xl md:text-2xl font-bold font-mono">Van Driel, Loes. (2024). "Algorithmic Precarity in the Creative Economy." University of Amsterdam Press.</p>
+                            <div className="space-y-4 p-4">
+                                <h2 className="text-4xl md:text-5xl font-bold uppercase border-b-8 border-black pb-2">Works Cited</h2>
+                                <div className="bg-white border-4 border-black p-6 shadow-lg space-y-3">
+                                    <p className="text-sm md:text-lg font-bold font-mono">Bruns, Axel. (2017). "Gatekeeping into the 21st century." Oxford Research Encyclopedia.</p>
+                                    <p className="text-sm md:text-lg font-bold font-mono">Bucher, Taina. (2017). "The algorithmic imaginary in social media." Info, Comm & Society.</p>
+                                    <p className="text-sm md:text-lg font-bold font-mono">Gillespie, Tarleton. (2014). "The relevance of algorithms." Media Technologies.</p>
+                                    <p className="text-sm md:text-lg font-bold font-mono">Noble, Safiya U. (2018). "Algorithms of Oppression." NYU Press.</p>
+                                    <p className="text-sm md:text-lg font-bold font-mono">Saturno. (2023). "Artists as Data: The Costs of Modern Visibility." Saturno Digital.</p>
+                                    <p className="text-sm md:text-lg font-bold font-mono">Van Driel, Loes. (2024). "Algorithmic Precarity in the Creative Economy." UvA Press.</p>
                                 </div>
                             </div>
                         )}
