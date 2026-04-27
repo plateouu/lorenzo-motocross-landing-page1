@@ -94,7 +94,7 @@ export default function ScriptPage() {
                         
                         <p><strong>[SLIDE 8: DATA SOURCES]</strong> My data set consist of professional reflections from creators on platforms like Hyperlux and Medium. These sources provide a rich archive of long-form discourse regarding algorithmic precarity. I am analyzing these texts to locate the specific moments where a creator’s professional intent conflicts with the technical demands of the platform.</p>
                         
-                        <p><strong>[SLIDE 9: THE ANALYSIS]</strong> During the analysis, I "coded" the data. In research, <strong>Coding</strong> is not computer programming. Instead, it is the process of labeling pieces of text with specific "tags" to find patterns. For example, every time an artist mentioned stress about numbers, I labeled that text with the code "Visibility Anxiety." I then grouped these codes into themes like "Visibility Labor" and "Identity Homogenization." This helped me turn hundreds of pages of text into clear, organized categories of artist behavior.</p>
+                        <p><strong>[SLIDE 9: THE ANALYSIS]</strong> During the analysis, I used a systematic process called Qualitative Coding. This involves reading every sentence of the artist reflections and assigning descriptive labels to specific patterns. For example, whenever an artist mentioned the need to use trending audio or specific hashtags, I assigned the label "Visibility Labor." This process transforms hundreds of pages of raw stories into organized categories that reveal the exact mechanical rules artists follow to maintain their reach.</p>
                     </Section>
 
                     <Section title="Key Findings" slide="10 & 11 & 12" time="8:50 - 11:50">
@@ -140,20 +140,23 @@ export default function ScriptPage() {
                                 <div className="space-y-2">
                                     <p className="font-black underline uppercase text-xl">1. Gillespie</p>
                                     <p className="font-bold opacity-90 leading-relaxed">
-                                        The "Algorithm as an Editor." He says code isn't neutral—it makes editorial choices just like a human editor. It decides what is "publicly relevant."
+                                        The "Boss." Algorithms have "opinions" on what content is good or relevant. If you don't please the boss, your work gets ignored.
+                                    </p>
+                                    <p className="font-black underline uppercase text-xl">1. Gillespie (The Boss)</p>
+                                    <p className="font-bold opacity-90 leading-relaxed">
+                                        Algorithms act as the "Boss" that decides what content is relevant. If you don't follow the boss's rules, your work gets ignored.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <p className="font-black underline uppercase text-xl">2. Axel Bruns</p>
+                                    <p className="font-black underline uppercase text-xl">2. Axel Bruns (The Bodyguard)</p>
                                     <p className="font-bold opacity-90 leading-relaxed">
-                                        "Gatekeeping is a Flow." Information flows through networks, but the platform at the center acts as a gatekeeping force that can restrict that flow (Reach Collapse).
+                                        Algorithms are the "Bodyguard" at the door of your followers' feeds. They decide if your post actually gets through to the people who follow you.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <p className="font-black underline uppercase text-xl">3. Loes van Driel</p>
+                                    <p className="font-black underline uppercase text-xl">3. Loes van Driel (Never-Ending Stress)</p>
                                     <p className="font-bold opacity-90 leading-relaxed">
-                                        "Algorithmic Precarity." Working for code makes life unstable. Artists are always chasing a moving target (the algorithm), leading to burnout and stress.
-                                        "Algorithmic Instability." Working for algorithms makes life unstable. Artists are always chasing a moving target, leading to burnout and stress.
+                                        Working for algorithms is "Never-Ending Stress." The rules change constantly, making artists feel like they are always in a state of instability.
                                     </p>
                                 </div>
                             </div>
@@ -166,15 +169,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q1: How did initial exploration lead to your final RQ? [CITING GILLESPIE]</p>
-                                        <p className="text-lg font-bold">"So pretty much I was reading <strong>Tarleton Gillespie</strong> and his work on algorithms. He explains that these algorithms act like editors who choose what is 'publicly relevant.' This fascinated me because it means the algorithm is actually deciding the value of an artist's identity. This directly led to my question about how these automated choices change an artist's creative heart."</p>
+                                        <p className="text-lg font-bold">"So pretty much I was reading <strong>Tarleton Gillespie</strong> and he talks about algorithms being like 'editors.' This fascinated me because it means the algorithm is the boss that decides who gets to be seen. This directly led to my question about how this control changes the way artists feel and how they create their art."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q2: How did scholarly methods inform your selection of Discourse Analysis?</p>
-                                        <p className="text-lg font-bold">"So I used <strong>Discourse Analysis</strong> to look at the specific language and the identity of artists under algorithmic pressure. This method helps me find patterns in the words they use. I can see the personal impact of automated rules on their actual professional voice."</p>
+                                        <p className="text-lg font-bold">"So I used <strong>Discourse Analysis</strong> to look at the words and the feelings of artists who are struggling with algorithms. This method is great for finding patterns in how they talk. It helped me see the personal impact of automated rules on their professional voice."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q3: What does 'Coding the data' mean in your study?</p>
-                                        <p className="text-lg font-bold">"So just to be clear, 'coding' here is about labeling text patterns and not computer programming. I used tags like 'Visibility Labor' to group all the times artists talked about the work they do just to get seen by the algorithms."</p>
+                                        <p className="text-lg font-bold">"So the process of 'coding' involves the systematic labeling of text segments to identify recurring patterns of algorithmic influence. I spent weeks reading through artist blogs and assigning descriptive tags like <strong>'Visibility Labor'</strong> or <strong>'Reach Collapse'</strong> to every relevant sentence. This methodical approach allowed me to transform hundreds of pages of qualitative stories into organized data that shows exactly how algorithms control human behavior."</p>
                                     </div>
                                 </div>
                             </div>
@@ -185,15 +188,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q5: How does this address a gap in the conversation? [CITING BRUNS]</p>
-                                        <p className="text-lg font-bold">"So pretty much I looked at <strong>Axel Bruns</strong> and his framework for how information flows. He shows that algorithms are a gatekeeping force in the middle of our networks. My research looks at how individual artists experience 'reach collapse' because of these technical rules. I'm filling the human gap by showing the impact on the person making the art."</p>
+                                        <p className="text-lg font-bold">"So pretty much I looked at <strong>Axel Bruns</strong> and his idea that algorithms are like bodyguards. He shows how they control the entrance to information. My research looks at how individual artists experience <strong>'Reach Collapse'</strong> because of these bodyguards. I'm filling the human gap by showing the stress it causes the person making the art."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q6: How did limitations influence your understanding?</p>
-                                        <p className="text-lg font-bold">"So I focused on public posts which means I can't see the private side of the struggle. This limitation shows me that my findings are just the start of a much bigger technical issue regarding digital fairness."</p>
+                                        <p className="text-lg font-bold">"So I focused on public blogs which means I can't see the behind-the-scenes part of the struggle. This limitation shows me that the problem is probably even bigger than I found, and it's a huge issue for digital fairness."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q7: What are the real-world implications of your findings?</p>
-                                        <p className="text-lg font-bold">"So the real-world implication is that artists are becoming technicians. The current algorithm environment produces formulaic content which leads to a loss of human creativity in favor of engagement data."</p>
+                                        <p className="text-lg font-bold">"So the real-world implication is that artists are becoming technicians. The current algorithm environment creates <strong>'Formulaic Content'</strong> where everyone copies successful styles. This means we lose human creativity just for the sake of higher engagement numbers."</p>
                                     </div>
                                 </div>
                             </div>
@@ -204,15 +207,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q9: What other curiosities do you have and how did this prepare you? [CITING VAN DRIEL]</p>
-                                        <p className="text-lg font-bold">"So pretty much I was very interested in <strong>Loes van Driel</strong> and her work on 'Algorithmic Instability.' She describes how automated work and things like AI making people lose jobs is becoming a huge issue. This fascinated me because it correlates with content creation and originality. I've started seeing people use AI scripts or text-to-speech when presenting, which inspired me to look at the effort and emotion put into videos. I've learned to analyze these systems by asking if quantity is becoming more important than quality."</p>
+                                        <p className="text-lg font-bold">"So pretty much I was very interested in <strong>Loes van Driel</strong> and her work on how automated systems make jobs unstable. This fascinated me because I see it in content creation where everyone is using AI or scripts just to keep up. It inspired me to look at the effort and emotion in videos. Now I analyze these systems by asking if quantity is more important than quality."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q10: How did you handle the uncertainty of the research process?</p>
-                                        <p className="text-lg font-bold">"So I handled the process by returning to my data and sticking to my theme. Focusing on the human impact maintained my direction even when the technical algorithmic structures felt complex."</p>
+                                        <p className="text-lg font-bold">"So I handled the process by returning to my data and sticking to my theme. Focusing on the human impact helped me stay on track even when the technical algorithm stuff felt confusing."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q12: What was the most important research skill you developed?</p>
-                                        <p className="text-lg font-bold">"So the most important skill was learning to look at a platform's design and see it as a government with its own rules. I can now apply this to any new technology by looking for the trade-offs between human agency and technical control."</p>
+                                        <p className="text-lg font-bold">"So the most important skill was learning to look at an algorithm as a set of rules that artists have to follow. I can now apply this to any new technology by looking for the trade-offs between what the human wants and what the machine requires."</p>
                                     </div>
                                 </div>
                             </div>
