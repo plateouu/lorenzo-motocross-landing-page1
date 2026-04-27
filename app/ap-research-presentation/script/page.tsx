@@ -132,6 +132,31 @@ export default function ScriptPage() {
                                 Use this theme to bridge any question back to your core research.
                             </p>
                         </div>
+
+                        {/* SOURCE DEEP DIVE - THE "YAP" SECTION */}
+                        <div className="bg-slate-900 text-white p-10 mb-12 border-[6px] border-black shadow-[12px_12px_0px_0px_rgba(253,224,71,1)]">
+                            <h3 className="text-3xl font-black uppercase mb-6 text-yellow-400">Source Deep Dive (Quick Ref)</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+                                <div className="space-y-2">
+                                    <p className="font-black underline uppercase text-xl">1. Gillespie</p>
+                                    <p className="font-bold opacity-90 leading-relaxed">
+                                        The "Algorithm as an Editor." He says code isn't neutral—it makes editorial choices just like a human editor. It decides what is "publicly relevant."
+                                    </p>
+                                </div>
+                                <div className="space-y-2">
+                                    <p className="font-black underline uppercase text-xl">2. Axel Bruns</p>
+                                    <p className="font-bold opacity-90 leading-relaxed">
+                                        "Gatekeeping is a Flow." Information flows through networks, but the platform at the center acts as a gatekeeping force that can restrict that flow (Reach Collapse).
+                                    </p>
+                                </div>
+                                <div className="space-y-2">
+                                    <p className="font-black underline uppercase text-xl">3. Loes van Driel</p>
+                                    <p className="font-bold opacity-90 leading-relaxed">
+                                        "Algorithmic Precarity." Working for code makes life unstable. Artists are always chasing a moving target (the algorithm), leading to burnout and stress.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div className="grid grid-cols-1 gap-12">
                             {/* Research/Inquiry Process */}
