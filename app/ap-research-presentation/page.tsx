@@ -52,8 +52,8 @@ export default function APResearchPresentation() {
         { id: "results-4", label: "THE COST" },
         { id: "discussion-1", label: "SYNTHESIS" },
         { id: "discussion-2", label: "ART AS LABOR" },
-        { id: "conclusion-1", label: "MAIN FINDING" },
-        { id: "conclusion-2", label: "SIGNIFICANCE" },
+        {id: "conclusion-2", label: "SIGNIFICANCE" },
+        { id: "works-cited", label: "WORKS CITED" },
     ]
 
     const next = React.useCallback(() => setCurrent(c => Math.min(c + 1, SLIDES.length - 1)), [SLIDES.length])
@@ -445,6 +445,21 @@ export default function APResearchPresentation() {
                                             <li>• Starts a talk on fairness.</li>
                                         </ul>
                                     </div>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* 18. WORKS CITED */}
+                        {SLIDES[current].id === "works-cited" && (
+                            <div className="space-y-8 p-8">
+                                <h2 className="text-6xl font-bold uppercase border-b-8 border-black pb-4">Works Cited</h2>
+                                <div className="bg-white border-8 border-black p-12 shadow-xl space-y-6 max-h-[60vh] overflow-auto">
+                                    <p className="text-xl md:text-2xl font-bold font-mono">Bruns, Axel. (2017). "Gatekeeping into the 21st century." Oxford Research Encyclopedia of Communication.</p>
+                                    <p className="text-xl md:text-2xl font-bold font-mono">Bucher, Taina. (2017). "The algorithmic imaginary: exploring the role of algorithms in social media." Information, Communication & Society.</p>
+                                    <p className="text-xl md:text-2xl font-bold font-mono">Gillespie, Tarleton. (2014). "The relevance of algorithms." Media Technologies: Essays on Communication, Materiality, and Society.</p>
+                                    <p className="text-xl md:text-2xl font-bold font-mono">Noble, Safiya U. (2018). "Algorithms of Oppression: How Search Engines Reinforce Racism." NYU Press.</p>
+                                    <p className="text-xl md:text-2xl font-bold font-mono">Saturno. (2023). "Artists as Data: The Costs of Modern Visibility." Saturno Digital Archives.</p>
+                                    <p className="text-xl md:text-2xl font-bold font-mono">Van Driel, Loes. (2024). "Algorithmic Precarity in the Creative Economy." University of Amsterdam Press.</p>
                                 </div>
                             </div>
                         )}
