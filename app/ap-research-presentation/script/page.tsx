@@ -5,20 +5,18 @@ import Link from "next/link";
 import { ArrowLeft, Clock, Mic2, Play, Pause, RotateCcw } from "lucide-react";
 
 export default function ScriptPage() {
-    const [timeLeft, setTimeLeft] = React.useState(15 * 60);
+    const [timeElapsed, setTimeElapsed] = React.useState(0);
     const [isActive, setIsActive] = React.useState(false);
 
     React.useEffect(() => {
         let interval: NodeJS.Timeout;
-        if (isActive && timeLeft > 0) {
+        if (isActive) {
             interval = setInterval(() => {
-                setTimeLeft((prev) => prev - 1);
+                setTimeElapsed((prev) => prev + 1);
             }, 1000);
-        } else if (timeLeft === 0) {
-            setIsActive(false);
         }
         return () => clearInterval(interval);
-    }, [isActive, timeLeft]);
+    }, [isActive]);
 
     const formatTime = (seconds: number) => {
         const mins = Math.floor(seconds / 60);
@@ -46,14 +44,14 @@ export default function ScriptPage() {
                     </div>
                 </header>
 
-                {/* PRO TIMER */}
+                {/* PRO STOPWATCH */}
                 <div className="sticky top-4 z-[100] mb-12 bg-white border-[6px] border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] flex items-center justify-between">
                     <div className="flex items-center gap-6">
-                        <div className={`text-7xl font-mono font-black ${timeLeft < 120 ? 'text-red-600' : 'text-black'}`}>
-                            {formatTime(timeLeft)}
+                        <div className={`text-7xl font-mono font-black ${timeElapsed > 15 * 60 ? 'text-red-600' : 'text-black'}`}>
+                            {formatTime(timeElapsed)}
                         </div>
                         <div className="space-y-1">
-                            <p className="text-sm font-black uppercase text-gray-400 leading-none">Remaining Time</p>
+                            <p className="text-sm font-black uppercase text-gray-400 leading-none">Elapsed Time</p>
                             <p className="text-xs font-bold text-gray-300">Target: 15 Minutes</p>
                         </div>
                     </div>
@@ -61,7 +59,7 @@ export default function ScriptPage() {
                         <button onClick={() => setIsActive(!isActive)} className="bg-black text-white p-6 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-lg">
                             {isActive ? <Pause className="w-8 h-8" /> : <Play className="w-8 h-8" />}
                         </button>
-                        <button onClick={() => { setTimeLeft(15 * 60); setIsActive(false); }} className="bg-slate-100 text-black p-6 rounded-2xl hover:bg-slate-200 transition-all border-2 border-black/10">
+                        <button onClick={() => { setTimeElapsed(0); setIsActive(false); }} className="bg-slate-100 text-black p-6 rounded-2xl hover:bg-slate-200 transition-all border-2 border-black/10">
                             <RotateCcw className="w-8 h-8" />
                         </button>
                     </div>
