@@ -69,7 +69,7 @@ export default function ScriptPage() {
 
                 <article className="space-y-24 pb-48">
                     
-                    <Section title="Beginning the Talk" slide="1" time="0:00 - 2:00">
+                    <Section title="Beginning the Talk" slide="1" time="0:00 - 1:20">
                         <p><strong>[SLIDE 1: TITLE]</strong> Good morning! My name is Taylor, and my research presentation is called: The Invisible Gatekeepers: Algorithms and Creative Identity.</p>
                         
                         <p>Most of us recognize that platforms like Instagram and TikTok use an algorithm to decide what appears on our feeds. We see the effects of this every day. I started noticing that everyone seems to be making these very formulaic videos that look exactly like each other. Creators seem to be moving away from originality because they want to cheat the algorithm. They copy styles of content that are already successful instead of being original. This process is creating a very repetitive internet. There is also a major impact on how we think. When an algorithm only feeds you one side of the political spectrum, you become biased toward that specific view. We end up in these echo chambers where the code chooses our reality for us.</p>
@@ -77,13 +77,13 @@ export default function ScriptPage() {
                         <p>This is especially important for digital artists—or creators who make content for a living. For these creators, the algorithm determines their visibility and their career. I wanted to study this because I saw artists changing their behavior. They are trying to please an algorithm. My study focuses on how this technical system impacts the actual identity and the creative heart of small artists working today.</p>
                     </Section>
 
-                    <Section title="Setting the Scene" slide="2 & 3" time="2:00 - 4:30">
+                    <Section title="Setting the Scene" slide="2 & 3" time="1:20 - 3:50">
                         <p><strong>[SLIDE 2: GATEKEEPING]</strong> I want to operationally define a key term for this study: Gatekeeping. Historically, gatekeeping was the process of a human—like an editor at a newspaper or a curator at an art gallery—choosing which work reached the public. Today, the algorithm has replaced that human curator. The code now makes the decision on what art is seen. As you can see on Gillespie’s map, this is a very dense process. It is a mix of technical rules and social habits. This diagram shows why it is so difficult for a single artist to understand how to get their work in front of people.</p>
                         
                         <p><strong>[SLIDE 3: DIGITAL ANXIETY]</strong> This constant push for visibility creates "Digital Anxiety." Taina Bucher, a scholar I looked at, explains that being hidden is a major threat. In the modern art world, visibility equates to professional existence. The Bruns model shows us that information flows through a network now. But the central rule remains: If the code does not favor your post, it remains hidden. This puts pressure on creators to constantly monitor their numbers and change their art to fit the system's preferences.</p>
                     </Section>
 
-                    <Section title="The Crisis & Research Intent" slide="4 & 5 & 6" time="4:30 - 7:00">
+                    <Section title="The Crisis & Research Intent" slide="4 & 5 & 6" time="3:50 - 6:20">
                         <p><strong>[SLIDE 4: THE PROBLEM]</strong> This systemic gatekeeping manifests as a phenomenon known as "Reach Collapse." Market analysis from Hyperlux Magazine and Saturno suggests a quantitative decoupling of social capital from visibility. Organic reach has declined by approximately 44% since 2019, leaving many creators reaching less than 5% of their established audience. This decline represents a fundamental change in how digital content is distributed. Visibility is now an earned technical reward rather than a guaranteed social connection.</p>
                         
                         <p><strong>[SLIDE 5: THE GAP]</strong> My review of the existing literature identified a significant gap in the scholarly conversation. Most research at this level focuses on macro-level platform governance or large-scale data sets. There is a lack of qualitative data regarding the individual experience. We understand how the machines work, yet we lack a clear understanding of how these systems impact the professional identity of the creator. My study addresses this gap by focusing on the micro-level impact of these governance structures.</p>
@@ -91,7 +91,7 @@ export default function ScriptPage() {
                         <p><strong>[SLIDE 6: RESEARCH QUESTION]</strong> This realization led to my core research question: <strong>How do algorithms affect the professional identity and creative output of small artists?</strong> My goal is to understand how algorithmic incentive structures influence the choices a creator makes throughout their process.</p>
                     </Section>
 
-                    <Section title="Methodological Framework" slide="7 & 8 & 9" time="7:00 - 9:30">
+                    <Section title="Methodological Framework" slide="7 & 8 & 9" time="6:20 - 8:50">
                         <p><strong>[SLIDE 7: APPROACH]</strong> I utilized Qualitative Discourse Analysis to investigate this question. By examining the public narratives and professional reflections of artists, I can identify the underlying themes of their digital experience. This method allows for a nuanced understanding of social phenomena that quantitative data often overlooks. It provides a lens into the "lived reality" of working within a governed technical space.</p>
                         
                         <p><strong>[SLIDE 8: DATA SOURCES]</strong> My data set consist of professional reflections from creators on platforms like Hyperlux and Medium. These sources provide a rich archive of long-form discourse regarding algorithmic precarity. I am analyzing these texts to locate the specific moments where a creator’s professional intent conflicts with the technical demands of the platform.</p>
@@ -99,7 +99,7 @@ export default function ScriptPage() {
                         <p><strong>[SLIDE 9: THE ANALYSIS]</strong> During the coding process, three predominant themes emerged. I identified frequent mentions of "Visibility Labor," "Format Pressure," and "Identity Homogenization." These codes represent the categories where artists feel the most friction between their art and the system. This framework helps us categorize the different types of strain that algorithmic gatekeeping places on the individual.</p>
                     </Section>
 
-                    <Section title="Key Findings" slide="10 & 11 & 12" time="9:30 - 12:30">
+                    <Section title="Key Findings" slide="10 & 11 & 12" time="8:50 - 11:50">
                         <p><strong>[SLIDE 10: RESULT 1]</strong> My first finding concerns the loss of agency. Creators feel that their audience connection has been mediated by a third-party logic. There is a sense of helplessness when visibility is detached from the quality of the work. The algorithm acts as an unpredictable filter that overrides the preferences of the followers. This shift forces creators to prioritize platform metrics over artistic intent.</p>
                         
                         <p><strong>[SLIDE 11: SYSTEM DEMANDS]</strong> Finding two focuses on technical standardisation. To maintain visibility, the algorithm incentivizes specific behaviors: high-frequency posting, the use of short-form video formats, and the adoption of viral trends. This creates a "homogenization" effect where artists must conform to these templates to remain competitive. The platform defines the professional standards, and creators must adopt them to achieve reach.</p>
@@ -107,7 +107,7 @@ export default function ScriptPage() {
                         <p><strong>[SLIDE 12: ARTIST STRAIN]</strong> This environment produces significant professional strain. Creators are engaging in "Platform Labor"—the constant maintenance of digital metrics—which reduces the time available for actual creative work. This leads to burnout and a perceived loss of artistic voice. The pressure to "perform for the code" creates a psychological burden that challenges the very identity of the artist.</p>
                     </Section>
 
-                    <Section title="Synthesis & Discussion" slide="13 & 14 & 15" time="12:30 - 14:00">
+                    <Section title="Synthesis & Discussion" slide="13 & 14 & 15" time="11:50 - 13:20">
                         <p><strong>[SLIDE 13: THE REALITY]</strong> There is also a clear economic cost to this shift. Many creators describe the platform as "Pay to Play," where paid advertising is the only reliable way to circumvent algorithmic restrictions. This creates a barrier for the small artist who lacks the capital to compete with larger institutions. It reinforces a system where reach is purchased rather than earned through social engagement.</p>
                         
                         <p><strong>[SLIDE 14: SYNTHESIS]</strong> When we synthesize these findings, we see that the algorithm functions as more than a distribution tool. It is an active governing force. My results indicate that creators are increasingly internalizing these technical requirements. They are fundamentally changing their creative process to align with the platform’s incentive structures.</p>
@@ -115,7 +115,7 @@ export default function ScriptPage() {
                         <p><strong>[SLIDE 15: THE SHIFT]</strong> The most critical takeaway is the shift in labor dynamics. Artists are now operating as laborers for the platform. Their creativity is being harnessed to generate engagement data rather than to facilitate human connection. This reveals a conflict between artistic purpose and platform economics.</p>
                     </Section>
 
-                    <Section title="Significance & Conclusion" slide="16 & 17" time="14:00 - 15:00">
+                    <Section title="Significance & Conclusion" slide="16 & 17" time="13:20 - 15:00">
                         <p><strong>[SLIDE 16: THE RESULT]</strong> In conclusion, my findings establish that algorithms are the primary gatekeepers of modern culture. They do not merely distribute art; they influence its very production. This study highlights how technical governance can flatten creative identity and force artists into a state of constant professional precarity.</p>
                         
                         <p><strong>[SLIDE 17: SIGNIFICANCE]</strong> This research is significant because it highlights the cultural risk of algorithmic homogenization. We are seeing a loss of unique creative voices due to a system that prioritizes retention data over artistic quality. This study provides a foundation for future research into digital equity and the rights of creators in a governed digital space.</p>
