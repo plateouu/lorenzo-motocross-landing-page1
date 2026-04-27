@@ -140,15 +140,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q1: How did initial exploration lead to your final RQ? [CITING GILLESPIE]</p>
-                                        <p className="text-lg font-bold">"I started by studying <strong>Tarleton Gillespie’s</strong> (2014) work on 'The Relevance of Algorithms.' He explains that algorithms are not neutral tools but editorial gatekeepers that choose what is 'publicly relevant.' This source made me realize that if the code is choosing what is relevant, then it is actively changing the professional identity of the creator. This connection moved me away from just studying social media in general and specifically toward the question of how these algorithmic choices affect an artist's creative heart."</p>
+                                        <p className="text-lg font-bold">"Tarleton Gillespie’s (2014) definition of algorithms as editorial gatekeepers directly informs my research into how these technical choices reshape an artist's creative identity. His theory of public relevance provides the foundation for my specific inquiry into the way algorithmic decision-making alters a creator's sense of self-expression."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q2: How did scholarly methods inform your selection of Discourse Analysis?</p>
-                                        <p className="text-lg font-bold">"I chose <strong>Discourse Analysis</strong> because I wanted to see how the language of artists changes when they are under pressure. Other methods only give you surface-level stats, but discourse analysis lets me look at the <em>words</em> they used. This allowed me to truly study 'identity,' which is a personal concept that numbers simply cannot capture."</p>
+                                        <p className="text-lg font-bold">"Discourse Analysis provides the necessary tools to study how algorithmic pressure influences the specific language and professional identity of artists. This method enables the analysis of recurring linguistic patterns that reveal the personal impact of automated platform governance."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q3: What does 'Coding the data' mean in your study?</p>
-                                        <p className="text-lg font-bold">"In this study, 'coding' was not writing computer software. It was a qualitative process where I read through hundreds of pages of text and labeled specific patterns. For instance, I used the code 'Visibility Labor' whenever an artist talked about the work they do just to get seen. I then looked at how often these codes appeared to determine which problems were the most common for creators."</p>
+                                        <p className="text-lg font-bold">"Qualitative coding in this study involves the systematic labeling of text segments to identify recurring patterns of algorithmic influence. I used tags like 'Visibility Labor' to categorize descriptions of the work required to maintain reach within automated distribution frameworks."</p>
                                     </div>
                                 </div>
                             </div>
@@ -159,15 +159,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q5: How does this address a gap in the conversation? [CITING BRUNS]</p>
-                                        <p className="text-lg font-bold">"My study fills a gap identified by <strong>Axel Bruns</strong> (2017) in his mass dissemination framework. Bruns argues that while information flows through networks, there is still a heavy gatekeeping force at the center. Most scholars focus only on that technical center (the platform), but my study looks at the artists at the edge. By connecting Bruns's theory of information flow to the human struggle of 'reach collapse,' I provided a much more complete picture of how algorithms impact individuals, not just corporations."</p>
+                                        <p className="text-lg font-bold">"Axel Bruns’s (2017) mass dissemination framework describes the centralized gatekeeping force within information networks and provides the technical context for my study on how individual artists experience algorithmic reach collapse. My research addresses the human gap in this technical conversation by analyzing the professional impact of these governance structures on the creator."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q6: How did limitations influence your understanding?</p>
-                                        <p className="text-lg font-bold">"Since I only looked at public posts, I couldn't see the private struggles of the artists. This made me realize that visibility is even more complex than it looks. It taught me that my findings are just the tip of the iceberg of a much larger technical issue regarding digital equity."</p>
+                                        <p className="text-lg font-bold">"My focus on public posts limits my view of private artist struggles and highlights the complexity of visibility. This limitation demonstrates that my findings represent a portion of a larger technical issue regarding digital equity."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q7: What are the real-world implications of your findings?</p>
-                                        <p className="text-lg font-bold">"The real-world implication is that artists are being forced to become technicians. If we keep this algorithm environment, we will see less unique art and more 'templated' content. This has consequences for our entire culture and how we value human creativity over engagement data."</p>
+                                        <p className="text-lg font-bold">"The real-world implication involves the transformation of artists into technicians. The current algorithmic environment produces templated content and carries consequences for the cultural valuation of human creativity over engagement data."</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,11 +178,11 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q9: What other curiosities do you have and how did this prepare you? [CITING VAN DRIEL]</p>
-                                        <p className="text-lg font-bold">"I am now curious about how AI-generated art will impact what <strong>Loes van Driel</strong> (2024) calls 'Algorithmic Precarity.' Her research on how professionals stay unstable because of code was the foundation for my thinking. This process has taught me to look past a website's design and see the power structures underneath. I'm now better prepared to analyze any technology by asking: Who does this code benefit, and what does it cost the humans using it?"</p>
+                                        <p className="text-lg font-bold">"Loes van Driel’s (2024) theory of 'Algorithmic Precarity' establishes the foundation for my future research into how AI-generated art further destabilizes creative careers. This research process developed my ability to analyze technical systems as governing forces that impose specific trade-offs between human agency and automated control."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q10: How did you handle the uncertainty of the research process?</p>
-                                        <p className="text-lg font-bold">"I handled it by going back to my data and sticking to my theme. When the research felt too big, I reminded myself that I was just looking for the human impact. This kept me focused even when the technical side of algorithms felt overwhelming."</p>
+                                        <p className="text-lg font-bold">"I handled the research process by returning to my data and adhering to my core theme. Focusing on the human impact maintained my direction during the analysis of complex technical algorithmic structures."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q12: What was the most important research skill you developed?</p>
