@@ -90,11 +90,11 @@ export default function ScriptPage() {
                     </Section>
 
                     <Section title="Methodological Framework" slide="7 & 8 & 9" time="6:20 - 8:50">
-                        <p><strong>[SLIDE 7: APPROACH]</strong> I utilized Qualitative Discourse Analysis to investigate this question. By examining the public narratives and professional reflections of artists, I can identify the underlying themes of their digital experience. This method allows for a nuanced understanding of social phenomena that quantitative data often overlooks. It provides a lens into the "lived reality" of working within a governed technical space.</p>
+                        <p><strong>[SLIDE 7: APPROACH]</strong> I used a method called <strong>Qualitative Discourse Analysis</strong>. This doesn't mean I am looking at numbers; it means I am analyzing the <em>conversations</em> and <em>language</em> that artists use publicly. Discourse Analysis helps us understand how the "big rules"—like platform algorithms—change the way people talk about themselves and their careers. By studying their blog posts and professional reflections, I can see how their language shifts from being about "creating art" to being about "managing visibility."</p>
                         
                         <p><strong>[SLIDE 8: DATA SOURCES]</strong> My data set consist of professional reflections from creators on platforms like Hyperlux and Medium. These sources provide a rich archive of long-form discourse regarding algorithmic precarity. I am analyzing these texts to locate the specific moments where a creator’s professional intent conflicts with the technical demands of the platform.</p>
                         
-                        <p><strong>[SLIDE 9: THE ANALYSIS]</strong> During the coding process, three predominant themes emerged. I identified frequent mentions of "Visibility Labor," "Format Pressure," and "Identity Homogenization." These codes represent the categories where artists feel the most friction between their art and the system. This framework helps us categorize the different types of strain that algorithmic gatekeeping places on the individual.</p>
+                        <p><strong>[SLIDE 9: THE ANALYSIS]</strong> During the analysis, I "coded" the data. In research, <strong>Coding</strong> is not computer programming. Instead, it is the process of labeling pieces of text with specific "tags" to find patterns. For example, every time an artist mentioned stress about numbers, I labeled that text with the code "Visibility Anxiety." I then grouped these codes into themes like "Visibility Labor" and "Identity Homogenization." This helped me turn hundreds of pages of text into clear, organized categories of artist behavior.</p>
                     </Section>
 
                     <Section title="Key Findings" slide="10 & 11 & 12" time="8:50 - 11:50">
@@ -143,16 +143,16 @@ export default function ScriptPage() {
                                         <p className="text-lg font-bold">"I started by looking at how social media works in general. But I soon realized that most research only looks at the viewer. I saw a gap where no one was talking about the artist's identity. This led me to focus on how the technical demands of the code change the person making the art."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q2: How did and how did scholarly methods inform your selection?</p>
-                                        <p className="text-lg font-bold">"I saw that other scholars used numbers and stats to study tech. But I felt that numbers don't show the emotional side of being an artist. I chose Discourse Analysis because it lets me analyze the actual stories and words of the creators. This aligns better with my goal of studying identity, not just stats."</p>
+                                        <p className="font-black text-blue-700 mb-2">Q2: How did scholarly methods inform your selection?</p>
+                                        <p className="text-lg font-bold">"I chose <strong>Discourse Analysis</strong> because I wanted to see how the language of artists changes when they are under pressure from an algorithm. Other methods like surveys only give you a 'yes' or 'no' answer. Discourse analysis let me look at the <em>words</em> they used to describe their struggle, which is the only way to truly study something as personal as 'identity.'"</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q3: How did your method impact your research process?</p>
-                                        <p className="text-lg font-bold">"Choosing discourse analysis meant I had to be very careful with how I coded the data. It made my process more focused on the 'why' behind the artists' posts. It pushed me to look for deeper patterns in their experiences rather than just surface-level complaints."</p>
+                                        <p className="font-black text-blue-700 mb-2">Q3: What does 'Coding the data' mean in your study?</p>
+                                        <p className="text-lg font-bold">"In this study, 'coding' was not writing computer software. It was a qualitative process where I read through hundreds of pages of text and labeled specific patterns. For instance, I used the code 'Visibility Labor' whenever an artist talked about the work they do just to get seen. I then looked at how often these codes appeared to determine which problems were the most common for creators."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q4: How did you determine which results were most important?</p>
-                                        <p className="text-lg font-bold">"I looked for the ideas that came up across every single source. When every artist mentioned 'stress' or 'short videos,' I knew those were the core findings. I prioritized the results that directly showed the trade-off between their art and the machine's requirements."</p>
+                                        <p className="text-lg font-bold">"I prioritized the themes that appeared across all separate platforms regardless of the individual artist. If creators on Medium, Hyperlux, and Saturno were all using the same 'coded' language of burnout and reach collapse, I knew those results represented a systemic issue, not just a personal one."</p>
                                     </div>
                                 </div>
                             </div>
