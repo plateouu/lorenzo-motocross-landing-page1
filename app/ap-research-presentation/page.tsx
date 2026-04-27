@@ -214,9 +214,9 @@ export default function APResearchPresentation() {
                             <div className="space-y-12 text-center p-8">
                                 <h2 className="text-4xl md:text-6xl font-bold uppercase border-b-8 border-red-600 pb-4 text-red-600 inline-block">Reach Collapse</h2>
                                 <div className="flex flex-col md:flex-row gap-8 mt-12">
-                                    <div className="flex-1 border-8 border-black p-12 bg-red-50 shadow-lg">
-                                        <h3 className="text-8xl font-black text-red-600">44%</h3>
-                                        <p className="text-3xl font-black uppercase">Drop in Reach</p>
+                                    <div className="p-6 border-4 border-black bg-yellow-400">
+                                        <h3 className="text-xl font-black uppercase mb-2">Final Shift:</h3>
+                                        <p className="text-4xl font-black uppercase">Creating for Art ➔ Working for Views</p>
                                     </div>
                                     <div className="flex-1 border-8 border-black p-12 bg-blue-50 shadow-lg">
                                         <h3 className="text-8xl font-black text-blue-600">&lt; 5%</h3>
@@ -358,9 +358,7 @@ export default function APResearchPresentation() {
                         {SLIDES[current].id === "results-3" && (
                             <div className="space-y-12 text-center p-8">
                                 <h2 className="text-6xl font-bold uppercase border-b-8 border-black pb-4 text-left">Artist Strain</h2>
-                                <p className="text-5xl md:text-[5rem] font-black leading-[1.1] max-w-6xl mx-auto py-12">
-                                    Artists are spending more time on <strong>"Platform Maintenance"</strong> than on art.
-                                </p>
+                                <p className="text-3xl font-bold">My final finding is the loss of the creative spirit. Artists feel forced into safe, repetitive styles to avoid losing views. They feel suffocated by the pressure to follow templates. This proves that art is no longer just expression; it is becoming a high-stress content job. Creators are no longer focused on what they want to say, but on what the algorithm requires, leading to burnout.</p>
                                 <div className="bg-red-600 text-white inline-block px-20 py-8 shadow-2xl border-4 border-black transform rotate-2">
                                     <p className="text-6xl font-black uppercase italic">Burnout is standard.</p>
                                 </div>
@@ -390,9 +388,9 @@ export default function APResearchPresentation() {
                                             <h3 className="text-4xl font-black text-blue-600 underline uppercase">1. Sensemaking</h3>
                                             <p className="text-2xl font-bold mt-4">Trying to "read" the code through numbers.</p>
                                         </div>
-                                        <div className="bg-red-50 p-8 border-8 border-black shadow-lg">
-                                            <h3 className="text-4xl font-black text-red-600 underline uppercase">2. Emotion</h3>
-                                            <p className="text-2xl font-bold mt-4">Constant anxiety about becoming invisible.</p>
+                                        <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
+                                            <p className="font-black text-blue-700 mb-2">Q7: What are the real-world implications of your findings?</p>
+                                            <p className="text-lg font-bold">"The real-world implication is the death of original art. We are moving toward an internet where everyone is forced to act like a content employee instead of an artist. This leads to a loss of human originality as we all start making the same repetitive videos to please the system."</p>
                                         </div>
                                     </div>
                                     <div className="border-8 border-black bg-white shadow-2xl max-w-md mx-auto overflow-hidden">
