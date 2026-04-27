@@ -76,33 +76,33 @@ export default function ScriptPage() {
                     </Section>
 
                     <Section title="Setting the Scene" slide="2 & 3" time="1:20 - 3:50">
-                        <p><strong>[SLIDE 2: GATEKEEPING]</strong> I want to operationally define a key term for this study: Gatekeeping. Historically, gatekeeping was the process of a human—like an editor at a newspaper (choosing what is printed) or a curator at an art gallery. Today, the algorithm has replaced that human curator. Algorithms now make the decision on what art is seen. As you can see on Gillespie’s map, this is a very dense process. It is a mix of technical rules and social habits. This diagram shows why it is so difficult for a single artist to understand how to get their work in front of people.</p>
+                        <p><strong>[SLIDE 2: GATEKEEPING]</strong> I want to define a key term for this study: Gatekeeping. Historically, gatekeeping was the process of a human editor choosing which work reached the public. Today, algorithms have replaced those human curators. This is a dense process of technical rules and social habits that filters information and determines its visibility. This diagram shows the specific technical filters a single piece of art must pass through to reach an audience.</p>
                         
-                        <p><strong>[SLIDE 3: DIGITAL ANXIETY]</strong> This constant push for visibility creates "Digital Anxiety." Taina Bucher, a scholar I looked at, explains that being hidden is a major threat. In the modern art world, visibility is the same as professional existence. The Bruns model shows us that information flows through a network now. Algorithmic rules determine if a post is seen or hidden. This puts pressure on creators to constantly monitor their numbers and change their art to fit the algorithm's preferences.</p>
+                        <p><strong>[SLIDE 3: DIGITAL ANXIETY]</strong> This technical filtering creates "Digital Anxiety." Scholar Taina Bucher explains that the threat of being "hidden" is a major professional risk. In the modern creative economy, visibility is the same as professional existence. Algorithms determine whether a post is seen or suppressed. This forces creators to constantly monitor their metrics and change their artistic output to align with the algorithm's preferences.</p>
                     </Section>
 
-                    <Section title="The Crisis & Research Intent" slide="4 & 5 & 6" time="3:50 - 6:20">
-                        <p><strong>[SLIDE 4: THE PROBLEM]</strong> Algorithmic gatekeeping appears as a phenomenon called "Reach Collapse." To explain this simply, reach collapse is when an artist has thousands of followers who simply never see their posts because the algorithm blocks the connection. Market analysis from Hyperlux Magazine suggests followers and views are completely separate now. Since 2019, organic reach has declined by 44%. Most creators now reach less than 5% of their audience. High visibility is now a reward for following algorithmic rules. This creates job instability for artists who cannot rely on their audience to find their work.</p>
+                    <Section title="The Crisis & The Gap" slide="4 & 5" time="3:50 - 5:50">
+                        <p><strong>[SLIDE 4: THE PROBLEM]</strong> This algorithmic gatekeeping results in "Reach Collapse." To explain this directly, reach collapse is when a content creator's followers are disconnected from their actual views. Since 2019, organic reach has declined by 44%. Most creators now reach less than 5% of their audience. Visibility is now a technical reward for following the algorithm's rules. This results in massive job instability for artists.</p>
                         
-                        <p><strong>[SLIDE 5: THE GAP]</strong> My review of the research shows a gap regarding the impact of these algorithms on the individual. Most experts focus on "macro" stuff like how big corporations work or how data is harvested. We understand the technical side. We know how companies benefit. My study looks at the "micro" level impact on the creator. We need to understand how these rules change the choices and the professional identity of the human artist. I am focusing on the experience of the individual creator working inside these algorithmic spaces.</p>
-                        
-                        <p><strong>[SLIDE 6: RESEARCH INTENT]</strong> This led to my core research question: <strong>How do algorithms affect the professional identity and creative output of small artists?</strong> My goal is to move past the mechanical formulas and analyze the trade-offs that creators make. I want to understand how algorithmic incentives influence a creator's choices from the first idea to the final post.</p>
+                        <p><strong>[SLIDE 5: THE GAP]</strong> My review of the research shows a fundamental gap regarding the **content creator**. Most experts focus on how social media companies make a profit or the technical way the software is written. We understand how big companies benefit, but we do not understand the impact on the human **author**. My study addresses this gap by analyzing the author's emotional state and the loss of creative motivation that occurs when they are hidden by an algorithm.</p>
                     </Section>
 
-                    <Section title="Methodological Framework" slide="7 & 8 & 9" time="6:20 - 8:50">
-                        <p><strong>[SLIDE 7: APPROACH]</strong> I used a method called <strong>Qualitative Discourse Analysis</strong>. This doesn't mean I am looking at numbers; it means I am analyzing the <em>conversations</em> and <em>language</em> that artists use publicly. Discourse Analysis helps us understand how the "big rules"—like platform algorithms—change the way people talk about themselves and their careers. By studying their blog posts and professional reflections, I can see how their language shifts from being about "creating art" to being about "managing visibility."</p>
+                    <Section title="Research Intent & Method" slide="6 & 7 & 8 & 9" time="5:50 - 8:50">
+                        <p><strong>[SLIDE 6: RESEARCH INTENT]</strong> This leads to my core research question: <strong>How do algorithms affect the professional identity and creative output of small artists?</strong> My goal is to analyze the trade-offs that content creators make. I want to understand how these incentives influence their choices, emotions, and motivation.</p>
+
+                        <p><strong>[SLIDE 7: THE METHOD]</strong> I used a method called <strong>Qualitative Discourse Analysis</strong>. This means I studied the actual words and sentences that content creators use in their public blogs. This helps us see how technical rules change the way people talk about their identity. It shows how an artist's language shifts from 'art' to 'following rules.'</p>
                         
-                        <p><strong>[SLIDE 8: DATA SOURCES]</strong> My data set consist of professional reflections from creators on platforms like Hyperlux and Medium. These sources provide a rich archive of long-form discourse regarding algorithmic precarity. I am analyzing these texts to locate the specific moments where a creator’s professional intent conflicts with the technical demands of the platform.</p>
+                        <p><strong>[SLIDE 8: DATA SOURCES]</strong> My data comes from long-form professional reflections on platforms like Hyperlux and Medium. These sources provide a detailed archive of the emotional and professional struggles of content creators. I analyzed these texts to find the specific moments where an artist's personal intent conflicts with the algorithm's demands.</p>
                         
-                        <p><strong>[SLIDE 9: THE ANALYSIS]</strong> During the analysis, I used a systematic process called Qualitative Coding. This involves reading every sentence of the artist reflections and assigning descriptive labels to specific patterns. For example, whenever an artist mentioned the need to use trending audio or specific hashtags, I assigned the label "Visibility Labor." This process transforms hundreds of pages of raw stories into organized categories that reveal the exact mechanical rules artists follow to maintain their reach.</p>
+                        <p><strong>[SLIDE 9: THE ANALYSIS]</strong> I used a systematic process called <strong>Qualitative Coding</strong>. This involves reading every sentence of the reflections and assigning descriptive labels to specific patterns. For example, I looked for repeated phrases about stress or feeling forced to post. I used the label "Visibility Labor" for the work required to stay seen. This process turns raw stories into organized data that shows exactly how algorithms control human behavior.</p>
                     </Section>
 
                     <Section title="Key Findings" slide="10 & 11 & 12" time="8:50 - 11:50">
-                        <p><strong>[SLIDE 10: RESULT 1]</strong> My first finding is the loss of agency. Creators feel the algorithm acts as a third-party filter between them and their audience. Visibility is independent of the quality of the art. The algorithm overrides the preferences of the followers. This shift forces creators to prioritize platform metrics when they should be focusing on artistic intent.</p>
+                        <p><strong>[SLIDE 10: RESULT 1]</strong> My first finding is the loss of control. Content creators feel they have no power over what their audience sees because the algorithm acts as a third-party filter. This makes artists feel like their hard work is wasted because a machine—not a human—is the final judge. This results in a loss of creative motivation.</p>
                         
-                        <p><strong>[SLIDE 11: SYSTEM DEMANDS]</strong> Finding two focuses on technical standardization. To stay visible, the algorithm rewards specific behaviors like high-frequency posting and using short-form video formats. This makes art very formulaic. Artists must copy successful templates to remain competitive. The platform defines the professional standards and creators must adopt them to be seen.</p>
+                        <p><strong>[SLIDE 11: POSTING RULES]</strong> Finding two focuses on strict posting rules. To stay visible, algorithms reward repetitive behaviors like making short-form videos every single day. This makes art look repetitive. Content creators stop being original because they have to copy successful templates just to be noticed by the algorithm.</p>
                         
-                        <p><strong>[SLIDE 12: ARTIST STRAIN]</strong> This environment produces significant professional strain. Creators are doing "Platform Labor" which is the constant maintenance of digital numbers. This reduces the time they have for actual creative work. This leads to burnout and a loss of artistic voice. The pressure to please an algorithm creates a psychological burden that changes who the artist is.</p>
+                        <p><strong>[SLIDE 12: ARTIST STRAIN]</strong> This environment produces massive stress. Content creators spend more time following these posting rules than actually making their art. This leads to severe burnout and the loss of the artist's unique voice. They feel like they are becoming a robot for the platform instead of a human creator.</p>
                     </Section>
 
                     <Section title="Synthesis & Discussion" slide="13 & 14 & 15" time="11:50 - 13:20">
@@ -138,25 +138,21 @@ export default function ScriptPage() {
                             <h3 className="text-3xl font-black uppercase mb-6 text-yellow-400">Source Deep Dive (Quick Ref)</h3>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
                                 <div className="space-y-2">
-                                    <p className="font-black underline uppercase text-xl">1. Gillespie</p>
+                                    <p className="font-black underline uppercase text-xl">1. Gillespie (Gatekeeping)</p>
                                     <p className="font-bold opacity-90 leading-relaxed">
-                                        The "Boss." Algorithms have "opinions" on what content is good or relevant. If you don't please the boss, your work gets ignored.
-                                    </p>
-                                    <p className="font-black underline uppercase text-xl">1. Gillespie (The Boss)</p>
-                                    <p className="font-bold opacity-90 leading-relaxed">
-                                        Algorithms act as the "Boss" that decides what content is relevant. If you don't follow the boss's rules, your work gets ignored.
+                                        Gillespie defines algorithms as editorial gatekeepers. They choose which content is "publicly relevant" based on platform-specific rules.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <p className="font-black underline uppercase text-xl">2. Axel Bruns (The Bodyguard)</p>
+                                    <p className="font-black underline uppercase text-xl">2. Axel Bruns (Information Flow)</p>
                                     <p className="font-bold opacity-90 leading-relaxed">
-                                        Algorithms are the "Bodyguard" at the door of your followers' feeds. They decide if your post actually gets through to the people who follow you.
+                                        Bruns analyzes how information flows through networks. He identifies that algorithms act as central control points that can restrict these flows.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <p className="font-black underline uppercase text-xl">3. Loes van Driel (Never-Ending Stress)</p>
+                                    <p className="font-black underline uppercase text-xl">3. Loes van Driel (Precarity)</p>
                                     <p className="font-bold opacity-90 leading-relaxed">
-                                        Working for algorithms is "Never-Ending Stress." The rules change constantly, making artists feel like they are always in a state of instability.
+                                        Van Driel examines the instability and stress that algorithms cause for creative workers who must constantly adapt to changing rules.
                                     </p>
                                 </div>
                             </div>
@@ -169,15 +165,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q1: How did initial exploration lead to your final RQ? [CITING GILLESPIE]</p>
-                                        <p className="text-lg font-bold">"So pretty much I was reading <strong>Tarleton Gillespie</strong> and he talks about algorithms being like 'editors.' This fascinated me because it means the algorithm is the boss that decides who gets to be seen. This directly led to my question about how this control changes the way artists feel and how they create their art."</p>
+                                        <p className="text-lg font-bold">"So pretty much I was reading <strong>Tarleton Gillespie</strong> and his technical definition of algorithms as editorial gatekeepers. He proves that algorithms decide which posts are relevant based on platform rules. This fascinated me because it shows a piece of code determining an artist's value. This moved my focus toward how these rules change a content creator's motivation and their creative identity."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q2: How did scholarly methods inform your selection of Discourse Analysis?</p>
-                                        <p className="text-lg font-bold">"So I used <strong>Discourse Analysis</strong> to look at the words and the feelings of artists who are struggling with algorithms. This method is great for finding patterns in how they talk. It helped me see the personal impact of automated rules on their professional voice."</p>
+                                        <p className="text-lg font-bold">"So I used <strong>Discourse Analysis</strong> to study the actual words and sentences that content creators use in their public blogs. This method lets me see how their language changes when they feel pressure from an algorithm. I can see the exact moments when an artist's professional voice shifts from being about 'art' to being about 'following rules.'"</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q3: What does 'Coding the data' mean in your study?</p>
-                                        <p className="text-lg font-bold">"So the process of 'coding' involves the systematic labeling of text segments to identify recurring patterns of algorithmic influence. I spent weeks reading through artist blogs and assigning descriptive tags like <strong>'Visibility Labor'</strong> or <strong>'Reach Collapse'</strong> to every relevant sentence. This methodical approach allowed me to transform hundreds of pages of qualitative stories into organized data that shows exactly how algorithms control human behavior."</p>
+                                        <p className="text-lg font-bold">"So I read through hundreds of pages of artist blogs and assigned labels to specific repeated phrases. For example, I used the label <strong>'Visibility Labor'</strong> whenever an artist described the extra work they do just to get noticed. This allowed me to turn raw stories into organized data that shows exactly how algorithms control human behavior."</p>
                                     </div>
                                 </div>
                             </div>
@@ -188,15 +184,15 @@ export default function ScriptPage() {
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q5: How does this address a gap in the conversation? [CITING BRUNS]</p>
-                                        <p className="text-lg font-bold">"So pretty much I looked at <strong>Axel Bruns</strong> and his idea that algorithms are like bodyguards. He shows how they control the entrance to information. My research looks at how individual artists experience <strong>'Reach Collapse'</strong> because of these bodyguards. I'm filling the human gap by showing the stress it causes the person making the art."</p>
+                                        <p className="text-lg font-bold">"So pretty much I looked at <strong>Axel Bruns</strong> and his research on how information flows through networks. Most experts focus on how the audience sees content or how companies make a profit. This creates a gap because we don't understand the author's internal experience. My research addresses this by showing how 'Reach Collapse' destroys a content creator's motivation and creates high levels of emotional stress."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q6: How did limitations influence your understanding?</p>
-                                        <p className="text-lg font-bold">"So I focused on public blogs which means I can't see the behind-the-scenes part of the struggle. This limitation shows me that the problem is probably even bigger than I found, and it's a huge issue for digital fairness."</p>
+                                        <p className="text-lg font-bold">"So I focused on public blogs which means I can't see the behind-the-scenes part of the struggle. This limitation shows me that the problem is probably even bigger than I found, and it's a huge issue for digital fairness for the human creator."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q7: What are the real-world implications of your findings?</p>
-                                        <p className="text-lg font-bold">"So the real-world implication is that artists are becoming technicians. The current algorithm environment creates <strong>'Formulaic Content'</strong> where everyone copies successful styles. This means we lose human creativity just for the sake of higher engagement numbers."</p>
+                                        <p className="text-lg font-bold">"So the real-world implication is that artists are being forced to act as technicians. Current algorithms reward repetitive content over human creativity. This leads to an internet where quality is less important than engagement numbers."</p>
                                     </div>
                                 </div>
                             </div>
