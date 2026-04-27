@@ -86,7 +86,7 @@ export default function ScriptPage() {
                         
                         <p><strong>[SLIDE 5: THE GAP]</strong> My review of the existing scholarly conversation identified a significant gap regarding the impact of these algorithms on the individual. The current literature is dominated by macro-level studies that focus on platform governance, corporate transparency, or large-scale data harvesting. We understand how the algorithms work from a technical perspective, and we understand how corporations benefit from them. However, there is a distinct lack of qualitative data regarding the micro-level impact on the creator subject. There is no clear understanding of how these governance structures influence the internal decision-making and professional identity of the human artist. My study addresses this gap by moving the focus away from the macro-organization and toward the experience of the individual creator operating within these governed spaces.</p>
                         
-                        <p><strong>[SLIDE 1: RESEARCH INTENT]</strong> This realization led to my core research question: <strong>How do algorithms affect the professional identity and creative output of small artists?</strong> My goal is to move past the technical mechanics of the code and instead analyze the psychological and professional trade-offs that creators make. I want to understand how algorithmic incentive structures influence the choices a creator makes throughout their entire process, from ideation to final publication.</p>
+                        <p><strong>[SLIDE 6: RESEARCH INTENT]</strong> This realization led to my core research question: <strong>How do algorithms affect the professional identity and creative output of small artists?</strong> My goal is to move past the technical mechanics of the code and instead analyze the psychological and professional trade-offs that creators make. I want to understand how algorithmic incentive structures influence the choices a creator makes throughout their entire process, from ideation to final publication.</p>
                     </Section>
 
                     <Section title="Methodological Framework" slide="7 & 8 & 9" time="6:20 - 8:50">
@@ -139,20 +139,16 @@ export default function ScriptPage() {
                                 <h3 className="text-3xl font-black uppercase underline decoration-8 decoration-yellow-400">Section 1: The Research Process</h3>
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q1: How did initial exploration lead to your final RQ?</p>
-                                        <p className="text-lg font-bold">"I started by looking at how social media works in general. But I soon realized that most research only looks at the viewer. I saw a gap where no one was talking about the artist's identity. This led me to focus on how the technical demands of the code change the person making the art."</p>
+                                        <p className="font-black text-blue-700 mb-2">Q1: How did initial exploration lead to your final RQ? [CITING GILLESPIE]</p>
+                                        <p className="text-lg font-bold">"I started by studying <strong>Tarleton Gillespie’s</strong> (2014) work on 'The Relevance of Algorithms.' He explains that algorithms are not neutral tools but editorial gatekeepers that choose what is 'publicly relevant.' This source made me realize that if the code is choosing what is relevant, then it is actively changing the professional identity of the creator. This connection moved me away from just studying social media in general and specifically toward the question of how these algorithmic choices affect an artist's creative heart."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q2: How did scholarly methods inform your selection?</p>
-                                        <p className="text-lg font-bold">"I chose <strong>Discourse Analysis</strong> because I wanted to see how the language of artists changes when they are under pressure from an algorithm. Other methods like surveys only give you a 'yes' or 'no' answer. Discourse analysis let me look at the <em>words</em> they used to describe their struggle, which is the only way to truly study something as personal as 'identity.'"</p>
+                                        <p className="font-black text-blue-700 mb-2">Q2: How did scholarly methods inform your selection of Discourse Analysis?</p>
+                                        <p className="text-lg font-bold">"I chose <strong>Discourse Analysis</strong> because I wanted to see how the language of artists changes when they are under pressure. Other methods only give you surface-level stats, but discourse analysis lets me look at the <em>words</em> they used. This allowed me to truly study 'identity,' which is a personal concept that numbers simply cannot capture."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q3: What does 'Coding the data' mean in your study?</p>
                                         <p className="text-lg font-bold">"In this study, 'coding' was not writing computer software. It was a qualitative process where I read through hundreds of pages of text and labeled specific patterns. For instance, I used the code 'Visibility Labor' whenever an artist talked about the work they do just to get seen. I then looked at how often these codes appeared to determine which problems were the most common for creators."</p>
-                                    </div>
-                                    <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q4: How did you determine which results were most important?</p>
-                                        <p className="text-lg font-bold">"I prioritized the themes that appeared across all separate platforms regardless of the individual artist. If creators on Medium, Hyperlux, and Saturno were all using the same 'coded' language of burnout and reach collapse, I knew those results represented a systemic issue, not just a personal one."</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,20 +158,16 @@ export default function ScriptPage() {
                                 <h3 className="text-3xl font-black uppercase underline decoration-8 decoration-blue-400">Section 2: Depth of Understanding</h3>
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q5: How does this address a gap in the conversation?</p>
-                                        <p className="text-lg font-bold">"Current research is very technical and focused on the platforms. My study addresses the human gap. It provides a look at the psychological toll and the identity shift that small artists go through. It puts the creator back in the center of the conversation."</p>
+                                        <p className="font-black text-blue-700 mb-2">Q5: How does this address a gap in the conversation? [CITING BRUNS]</p>
+                                        <p className="text-lg font-bold">"My study fills a gap identified by <strong>Axel Bruns</strong> (2017) in his mass dissemination framework. Bruns argues that while information flows through networks, there is still a heavy gatekeeping force at the center. Most scholars focus only on that technical center (the platform), but my study looks at the artists at the edge. By connecting Bruns's theory of information flow to the human struggle of 'reach collapse,' I provided a much more complete picture of how algorithms impact individuals, not just corporations."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q6: How did limitations influence your understanding?</p>
-                                        <p className="text-lg font-bold">"Since I only looked at public posts, I couldn't see the private struggles or the exact data of the artists. This made me realize that visibility is even more complex than it looks from the outside. It taught me that my findings are just the tip of the iceberg of a much larger technical issue."</p>
+                                        <p className="text-lg font-bold">"Since I only looked at public posts, I couldn't see the private struggles of the artists. This made me realize that visibility is even more complex than it looks. It taught me that my findings are just the tip of the iceberg of a much larger technical issue regarding digital equity."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q7: What are the real-world implications of your findings?</p>
-                                        <p className="text-lg font-bold">"The real-world implication is that artists are being forced to become technicians. If we keep this system, we will see less unique art and more 'templated' content. This has consequences for our entire culture and how we value creativity over data."</p>
-                                    </div>
-                                    <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q8: How do your findings provide directions for future research?</p>
-                                        <p className="text-lg font-bold">"Future research could do 'live ethnographies' where they watch artists create in real-time. My study provides a foundation showing that identity is shifting, so the next step is to study specifically how to build platforms that support art without these technical burdens."</p>
+                                        <p className="text-lg font-bold">"The real-world implication is that artists are being forced to become technicians. If we keep this algorithm environment, we will see less unique art and more 'templated' content. This has consequences for our entire culture and how we value human creativity over engagement data."</p>
                                     </div>
                                 </div>
                             </div>
@@ -185,24 +177,16 @@ export default function ScriptPage() {
                                 <h3 className="text-3xl font-black uppercase underline decoration-8 decoration-red-400">Section 3: Reflection & Self-Awareness</h3>
                                 <div className="space-y-4">
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q9: What other curiosities do you have and how did this prepare you?</p>
-                                        <p className="text-lg font-bold">"I’m now curious about how AI art generators will affect this same problem. This process has prepared me to analyze technical systems critically. It gave me the skills to look past the 'user interface' and see the power structures underneath."</p>
+                                        <p className="font-black text-blue-700 mb-2">Q9: What other curiosities do you have and how did this prepare you? [CITING VAN DRIEL]</p>
+                                        <p className="text-lg font-bold">"I am now curious about how AI-generated art will impact what <strong>Loes van Driel</strong> (2024) calls 'Algorithmic Precarity.' Her research on how professionals stay unstable because of code was the foundation for my thinking. This process has taught me to look past a website's design and see the power structures underneath. I'm now better prepared to analyze any technology by asking: Who does this code benefit, and what does it cost the humans using it?"</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q10: How did you handle the uncertainty of the research process?</p>
-                                        <p className="text-lg font-bold">"I handled it by going back to my data and sticking to my theme. When the research felt too big, I reminded himself that I was just looking for the human impact. This kept me focused even when the technical side of algorithms felt overwhelming."</p>
-                                    </div>
-                                    <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q11: If you could revisit the process, what would you do differently?</p>
-                                        <p className="text-lg font-bold">"I would probably include direct interviews. Analyzing public posts is great, but talking one-on-one with an artist would provide even more personal detail. It would allow me to ask follow-up questions that I couldn't get from just a blog post."</p>
+                                        <p className="text-lg font-bold">"I handled it by going back to my data and sticking to my theme. When the research felt too big, I reminded myself that I was just looking for the human impact. This kept me focused even when the technical side of algorithms felt overwhelming."</p>
                                     </div>
                                     <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
                                         <p className="font-black text-blue-700 mb-2">Q12: What was the most important research skill you developed?</p>
-                                        <p className="text-lg font-bold">"The most important skill was Critical Media Literacy. I learned how to look at a platform's design and see it as a government with its own rules. I can now apply this to any new technology or system I encounter in the future."</p>
-                                    </div>
-                                    <div className="p-6 bg-slate-50 border-2 border-black rounded-lg">
-                                        <p className="font-black text-blue-700 mb-2">Q13: How did your adviser facilitate your understanding? (Optional)</p>
-                                        <p className="text-lg font-bold">"My adviser helped me stay grounded in the human experience. When I got too deep into the technical side of how code works, they reminded me to focus on the 'Identity' part of my question. This ensured my research stayed relevant to artists, not just techies."</p>
+                                        <p className="text-lg font-bold">"The most important skill was Critical Media Literacy. I learned how to look at a platform's design and see it as a government with its own rules. I can now apply this to any new technology I encounter in the future, looking for the trade-offs between user agency and technical control."</p>
                                     </div>
                                 </div>
                             </div>
