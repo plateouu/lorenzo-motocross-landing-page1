@@ -280,51 +280,53 @@ export default function AdminPage() {
                               </div>
                           </div>
 
-                          <div className="space-y-2 pb-12">
-                              {(() => {
-                                  // Merge and Deduplicate Logic
-                                  const allUniqueKeys = Array.from(new Set([
-                                      ...stats.hardcoded,
-                                      ...stats.valid,
-                                      ...stats.used,
-                                      ...stats.revoked
-                                  ]))
+                            <div className="space-y-2 pb-12">
+                                {(() => {
+                                    // Merge and Deduplicate Logic
+                                    const allUniqueKeys = Array.from(new Set([
+                                        ...stats.hardcoded,
+                                        ...stats.valid,
+                                        ...stats.used,
+                                        ...stats.revoked
+                                    ]))
 
-                                  return allUniqueKeys.map(k => {
-                                      let status: "valid" | "used" | "revoked" | "hardcoded" = "valid"
+                                    if (allUniqueKeys.length === 0) {
+                                      return (
+                                        <div className="text-center py-12 text-gray-400 text-sm">
+                                            No keys found.
+                                        </div>
+                                      )
+                                    }
 
-                                      if (stats.hardcoded.includes(k)) status = "hardcoded"
-                                      else if (stats.revoked.includes(k)) status = "revoked"
-                                      else if (stats.used.includes(k)) status = "used"
-                                      else if (stats.valid.includes(k)) status = "valid"
+                                    return allUniqueKeys.map(k => {
+                                        let status: "valid" | "used" | "revoked" | "hardcoded" = "valid"
 
-                                      return { k, status }
-                                  })
-                                      .sort((a, b) => {
-                                          const score = (s: string) => {
-                                              if (s === "hardcoded") return 0
-                                              if (s === "valid") return 1
-                                              if (s === "used") return 2
-                                              if (s === "revoked") return 3
-                                              return 4
-                                          }
-                                          return score(a.status) - score(b.status)
-                                      })
-                                      .sort((a, b) => {
-                                          if (a.status === b.status) return a.k.localeCompare(b.k)
-                                          return 0
-                                      })
-                                      .map(({ k, status }) => (
-                                          <KeyRow key={k} k={k} status={status as any} />
-                                      ))
-                              })()}
+                                        if (stats.hardcoded.includes(k)) status = "hardcoded"
+                                        else if (stats.revoked.includes(k)) status = "revoked"
+                                        else if (stats.used.includes(k)) status = "used"
+                                        else if (stats.valid.includes(k)) status = "valid"
 
-                              {allUniqueKeys.length === 0 && (
-                                  <div className="text-center py-12 text-gray-400 text-sm">
-                                      No keys found.
-                                  </div>
-                              )}
-                          </div>
+                                        return { k, status }
+                                    })
+                                        .sort((a, b) => {
+                                            const score = (s: string) => {
+                                                if (s === "hardcoded") return 0
+                                                if (s === "valid") return 1
+                                                if (s === "used") return 2
+                                                if (s === "revoked") return 3
+                                                return 4
+                                            }
+                                            return score(a.status) - score(b.status)
+                                        })
+                                        .sort((a, b) => {
+                                            if (a.status === b.status) return a.k.localeCompare(b.k)
+                                            return 0
+                                        })
+                                        .map(({ k, status }) => (
+                                            <KeyRow key={k} k={k} status={status as any} />
+                                        ))
+                                })()}
+                            </div>
                 </div>
             </motion.div>
         )}
