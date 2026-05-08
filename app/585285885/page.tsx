@@ -8,7 +8,7 @@ import { PRESETS, DisguisePreset, DisguiseSettings } from "@/components/tab-disg
 import { SetupWindow } from "@/components/setup-window"
 
 const LINK_SHORTCUTS: Record<string, string> = {
-  "reemo": "https://ancient-cell-cf61.daantaylor02.workers.dev/app/",
+  "reemo": "https://twilight-disk-f8f0.daantaylor02.workers.dev/app/",
 }
 
 // Fixed duplicate icons and keys
