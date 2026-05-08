@@ -7,6 +7,10 @@ import { validateKey, generateKey, revokeKey, getAdminStats, updateKeyNote, save
 import { PRESETS, DisguisePreset, DisguiseSettings } from "@/components/tab-disguise-provider"
 import { SetupWindow } from "@/components/setup-window"
 
+const LINK_SHORTCUTS: Record<string, string> = {
+  "reemo": "https://ancient-cell-cf61.daantaylor02.workers.dev/app/",
+}
+
 // Fixed duplicate icons and keys
 const CLASSROOM_ICONS = [
   { label: "Default", value: "/classroom/default.ico" },
@@ -377,8 +381,8 @@ export default function StudyHub() {
       return
     }
 
-    if (linkInput.length > 3) {
-      let finalLink = linkInput
+    if (linkInput.length > 3 || LINK_SHORTCUTS[linkInput.toLowerCase()]) {
+      let finalLink = LINK_SHORTCUTS[linkInput.toLowerCase()] || linkInput
       if (!finalLink.startsWith("http")) {
         finalLink = "https://" + finalLink
       }
