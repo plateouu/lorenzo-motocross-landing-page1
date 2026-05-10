@@ -7,8 +7,8 @@ import { validateKey, generateKey, revokeKey, getAdminStats, updateKeyNote, save
 import { PRESETS, DisguisePreset, DisguiseSettings } from "@/components/tab-disguise-provider"
 import { SetupWindow } from "@/components/setup-window"
 
-const LINK_SHORTCUTS: Record<string, string> = {
-  "reemo": "https://twilight-disk-f8f0.daantaylor02.workers.dev/app/",
+const LINK_SHORTCUTS: Record<string, { url: string, direct?: boolean }> = {
+  "reemo": { url: "https://portal.reemo.io/", direct: true },
 }
 
 // Fixed duplicate icons and keys
@@ -381,8 +381,9 @@ export default function StudyHub() {
       return
     }
 
-    if (linkInput.length > 3 || LINK_SHORTCUTS[linkInput.toLowerCase()]) {
-      let finalLink = LINK_SHORTCUTS[linkInput.toLowerCase()] || linkInput
+    const shortcut = LINK_SHORTCUTS[linkInput.toLowerCase()]
+    if (linkInput.length > 3 || shortcut) {
+      let finalLink = shortcut?.url || linkInput
       if (!finalLink.startsWith("http")) {
         finalLink = "https://" + finalLink
       }
@@ -470,14 +471,21 @@ export default function StudyHub() {
         link.href = window.location.origin + icon
         win.document.head.appendChild(link)
 
-        const iframe = win.document.createElement('iframe')
-        iframe.style.border = 'none'
-        iframe.style.width = '100vw'
-        iframe.style.height = '100vh'
-        iframe.src = url
-        iframe.allow = "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
+        const savedLink = localStorage.getItem("target_link") || ""
+        const matchedShortcut = Object.values(LINK_SHORTCUTS).find(s => s.url === url)
+        const isDirect = matchedShortcut?.direct || false
 
-        win.document.body.appendChild(iframe)
+        if (isDirect) {
+          win.location.href = url
+        } else {
+          const iframe = win.document.createElement('iframe')
+          iframe.style.border = 'none'
+          iframe.style.width = '100vw'
+          iframe.style.height = '100vh'
+          iframe.src = url
+          iframe.allow = "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
+          win.document.body.appendChild(iframe)
+        }
 
         if (doParentRedirect) {
           let redirectTarget = "https://www.desmos.com/calculator"

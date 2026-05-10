@@ -1,0 +1,559 @@
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+How Social Media Algorithms Shape Creative Identity Among Small Independent Visual Artists 
+AP Research 
+January 7, 2026 
+Word Count: 4610 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+2 
+How Social Media Algorithms Shape Creative Identity Among Small Independent Visual 
+Artists 
+Abstract 
+This paper investigates the impact of recommendation systems on the creative identity of 
+small independent visual artists. While existing literature reveals that recommendation systems 
+have the power to act as gatekeepers of cultural content, to create uncertainty among platform 
+workers, and to require certain skills from those who create content, there has been less attention 
+paid to how small visual artists discuss such systems as a problem related to their art and creative 
+identity. Through qualitative discourse analysis of six texts published by small visual artists and 
+three texts published by social media platforms between 2020 and 2025, this study investigates 
+the experiences of small artists who interact with social media recommendation systems. These 
+texts range from artist essays and articles discussing art to official explanations of the ranking 
+systems of platforms like Instagram, TikTok, and YouTube. The results of this analysis reveal 
+that the small artists that were studied did not discuss the recommendation systems of social 
+media platforms as only a topic related to the distribution of their art. Instead, their discussions of 
+recommendation systems indicated that they often experienced such systems as invisible 
+gatekeepers to audiences, which created instability in their relationship with their audiences and 
+their responsibilities to create content that was small artists could publish and view. Furthermore, 
+their discussions of their experiences with recommendation systems indicates that their concept 
+of artistic creativity is, at the very least, defensive in relation to the invisibility of their art that is 
+enabled through recommendation systems. These findings contribute to the existing literature on 
+both the impacts of recommendation systems on creators and small visual artists, suggesting that 
+2 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+3 
+efforts should be made towards treating audience building as an aspect of artistic development 
+rather than as a private responsibility of the artists themselves. 
+Introduction 
+For small visual artists, social media promised to be a more democratic form of the art 
+world. Instead of having to gain the approval of various art world institutions before they could 
+exhibit their work, painters, illustrators, photographers, tattoo artists, and digital artists had a 
+platform to exhibit their art. For small visual artists, this was important due to the relationship 
+between exposure and sales. If the audience does not get to view the artist’s work, then there is 
+no way for that audience to respond to the art or the artist itself. For those without the support 
+that the art world typically offers to popular artists, social media offers a variety of spaces for 
+them to exhibit themselves. 
+However, the digital art world has become less direct. Instead of being able to simply 
+publish art into an audience that they have created themselves, digital artists must contend with 
+the filtering power of social media algorithms. What gets published to an audience can change 
+from week to week. Some works may garner significant views while others may receive very 
+little. Additionally, artists are often required to rely upon metrics to gauge the success of their art 
+projects rather than the underlying and often invisible social media platforms that make their art 
+possible to view. 
+Furthermore, many artists use these platforms to exhibit themselves and their work to the 
+public as a means of presenting themselves and their creative identities. Therefore, the invisible 
+gatekeepers of social media have a powerful influence upon the identities of these visual artists. 
+While the gatekeepers may be invisible to the public, they are still present in the creation of these 
+3 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+4 
+platforms as a means of making sure that only the most popular artists receive the most views on 
+their art projects. 
+Using these definitions, the question that will be explored in this research project is: How 
+do social media algorithms impact the creative identity of small independent visual artists? The 
+creative identity can be considered the artist’s understanding and presentation of their role as a 
+creator. Small independent visual artists are those who do not receive the same level of support 
+from the art world and who rely upon digital platforms to exhibit their art. Through analyzing 
+these artists’ presentations of social media algorithms, it is possible to understand the impact that 
+algorithms have upon the lives of these creators. 
+Literature Review 
+Of the vast array of cultures that could be studied in order to determine in what ways they 
+exhibit their relationship with technology, one aspect of our society’s culture that has been 
+considered in some ways by research on a variety of algorithms. Authors like Gillespie (2014), 
+Beer (2017), and Kitchin (2017) have all published research that aids in the support of the first 
+assumption in this paper: that algorithms, like social media algorithms, are cultural actors. 
+Additionally, authors like Bucher (2017), Eslami et al. (2015), and DeVito, Gergle, and Birnholtz 
+(2017) have each performed studies on those within social media platforms and their reactions to 
+or understanding of the algorithms that direct their user experiences; these type of studies help to 
+contextualize the second assumption of this paper: that creative artists are aware of the impact of 
+these algorithms, and make creative decisions on their platforms as a result. A final group of 
+authors that aids in the validation of the paper’s assumptions are Nieborg and Poell (2018), Poell, 
+Nieborg, and van Dijck (2019), Duffy (2017, 2020), Cotter (2019), Bishop (2019), and Klawitter 
+and Hargittai (2018). These authors have performed studies that are reflective of the third 
+4 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+5 
+assumption: that artists feel pressure from social media to perform upon its platforms. Related to 
+this second assumption, scholars such as Abidin (2016), Baym (2018), Cunningham and Craig 
+(2019), and Caplan and Gillespie (2020) also have completed studies that reflect the duties that 
+are expected to be fulfilled for those who desire to perform well upon social media platforms. 
+Finally, studies by authors like Noble (2018), Striphas (2015), Seaver (2017), among others, have 
+helped to contextualize the overall culture in which creative artists perform upon social media 
+platforms. While these authors do not directly discuss visual artists themselves, they have laid 
+the foundation upon which this type of research can be built; their efforts have become somewhat 
+foundational for this research project. Thus, an area that has often been studied regarding social 
+media creative artists is in relation to influencers or YouTubers, or other types of individuals who 
+rely upon social media as their industry. Visual artists, unless those artists are also users upon 
+which social media platforms capitalize, are rarely considered in these types of studies. It is in 
+this gap in research that this topic was chosen; the observation that many visual artists are also 
+aware of and impacted by these platform algorithms inspires a desire to perform this type of 
+targeted research into those visual artists as an additional culture affected by technological 
+cultural actors. 
+Related to the idea of algorithms as cultural actors is the idea that artists are impacted by 
+those algorithms.  Studies by authors like Kellogg, Valentine, and Christin (2020), for example, 
+have examined how workers for various companies react to and feel controlled by the perceived 
+‘demands’ of technology systems.  Relatedly, algorithms may appear to have the same type of 
+controlling ‘demand’ towards artists; not fulfilling those demands would seemingly mean being 
+excluded from access to vast numbers of platform viewers.  However, unlike in the examples 
+from these other studies where individuals may feel pressure to merely survive as a company or 
+5 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+6 
+online entity, artists both apply their critiques and feelings of judgement upon themselves in 
+relation to these platforms.  Thus, further study on these feelings by artists is important to 
+understand why these algorithms create such reactions within those artists; how can algorithmic 
+societal systems create such personal reactions by those who use these cultural technologies? 
+Methodology 
+The qualitative discourse analysis was appropriate for answering the research question 
+about how artists discuss algorithms on social media platforms. Therefore, discourse analysis 
+was utilized for this project to determine how artists within various communities discuss the 
+concept of algorithms and their impact upon visual art and artists. 
+The texts were collected through targeted searches on the web between April 28 and May 
+1, 2026 using terms like “Instagram algorithm artists,” “Instagram dead for artists,” “independent 
+artists social media algorithm,” “artists algorithm reach collapse,” “algorithm anxiety artists,” 
+and “Instagram for artists do's and don'ts.” Each of these texts needed to focus upon visual 
+artists, discuss social media algorithms, be accessible to the public, and discuss their artistic 
+work with those criteria. In addition to these texts by artists, three official texts from social media 
+platforms (Instagram, TikTok, and YouTube) were also collected and utilized to provide a 
+comparison between the two concepts. More specific comments, discussions outside of the 
+platforms’ official channels, and paywalled content was excluded from this research for both 
+ethical and practical reasons. 
+The results of this research included six texts written by and for artists, and three texts 
+from the social media platforms explaining their algorithms. The texts written by the artists 
+included discussions from Hyperlux Magazine, GinAngieLa.com on social media’s “Social Art 
+Dilemma,” two blog posts from Saturno discussing Instagram and moving away from the social 
+6 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+7 
+media platform, a post from Sara Leger discussing whether Instagram is worth using as artists, 
+and a blog post from Gallery 4% that provides advice to artists considering Instagram as a social 
+media platform for their art. The explanations from the social media platforms included 
+Instagram’s description of the ranking of posts on the social media platform, an explanation from 
+TikTok of its “For You” page recommendation system, and YouTube’s help page that explains 
+the platform’s recommendation system for videos on the platform. These two groups of texts 
+were selected in order to provide a more comprehensive discussion on the topic while still 
+remaining focused upon the research question. 
+Table 1​
+Corpus Used for Discourse Analysis 
+Source 
+Type 
+Use in analysis 
+Kahn (2025) 
+Artist-facing article 
+Reach collapse, content demands, 
+burnout, alternatives 
+GinAngieLa.com (2024) 
+Artist essay 
+Account status, recommendation 
+limits, paid boosts 
+Saturno (2024a) 
+Artist blog post 
+Paid visibility, product posts, 
+independent artist survival 
+Saturno (2024b) 
+Artist blog post 
+Website/newsletter as response to 
+Instagram dependence 
+Leger (n.d.) 
+Artist studio blog 
+Authenticity, local networks, 
+rejection of spectacle 
+Ganguly (2025) 
+Artist advice article 
+Process content, Stories, algorithm 
+anxiety 
+Mosseri (2023) 
+Platform explainer 
+Instagram ranking across Feed, 
+Stories, Explore, Reels 
+TikTok (2020) 
+Platform explainer 
+For You feed signals and 
+personalization 
+YouTube Help (n.d.) 
+Platform explainer 
+Recommendation signals and user 
+feedback 
+The unit of analysis was meaning units, which were defined as the sentences or short paragraphs 
+within the texts that made a specific claim regarding the topics of analysis. Each of the texts was 
+read by the researcher, and each of the meaning units related to the research question were 
+highlighted. During the first pass in coding the texts, codes were created that described the 
+concept of each highlighted meaning unit. These codes included terms like reach collapse, 
+7 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+8 
+audience instability, format pressure, paid visibility, emotional strain, authenticity, platform 
+explanation, and exit strategy. During the second pass in comparing the codes created during the 
+first pass, the codes were grouped into three main categories. This two-pass method of coding 
+and categorizing the texts is recommended by Braun and Clarke (2006) in their recommendation 
+that qualitative themes should be developed by moving from coded patterns to interpretive 
+themes. The process of developing these themes was utilized to increase the trustworthiness of 
+the research by explaining the formation of each theme, ensuring that each theme was present in 
+multiple texts, and examining for disconfirming evidence, even within the advice texts for 
+Instagram artists. Furthermore, such an approach to theme development was recommended by 
+Nowell et al. (2017). 
+This methodology has some limitations in relation to the research question. The research 
+does not attempt to represent all Instagram artists, nor does it attempt to measure the reach of 
+Instagram accounts. The texts were public texts with persuasive elements, as they were written 
+either to provide advice to Instagram artists, to criticize Instagram itself, or to explain the ranking 
+of Instagram posts. Thus, these findings only apply to the analysis of discourse among Instagram 
+artists, and do not make any claims regarding representative artists. Despite these limitations, the 
+discourse among these groups of artists is still a means of gaining valuable insights into the way 
+in which those artists are making sense of the platform and its algorithms. 
+The research was ethical in that all texts utilized were publicly available texts written for 
+broad audiences. No private texts, usernames of Instagram artists from the comment sections of 
+their Instagram posts, or other personally identifiable nonconsented data were collected. 
+Furthermore, the research utilized the original texts from the authors in most cases, except for in 
+instances in which brief quotations from the authors were essential to the interpretation of certain 
+8 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+9 
+concepts by those authors. However, the intention of this research is not to reveal the individual 
+texts or artists, but only the general pattern of discourse among the artist communities. 
+Findings and Discussion 
+The analysis produced three main findings. First, artist-facing texts describe algorithms as 
+systems that make an already-built audience unstable. Second, they describe visibility as a new 
+form of labor that competes with art-making. Third, they show that artists respond through 
+defensive creativity, a stance in which authenticity is protected against the threat of invisibility. 
+These findings extend the literature on algorithmic precarity by showing that small visual artists 
+experience platform uncertainty not only as income instability but also as a challenge to creative 
+identity. 
+Finding 1: Audience becomes unstable even after it is built. In traditional artistic gatekeeping, an 
+artist may struggle to enter a gallery, school, magazine, or market. In the artist-facing texts, the 
+struggle is different. The audience may already exist, but the platform can make that audience 
+unreachable. Saturno (2024a) gives the clearest example: a painting reel could receive thousands 
+of likes and tens of thousands of views, while a reel that directed viewers to a product in the 
+artist's store dropped sharply. The important point is not only the numerical difference. It is the 
+interpretation of the difference. The artist reads the lower reach as evidence that the platform 
+separates creative display from commercial survival. Art can be visible as content, but the artist's 
+attempt to sell the work becomes less visible. 
+Hyperlux Magazine presents a similar pattern at a larger scale. Kahn (2025) describes artists 
+building audiences over years and then seeing posts reach only a tiny fraction of those followers. 
+This discourse turns follower count into an unreliable symbol. A follower is no longer proof of 
+access to a viewer. Instead, the artist owns a number that the platform may or may not activate. 
+9 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+10 
+This finding connects to Eslami et al. (2015), who show that users can misread missing content 
+as a social choice rather than an algorithmic result. For artists, that ambiguity can become 
+emotionally heavier because a low-performing post may feel like rejection of the artwork itself. 
+The official platform texts help explain why this happens without fully resolving the artists' 
+concern. Instagram states that it does not use one single algorithm but multiple ranking systems 
+for Feed, Stories, Explore, Reels, and Search (Mosseri, 2023). TikTok describes the For You feed 
+as a personalized ranking system based on interactions, video information, and settings (TikTok, 
+2020). YouTube explains recommendations through watch history, likes, dislikes, subscriptions, 
+and other signals (YouTube Help, n.d.). These explanations are more transparent than silence, but 
+they still describe visibility from the viewer side. They explain why a viewer might receive 
+content, not how an artist should understand the loss of access to followers. The gap between 
+platform explanation and artist experience is where anxiety forms. 
+Finding 2: Visibility becomes labor that competes with art-making. Across the artist-facing texts, 
+algorithms are described as demanding constant maintenance. Hyperlux calls this a 'content 
+creation trap' (Kahn, 2025). GinAngieLa.com (2024) describes pressure to post frequently, use 
+new features, monitor account status, and respond to platform incentives. Gallery 4% (Ganguly, 
+2025) frames Instagram as a space where artists should show process, use Stories, engage like 
+humans, use hashtags, craft bios, and avoid obsessing over the algorithm. This advice is 
+supportive, but it also reveals how much extra work is now attached to being seen. 
+This finding aligns with Abidin's (2016) visibility labor and Cotter's (2019) visibility game. The 
+artist is not simply asked to make a painting or digital image. The artist is asked to make the 
+work, document the process, edit the documentation, select a format, choose captions, test 
+hashtags, encourage comments, answer messages, post at the right time, and then interpret the 
+10 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+11 
+results. In this sense, visibility becomes a second studio. The labor is creative, emotional, and 
+technical at once. 
+The artist-facing texts show that this labor changes creative time. Saturno (2024b) contrasts the 
+slow time of art with the quick reward structure of social feeds, arguing that art requires attention 
+while platforms encourage rapid scrolling. Leger (n.d.) makes a similar distinction by rejecting 
+the idea that an artist should make herself a spectacle for the sake of reach. These statements are 
+not only complaints about workload. They defend a different time scale for art. A painting may 
+take weeks; a post may live for days or hours. The platform values the repeatable event of 
+posting, while the artist values the slower process of making. 
+Finding 3: Algorithms pressure artists toward format translation and aesthetic narrowing. A 
+repeated theme in the corpus is that the work most valued by the platform is not always the work 
+most valued by the artist. Hyperlux argues that subtle or complex artworks can lose attention on 
+small screens, while brighter, simpler, or more immediately legible images perform better (Kahn, 
+2025). Gallery 4% advises artists not to treat Instagram like a quiet gallery wall, but like a 
+conversation space with process, polls, Stories, and personality (Ganguly, 2025). Instagram and 
+TikTok's own explanations also emphasize ranking signals produced by user interaction, such as 
+watching, sharing, liking, commenting, and following (Mosseri, 2023; TikTok, 2020). The result 
+is a translation pressure: art must become content that can trigger measurable interaction quickly. 
+Translation is not automatically negative. Many artists enjoy showing process, telling stories, or 
+making short videos. However, the discourse shows that translation becomes harmful when 
+artists feel they must redesign their artistic presence around what is ranked. This finding extends 
+Nieborg and Poell's (2018) theory of the contingent cultural commodity. The artwork is not 
+merely distributed by the platform; it is repackaged for platform conditions. For a small visual 
+11 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+12 
+artist, the product may become a bundle of painting, process reel, caption, personal narrative, and 
+engagement prompt. The artist is rewarded for being both artist and content strategist. 
+Finding 4: Defensive creativity is the new understanding. The central new understanding of this 
+study is defensive creativity. Defensive creativity is the condition in which artists continue to 
+value authentic expression, but increasingly define and protect that expression in response to 
+algorithmic pressure. It has three parts. The first is protective authenticity: artists insist that likes 
+and reach should not define the value of the work. The second is strategic compliance: artists still 
+use platform tactics because visibility matters for survival. The third is exit imagination: artists 
+imagine websites, email lists, galleries, local networks, and alternative platforms as ways to 
+reduce dependence on algorithmic feeds. 
+This pattern appears across the corpus. GinAngieLa.com (2024) recommends checking account 
+status and not depending only on Instagram. Saturno (2024b) describes building a website and 
+newsletter as a way to recover control. Hyperlux recommends email lists, websites, real-world 
+connections, and alternative platforms (Kahn, 2025). Leger (n.d.) emphasizes local networking, 
+websites, galleries, and the reminder that likes are not a reflection of artistic worth. These 
+responses are not simple rejection of social media. They are attempts to use social media without 
+allowing it to fully define the artist. 
+Defensive creativity advances existing research because it shows the identity dimension of 
+algorithmic precarity. Duffy (2020) describes algorithmic precarity as instability produced by 
+opaque and changing platforms. This study supports that idea but adds that small visual artists 
+translate precarity into a defense of artistic selfhood. They ask: Am I making what I believe in, 
+or what the platform will recognize? Am I building an audience, or building value for the 
+platform? Am I an artist, or an unpaid content worker? These questions show that algorithmic 
+12 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+13 
+gatekeeping affects not only exposure but also the terms by which artists understand creative 
+integrity. 
+This also complicates the idea that algorithms simply replace traditional gatekeepers. Algorithms 
+do not operate exactly like gallery owners or critics. They do not usually say yes or no to an 
+artwork in a direct statement. Instead, they create a shifting environment in which artists 
+anticipate what may become visible. The gate is distributed across ranking signals, viewer 
+behavior, platform rules, moderation systems, and monetization incentives. That makes 
+algorithmic gatekeeping harder to confront because the artist cannot appeal to one curator or 
+editor. The artist must keep adjusting to a system that is always partly hidden. 
+At the same time, the data contains a tension. Some artist-facing texts still present platforms as 
+useful and even necessary. Gallery 4% encourages artists to show process and engage with 
+followers (Ganguly, 2025). Instagram, TikTok, and YouTube present ranking as personalization 
+that helps users find relevant content (Mosseri, 2023; TikTok, 2020; YouTube Help, n.d.). This 
+disconfirming evidence matters because it prevents the conclusion from becoming too simple. 
+The finding is not that artists should leave all platforms. The finding is that platform participation 
+has become emotionally and creatively ambivalent. Artists use the systems that frustrate them 
+because those systems still offer access, discovery, and community. 
+A closer comparison shows that artists and platforms use different moral vocabularies. Platform 
+documents describe recommendation as personalization, relevance, and user choice. TikTok, for 
+example, explains that recommendations are shaped by interactions and video information 
+(TikTok, 2020), while YouTube frames recommendations as a way to help viewers find videos 
+they may like (YouTube Help, n.d.). Artist-facing texts use a different vocabulary: unfairness, 
+invisibility, pressure, burnout, and survival. The same technical process is therefore narrated in 
+13 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+14 
+two incompatible ways. From the platform side, ranking is a service to viewers. From the artist 
+side, ranking is a condition of work. This mismatch is one reason the artist discourse becomes so 
+emotionally intense. 
+The strongest evidence for defensive creativity appears when the texts move from complaint to 
+boundary-setting. These artists rarely say that visibility is meaningless. Instead, they argue that 
+visibility must be subordinated to artistic control. Leger (n.d.) tells artists that likes and 
+comments are not reflections of the artist or the art. Saturno (2024b) argues for a website and 
+blog where the artist can communicate without the same threat of platform restriction. Hyperlux 
+similarly recommends direct channels and real-world relationships (Kahn, 2025). These are not 
+simply marketing alternatives. They are identity strategies. By building spaces outside the feed, 
+artists try to recover the right to decide how slowly, deeply, or commercially their work should 
+be encountered. 
+This finding also helps explain why algorithmic pressure can lead to sameness without any 
+platform explicitly ordering artists to copy one another. If artists believe that certain forms are 
+more legible to the ranking system, then many artists may independently move toward those 
+forms: short videos, process reveals, bold thumbnails, personal hooks, trend sounds, and captions 
+designed for engagement. The result is a soft form of standardization. It is not censorship in the 
+direct sense, but it can still narrow creative presentation because artists learn to anticipate what 
+the system is likely to notice. Defensive creativity is therefore both adaptive and risky: it helps 
+artists survive the platform, but it can also make the platform's preferences feel like the natural 
+shape of art online. 
+14 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+15 
+Limitations 
+This study has a few limitations. First, the sample is small and made up of purposefully 
+selected texts. Although the sample is larger than the original study that employed the four-text 
+model, it is still limited to the variety of visual artists that can be represented within this study. 
+Other visual artists from different parts of the world, other languages, other media, or at other 
+stages of their careers may experience these social media text detection algorithms differently. 
+Second, the public essays and posts of advice are rhetorical exercises; the authors may have 
+chosen to focus on their frustrations with social media algorithms or their solutions to those 
+frustrations. Therefore, the study does not analyze the experiences of all visual artists. 
+Third, the study did not have access to the code of the social media platforms, the 
+authors’ analytics software, or the reasons for their public posts. As Kitchin (2017) and Seaver 
+(2017) discuss in their studies of social media and sociotechnical systems, it is difficult to study 
+the algorithms that social media platforms use to curate the content that is published on those 
+platforms. Furthermore, it is impossible to prove that the social media platforms purposefully did 
+not make certain posts by specific visual artists visible to their followers. Fourth, the study was 
+completed by only one researcher. To mitigate this limitation, the coding of the texts was 
+performed twice and with memos from each round of coding. 
+Implications 
+The findings of this research have implications for three different communities of 
+practice. For art educators, the findings suggest that social media should not be taught as a means 
+of promoting the art of students within art schools. Instead, educators should consider how to 
+teach students the challenges of social media in relation to the art that they create and how to 
+separate the two values of their art. 
+15 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+16 
+ 
+For independent artists communities, the findings suggest the importance of sharing 
+information about social media platforms. Independent artists already share information among 
+themselves regarding their social media accounts. However, the findings of this research suggest 
+that such discussions should include topics like ranking of social media accounts, number of 
+followers, visibility of art, and strategies to increase each of these factors. 
+For the social media platforms themselves, the findings suggest the importance of 
+changing the ways in which they discuss their algorithms. The platforms often describe how their 
+algorithm recommendations may reach the viewers of social media accounts. However, artists 
+need to be provided with the information regarding how their platforms can reach their 
+followers, how they can be recommended to others through the platform, how their accounts may 
+become restricted, and how they can appeal to the social media platforms to correct those 
+restrictions. 
+Conclusion 
+This paper discussed the ways in which social media algorithms have an impact upon the 
+creative identity of small independent visual artists. Through a discourse analysis of the texts 
+published by small visual artists and the platforms themselves, it becomes evident that small 
+visual artists describe their social media algorithms as invisible entities that impact their 
+audiences, require them to produce specific types of art, and create feelings of dissatisfaction 
+within themselves. 
+The finding of the research of this topic is that small visual artists exhibit a form of 
+“defensive creativity” in relation to these algorithms. In other words, they feel a need to protect 
+their creative identity and their authenticity, despite the fact that they often have to change their 
+16 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+17 
+behaviors and their type of art in order to survive within their social media platforms. This type 
+of finding is important to both artists and art communities as a means of helping them to 
+understand their challenges within social media platforms. 
+Beyond the desire to reveal the challenges for artists and the importance of sharing that 
+information within each community of artists, the strongest conclusions of this research is that 
+defensive creativity itself is a topic that should be explored further by both art educators, art 
+communities, and social media platform designers. 
+ 
+17 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+18 
+References 
+Abidin, C. (2016). Visibility labour: Engaging with influencers' fashion brands and #OOTD 
+advertorial campaigns on Instagram. Media International Australia, 161(1), 86-100. 
+https://doi.org/10.1177/1329878X16665177 
+Baym, N. K. (2018). Playing to the crowd: Musicians, audiences, and the intimate work of 
+connection. New York University Press. 
+Beer, D. (2017). The social power of algorithms. Information, Communication & Society, 20(1), 
+1-13. https://doi.org/10.1080/1369118X.2016.1216147 
+Bishop, S. (2019). Managing visibility on YouTube through algorithmic gossip. New Media & 
+Society, 21(11-12), 2589-2606. https://doi.org/10.1177/1461444819854731 
+Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in 
+Psychology, 3(2), 77-101. https://doi.org/10.1191/1478088706qp063oa 
+Bucher, T. (2017). The algorithmic imaginary: Exploring the ordinary affects of Facebook 
+algorithms. Information, Communication & Society, 20(1), 30-44. 
+https://doi.org/10.1080/1369118X.2016.1154086 
+Caplan, R., & Gillespie, T. (2020). Tiered governance and demonetization: The shifting terms of 
+labor and compensation in the platform economy. Social Media + Society, 6(2), 1-13. 
+https://doi.org/10.1177/2056305120936636 
+Cotter, K. (2019). Playing the visibility game: How digital influencers and algorithms negotiate 
+influence on Instagram. New Media & Society, 21(4), 895-913. 
+https://doi.org/10.1177/1461444818815684 
+Cunningham, S., & Craig, D. (2019). Social media entertainment: The new intersection of 
+Hollywood and Silicon Valley. New York University Press. 
+18 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+19 
+DeVito, M. A., Gergle, D., & Birnholtz, J. (2017). Algorithms ruin everything: #RIPTwitter, folk 
+theories, and resistance to algorithmic change in social media. In Proceedings of the 2017 
+CHI Conference on Human Factors in Computing Systems (pp. 3163-3174). ACM. 
+https://doi.org/10.1145/3025453.3025659 
+DeVito, M. A., Birnholtz, J., Hancock, J. T., French, M., & Liu, S. (2018). How people form folk 
+theories of social media feeds and what it means for how we study self-presentation. In 
+Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems 
+(Paper 120). ACM. https://doi.org/10.1145/3173574.3173694 
+Duffy, B. E. (2017). (Not) getting paid to do what you love: Gender, social media, and 
+aspirational work. Yale University Press. 
+Duffy, B. E. (2020). Algorithmic precarity in cultural work. Communication and the Public, 
+5(3-4), 103-107. https://doi.org/10.1177/2057047320959855 
+Eslami, M., Rickman, A., Vaccaro, K., Aleyasen, A., Vuong, A., Karahalios, K., Hamilton, K., & 
+Sandvig, C. (2015). I always assumed that I wasn't really that close to [her]: Reasoning 
+about invisible algorithms in news feeds. In Proceedings of the 33rd Annual ACM 
+Conference on Human Factors in Computing Systems (pp. 153-162). ACM. 
+https://doi.org/10.1145/2702123.2702556 
+Ganguly, P. (2025, June 4). Instagram for artists: Do's and don'ts. Gallery 4%. 
+https://www.gallery4percent.com/post/instagram-for-artists-do-s-and-don-ts 
+Gillespie, T. (2014). The relevance of algorithms. In T. Gillespie, P. J. Boczkowski, & K. A. Foot 
+(Eds.), Media technologies: Essays on communication, materiality, and society (pp. 
+167-194). MIT Press. https://doi.org/10.7551/mitpress/9780262525374.003.0009 
+19 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+20 
+GinAngieLa.com. (2024, January 16). Is Instagram dead for artists in 2025? [The 'Social Art 
+Dilemma']. Medium. 
+https://medium.com/@ginangiela/the-social-art-dilemma-or-is-instagram-dead-for-artists-
+in-2024-9b7b0a3264bd 
+Kahn, A. (2025, November 27). The algorithm is killing artists: How social media's promise 
+became a prison. Hyperlux Magazine. 
+https://hyperluxmagazine.com/the-algorithm-is-killing-artists-how-social-medias-promise
+-became-a-prison/ 
+Kellogg, K. C., Valentine, M. A., & Christin, A. (2020). Algorithms at work: The new contested 
+terrain of control. Academy of Management Annals, 14(1), 366-410. 
+https://doi.org/10.5465/annals.2018.0174 
+Kitchin, R. (2017). Thinking critically about and researching algorithms. Information, 
+Communication & Society, 20(1), 14-29. 
+https://doi.org/10.1080/1369118X.2016.1154087 
+Klawitter, E., & Hargittai, E. (2018). 'It's like learning a whole other language': The role of 
+algorithmic skills in the curation of creative goods. International Journal of 
+Communication, 12, 3490-3510. 
+Leger, S. (n.d.). Is Instagram still worth it for artists? Sara Leger. Retrieved May 1, 2026, from 
+https://saraleger.com/is-instagram-worth-it-for-artists/ 
+Mosseri, A. (2023, May 31). Instagram ranking explained. Instagram Blog. 
+https://about.instagram.com/blog/announcements/instagram-ranking-explained 
+20 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+21 
+Nieborg, D. B., & Poell, T. (2018). The platformization of cultural production: Theorizing the 
+contingent cultural commodity. New Media & Society, 20(11), 4275-4292. 
+https://doi.org/10.1177/1461444818769694 
+Noble, S. U. (2018). Algorithms of oppression: How search engines reinforce racism. New York 
+University Press. 
+Nowell, L. S., Norris, J. M., White, D. E., & Moules, N. J. (2017). Thematic analysis: Striving to 
+meet the trustworthiness criteria. International Journal of Qualitative Methods, 16(1), 
+1-13. https://doi.org/10.1177/1609406917733847 
+Poell, T., Nieborg, D., & van Dijck, J. (2019). Platformisation. Internet Policy Review, 8(4). 
+https://doi.org/10.14763/2019.4.1425 
+Saturno. (2024a, August 4). The new algorithm: An unnecessary obstacle for independent artists. 
+Saturno. 
+https://www.saturnoart.com/nuevo-blog/2024/8/4/the-new-algorithm-an-unnecessary-obst
+acle-for-independent-artists 
+Saturno. (2024b, August 5). How to promote your art without Instagram: A journey of adaptation 
+and innovation. Saturno. 
+https://www.saturnoart.com/nuevo-blog/2024/8/5/how-to-promote-your-art-without-insta
+gram-a-journey-of-adaptation-and-innovation 
+Seaver, N. (2017). Algorithms as culture: Some tactics for the ethnography of algorithmic 
+systems. Big Data & Society, 4(2), 1-12. https://doi.org/10.1177/2053951717738104 
+Striphas, T. (2015). Algorithmic culture. European Journal of Cultural Studies, 18(4-5), 395-412. 
+https://doi.org/10.1177/1367549415577392 
+21 
+ALGORITHMIC GATEKEEPING AND CREATIVE IDENTITY​
+22 
+TikTok. (2020, June 18). How TikTok recommends videos #ForYou. TikTok Newsroom. 
+https://newsroom.tiktok.com/how-tiktok-recommends-videos-for-you 
+YouTube Help. (n.d.). How YouTube recommendations work. Google Help. Retrieved May 1, 
+2026, from https://support.google.com/youtube/answer/16089387 
+22 
