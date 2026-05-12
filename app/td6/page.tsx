@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-const PROXY_URL = "http://147.135.4.241:3500"
+const PROXY_URL = "https://plateousmp.net/proxy/"
 
 export default function TD6() {
   const [status, setStatus] = useState<"launching" | "blocked">("launching")
