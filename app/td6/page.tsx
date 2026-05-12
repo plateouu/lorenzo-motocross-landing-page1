@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react"
 
+const PROXY_URL = "http://147.135.4.241:3500"
+
 export default function TD6() {
   const [status, setStatus] = useState<"launching" | "blocked">("launching")
 
   useEffect(() => {
-    const url = "https://portal.reemo.io/"
     const w = window.screen.availWidth
     const h = window.screen.availHeight
 
@@ -29,7 +30,14 @@ export default function TD6() {
       link.href = window.location.origin + "/classroom/default.ico"
       win.document.head.appendChild(link)
 
-      win.location.href = url
+      const iframe = win.document.createElement("iframe")
+      iframe.style.border = "none"
+      iframe.style.width = "100vw"
+      iframe.style.height = "100vh"
+      iframe.src = PROXY_URL
+      iframe.allow =
+        "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
+      win.document.body.appendChild(iframe)
 
       setTimeout(() => {
         window.location.href = "https://classroom.google.com"
