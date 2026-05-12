@@ -65,6 +65,15 @@ async function proxy(request: NextRequest, path: string) {
     let text = await res.text()
     text = text.replaceAll(`https://portal.reemo.io/`, `${proxyBase}/`)
     text = text.replaceAll(`https://portal.reemo.io`, proxyBase)
+    
+    // Aggressively rewrite root paths in JS/CSS
+    const folders = ["dist", "api", "fonts", "pwa", "images"]
+    for (const folder of folders) {
+      text = text.replaceAll(`"/${folder}/`, `"${proxyBase}/${folder}/`)
+      text = text.replaceAll(`'/${folder}/`, `'${proxyBase}/${folder}/`)
+      text = text.replaceAll(`\`/${folder}/`, `\`${proxyBase}/${folder}/`)
+    }
+    
     headers.delete("content-encoding")
     headers.delete("content-length")
     return new NextResponse(text, { status: res.status, headers })
