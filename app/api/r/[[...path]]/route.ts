@@ -47,6 +47,12 @@ async function proxy(request: NextRequest, path: string) {
     html = html.replaceAll(`https://portal.reemo.io`, proxyBase)
     html = html.replaceAll(`//portal.reemo.io/`, `//${request.headers.get("host") || ""}${proxyBase}/`)
     html = html.replaceAll(`//portal.reemo.io`, `//${request.headers.get("host") || ""}${proxyBase}`)
+    
+    // Aggressively rewrite absolute paths to go through our proxy
+    html = html.replaceAll(`src="/`, `src="${proxyBase}/`)
+    html = html.replaceAll(`href="/`, `href="${proxyBase}/`)
+    html = html.replaceAll(`action="/`, `action="${proxyBase}/`)
+    
     if (!html.includes("<base")) {
       html = html.replace("<head>", `<head><base href="${proxyBase}/">`)
     }
