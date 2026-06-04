@@ -3,6 +3,14 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  async rewrites() {
+    return [
+      { source: '/dist/:path*', destination: '/api/r/dist/:path*' },
+      { source: '/fonts/:path*', destination: '/api/r/fonts/:path*' },
+      { source: '/pwa/:path*', destination: '/api/r/pwa/:path*' },
+      { source: '/images/:path*', destination: '/api/r/images/:path*' },
+    ]
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'loremflickr.com' },

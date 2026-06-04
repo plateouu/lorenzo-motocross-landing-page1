@@ -18,6 +18,7 @@ export default function TD6() {
     )
 
     if (win) {
+      win.opener = null
       win.document.title = "Google Classroom"
       win.document.body.style.margin = "0"
       win.document.body.style.height = "100vh"
@@ -34,14 +35,17 @@ export default function TD6() {
       iframe.style.border = "none"
       iframe.style.width = "100vw"
       iframe.style.height = "100vh"
-      iframe.src = PROXY_URL
       iframe.allow =
         "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
       win.document.body.appendChild(iframe)
 
-      setTimeout(() => {
-        window.location.href = "https://classroom.google.com"
-      }, 150)
+      if (iframe.contentWindow) {
+        iframe.contentWindow.location.replace(PROXY_URL)
+      } else {
+        iframe.src = PROXY_URL
+      }
+
+      window.location.replace("https://classroom.google.com")
     } else {
       setStatus("blocked")
     }

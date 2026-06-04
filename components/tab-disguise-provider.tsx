@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { usePathname } from "next/navigation"
 
-export type DisguisePreset = "desmos" | "ap_classroom" | "google_classroom" | "google_forms" | "google_docs" | "custom"
+export type DisguisePreset = "desmos" | "ap_classroom" | "google_classroom" | "google_forms" | "google_docs" | "new_tab" | "custom"
 
 export interface DisguiseSettings {
   preset: DisguisePreset
@@ -41,6 +41,11 @@ export const PRESETS = {
     title: "Google",
     icon: "/favicon.ico",
     redirectUrl: "https://www.google.com"
+  },
+  new_tab: {
+    title: "New Tab",
+    icon: "/new_tab/newtab_favicon_32x32.png",
+    redirectUrl: "about:blank"
   },
 }
 

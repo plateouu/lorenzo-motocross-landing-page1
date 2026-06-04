@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa" />
+    <list default="true" id="af98e165-902d-40c5-afb8-a632cc63dc15" name="Changes" comment="fa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/r/[[...path]]/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/r/[[...path]]/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/tab-disguise-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/tab-disguise-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

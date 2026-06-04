@@ -433,6 +433,7 @@ export default function StudyHub() {
 
     if (win) {
       try {
+        win.opener = null;
         let title = "Desmos | Graphing Calculator"
         let icon = "/desmos/favicon.ico"
 
@@ -482,9 +483,15 @@ export default function StudyHub() {
           iframe.style.border = 'none'
           iframe.style.width = '100vw'
           iframe.style.height = '100vh'
-          iframe.src = url
           iframe.allow = "fullscreen; camera; microphone; display-capture; clipboard-read; clipboard-write; autoplay"
+          
           win.document.body.appendChild(iframe)
+          
+          if (iframe.contentWindow) {
+            iframe.contentWindow.location.replace(url)
+          } else {
+            iframe.src = url
+          }
         }
 
         if (doParentRedirect) {
@@ -499,9 +506,8 @@ export default function StudyHub() {
             redirectTarget = PRESETS[currentSettings.preset].redirectUrl || redirectTarget
           }
 
-          setTimeout(() => {
-            window.location.href = redirectTarget
-          }, 100)
+          // Use replace to avoid keeping the page in browser history
+          window.location.replace(redirectTarget)
         }
 
       } catch (e) { console.error("Popup blocked or failed", e) }
