@@ -33,13 +33,23 @@ export default function Unit1BlogHome() {
             A blog exploring how the little things we say every day shape who we are, and the unwritten rules behind the words we use.
           </p>
 
-        <TransitionLink 
-          href="/unit1-blog/post"
-          className="inline-flex items-center justify-center bg-[#ff3b30] text-[#f3efe0] px-14 py-6 rounded-full text-2xl font-black tracking-widest uppercase transition-transform hover:-translate-y-2 hover:shadow-[12px_12px_0px_#131211] active:translate-y-0 active:shadow-none w-max border-[4px] border-[#131211] shadow-[8px_8px_0px_#131211]"
-          style={{ fontFamily: 'var(--font-space)' }}
-        >
-          Read the Essay
-        </TransitionLink>
+        <div className="flex flex-col sm:flex-row gap-6 items-center justify-center w-full max-w-3xl mx-auto">
+          <TransitionLink 
+            href="/unit1-blog/post"
+            className="inline-flex items-center justify-center bg-[#ff3b30] text-[#f3efe0] px-14 py-6 rounded-full text-2xl font-black tracking-widest uppercase transition-transform hover:-translate-y-2 hover:shadow-[12px_12px_0px_#131211] active:translate-y-0 active:shadow-none w-max border-[4px] border-[#131211] shadow-[8px_8px_0px_#131211]"
+            style={{ fontFamily: 'var(--font-space)' }}
+          >
+            Read the Essay
+          </TransitionLink>
+          
+          <TransitionLink 
+            href="/unit1-blog/final-exam"
+            className="inline-flex items-center justify-center bg-[#131211] text-[#f3efe0] px-14 py-6 rounded-full text-2xl font-black tracking-widest uppercase transition-transform hover:-translate-y-2 hover:shadow-[12px_12px_0px_#ff3b30] active:translate-y-0 active:shadow-none w-max border-[4px] border-[#131211] shadow-[8px_8px_0px_#131211]"
+            style={{ fontFamily: 'var(--font-space)' }}
+          >
+            Final Exam
+          </TransitionLink>
+        </div>
       </div>
 
     </div>

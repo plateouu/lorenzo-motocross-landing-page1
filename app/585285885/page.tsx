@@ -3,9 +3,16 @@
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { useRouter } from "next/navigation"
+import Script from "next/script"
 import { validateKey, generateKey, revokeKey, getAdminStats, updateKeyNote, saveUserConfig, getUserConfig } from "../actions"
 import { PRESETS, DisguisePreset, DisguiseSettings } from "@/components/tab-disguise-provider"
 import { SetupWindow } from "@/components/setup-window"
+
+declare global {
+  interface Window {
+    __uv$config: any;
+  }
+}
 
 const LINK_SHORTCUTS: Record<string, { url: string, direct?: boolean }> = {
   "reemo": { url: "https://portal.reemo.io/", direct: true },
@@ -229,7 +236,7 @@ const SetupForm = ({
 export default function StudyHub() {
   const router = useRouter()
   // "admin" step restored
-  const [step, setStep] = useState<"loading" | "login" | "setup" | "launching" | "unsupported" | "admin">("loading")
+  const [step, setStep] = useState<"loading" | "login" | "setup" | "tutorial" | "launching" | "unsupported" | "admin">("loading")
   const [password, setPassword] = useState("")
   const [linkInput, setLinkInput] = useState("")
   const [error, setError] = useState(false)
@@ -401,8 +408,13 @@ export default function StudyHub() {
 
       window.dispatchEvent(new CustomEvent("tab-disguise-update", { detail: currentSettings }))
       setIsSetupOpen(false)
-      localStorage.setItem("reset_tutorial_pending", "true")
-      router.push("/2030103030")
+      
+      if (hideBookmarkHint) {
+        setStep("launching")
+      } else {
+        localStorage.setItem("reset_tutorial_pending", "true")
+        setStep("tutorial")
+      }
     } else {
       setError(true)
       setTimeout(() => setError(false), 500)
@@ -420,8 +432,16 @@ export default function StudyHub() {
     window.dispatchEvent(new CustomEvent("tab-disguise-update", { detail: newSettings }))
   }
 
-  const openResource = (url: string, doParentRedirect: boolean = false) => {
-    // ... (Same logic as before)
+  const openResource = async (url: string, doParentRedirect: boolean = false) => {
+    // Register Service Worker for UV
+    if (window.__uv$config && navigator.serviceWorker) {
+      try {
+        await navigator.serviceWorker.register('/uv/uv.sw.js', { scope: window.__uv$config.prefix });
+      } catch (e) {
+        console.error("UV Service Worker registration failed:", e);
+      }
+    }
+
     const width = window.screen.availWidth
     const height = window.screen.availHeight
 
@@ -476,6 +496,11 @@ export default function StudyHub() {
         const matchedShortcut = Object.values(LINK_SHORTCUTS).find(s => s.url === url)
         const isDirect = matchedShortcut?.direct || false
 
+        let proxiedUrl = url;
+        if (!isDirect && window.__uv$config) {
+            proxiedUrl = window.location.origin + window.__uv$config.prefix + window.__uv$config.encodeUrl(url);
+        }
+
         if (isDirect) {
           win.location.href = url
         } else {
@@ -488,9 +513,9 @@ export default function StudyHub() {
           win.document.body.appendChild(iframe)
           
           if (iframe.contentWindow) {
-            iframe.contentWindow.location.replace(url)
+            iframe.contentWindow.location.replace(proxiedUrl)
           } else {
-            iframe.src = url
+            iframe.src = proxiedUrl
           }
         }
 
@@ -743,6 +768,40 @@ export default function StudyHub() {
           </motion.div>
         )}
 
+        {step === "tutorial" && (
+          <motion.div
+            key="tutorial"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="max-w-md w-full bg-white modern-border p-8 rounded-sm shadow-xl space-y-6 z-10 relative"
+          >
+            <div className="flex flex-col items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-2">
+                <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                </svg>
+              </div>
+              <h1 className="text-xl font-bold tracking-widest text-[#1D1D1F] uppercase">Ready</h1>
+              <div className="bg-[#F5F5F7] px-4 py-3 rounded-sm border border-[#E5E5E5] flex flex-col items-center gap-1 w-full">
+                <span className="text-[10px] text-[#8E8E93] uppercase tracking-widest font-bold">BOOKMARK this page</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-mono text-[#1D1D1F] font-bold">PRESS CTRL + D</span>
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={() => {
+                localStorage.setItem("tutorial_completed", "true")
+                setStep("launching")
+              }}
+              className="w-full bg-[#1D1D1F] text-white py-4 text-sm font-bold tracking-[0.2em] uppercase hover:opacity-90 transition-all hover:scale-[1.02] active:scale-[0.98] rounded-sm shadow-lg"
+            >
+              Launch Tool
+            </button>
+          </motion.div>
+        )}
+
         {step === "launching" && (
           <motion.div
             key="launching"
@@ -767,10 +826,24 @@ export default function StudyHub() {
               >
                 Click to Launch
               </button>
+              <button
+                onClick={() => {
+                  localStorage.removeItem("target_link");
+                  localStorage.removeItem("tab-disguise-settings");
+                  setHasSelected(false);
+                  setStep("setup");
+                }}
+                className="text-[10px] text-neutral-400 hover:text-red-500 uppercase tracking-widest transition-colors"
+              >
+                Reset Configuration
+              </button>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
+
+      <Script src="/uv/uv.bundle.js" strategy="beforeInteractive" />
+      <Script src="/uv/uv.config.js" strategy="beforeInteractive" />
     </div>
   )
 }
