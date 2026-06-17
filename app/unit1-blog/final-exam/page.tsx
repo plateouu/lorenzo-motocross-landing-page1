@@ -30,24 +30,24 @@ export default function FinalExamBlogPost() {
 
         <div className="space-y-12 text-[#131211] text-xl md:text-2xl leading-[1.7] font-medium" style={{ fontFamily: 'var(--font-outfit)' }}>
           <p className="first-letter:text-[4.5rem] md:first-letter:text-[5.5rem] first-letter:font-black first-letter:text-[#f3efe0] first-letter:bg-[#ff3b30] first-letter:px-5 first-letter:pt-2 first-letter:pb-3 first-letter:mr-6 first-letter:float-left first-letter:leading-none first-letter:shadow-[8px_8px_0px_#131211] first-letter:rounded-full first-letter:border-[4px] first-letter:border-[#131211]">
-            Let's be real for a second. In 2019, Hong Kong was completely wild with pro-democracy protests. What started as just a pushback against an extradition bill totally exploded, with up to <em className="not-italic inline-block bg-[#ff3b30] text-[#f3efe0] px-4 pt-1 pb-2 rounded-full border-[3px] border-[#131211] shadow-[5px_5px_0px_#131211] font-black -rotate-1 mx-1">2 million people</em> taking to the streets. But then 2020 hit, and the Chinese government cracked down hard. Like, literally banning gatherings of more than four people.
+            Let's be real for a second. In 2019, Hong Kong was wild with protests for increased democracy. What started as a protest against an extradition bill developed into a full-blown movement with up to <em className="not-italic inline-block bg-[#ff3b30] text-[#f3efe0] px-4 pt-1 pb-2 rounded-full border-[3px] border-[#131211] shadow-[5px_5px_0px_#131211] font-black -rotate-1 mx-1">2 million people</em> actively protesting. However, 2020 would bring another development for the region; the Chinese government would clamp down on protests.
           </p>
 
           <p>
-            Shortly after, they dropped the National Security Law, making the popular slogan "Liberate Hong Kong" a legit jailable offense. The streets were completely silenced. People were exhausted. They desperately needed a new loophole to resist.
+            They banned gatherings of more than four people. Then, shortly after, they would pass the National Security Law, turning the popular protest slogan, "Liberate Hong Kong," into a jailable offense. All of Hong Kong was silenced. People were exhausted from protesting, and someone had to find a new loophole.
           </p>
 
           <blockquote className="my-24 p-10 md:p-16 bg-[#ff3b30] text-[#f3efe0] shadow-[12px_12px_0px_#131211] rounded-[60px] rounded-br-[10px] border-[6px] border-[#131211] relative">
             <div className="absolute -top-6 -left-6 w-16 h-16 bg-[#131211] text-[#f3efe0] rounded-full border-[4px] border-[#131211] shadow-[6px_6px_0px_#f3efe0] flex items-center justify-center font-serif text-5xl pt-4">"</div>
             <p className="text-3xl md:text-5xl font-black leading-[1.2] tracking-tighter" style={{ fontFamily: 'var(--font-space)' }}>
-              On the exact same day Hong Kong banned public gatherings, Nintendo released Animal Crossing: New Horizons.
+              On the exact same day Hong Kong banned public gatherings, Nintendo would release Animal Crossing: New Horizons.
             </p>
           </blockquote>
 
           <h3 className="text-3xl font-black mb-6" style={{ fontFamily: 'var(--font-space)' }}>Protesting in Paradise</h3>
 
           <p>
-            It didn’t take long for activists to realize this peaceful island simulator was the perfect loophole. On April 1, 2020, prominent democracy activist Joshua Wong posted a screenshot of his character standing next to a yellow banner that read <em className="not-italic inline-block bg-[#131211] text-[#f3efe0] px-4 pt-1 pb-2 rounded-full border-[3px] border-[#131211] shadow-[4px_4px_0px_#ff3b30] font-black rotate-1 mx-1">&quot;Free Hong Kong, Revolution Now.&quot;</em> Almost overnight, players began designing black protest outfits, recreating the iconic yellow umbrellas, and sharing their virtual protests online.
+            The first to recognize the potential of the video game to support their protest movement was Joshua Wong, a prominent figure in the Hong Kong democracy movement. On April 1, 2020, Wong posted a screenshot of himself within Animal Crossing standing beside a yellow banner that read <em className="not-italic inline-block bg-[#131211] text-[#f3efe0] px-4 pt-1 pb-2 rounded-full border-[3px] border-[#131211] shadow-[4px_4px_0px_#ff3b30] font-black rotate-1 mx-1">&quot;Free Hong Kong, Revolution Now.&quot;</em> Overnight, players of the game began to create protest wear and share their protests on social media.
           </p>
 
           <div className="my-16 relative">
@@ -60,34 +60,34 @@ export default function FinalExamBlogPost() {
           <h3 className="text-3xl font-black mb-6 mt-16" style={{ fontFamily: 'var(--font-space)' }}>The Power of Cultural Resistance</h3>
 
           <p>
-            Why should anyone care about a video game protest? It all comes down to cultural resistance. As author <strong className="font-black decoration-wavy underline decoration-[#ff3b30] hover:text-[#ff3b30] transition-colors">Stephen Duncombe</strong> points out, culture is a powerful tool because you literally have to <em>imagine</em> political change before you can make it happen. 
+            Video games are more than a means of entertainment anymore. On the contrary, they have become a new form of cultural resistance. Cultural theory author <strong className="font-black decoration-wavy underline decoration-[#ff3b30] hover:text-[#ff3b30] transition-colors">Stephen Duncombe</strong> argues that the role of culture as a tool for creating political change requires individuals to first <em>imagine</em> the change they would like to see before they can create it.
           </p>
 
           <p>
-            Historically, we've seen this with punk rock music, graffiti art, and underground zines. But now? It's Animal Crossing, Minecraft, and Roblox. Activists are bypassing boring political channels and reaching younger audiences who might normally just scroll past the news, expanding the movement's footprint into entirely new demographics.
+            Other examples of cultural resistance include the rise of punk rock, graffiti art, and underground newspapers. Today’s movements, however, have used platforms like Animal Crossing: New Horizons, Minecraft, and Roblox to expose their political and social messages to demographics that would otherwise never engage with political movements.
           </p>
 
           <h3 className="text-3xl font-black mb-6 mt-16" style={{ fontFamily: 'var(--font-space)' }}>Did It Actually Work?</h3>
 
           <p>
-            It’s super easy to dismiss online activism as just "slacktivism." Did building virtual islands magically change China's policies? Obviously not. The strict laws stayed, and activists still got arrested. But if you look closer, these protests were actually a massive win in three ways:
+            While it is easy to dismiss online activism as "slacktivism," there is no denying that the virtual protest movement in Hong Kong did not change anything in China. However, there are three ways in which the protest was a win for the movement:
           </p>
 
           <ul className="list-disc pl-8 space-y-4">
-            <li><strong>They beat the censorship:</strong> During the COVID-19 lockdowns, these digital protests kept the Hong Kong movement visible internationally.</li>
-            <li><strong>They hijacked the media cycle:</strong> Screenshots from a Nintendo game jumped from Reddit to gaming sites like IGN, and eventually to major news networks like CNN and The BBC.</li>
-            <li><strong>They provoked a real response:</strong> The Chinese government took the threat so seriously that within three weeks of its release, Animal Crossing was wiped from China's gray market platforms. When a global superpower bans a game about talking animals, you know the activism struck a nerve.</li>
+            <li><strong>First, they had beaten the censorship laws of Hong Kong;</strong> digital protests helped sustain the movement abroad during the COVID-19 pandemic.</li>
+            <li><strong>Second, they had hijacked the media cycle;</strong> screenshots of players within the video game trending on Reddit and other gaming websites like IGN, followed by national news stations like CNN and The BBC.</li>
+            <li><strong>Finally, they provoked a real response from the Chinese government.</strong> Upon the video game’s release in China, Nintendo lost the game’s digital rights on China’s gray market gaming platforms within three weeks of its release. A superpower in global politics has banned a video game about friendly, talking animals.</li>
           </ul>
 
           <h3 className="text-3xl font-black mb-6 mt-16" style={{ fontFamily: 'var(--font-space)' }}>What's Next for Digital Activism?</h3>
 
           <p>
-            Going forward, we seriously need to stop viewing video games as just toys. They are becoming uncensored digital town halls. As governments get better at monitoring the physical world, human rights organizations and tech companies have to figure out how to protect these digital spaces from interference.
+            The future of video games and activism will go hand in hand. Video games will remain uncensored digital town halls where individuals can voice their concerns. As the world’s leaders continue to monitor the physical world, organizations like the United Nations, Amnesty International, and other technology companies must work to protect the digital world from excessive governmental interference.
           </p>
 
           <div className="bg-[#131211] text-[#f3efe0] p-10 rounded-[40px] mt-16 shadow-[10px_10px_0px_#ff3b30] border-[4px] border-[#131211]">
             <h4 className="text-2xl font-black mb-4 text-[#ff3b30]" style={{ fontFamily: 'var(--font-space)' }}>What do you think?</h4>
-            <p className="text-lg">Can video games be a legitimate platform for political change, or are they just a temporary nuisance to authoritarian governments? Let me know your thoughts in the comments!</p>
+            <p className="text-lg">What do you think about the idea of video games as a platform for political change? Let me know your thoughts in the comments!</p>
             <div className="mt-8">
               <TransitionLink href="https://docs.google.com/document/d/1A9KSK7-zCfmNEhQOcwXi29_J_g9RFU13715DOXNoljE/edit?usp=classroom_web&authuser=2" target="_blank" className="inline-block bg-[#f3efe0] text-[#131211] font-black px-6 py-3 rounded-full border-[3px] border-[#f3efe0] hover:bg-[#ff3b30] hover:text-[#f3efe0] hover:border-[#131211] transition-all uppercase tracking-wider text-sm shadow-[4px_4px_0px_#131211]">
                 Read My Full Argument Essay
